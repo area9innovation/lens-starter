@@ -51,8 +51,9 @@ LensApp.Prototype = function() {
   // 
 
   this.getPanels = function() {
-    return panels.slice(0);
+    return [];
   };
+
 };
 
 LensApp.Prototype.prototype = Lens.prototype;

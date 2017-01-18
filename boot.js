@@ -38,7 +38,8 @@ $(function() {
   // Injects itself into body
 
   var app = new window.Lens({
-    document_url: qs.url ? decodeURIComponent(qs.url) : documentURL
+    document_url: qs.url ? decodeURIComponent(qs.url) : documentURL,
+    right_column: false
   });
 
   app.start();
