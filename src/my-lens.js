@@ -1,27 +1,11 @@
 "use strict";
 
 var Lens = require("lens/reader");
-var panels = Lens.getDefaultPanels();
   
 // All available converters
 var LensConverter = require("lens/converter");
 var CustomConverter = require("./custom_converter");
 var ElifeConverter = require("lens/converter/elife_converter");
-
-// Custom Panels
-// -------------------
-// 
-// The following lines enable the altmetrics panel
-// which can be considered a demo implementation for a custom
-// panel in Lens
-// 
-// Find the code in panels/altmetrics and use it as an inspiration
-// to build your own Lens panel
-
-var altmetricsPanel = require('./panels/altmetrics');
-
-// Insert altmetrics panel at next to last position
-panels.splice(-1, 0, altmetricsPanel);
 
 var LensApp = function(config) {
   Lens.call(this, config);
@@ -45,15 +29,6 @@ LensApp.Prototype = function() {
       new LensConverter(converterOptions)
     ]
   };
-
-  // Custom panels
-  // --------------
-  // 
-
-  this.getPanels = function() {
-    return [];
-  };
-
 };
 
 LensApp.Prototype.prototype = Lens.prototype;
