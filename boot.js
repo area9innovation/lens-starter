@@ -39,7 +39,7 @@ $(function() {
 
   var app = new window.Lens({
     document_url: qs.url ? decodeURIComponent(qs.url) : documentURL,
-    right_column: false
+    show_resources_panel: false
   });
 
   app.start();
