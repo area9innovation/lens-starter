@@ -2,10 +2,7 @@
 
 var Lens = require("lens/reader");
   
-// All available converters
-var LensConverter = require("lens/converter");
-var CustomConverter = require("./custom_converter");
-var ElifeConverter = require("lens/converter/elife_converter");
+var JbjsConverter = require("./jbjs_converter");
 
 var LensApp = function(config) {
   Lens.call(this, config);
@@ -24,9 +21,7 @@ LensApp.Prototype = function() {
 
   this.getConverters = function(converterOptions) {
     return [
-      new CustomConverter(converterOptions),
-      new ElifeConverter(converterOptions),
-      new LensConverter(converterOptions)
+      new JbjsConverter(converterOptions),
     ]
   };
 };

@@ -1,0 +1,3223 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE article
+  PUBLIC '-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN'
+  'JATS-journalpublishing1.dtd'>
+<article article-type="research-article" dtd-version="1.0" xml:lang="EN" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<front>
+		<journal-meta>
+			<journal-id journal-id-type="hwp">jbjsam</journal-id>
+			<journal-id journal-id-type="nlm-ta">J Bone Joint Surg Am</journal-id>
+			<journal-id journal-id-type="publisher-id">jbjsam</journal-id>
+			<journal-title-group>
+				<journal-title>The Journal of Bone and Joint Surgery</journal-title>
+				<abbrev-journal-title abbrev-type="full">The Journal of Bone and Joint Surgery</abbrev-journal-title>
+			</journal-title-group>
+			<issn pub-type="ppub">0021-9355</issn>
+			<issn pub-type="epub">1535-1386</issn>
+			<publisher>
+				<publisher-name>The Journal of Bone and Joint Surgery, Inc.</publisher-name>
+			</publisher>
+		</journal-meta>
+		<article-meta>
+			<article-id pub-id-type="publisher-id">jbjsam.n01002</article-id>
+			<article-id pub-id-type="doi">10.2106/JBJS.N.01002</article-id>
+			<article-categories>
+				<subj-group subj-group-type="hwp-journal-coll">
+					<subject>0120</subject>
+					<subject>0050</subject>
+				</subj-group>
+				<subj-group subj-group-type="heading">
+					<subject>Scientific Articles</subject>
+				</subj-group>
+			</article-categories>
+			<title-group>
+				<article-title>Treatment of Congenital Vertical Talus: Comparison of Minimally Invasive and Extensive Soft-Tissue Release Procedures at Minimum Five-Year Follow-up</article-title>
+			</title-group>
+			<contrib-group>
+				<contrib contrib-type="author">
+					<name name-style="western">
+						<surname>Yang</surname>
+						<given-names>Justin S.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name name-style="western">
+						<surname>Dobbs</surname>
+						<given-names>Matthew B.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff2">
+						<sup>2</sup>
+					</xref>
+				</contrib>
+				<aff id="aff1">
+					<label>1</label>Department of Orthopaedic Surgery, Washington University School of Medicine, 660 South Euclid Avenue, St. Louis, MO 63110</aff>
+				<aff id="aff2">
+					<label>2</label>St. Louis Children’s Hospital, 1 Children’s Place, Suite 4S-60, St. Louis, MO 63110. E-mail address: 
+					<email>
+						dobbsm@wudosis.wustl.edu</email>
+				</aff>
+			</contrib-group>
+			<pub-date pub-type="epub-ppub">
+				<day>19</day>
+				<month>8</month>
+				<year>2015</year>
+			</pub-date>
+			<volume>97</volume>
+			<issue>16</issue>
+			<fpage>1354</fpage>
+			<lpage>1365</lpage>
+			<permissions>
+				<copyright-statement>Copyright © 2015 by The Journal of Bone and Joint Surgery, Incorporated</copyright-statement>
+				<copyright-year>2015</copyright-year>
+			</permissions>
+			<self-uri xlink:href="jbjsam.n01002.pdf" xlink:title="pdf"/>
+			<self-uri content-type="disclosure-pdf" xlink:href="jbjsam.n01002.disclosure.pdf"/>
+			<abstract>
+				<sec>
+					<title>Background:</title>
+					<p>The most common historical treatment method for congenital vertical talus is extensive soft-tissue release surgery. A minimally invasive treatment approach that relies primarily on serial cast correction was introduced almost ten years ago, with promising early results. The purpose of this study was to assess the long-term outcome of patients with congenital vertical talus managed with the minimally invasive technique and compare them with a cohort treated with extensive soft-tissue release surgery.</p>
+				</sec>
+				<sec>
+					<title>Methods:</title>
+					<p>The records of twenty-seven consecutive patients with vertical talus (forty-two feet) were retrospectively reviewed at a mean of seven years (range, five to 11.3 years) after initial correction was achieved. The minimally invasive method was used to treat sixteen patients (twenty-four feet), and extensive soft-tissue release surgery was used to treat eleven patients (eighteen feet). Patient demographics, ankle range of motion, the PODCI (Pediatric Outcomes Data Collection Instrument) questionnaire, and radiographic measurements were analyzed.</p>
+				</sec>
+				<sec>
+					<title>Results:</title>
+					<p>At the latest follow-up, the mean range of motion of patients treated with the minimally invasive method was 42.4° compared with 12.7° for patients treated with extensive surgery (p &lt; 0.0001). The PODCI normative pain and global function scores were superior in the minimally invasive treatment group compared with the extensive soft-tissue release group. Greater correction of hindfoot valgus (anteroposterior talar axis-first metatarsal base angle) was achieved in the minimally invasive treatment group compared with the extensive surgery group (40.1° versus 27.9°, p = 0.03), although all other radiographic values were similar between the two groups (p &gt;0.1 for all). Subgroup analysis of patients with isolated vertical talus also showed superior range of motion and PODCI normative global function scores in the minimally invasive group.</p>
+				</sec>
+				<sec>
+					<title>Conclusions:</title>
+					<p>The minimally invasive treatment method for vertical talus resulted in better long-term ankle range of motion and pain scores compared with extensive soft-tissue release surgery. Longer-term studies are necessary to determine whether the improved outcomes are maintained into adulthood and whether the superior outcome is related to reduced scarring.</p>
+				</sec>
+				<sec>
+					<title>Level of Evidence:</title>
+					<p>Therapeutic 
+						<underline>
+							Level III</underline>. See Instructions for Authors for a complete description of levels of evidence.</p>
+				</sec>
+			</abstract>
+			<counts>
+				<page-count count="12"/>
+			</counts>
+			<custom-meta-group>
+				<custom-meta>
+					<meta-name>peer-review-statement</meta-name>
+					<meta-value>
+						<bold>Peer Review:</bold>This article was reviewed by the Editor-in-Chief and one Deputy Editor, and it underwent blinded review by two or more outside experts. It was also reviewed by an expert in methodology and statistics. The Deputy Editor reviewed each revision of the article, and it underwent a final review by the Editor-in-Chief prior to publication. Final corrections and clarifications occurred during one or more exchanges between the author(s) and copyeditors.</meta-value>
+				</custom-meta>
+			</custom-meta-group>
+		</article-meta>
+	</front>
+	<body>
+		<p>Congenital vertical talus is a rare flatfoot deformity that is present at birth and is characterized by a fixed dorsal dislocation of the navicular on the talus with associated Achilles tendon and dorsolateral soft-tissue contractures as well as calcaneocuboid joint subluxation and/or dislocation
+			<sup>
+				<xref ref-type="bibr" rid="bib1">
+					1</xref>
+			</sup>. The estimated prevalence of vertical talus is one in 10,000
+			<sup>
+				<xref ref-type="bibr" rid="bib2">
+					2</xref>
+			</sup>, although this is likely an underestimation because of lack of recognition of vertical talus in the neonatal period. Vertical talus is etiologically heterogeneous. Nearly half of all cases occur as an isolated condition, whereas the remaining cases are associated with known genetic
+			<sup>
+				<xref ref-type="bibr" rid="bib3">
+					3</xref>
+			</sup>and/or neuromuscular conditions, including arthrogryposis and myelomeningocele, and are referred to as “non-isolated.”
+			<sup>
+				<xref ref-type="bibr" rid="bib4">
+					4</xref>
+			</sup>Although the cause of many cases of isolated vertical talus is unknown, there is growing evidence to support a genetic etiology, as &gt;20% of reported cases in some series are familial
+			<sup>
+				<xref ref-type="bibr" rid="bib5">
+					5</xref>,
+				<xref ref-type="bibr" rid="bib6">
+					6</xref>
+			</sup>. Mutations in the HOXD10
+			<sup>
+				<xref ref-type="bibr" rid="bib7">
+					7</xref>
+			</sup>and GDF5
+			<sup>
+				<xref ref-type="bibr" rid="bib8">
+					8</xref>
+			</sup>genes have been identified in some patients with isolated vertical talus, with many additional genetic factors remaining unknown. Indeed, primary muscle abnormalities have been found on muscle biopsies in some cases
+			<sup>
+				<xref ref-type="bibr" rid="bib9">
+					9</xref>
+			</sup>. Although both isolated and non-isolated vertical tali pose treatment challenges, it is generally accepted that non-isolated cases are more rigid and less responsive to treatment
+			<sup>
+				<xref ref-type="bibr" rid="bib10">
+					10</xref>,
+				<xref ref-type="bibr" rid="bib11">
+					11</xref>
+			</sup>.</p>
+		<p>The challenge in treating vertical talus is how to best achieve the desired outcome of a mobile, plantigrade, pain-free, and functional foot. Bracing and/or shoe modifications alone do not provide correction and often result in pain and long-term disability
+			<sup>
+				<xref ref-type="bibr" rid="bib1">
+					1</xref>,
+				<xref ref-type="bibr" rid="bib12">
+					12</xref>
+			</sup>. The traditional surgical approach involving extensive soft-tissue release, while effective for gaining initial correction in many cases, is associated with several potential complications, including wound necrosis, osteonecrosis, inadequate correction of the deformity, stiffness of the ankle and subtalar joints, and amputation in extreme cases
+			<sup>
+				<xref ref-type="bibr" rid="bib2">
+					2</xref>,
+				<xref ref-type="bibr" rid="bib13">
+					13</xref>-
+				<xref ref-type="bibr" rid="bib16">
+					16</xref>
+			</sup>.</p>
+		<p>A minimally invasive technique for correcting vertical talus that relies primarily on serial casting was introduced almost ten years ago
+			<sup>
+				<xref ref-type="bibr" rid="bib17">
+					17</xref>,
+				<xref ref-type="bibr" rid="bib18">
+					18</xref>
+			</sup>. Multiple centers have reproduced the effectiveness of this technique in achieving initial correction (both radiographically and clinically), while maintaining excellent motion in the foot and ankle, for patients with both isolated and non-isolated vertical talus
+			<sup>
+				<xref ref-type="bibr" rid="bib10">
+					10</xref>,
+				<xref ref-type="bibr" rid="bib19">
+					19</xref>-
+				<xref ref-type="bibr" rid="bib26">
+					26</xref>
+			</sup>. In the present study, we compare the long-term outcomes of clinical and radiographic correction, foot function, and foot and ankle flexibility in patients with vertical talus (isolated and non-isolated) treated with either the minimally invasive method
+			<sup>
+				<xref ref-type="bibr" rid="bib17">
+					17</xref>
+			</sup>or extensive soft-tissue release surgery.</p>
+		<sec sec-type="materials|methods">
+			<title>Materials and Methods</title>
+			<p>After institutional review board approval, we retrospectively reviewed the records of thirty-two consecutive patients (fifty feet) who were treated for congenital vertical talus at a single institution between 1998 and 2007. Inclusion criteria were (1) diagnosis of vertical talus confirmed by a lateral radiograph made with the foot in maximum plantar flexion (
+				<xref ref-type="fig" rid="fig1a">
+					Figs. 1-A</xref>and 
+				<xref ref-type="fig" rid="fig1b">
+					1-B</xref>) that demonstrated persistent dislocation of the navicular on the talar head with a talar axis-first metatarsal base angle of &gt;35°, (2) follow-up for a minimum of five years after correction was achieved, and (3) availability of complete pretreatment and post-treatment radiographs. Two patients were lost to follow-up, and two patients did not have the required pretreatment and post-treatment radiographs. One patient was excluded as an outlier on the basis of age at initiation of treatment. The remaining twenty-seven patients were available for analysis. Patients with bilateral involvement had one foot randomly selected for statistical analysis. Patients with isolated vertical talus were also examined separately in a subgroup analysis.</p>
+			<fig-group id="fig1" orientation="portrait" position="float">
+				<caption>
+					<title>A four-month-old boy with rigid bilateral isolated vertical talus. Preoperative lateral plantar flexion radiographs of the left (
+						<bold>
+							Fig. 1-A</bold>) and right (
+						<bold>
+							Fig. 1-B</bold>) feet demonstrate persistent dorsal translation of the forefoot on the hindfoot.</title>
+				</caption>
+				<fig fig-type="figure" id="fig1a" orientation="portrait" position="float">
+					<label>Fig. 1-A</label>
+					<graphic orientation="portrait" position="float" xlink:href="jbjsam.n01002fig1a"/>
+				</fig>
+				<fig fig-type="figure" id="fig1b" orientation="portrait" position="float">
+					<label>Fig. 1-B</label>
+					<graphic orientation="portrait" position="float" xlink:href="jbjsam.n01002fig1b"/>
+				</fig>
+			</fig-group>
+			<p>Patient demographics were recorded (
+				<xref ref-type="table" rid="tbl1">
+					Table I</xref>); fifteen were male and twelve were female. Seventeen patients (twenty-four feet) had a diagnosis of isolated vertical talus (
+				<xref ref-type="fig" rid="fig2a">
+					Figs. 2-A</xref>and 
+				<xref ref-type="fig" rid="fig2b">
+					2-B</xref>), and ten patients (eighteen feet) had non-isolated vertical talus (vertical talus occurring in association with a known genetic or neuromuscular condition). Mean age at the start of serial casting was 6.6 months for the minimally invasive group and 15.2 months for the extensive release group. Mean follow-up duration was seven years (range, five to 11.3 years). The choice of treatment method utilized for each patient was based strictly on surgeon preference and not on the severity of the deformity. The senior author utilized the minimally invasive method (sixteen consecutive patients), and the remaining two surgeons utilized an extensive soft-tissue release.</p>
+			<table-wrap id="tbl1" orientation="portrait" position="float">
+				<label>TABLE I</label>
+				<caption>
+					<p>Demographics of Patients with Vertical Talus Included in This Study</p>
+				</caption>
+				<table frame="hsides" rules="groups">
+					<thead>
+						<tr>
+							<td colspan="1" rowspan="1"/>
+							<td align="center" colspan="1" rowspan="1">Minimally Invasive</td>
+							<td align="center" colspan="1" rowspan="1">Extensive Surgery</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="1" rowspan="1">Age at initial treatment
+								<xref ref-type="table-fn" rid="tblfn1">
+									*</xref>
+								<italic>(mo)</italic>
+							</td>
+							<td align="char" char="." colspan="1" rowspan="1">6.6 (1.1 to 28.8)</td>
+							<td align="char" char="." colspan="1" rowspan="1">15.2 (1.6 to 37.6)</td>
+						</tr>
+						<tr>
+							<td colspan="1" rowspan="1">Sex 
+								<italic>
+									(no. of patients)</italic>
+							</td>
+							<td colspan="1" rowspan="1"/>
+							<td colspan="1" rowspan="1"/>
+						</tr>
+						<tr>
+							<td colspan="1" rowspan="1"> Male</td>
+							<td align="char" char="." colspan="1" rowspan="1">10</td>
+							<td align="char" char="." colspan="1" rowspan="1">5</td>
+						</tr>
+						<tr>
+							<td colspan="1" rowspan="1"> Female</td>
+							<td align="char" char="." colspan="1" rowspan="1">6</td>
+							<td align="char" char="." colspan="1" rowspan="1">6</td>
+						</tr>
+						<tr>
+							<td colspan="1" rowspan="1">Diagnosis 
+								<italic>
+									(no. of patients [no. of feet])</italic>
+							</td>
+							<td colspan="1" rowspan="1"/>
+							<td colspan="1" rowspan="1"/>
+						</tr>
+						<tr>
+							<td colspan="1" rowspan="1"> Isolated</td>
+							<td align="char" char="." colspan="1" rowspan="1">10 (14)</td>
+							<td align="char" char="." colspan="1" rowspan="1">7 (10)</td>
+						</tr>
+						<tr>
+							<td colspan="1" rowspan="1"> Non-isolated</td>
+							<td align="char" char="." colspan="1" rowspan="1">6 (10)</td>
+							<td align="char" char="." colspan="1" rowspan="1">4 (8)</td>
+						</tr>
+						<tr>
+							<td colspan="1" rowspan="1">No. of casts
+								<xref ref-type="table-fn" rid="tblfn2">
+									†</xref>
+							</td>
+							<td colspan="1" rowspan="1"/>
+							<td colspan="1" rowspan="1"/>
+						</tr>
+						<tr>
+							<td colspan="1" rowspan="1"> Preop.</td>
+							<td align="char" char="." colspan="1" rowspan="1">4 (2 to 6)</td>
+							<td align="char" char="." colspan="1" rowspan="1">0 (0 to 2)</td>
+						</tr>
+						<tr>
+							<td colspan="1" rowspan="1"> Postop.</td>
+							<td align="char" char="." colspan="1" rowspan="1">2 (2 to 4)</td>
+							<td align="char" char="." colspan="1" rowspan="1">2 (2 to 4)</td>
+						</tr>
+					</tbody>
+				</table>
+				<table-wrap-foot>
+					<fn id="tblfn1">
+						<label>*</label>
+						<p>Values are given as the mean, with the range in parentheses.</p>
+					</fn>
+					<fn id="tblfn2">
+						<label>†</label>
+						<p>Values are given as the median, with the interquartile range in parentheses.</p>
+					</fn>
+				</table-wrap-foot>
+			</table-wrap>
+			<fig-group id="fig2" orientation="portrait" position="float">
+				<caption>
+					<title>Preoperative clinical photographs of both feet with vertical talus shown in the previous figures, also at the patient age of four months.</title>
+				</caption>
+				<fig fig-type="figure" id="fig2a" orientation="portrait" position="float">
+					<label>Fig. 2-A</label>
+					<caption>
+						<p>The plantar aspect of the right foot is convex.</p>
+					</caption>
+					<graphic orientation="portrait" position="float" xlink:href="jbjsam.n01002fig2a"/>
+				</fig>
+				<fig fig-type="figure" id="fig2b" orientation="portrait" position="float">
+					<label>Fig. 2-B</label>
+					<caption>
+						<p>There is a fixed forefoot adduction and hindfoot valgus deformity.</p>
+					</caption>
+					<graphic orientation="portrait" position="float" xlink:href="jbjsam.n01002fig2b"/>
+				</fig>
+			</fig-group>
+			<sec>
+				<title>Treatment</title>
+				<p>The minimally invasive technique has previously been described for treating both isolated and non-isolated vertical talus and consists of serial foot manipulation and casting followed by percutaneous talonavicular joint pinning and percutaneous Achilles tenotomy to correct hindfoot equinus, followed by shoe-and-bar bracing once casting is complete and the pin is removed
+					<sup>
+						<xref ref-type="bibr" rid="bib17">
+							17</xref>,
+						<xref ref-type="bibr" rid="bib18">
+							18</xref>,
+						<xref ref-type="bibr" rid="bib27">
+							27</xref>
+					</sup>. All of the isolated vertical tali in this study were reduced with the above treatment protocol. In those non-isolated vertical tali in which serial casting did not result in complete correction, a limited anterior subtalar joint capsulotomy, performed through a 1-cm dorsal skin incision, allowed the placement of an elevator to complete the reduction, which was followed by the treatment outlined above, involving pin fixation and tenotomy of the Achilles tendon. We recommend that surgeons who are first utilizing this technique make the small dorsal skin incision to visualize reduction and aid in pin placement. If the talonavicular joint is reduced under fluoroscopic visualization, capsulotomy is not necessary; if the joint is not reduced, then the surgeon proceeds with a limited capsulotomy as outlined above.</p>
+				<p>For the patient cohort treated with extensive soft-tissue release surgery, this procedure was performed as a single-stage surgery and included posterior capsulotomy of the ankle and subtalar joints, sectioning of the calcaneofibular ligament, and capsulotomies of the calcaneocuboid and talonavicular joints
+					<sup>
+						<xref ref-type="bibr" rid="bib28">
+							28</xref>,
+						<xref ref-type="bibr" rid="bib29">
+							29</xref>
+					</sup>. Only one patient had release of the talocalcaneal interosseous ligament.</p>
+			</sec>
+			<sec>
+				<title>Follow-up Evaluations</title>
+				<p>Recurrences were defined radiographically as any loss of correction of the talonavicular reduction as measured on the lateral standing foot radiograph. Patients diagnosed radiographically with evidence of recurrence had a corresponding loss of ≥10° of plantar flexion. Radiographs of the feet were made at the time of presentation, immediately postoperatively, and on an annual basis thereafter
+					<sup>
+						<xref ref-type="bibr" rid="bib30">
+							30</xref>
+					</sup>. Radiographic angles were measured twice by the same examiner three weeks apart, and the mean of the two measurements was recorded. The examiner was blinded with regard to the treatment group and previous measurement results and was not involved in the treatment of any of the patients. The same examiner measured ankle range of motion of all patients with a handheld goniometer.</p>
+				<p>At the latest visit, the PODCI (Pediatric Outcomes Data Collection Instrument) questionnaire was completed by the parents or guardian
+					<sup>
+						<xref ref-type="bibr" rid="bib31">
+							31</xref>
+					</sup>. Both standardized and normative scores were calculated on the basis of published guidelines (http://www.aaos.org/research/outcomes/outcomes_documentation.asp#pedsref). Standardized scores are raw scores reported on the range of 0 to 100, with 100 being the best possible score; interpretation of the standardized score is not consistent among scales because of differences in how the general healthy population scored. To make the scores comparable across various scales, the normative score was calculated on the basis of data from the general healthy population, which has a mean normative score of 50. Thus, a patient scoring &gt;50 is above the mean of the general healthy population.</p>
+			</sec>
+			<sec>
+				<title>Statistical Analysis</title>
+				<p>Preoperative and postoperative limb-specific range of motion and preoperative radiographic measurements were compared for the four combinations of treatment method utilized and presence or absence of an isolated vertical talus using one-way analysis of variance (ANOVA). When the overall model was significant (p &lt; 0.05), least-squares means were used to perform all pairwise between-group comparisons, with particular interest in the comparison between the two treatments for both isolated and non-isolated vertical talus. These pairwise comparisons were adjusted for the performance of multiple comparisons with the Tukey-Kramer method. Within the ANOVA, a statistical contrast was used to test the a priori hypothesis that values for the minimally invasive method were similar to those for the extensive-surgery group, regardless of syndrome. For bilaterally affected patients, one foot was randomly selected for analysis. Each foot was treated as an independent observation.</p>
+				<p>The change in radiographic measurements was compared across groups using analysis of covariance (ANCOVA) in which the value at the latest follow-up was the dependent variable, the four combinations of treatment method and presence or absence of an isolated vertical talus were the independent variables, and the preoperative value was the covariate. Specific between-group comparisons were performed as described above. A subset of PODCI domain scores was compared between patients treated with minimally invasive and extensive surgery, regardless of syndrome, by ANOVA. Because of violations of the assumptions required for ANOVA, some variables were rank-transformed prior to analysis. The Student t test was used for comparison of subsequent procedures between the minimally invasive and extensive soft-tissue release groups, and between the isolated and non-isolated groups. Data for normally distributed variables are reported as the mean and standard deviation. Variables that were not normally distributed are reported as the median and interquartile range (defined as the difference between the 25th and 75th percentiles).</p>
+			</sec>
+			<sec>
+				<title>Source of Funding</title>
+				<p>One of the authors (J.S.Y.) received an OREF (Orthopaedic Research and Education Foundation) Resident Research Grant.</p>
+			</sec>
+		</sec>
+		<sec sec-type="results">
+			<title>Results</title>
+			<sec>
+				<title>Range of Motion</title>
+				<p>The mean postoperative ankle arc of motion was greater in patients treated with the minimally invasive method compared with those treated with extensive soft-tissue release surgery (42.4° versus 12.7°, p &lt; 0.0001) (
+					<xref ref-type="table" rid="tbl2">
+						Table II</xref>). Mean dorsiflexion was 18.5° in the minimally invasive group compared with 5.0° in the extensive soft-tissue release group (p &lt; 0.0001). Mean plantar flexion was 23.9° in the minimally invasive group compared with 7.7° in the extensive soft-tissue release group (p = 0.0006) (
+					<xref ref-type="fig" rid="fig3">
+						Fig. 3</xref>).</p>
+				<table-wrap id="tbl2" orientation="portrait" position="float">
+					<label>TABLE II</label>
+					<caption>
+						<p>Postoperative Ankle Range of Motion in Patients with Vertical Talus Included in This Study</p>
+					</caption>
+					<table frame="hsides" rules="groups">
+						<thead>
+							<tr>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">Minimally Invasive</td>
+								<td align="center" colspan="1" rowspan="1">Extensive Surgery</td>
+								<td align="center" colspan="1" rowspan="1">P Value</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="1" rowspan="1">All patients</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> No. of patients</td>
+								<td align="center" colspan="1" rowspan="1">16</td>
+								<td align="center" colspan="1" rowspan="1">11</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Dorsiflexion
+									<xref ref-type="table-fn" rid="tblfn3">
+										*</xref>
+									<italic>(deg)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">18.5 ± 7.9 (5 to 30)</td>
+								<td align="center" colspan="1" rowspan="1">5.0 ± 3.9 (0 to 10)</td>
+								<td align="center" colspan="1" rowspan="1">&lt;0.0001</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Plantar flexion
+									<xref ref-type="table-fn" rid="tblfn3">
+										*</xref>
+									<italic>(deg)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">23.9 ± 11.8 (0 to 35)</td>
+								<td align="center" colspan="1" rowspan="1">7.7 ± 5.2 (0 to 15)</td>
+								<td align="center" colspan="1" rowspan="1">0.0006</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Total range of motion 
+									<italic>
+										(deg)</italic>
+									<xref ref-type="table-fn" rid="tblfn3">*</xref>
+								</td>
+								<td align="center" colspan="1" rowspan="1">42.4 ± 18.0 (5 to 60)</td>
+								<td align="center" colspan="1" rowspan="1">12.7 ± 6.8 (5 to 25)</td>
+								<td align="center" colspan="1" rowspan="1">&lt;0.0001</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Isolated vertical talus</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> No. of patients</td>
+								<td align="center" colspan="1" rowspan="1">10</td>
+								<td align="center" colspan="1" rowspan="1">7</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Dorsiflexion
+									<xref ref-type="table-fn" rid="tblfn3">
+										*</xref>
+									<italic>(deg)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">21.1 ± 6.2 (10 to 30)</td>
+								<td align="center" colspan="1" rowspan="1">6.4 ± 3.8 (0 to 10)</td>
+								<td align="center" colspan="1" rowspan="1">&lt;0.0001</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Plantar flexion
+									<xref ref-type="table-fn" rid="tblfn3">
+										*</xref>
+									<italic>(deg)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">30.7 ± 4.3 (20 to 35)</td>
+								<td align="center" colspan="1" rowspan="1">9.3 ± 5.3 (0 to 15)</td>
+								<td align="center" colspan="1" rowspan="1">&lt;0.0001</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Total range of motion
+									<xref ref-type="table-fn" rid="tblfn3">
+										*</xref>
+									<italic>(deg)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">51.8 ± 6.9 (40 to 60)</td>
+								<td align="center" colspan="1" rowspan="1">15.7 ± 6.1 (10 to 25)</td>
+								<td align="center" colspan="1" rowspan="1">&lt;0.0001</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Non-isolated vertical talus</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> No. of patients</td>
+								<td align="center" colspan="1" rowspan="1">6</td>
+								<td align="center" colspan="1" rowspan="1">4</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Dorsiflexion
+									<xref ref-type="table-fn" rid="tblfn3">
+										*</xref>
+									<italic>(deg)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">14.2 ± 9.2 (5 to 30)</td>
+								<td align="center" colspan="1" rowspan="1">2.5 ± 2.9 (0 to 5)</td>
+								<td align="center" colspan="1" rowspan="1">0.03</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Plantar flexion
+									<xref ref-type="table-fn" rid="tblfn3">
+										*</xref>
+									<italic>(deg)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">12.5 ± 11.7 (0 to 30)</td>
+								<td align="center" colspan="1" rowspan="1">5 ± 4.1 (0 to 10)</td>
+								<td align="center" colspan="1" rowspan="1">0.5</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Total range of motion 
+									<italic>
+										(deg)</italic>
+									<xref ref-type="table-fn" rid="tblfn3">*</xref>
+								</td>
+								<td align="center" colspan="1" rowspan="1">26.7 ± 20.4 (5 to 60)</td>
+								<td align="center" colspan="1" rowspan="1">7.5 ± 5.0 (5 to 15)</td>
+								<td align="center" colspan="1" rowspan="1">0.04</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn id="tblfn3">
+							<label>*</label>
+							<p>Values are given as the mean and standard deviation, with the range in parentheses.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+				<fig fig-type="figure" id="fig3" orientation="portrait" position="float">
+					<label>Fig. 3</label>
+					<caption>
+						<p>Eleven years after correction of the vertical talus, the patient in the previous figures demonstrates neutral alignment of the hindfeet in stance.</p>
+					</caption>
+					<graphic orientation="portrait" position="float" xlink:href="jbjsam.n01002fig3"/>
+				</fig>
+			</sec>
+			<sec>
+				<title>PODCI Scores</title>
+				<p>Fifteen patients in the minimally invasive group and eight in the extensive soft-tissue release group provided PODCI data. At the latest follow-up, PODCI scores for pain were better in the minimally invasive group (
+					<xref ref-type="table" rid="tbl3">
+						Table III</xref>). The mean normative pain score was 51.0 in the minimally invasive group compared with 34.1 in the extensive soft-tissue release group (p = 0.041). There was no difference between the two groups in the transfer and basic mobility domain. The normative global function domain was higher in the minimally invasive group (48.3) compared with the extensive soft-tissue release group (34.3, p = 0.03).</p>
+				<table-wrap id="tbl3" orientation="portrait" position="float">
+					<label>TABLE III</label>
+					<caption>
+						<p>Postoperative PODCI
+							<xref ref-type="table-fn" rid="tblfn4">
+								*</xref>Scores</p>
+					</caption>
+					<table frame="hsides" rules="groups">
+						<thead>
+							<tr>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">Minimally Invasive</td>
+								<td align="center" colspan="1" rowspan="1">Extensive Surgery</td>
+								<td align="center" colspan="1" rowspan="1">P Value</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="1" rowspan="1">All patients</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> No. of patients</td>
+								<td align="center" colspan="1" rowspan="1">15</td>
+								<td align="center" colspan="1" rowspan="1">8</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Pain</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Standardized</td>
+								<td align="center" colspan="1" rowspan="1">92.7</td>
+								<td align="center" colspan="1" rowspan="1">70.3</td>
+								<td align="center" colspan="1" rowspan="1">0.047
+									<xref ref-type="table-fn" rid="tblfn5">
+										†</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Normative</td>
+								<td align="center" colspan="1" rowspan="1">51.0</td>
+								<td align="center" colspan="1" rowspan="1">34.1</td>
+								<td align="center" colspan="1" rowspan="1">0.041
+									<xref ref-type="table-fn" rid="tblfn5">
+										†</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Transfer and basic mobility</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Standardized</td>
+								<td align="center" colspan="1" rowspan="1">96.7</td>
+								<td align="center" colspan="1" rowspan="1">96.8</td>
+								<td align="center" colspan="1" rowspan="1">0.80
+									<xref ref-type="table-fn" rid="tblfn6">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Normative</td>
+								<td align="center" colspan="1" rowspan="1">47.1</td>
+								<td align="center" colspan="1" rowspan="1">47.3</td>
+								<td align="center" colspan="1" rowspan="1">0.71
+									<xref ref-type="table-fn" rid="tblfn6">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Global function</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Standardized</td>
+								<td align="center" colspan="1" rowspan="1">91.1</td>
+								<td align="center" colspan="1" rowspan="1">82.4</td>
+								<td align="center" colspan="1" rowspan="1">0.15
+									<xref ref-type="table-fn" rid="tblfn6">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Normative</td>
+								<td align="center" colspan="1" rowspan="1">48.3</td>
+								<td align="center" colspan="1" rowspan="1">34.3</td>
+								<td align="center" colspan="1" rowspan="1">0.03
+									<xref ref-type="table-fn" rid="tblfn6">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Isolated vertical talus</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> No. of patients</td>
+								<td align="center" colspan="1" rowspan="1">10</td>
+								<td align="center" colspan="1" rowspan="1">7</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Pain</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Standardized</td>
+								<td align="center" colspan="1" rowspan="1">92.0</td>
+								<td align="center" colspan="1" rowspan="1">74.9</td>
+								<td align="center" colspan="1" rowspan="1">0.12
+									<xref ref-type="table-fn" rid="tblfn5">
+										†</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Normative</td>
+								<td align="center" colspan="1" rowspan="1">50.8</td>
+								<td align="center" colspan="1" rowspan="1">37.4</td>
+								<td align="center" colspan="1" rowspan="1">0.1
+									<xref ref-type="table-fn" rid="tblfn5">
+										†</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Transfer and basic mobility</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Standardized</td>
+								<td align="center" colspan="1" rowspan="1">99.4</td>
+								<td align="center" colspan="1" rowspan="1">98.0</td>
+								<td align="center" colspan="1" rowspan="1">0.36
+									<xref ref-type="table-fn" rid="tblfn6">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Normative</td>
+								<td align="center" colspan="1" rowspan="1">52.1</td>
+								<td align="center" colspan="1" rowspan="1">49.4</td>
+								<td align="center" colspan="1" rowspan="1">0.32
+									<xref ref-type="table-fn" rid="tblfn6">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Global function</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Standardized</td>
+								<td align="center" colspan="1" rowspan="1">94.0</td>
+								<td align="center" colspan="1" rowspan="1">85.6</td>
+								<td align="center" colspan="1" rowspan="1">0.13
+									<xref ref-type="table-fn" rid="tblfn6">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">  Normative</td>
+								<td align="center" colspan="1" rowspan="1">52.2</td>
+								<td align="center" colspan="1" rowspan="1">38.6</td>
+								<td align="center" colspan="1" rowspan="1">0.02
+									<xref ref-type="table-fn" rid="tblfn6">
+										‡</xref>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn id="tblfn4">
+							<label>*</label>
+							<p>PODCI = Pediatric Outcomes Data Collection Instrument.</p>
+						</fn>
+						<fn id="tblfn5">
+							<label>†</label>
+							<p>By ANOVA comparing the two treatment groups, with Welch correction for unequal variances.</p>
+						</fn>
+						<fn id="tblfn6">
+							<label>‡</label>
+							<p>By ANOVA comparing the two treatment groups, with rank-transformation of the data.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+			</sec>
+			<sec>
+				<title>Radiographic Values</title>
+				<p>Preoperative radiographic values were similar between the two treatment method groups (p &gt;0.18 for all variables). The correction of hindfoot valgus (anteroposterior talar axis-first metatarsal base angle) was greater in the minimally invasive group (40.1° versus 27.9°, p = 0.03) (
+					<xref ref-type="table" rid="tbl4">
+						Table IV</xref>), but this difference did not remain significant when comparing the two groups separately for isolated (p = 0.12) or for non-isolated vertical talus (p = 0.53). The correction of all other radiographic values was similar for both treatment method groups (p &gt;0.1 for all variables) (
+					<xref ref-type="fig" rid="fig4a">
+						Figs. 4-A</xref>and 
+					<xref ref-type="fig" rid="fig4b">
+						4-B</xref>).</p>
+				<table-wrap id="tbl4" orientation="portrait" position="float">
+					<label>TABLE IV</label>
+					<caption>
+						<p>Radiographic Values of All Feet with Vertical Talus Included in This Study</p>
+					</caption>
+					<table frame="hsides" rules="groups">
+						<thead>
+							<tr>
+								<td colspan="1" rowspan="1">Angle</td>
+								<td align="center" colspan="1" rowspan="1">Minimally Invasive (N = 16 Patients)
+									<xref ref-type="table-fn" rid="tblfn7">
+										*</xref>
+									<italic>(deg)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">Extensive Surgery (N = 11 Patients)
+									<xref ref-type="table-fn" rid="tblfn7">
+										*</xref>
+									<italic>(deg)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">P Value
+									<xref ref-type="table-fn" rid="tblfn8">
+										†</xref>
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="1" rowspan="1">Anteroposterior talocalcaneal</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Preop.</td>
+								<td align="center" colspan="1" rowspan="1">42.6 ± 12.1</td>
+								<td align="center" colspan="1" rowspan="1">39.4 ± 18.4</td>
+								<td align="center" colspan="1" rowspan="1">0.97
+									<xref ref-type="table-fn" rid="tblfn9">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Latest follow-up</td>
+								<td align="center" colspan="1" rowspan="1">15.8 ± 9.2</td>
+								<td align="center" colspan="1" rowspan="1">9.3 ± 11.2</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Correction</td>
+								<td align="center" colspan="1" rowspan="1">−26.8 ± 9.7</td>
+								<td align="center" colspan="1" rowspan="1">−30.1 ± 24.3</td>
+								<td align="center" colspan="1" rowspan="1">0.26
+									<xref ref-type="table-fn" rid="tblfn10">
+										§</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Anteroposterior talar axis-first metatarsal base</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Preop.</td>
+								<td align="center" colspan="1" rowspan="1">46.6 ± 25.7</td>
+								<td align="center" colspan="1" rowspan="1">35.0 ± 35.7</td>
+								<td align="center" colspan="1" rowspan="1">0.59
+									<xref ref-type="table-fn" rid="tblfn9">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Latest follow-up</td>
+								<td align="center" colspan="1" rowspan="1">6.4 ± 4.0</td>
+								<td align="center" colspan="1" rowspan="1">7.1 ± 14.5</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Correction</td>
+								<td align="center" colspan="1" rowspan="1">−40.1 ± 25.5</td>
+								<td align="center" colspan="1" rowspan="1">−27.9 ± 29.9</td>
+								<td align="center" colspan="1" rowspan="1">0.03
+									<xref ref-type="table-fn" rid="tblfn10">
+										§</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Lateral talocalcaneal</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Preop.</td>
+								<td align="center" colspan="1" rowspan="1">59.4 ± 15.5</td>
+								<td align="center" colspan="1" rowspan="1">54.5 ± 15.3</td>
+								<td align="center" colspan="1" rowspan="1">0.18
+									<xref ref-type="table-fn" rid="tblfn9">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Latest follow-up</td>
+								<td align="center" colspan="1" rowspan="1">30.8 ± 8.6</td>
+								<td align="center" colspan="1" rowspan="1">27.5 ± 11.5</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Correction</td>
+								<td align="center" colspan="1" rowspan="1">−28.7 ± 14.3</td>
+								<td align="center" colspan="1" rowspan="1">−27.0 ± 20.7</td>
+								<td align="center" colspan="1" rowspan="1">0.68
+									<xref ref-type="table-fn" rid="tblfn10">
+										§</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Lateral talar axis-first metatarsal base</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Preop.</td>
+								<td align="center" colspan="1" rowspan="1">78.3 ± 14.2</td>
+								<td align="center" colspan="1" rowspan="1">81.2 ± 9.6</td>
+								<td align="center" colspan="1" rowspan="1">0.44
+									<xref ref-type="table-fn" rid="tblfn9">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Latest follow-up</td>
+								<td align="center" colspan="1" rowspan="1">5.3 ± 9.6</td>
+								<td align="center" colspan="1" rowspan="1">17.3 ± 26.8</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Correction</td>
+								<td align="center" colspan="1" rowspan="1">−73.0 ± 16.8</td>
+								<td align="center" colspan="1" rowspan="1">−63.9 ± 28.7</td>
+								<td align="center" colspan="1" rowspan="1">0.10
+									<xref ref-type="table-fn" rid="tblfn10">
+										§</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Lateral tibiocalcaneal</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Preop.</td>
+								<td align="center" colspan="1" rowspan="1">109.1 ± 14.0</td>
+								<td align="center" colspan="1" rowspan="1">106.1 ± 22</td>
+								<td align="center" colspan="1" rowspan="1">0.56
+									<xref ref-type="table-fn" rid="tblfn9">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Latest follow-up</td>
+								<td align="center" colspan="1" rowspan="1">76.4 ± 12.7</td>
+								<td align="center" colspan="1" rowspan="1">78.7 ± 13.1</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Correction</td>
+								<td align="center" colspan="1" rowspan="1">−32.6 ± 23.1</td>
+								<td align="center" colspan="1" rowspan="1">−27.4 ± 29.8</td>
+								<td align="center" colspan="1" rowspan="1">0.93
+									<xref ref-type="table-fn" rid="tblfn10">
+										§</xref>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn id="tblfn7">
+							<label>*</label>
+							<p>Values are given as the mean and standard deviation.</p>
+						</fn>
+						<fn id="tblfn8">
+							<label>†</label>
+							<p>Data were rank-transformed prior to analysis.</p>
+						</fn>
+						<fn id="tblfn9">
+							<label>‡</label>
+							<p>By ANOVA statistical contrast comparing all four of the subgroups: isolated and non-isolated vertical talus treated with minimally invasive and extensive surgery.</p>
+						</fn>
+						<fn id="tblfn10">
+							<label>§</label>
+							<p>By ANCOVA statistical contrast comparing all four of the subgroups.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+				<fig-group id="fig4" orientation="portrait" position="float">
+					<caption>
+						<title>Lateral standing radiographs of the patient in the previous figures, also eleven years after correction, demonstrate normal relationships between the talus and the calcaneus and between the tibia and the calcaneus.</title>
+					</caption>
+					<fig fig-type="figure" id="fig4a" orientation="portrait" position="float">
+						<label>Fig. 4-A</label>
+						<graphic orientation="portrait" position="float" xlink:href="jbjsam.n01002fig4a"/>
+					</fig>
+					<fig fig-type="figure" id="fig4b" orientation="portrait" position="float">
+						<label>Fig. 4-B</label>
+						<graphic orientation="portrait" position="float" xlink:href="jbjsam.n01002fig4b"/>
+					</fig>
+				</fig-group>
+			</sec>
+			<sec>
+				<title>Isolated Vertical Talus</title>
+				<p>Dorsiflexion was significantly greater in the minimally invasive group (21.1° versus 6.4°, p &lt; 0.0001), as were plantar flexion (30.7° versus 9.3°, p &lt; 0.0001) and total range of motion (51.8° versus 15.7°, p &lt; 0.0001). Analysis of the PODCI scores showed that the normative score for global function was significantly higher in the minimally invasive group (52.2 versus 38.6, p = 0.02).</p>
+				<p>Radiographic measures of severity were greater preoperatively in the minimally invasive group, although the amount of correction achieved was the same in both groups for most measures (
+					<xref ref-type="table" rid="tbl5">
+						Table V</xref>). The only exception was that the correction of the anteroposterior talocalcaneal angle was greater in the extensive soft-tissue release group (41.5° versus 30.3°, p = 0.005).</p>
+				<table-wrap id="tbl5" orientation="portrait" position="float">
+					<label>TABLE V</label>
+					<caption>
+						<p>Radiographic Values of Feet with Isolated Vertical Talus Included in This Study</p>
+					</caption>
+					<table frame="hsides" rules="groups">
+						<thead>
+							<tr>
+								<td colspan="1" rowspan="1">Angle</td>
+								<td align="center" colspan="1" rowspan="1">Minimally Invasive (N = 10 Patients)
+									<xref ref-type="table-fn" rid="tblfn11">
+										*</xref>
+									<italic>(deg)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">Extensive Surgery (N = 7 Patients)
+									<xref ref-type="table-fn" rid="tblfn11">
+										*</xref>
+									<italic>(deg)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">P Value</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="1" rowspan="1">Anteroposterior talocalcaneal</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Preop.</td>
+								<td align="center" colspan="1" rowspan="1">50.4 ± 3.3</td>
+								<td align="center" colspan="1" rowspan="1">47.7 ± 13.0</td>
+								<td align="center" colspan="1" rowspan="1">0.63
+									<xref ref-type="table-fn" rid="tblfn12">
+										†</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Latest follow-up</td>
+								<td align="center" colspan="1" rowspan="1">20.1 ± 8.9</td>
+								<td align="center" colspan="1" rowspan="1">6.2 ± 8.9</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Correction</td>
+								<td align="center" colspan="1" rowspan="1">−30.3 ± 8.1</td>
+								<td align="center" colspan="1" rowspan="1">−41.5 ± 16.3</td>
+								<td align="center" colspan="1" rowspan="1">0.005
+									<xref ref-type="table-fn" rid="tblfn13">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Anteroposterior talar axis-first metatarsal base</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Preop.</td>
+								<td align="center" colspan="1" rowspan="1">60.9 ± 21.2</td>
+								<td align="center" colspan="1" rowspan="1">37 ± 15.4</td>
+								<td align="center" colspan="1" rowspan="1">0.03
+									<xref ref-type="table-fn" rid="tblfn12">
+										†</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Latest follow-up</td>
+								<td align="center" colspan="1" rowspan="1">6 ± 2.4</td>
+								<td align="center" colspan="1" rowspan="1">5.3 ± 15.4</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Correction</td>
+								<td align="center" colspan="1" rowspan="1">−54.9 ± 20.0</td>
+								<td align="center" colspan="1" rowspan="1">−31.7 ± 17.2</td>
+								<td align="center" colspan="1" rowspan="1">0.12
+									<xref ref-type="table-fn" rid="tblfn13">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Lateral talocalcaneal</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Preop.</td>
+								<td align="center" colspan="1" rowspan="1">63.4 ± 12.5</td>
+								<td align="center" colspan="1" rowspan="1">53.8 ± 8.9</td>
+								<td align="center" colspan="1" rowspan="1">0.02
+									<xref ref-type="table-fn" rid="tblfn12">
+										†</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Latest follow-up</td>
+								<td align="center" colspan="1" rowspan="1">34.0 ± 3.6</td>
+								<td align="center" colspan="1" rowspan="1">25.2 ± 14.6</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Correction</td>
+								<td align="center" colspan="1" rowspan="1">−29.4 ± 12.3</td>
+								<td align="center" colspan="1" rowspan="1">−28.7 ± 20.3</td>
+								<td align="center" colspan="1" rowspan="1">0.42
+									<xref ref-type="table-fn" rid="tblfn13">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Lateral talar axis-first metatarsal base</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Preop.</td>
+								<td align="center" colspan="1" rowspan="1">81.2 ± 12.3</td>
+								<td align="center" colspan="1" rowspan="1">81.2 ± 11.5</td>
+								<td align="center" colspan="1" rowspan="1">0.88
+									<xref ref-type="table-fn" rid="tblfn12">
+										†</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Latest follow-up</td>
+								<td align="center" colspan="1" rowspan="1">5.7 ± 3.1</td>
+								<td align="center" colspan="1" rowspan="1">13.0 ± 10.5</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Correction</td>
+								<td align="center" colspan="1" rowspan="1">−75.5 ± 13.2</td>
+								<td align="center" colspan="1" rowspan="1">−68.2 ± 16.6</td>
+								<td align="center" colspan="1" rowspan="1">0.07
+									<xref ref-type="table-fn" rid="tblfn13">
+										‡</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Lateral tibiocalcaneal</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Preop.</td>
+								<td align="center" colspan="1" rowspan="1">108.7 ± 15.4</td>
+								<td align="center" colspan="1" rowspan="1">99.5 ± 12</td>
+								<td align="center" colspan="1" rowspan="1">0.23
+									<xref ref-type="table-fn" rid="tblfn12">
+										†</xref>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Latest follow-up</td>
+								<td align="center" colspan="1" rowspan="1">73.1 ± 9.6</td>
+								<td align="center" colspan="1" rowspan="1">85.2 ± 8.5</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Correction</td>
+								<td align="center" colspan="1" rowspan="1">−35.6 ± 22.8</td>
+								<td align="center" colspan="1" rowspan="1">−14.3 ± 11.1</td>
+								<td align="center" colspan="1" rowspan="1">0.06
+									<xref ref-type="table-fn" rid="tblfn13">
+										‡</xref>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn id="tblfn11">
+							<label>*</label>
+							<p>Values are given as the mean and standard deviation.</p>
+						</fn>
+						<fn id="tblfn12">
+							<label>†</label>
+							<p>By ANOVA comparing the two treatment groups, with Welch correction for unequal variances.</p>
+						</fn>
+						<fn id="tblfn13">
+							<label>‡</label>
+							<p>By ANOVA comparing the two treatment groups, with rank-transformation of the data.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+			</sec>
+			<sec>
+				<title>Complications and Subsequent Procedures</title>
+				<p>In the minimally invasive treatment method group, two patients (three feet) had recurrence of deformity within one year of the initial procedure and were treated with repeat casting and pinning of the talonavicular joint without the need for an extensive soft-tissue release. Another patient developed recurrence that required repeat casting in addition to limited soft-tissue release surgery.</p>
+				<p>In the extensive soft-tissue release group, one foot required debridement for skin necrosis. An additional three patients (six vertical tali) underwent repeat extensive soft-tissue releases and osseous corrective surgery bilaterally for recurrent deformity (
+					<xref ref-type="table" rid="tbl6">
+						Table VI</xref>).</p>
+				<table-wrap id="tbl6" orientation="portrait" position="float">
+					<label>TABLE VI</label>
+					<caption>
+						<p>Detailed Patient Data</p>
+					</caption>
+					<table frame="hsides" rules="groups">
+						<thead>
+							<tr>
+								<td colspan="1" rowspan="1">Patient</td>
+								<td align="center" colspan="1" rowspan="1">Age at Initiation of Treatment 
+									<italic>
+										(mo)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">Associated Anomalies</td>
+								<td align="center" colspan="1" rowspan="1">Side</td>
+								<td align="center" colspan="1" rowspan="1">No. of Casts Prior to Surgery</td>
+								<td align="center" colspan="1" rowspan="1">Primary Procedures
+									<xref ref-type="table-fn" rid="tblfn14">
+										*</xref>
+								</td>
+								<td align="center" colspan="1" rowspan="1">Age at Initial Revision
+									<xref ref-type="table-fn" rid="tblfn15">
+										†</xref>
+									<italic>(mo)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">Subsequent Procedures</td>
+								<td align="center" colspan="1" rowspan="1">Age at Final Follow-up 
+									<italic>
+										(mo)</italic>
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="1" rowspan="1">Minimally invasive method</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 1</td>
+								<td align="center" colspan="1" rowspan="1">29</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">2</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">33</td>
+								<td colspan="1" rowspan="1">Limited calcaneocuboid joint capsulotomy; tibialis anterior tendon, peroneus brevis, and extensor digitorum longus tendon lengthening</td>
+								<td align="center" colspan="1" rowspan="1">124</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 2</td>
+								<td align="center" colspan="1" rowspan="1">1</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">6</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">81</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 2</td>
+								<td align="center" colspan="1" rowspan="1">1</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">6</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">81</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 3</td>
+								<td align="center" colspan="1" rowspan="1">4</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">4</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">78</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 4</td>
+								<td align="center" colspan="1" rowspan="1">3</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">6</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">78</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 4</td>
+								<td align="center" colspan="1" rowspan="1">3</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">6</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">78</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 5</td>
+								<td align="center" colspan="1" rowspan="1">4</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">5</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">62</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 6</td>
+								<td align="center" colspan="1" rowspan="1">4</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">6</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">65</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 7</td>
+								<td align="center" colspan="1" rowspan="1">2</td>
+								<td colspan="1" rowspan="1">Brachydactyly, facial dysmorphism</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">4</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">3</td>
+								<td colspan="1" rowspan="1">Revision of pin sticking out of skin</td>
+								<td align="center" colspan="1" rowspan="1">85</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 7</td>
+								<td align="center" colspan="1" rowspan="1">2</td>
+								<td colspan="1" rowspan="1">Brachydactyly, facial dysmorphism</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">4</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">7</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">85</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 8</td>
+								<td align="center" colspan="1" rowspan="1">2</td>
+								<td colspan="1" rowspan="1">Sacral agenesis, fatty filum</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">7</td>
+								<td align="center" colspan="1" rowspan="1">A, B, C</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">88</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 9</td>
+								<td align="center" colspan="1" rowspan="1">15</td>
+								<td colspan="1" rowspan="1">Arthrogryposis</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">6</td>
+								<td align="center" colspan="1" rowspan="1">A, B, C</td>
+								<td align="center" colspan="1" rowspan="1">48</td>
+								<td colspan="1" rowspan="1">Talonavicular and calcaneocuboid joint capsulotomies</td>
+								<td align="center" colspan="1" rowspan="1">97</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 9</td>
+								<td align="center" colspan="1" rowspan="1">15</td>
+								<td colspan="1" rowspan="1">Arthrogryposis</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">6</td>
+								<td align="center" colspan="1" rowspan="1">A, B, C</td>
+								<td align="center" colspan="1" rowspan="1">48</td>
+								<td colspan="1" rowspan="1">Talonavicular and calcaneocuboid joint capsulotomies</td>
+								<td align="center" colspan="1" rowspan="1">97</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 10</td>
+								<td align="center" colspan="1" rowspan="1">2</td>
+								<td colspan="1" rowspan="1">Complex polydactyly and syndactyly of hands and feet, amniotic band syndrome</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">6</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">3</td>
+								<td colspan="1" rowspan="1">Revision of pin sticking out of skin</td>
+								<td align="center" colspan="1" rowspan="1">63</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 10</td>
+								<td align="center" colspan="1" rowspan="1">2</td>
+								<td colspan="1" rowspan="1">Complex polydactyly and syndactyly of hands and feet, amniotic band syndrome</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">6</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">3</td>
+								<td colspan="1" rowspan="1">Revision of pin sticking out of skin</td>
+								<td align="center" colspan="1" rowspan="1">63</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 11</td>
+								<td align="center" colspan="1" rowspan="1">4</td>
+								<td colspan="1" rowspan="1">Sacral agenesis, caudal regression</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">7</td>
+								<td align="center" colspan="1" rowspan="1">A, B, C</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">80</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 12</td>
+								<td align="center" colspan="1" rowspan="1">15</td>
+								<td colspan="1" rowspan="1">Myelodysplasia, choanal atresia, tracheomalacia</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">5</td>
+								<td align="center" colspan="1" rowspan="1">A, B, C</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">80</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 12</td>
+								<td align="center" colspan="1" rowspan="1">15</td>
+								<td colspan="1" rowspan="1">Myelodysplasia, choanal atresia, tracheomalacia</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">5</td>
+								<td align="center" colspan="1" rowspan="1">A, B, C</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">80</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 13</td>
+								<td align="center" colspan="1" rowspan="1">5</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">5</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">82</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 13</td>
+								<td align="center" colspan="1" rowspan="1">5</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">5</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">82</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 14</td>
+								<td align="center" colspan="1" rowspan="1">7</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">5</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">117</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 14</td>
+								<td align="center" colspan="1" rowspan="1">7</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">4</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">117</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 15</td>
+								<td align="center" colspan="1" rowspan="1">5</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">4</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">123</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 16</td>
+								<td align="center" colspan="1" rowspan="1">5</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">5</td>
+								<td align="center" colspan="1" rowspan="1">A, B</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">111</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Extensive soft-tissue release</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 17</td>
+								<td align="center" colspan="1" rowspan="1">7</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">24</td>
+								<td colspan="1" rowspan="1">Medial cuneiform osteotomy, circumferential subtalar release, calcaneal osteotomy, lateral column lengthening</td>
+								<td align="center" colspan="1" rowspan="1">113</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 17</td>
+								<td align="center" colspan="1" rowspan="1">7</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">24</td>
+								<td colspan="1" rowspan="1">Medial cuneiform osteotomy, circumferential subtalar release, calcaneal osteotomy, lateral column lengthening</td>
+								<td align="center" colspan="1" rowspan="1">113</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 18</td>
+								<td align="center" colspan="1" rowspan="1">31</td>
+								<td colspan="1" rowspan="1">Escobar syndrome, vertical talus, kyphosis</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D, E</td>
+								<td align="center" colspan="1" rowspan="1">73</td>
+								<td colspan="1" rowspan="1">Partial calcaneal excision, medial and plantar exostosis excision</td>
+								<td align="center" colspan="1" rowspan="1">134</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 18</td>
+								<td align="center" colspan="1" rowspan="1">31</td>
+								<td colspan="1" rowspan="1">Escobar syndrome, vertical talus, kyphosis</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D, E</td>
+								<td align="center" colspan="1" rowspan="1">73</td>
+								<td colspan="1" rowspan="1">Partial calcaneal excision, medial and plantar exostosis excision</td>
+								<td align="center" colspan="1" rowspan="1">134</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 19</td>
+								<td align="center" colspan="1" rowspan="1">24</td>
+								<td colspan="1" rowspan="1">Arthrogryposis</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">88</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 19</td>
+								<td align="center" colspan="1" rowspan="1">24</td>
+								<td colspan="1" rowspan="1">Arthrogryposis</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">88</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 20</td>
+								<td align="center" colspan="1" rowspan="1">37</td>
+								<td colspan="1" rowspan="1">Arthrogryposis</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">86</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 20</td>
+								<td align="center" colspan="1" rowspan="1">37</td>
+								<td colspan="1" rowspan="1">Arthrogryposis</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">86</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 21</td>
+								<td align="center" colspan="1" rowspan="1">14</td>
+								<td colspan="1" rowspan="1">Congenital muscular dystrophy</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">84</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 21</td>
+								<td align="center" colspan="1" rowspan="1">14</td>
+								<td colspan="1" rowspan="1">Congenital muscular dystrophy</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">84</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 22</td>
+								<td align="center" colspan="1" rowspan="1">31</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">159</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 23
+									<xref ref-type="table-fn" rid="tblfn16">
+										‡</xref>
+								</td>
+								<td align="center" colspan="1" rowspan="1">106</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D, F</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">214</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 23
+									<xref ref-type="table-fn" rid="tblfn16">
+										‡</xref>
+								</td>
+								<td align="center" colspan="1" rowspan="1">135</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">214</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 24</td>
+								<td align="center" colspan="1" rowspan="1">12</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">73</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 24</td>
+								<td align="center" colspan="1" rowspan="1">12</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">73</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 25</td>
+								<td align="center" colspan="1" rowspan="1">11</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">75</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 26</td>
+								<td align="center" colspan="1" rowspan="1">12</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">0</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">13</td>
+								<td colspan="1" rowspan="1">Debridement of skin necrosis</td>
+								<td align="center" colspan="1" rowspan="1">84</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 27</td>
+								<td align="center" colspan="1" rowspan="1">8</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">1</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">NA</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td align="center" colspan="1" rowspan="1">123</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 28</td>
+								<td align="center" colspan="1" rowspan="1">15</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Right</td>
+								<td align="center" colspan="1" rowspan="1">2</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">77</td>
+								<td colspan="1" rowspan="1">Medial cuneiform excision, medial subtalar release, peroneal tendon release, lateral column lengthening through calcaneocuboid joint</td>
+								<td align="center" colspan="1" rowspan="1">141</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> 28</td>
+								<td align="center" colspan="1" rowspan="1">15</td>
+								<td colspan="1" rowspan="1">None</td>
+								<td colspan="1" rowspan="1">Left</td>
+								<td align="center" colspan="1" rowspan="1">2</td>
+								<td align="center" colspan="1" rowspan="1">D</td>
+								<td align="center" colspan="1" rowspan="1">77</td>
+								<td colspan="1" rowspan="1">Medial cuneiform excision, medial subtalar release, peroneal tendon release, lateral column lengthening through calcaneocuboid joint</td>
+								<td align="center" colspan="1" rowspan="1">141</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn id="tblfn14">
+							<label>*</label>
+							<p>A = percutaneous Achilles tenotomy, B = percutaneous pinning of talonavicular joint, C = limited anterior subtalar joint capsulotomy, D = capsulotomies of posterior ankle and subtalar joints, calcaneocuboid joint, and talonavicular joint, E = interosseous talocalcaneal ligament release, and F = navicular excision.</p>
+						</fn>
+						<fn id="tblfn15">
+							<label>†</label>
+							<p>NA = not applicable.</p>
+						</fn>
+						<fn id="tblfn16">
+							<label>‡</label>
+							<p>This patient was excluded on account of age.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+			</sec>
+		</sec>
+		<sec sec-type="discussion">
+			<title>Discussion</title>
+			<p>The minimally invasive method to treat vertical talus was developed to provide an alternative surgical approach so that a more mobile, functional foot could ultimately result
+				<sup>
+					<xref ref-type="bibr" rid="bib17">
+						17</xref>
+				</sup>. In the current study, we used clinical, radiographic, and functional outcomes to demonstrate the ability to achieve correction using the minimally invasive method for isolated and non-isolated vertical tali and to maintain it at a mean follow-up of seven years. Furthermore, we were able to show that patients treated with the minimally invasive method had better long-term foot flexibility and pain scores compared with those treated with extensive soft-tissue release surgery.</p>
+			<p>Although the minimally invasive method of vertical talus correction is not a nonsurgical approach, in most cases it is joint-sparing, meaning that intracapsular release is not necessary
+				<sup>
+					<xref ref-type="bibr" rid="bib17">
+						17</xref>
+				</sup>. In some of the more rigid non-isolated vertical tali in which serial casting does not achieve full correction, then a selective capsulotomy of the anterior subtalar joint completes the correction
+				<sup>
+					<xref ref-type="bibr" rid="bib10">
+						10</xref>
+				</sup>. Following the first description of this minimally invasive method for the treatment of congenital vertical talus
+				<sup>
+					<xref ref-type="bibr" rid="bib17">
+						17</xref>,
+					<xref ref-type="bibr" rid="bib18">
+						18</xref>
+				</sup>, many centers replicated a high success rate for achieving initial clinical and radiographic correction for both isolated and non-isolated vertical tali
+				<sup>
+					<xref ref-type="bibr" rid="bib10">
+						10</xref>,
+					<xref ref-type="bibr" rid="bib19">
+						19</xref>-
+					<xref ref-type="bibr" rid="bib26">
+						26</xref>,
+					<xref ref-type="bibr" rid="bib32">
+						32</xref>
+				</sup>. However, the follow-up was less than two years in those studies, and none had a comparison cohort treated with traditional surgical techniques.</p>
+			<p>Perhaps the first attempt at developing a less invasive method of treating vertical talus should be credited to Seimon, who reported on seven patients
+				<sup>
+					<xref ref-type="bibr" rid="bib33">
+						33</xref>
+				</sup>. Through a dorsal approach, he tenotomized the extensor digitorum longus, peroneus tertius, extensor hallucis longus, and tibialis anterior as well as performed a capsulotomy of the talonavicular joint. Excellent cosmetic results were reported but functional outcomes, including the ability to dorsiflex toes or ankles, were not described. The advantage of the minimally invasive approach that we utilized in the current study is that it relies on serial casting to gradually stretch the dorsolateral soft tissues so that, unlike with Seimon’s approach, tenotomies of the dorsolateral tendons are not necessary and in most cases the talonavicular joint is fully reduced with casting alone.</p>
+			<p>Since Seimon published his original article, there have been no further published studies assessing the efficacy of the technique, to our knowledge. Instead, more extensive soft-tissue release procedures have been developed
+				<sup>
+					<xref ref-type="bibr" rid="bib15">
+						15</xref>,
+					<xref ref-type="bibr" rid="bib28">
+						28</xref>,
+					<xref ref-type="bibr" rid="bib34">
+						34</xref>-
+					<xref ref-type="bibr" rid="bib36">
+						36</xref>
+				</sup>. Although good correction can be achieved with these extensive surgical procedures, long-term problems are reported, including stiffness of the ankle and subtalar joints
+				<sup>
+					<xref ref-type="bibr" rid="bib13">
+						13</xref>-
+					<xref ref-type="bibr" rid="bib15">
+						15</xref>
+				</sup>. Patients with clubfoot treated with extensive soft-tissue releases have similar long-term problems, and this recognition contributed to the popularity of the Ponseti method of clubfoot management, whereby intracapsular joint surgery is avoided in the majority of patients
+				<sup>
+					<xref ref-type="bibr" rid="bib37">
+						37</xref>
+				</sup>. It has, in fact, been hypothesized that the minimization of scar tissue formation in the growing foot achieved with the Ponseti method results in long-term improvement of foot mobility, foot function, and quality of life
+				<sup>
+					<xref ref-type="bibr" rid="bib37">
+						37</xref>
+				</sup>compared with clubfeet treated with extensive soft-tissue release surgery
+				<sup>
+					<xref ref-type="bibr" rid="bib38">
+						38</xref>,
+					<xref ref-type="bibr" rid="bib39">
+						39</xref>
+				</sup>. On the basis of our findings, the goal of vertical talus treatment should also be to provide correction with the least invasive method possible.</p>
+			<p>Although recurrences occurred in both the minimally invasive method and the extensive surgery group, two of the three patients in the minimally invasive method group were treated with repeat casting and did not require extensive soft-tissue release, whereas all three patients in the extensive-surgery group with recurrences went on to have more extensive soft-tissue releases and osseous surgical procedures. Applying the principles of the minimally invasive method to treat recurrences is thus effective and can minimize the amount of surgery required with the goal of maintaining mobility.</p>
+			<p>The results of this study must be interpreted in light of the following limitations. First, our study design is retrospective. It would now be difficult to perform a prospective study, as the minimally invasive method has become the standard of care for initial treatment of vertical talus because of the more favorable short-term results. Second, one patient who was to receive minimally invasive surgery crossed over to the extensive-surgery treatment arm; this patient was analyzed in the original treatment group. Although we are not able to quantify the potential bias that this introduces in our conclusions, we note that this would likely have biased our results against the noninvasive method since the patient was analyzed in that group even though both feet eventually needed more extensive surgery. Third, we did not record subtalar motion. Fourth, the age at the start of treatment differed between the two groups. Finally, as a consequence of the rarity of congenital vertical talus, the number of patients in this study was small. As sample size limitations precluded an examination of the possible interaction between the treatment group and the underlying syndrome and/or neuromuscular condition, we were unable to statistically determine whether the underlying etiology impacts treatment outcomes. However, because vertical talus, like many musculoskeletal disorders, is genetically and etiologically heterogeneous, the underlying cause is likely to affect outcomes, as studies (including ours) suggest
+				<sup>
+					<xref ref-type="bibr" rid="bib10">
+						10</xref>,
+					<xref ref-type="bibr" rid="bib19">
+						19</xref>,
+					<xref ref-type="bibr" rid="bib20">
+						20</xref>,
+					<xref ref-type="bibr" rid="bib22">
+						22</xref>,
+					<xref ref-type="bibr" rid="bib23">
+						23</xref>,
+					<xref ref-type="bibr" rid="bib25">
+						25</xref>
+				</sup>.</p>
+			<p>We hypothesize that by minimizing intracapsular surgery through the minimally invasive treatment method, less scar tissue will be generated in the growing foot, leading to improved foot and ankle mobility. Better motion is thought to lead to superior long-term outcomes with the Ponseti method
+				<sup>
+					<xref ref-type="bibr" rid="bib37">
+						37</xref>
+				</sup>and is likely the factor also contributing to improved outcomes with the minimally invasive method for vertical talus correction. Longer-term studies are necessary to determine if the improved outcomes are maintained into adulthood.</p>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<p>N
+				<sc>
+					ote</sc>: The authors thank Karen Steger-May for her statistical analysis and Perry Schoenecker and Margaret Rich for their contribution of patients to this study.</p>
+		</ack>
+		<fn-group>
+			<fn id="fn1">
+				<p>Investigation performed at St. Louis Shriner’s Hospital for Children, St. Louis, St. Louis Children’s Hospital, St. Louis, and the Department of Orthopaedic Surgery, Washington University School of Medicine, St. Louis, Missouri</p>
+			</fn>
+			<fn fn-type="financial-disclosure" id="fn2">
+				<p>
+					<bold>Disclosure:</bold>One or more of the authors received payments or services, either directly or indirectly (i.e., via his or her institution), from a third party in support of an aspect of this work. In addition, one or more of the authors, or his or her institution, has had a financial relationship, in the thirty-six months prior to submission of this work, with an entity in the biomedical arena that could be perceived to influence or have the potential to influence what is written in this work. No author has had any other relationships, or has engaged in any other activities, that could be perceived to influence or have the potential to influence what is written in this work. The complete 
+					<bold>
+						Disclosures of Potential Conflicts of Interest</bold>submitted by authors are always provided with the online version of the article.</p>
+			</fn>
+		</fn-group>
+		<ref-list>
+			<title>References</title>
+			<ref id="bib1">
+				<label>1</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Drennan</surname>
+							<given-names>JC</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Congenital vertical talus</article-title>. 
+					<source>
+						Instr Course Lect.</source>
+					<year>1996</year>;
+					<volume>
+						45</volume>:
+					<fpage>
+						315</fpage>-
+					<lpage>
+						22</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib2">
+				<label>2</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Jacobsen</surname>
+							<given-names>ST</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Crawford</surname>
+							<given-names>AH</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Congenital vertical talus</article-title>. 
+					<source>
+						J Pediatr Orthop.</source>
+					<year>1983</year>
+					<month>Jul</month>;
+					<volume>
+						3</volume>(
+					<issue>
+						3</issue>):
+					<fpage>
+						306</fpage>-
+					<lpage>
+						10</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib3">
+				<label>3</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Townes</surname>
+							<given-names>PL</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Dehart</surname>
+							<given-names>GK</given-names>
+							<suffix>Jr</suffix>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Hecht</surname>
+							<given-names>F</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Manning</surname>
+							<given-names>JA</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Trisomy 13-15 in a male infant</article-title>. 
+					<source>
+						J Pediatr.</source>
+					<year>1962</year>
+					<month>Apr</month>;
+					<volume>
+						60</volume>:
+					<fpage>
+						528</fpage>-
+					<lpage>
+						32</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib4">
+				<label>4</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Sharrard</surname>
+							<given-names>WJ</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Grosfield</surname>
+							<given-names>I</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						The management of deformity and paralysis of the foot in myelomeningocele</article-title>. 
+					<source>
+						J Bone Joint Surg Br.</source>
+					<year>1968</year>
+					<month>Aug</month>;
+					<volume>
+						50</volume>(
+					<issue>
+						3</issue>):
+					<fpage>
+						456</fpage>-
+					<lpage>
+						65</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib5">
+				<label>5</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Ogata</surname>
+							<given-names>K</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Schoenecker</surname>
+							<given-names>PL</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Sheridan</surname>
+							<given-names>J</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Congenital vertical talus and its familial occurrence: an analysis of 36 patients</article-title>. 
+					<source>
+						Clin Orthop Relat Res.</source>
+					<year>1979</year>
+					<month>Mar-Apr</month>;
+					<volume>
+						139</volume>:
+					<fpage>
+						128</fpage>-
+					<lpage>
+						32</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib6">
+				<label>6</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Dobbs</surname>
+							<given-names>MB</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Schoenecker</surname>
+							<given-names>PL</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Gordon</surname>
+							<given-names>JE</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Autosomal dominant transmission of isolated congenital vertical talus</article-title>. 
+					<source>
+						Iowa Orthop J.</source>
+					<year>2002</year>;
+					<volume>
+						22</volume>:
+					<fpage>
+						25</fpage>-
+					<lpage>
+						7</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib7">
+				<label>7</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Dobbs</surname>
+							<given-names>MB</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Gurnett</surname>
+							<given-names>CA</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Pierce</surname>
+							<given-names>B</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Exner</surname>
+							<given-names>GU</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Robarge</surname>
+							<given-names>J</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Morcuende</surname>
+							<given-names>JA</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Cole</surname>
+							<given-names>WG</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Templeton</surname>
+							<given-names>PA</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Foster</surname>
+							<given-names>B</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Bowcock</surname>
+							<given-names>AM</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						HOXD10 M319K mutation in a family with isolated congenital vertical talus</article-title>. 
+					<source>
+						J Orthop Res.</source>
+					<year>2006</year>
+					<month>Mar</month>;
+					<volume>
+						24</volume>(
+					<issue>
+						3</issue>):
+					<fpage>
+						448</fpage>-
+					<lpage>
+						53</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib8">
+				<label>8</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Dobbs</surname>
+							<given-names>MB</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Gurnett</surname>
+							<given-names>CA</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Robarge</surname>
+							<given-names>J</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Gordon</surname>
+							<given-names>JE</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Morcuende</surname>
+							<given-names>JA</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Bowcock</surname>
+							<given-names>AM</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Variable hand and foot abnormalities in family with congenital vertical talus and CDMP-1 gene mutation</article-title>. 
+					<source>
+						J Orthop Res.</source>
+					<year>2005</year>
+					<month>Nov</month>;
+					<volume>
+						23</volume>(
+					<issue>
+						6</issue>):
+					<fpage>
+						1490</fpage>-
+					<lpage>
+						4</lpage>. 
+					<comment>
+						Epub 2005 Jul 11</comment>.</mixed-citation>
+			</ref>
+			<ref id="bib9">
+				<label>9</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Merrill</surname>
+							<given-names>LJ</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Gurnett</surname>
+							<given-names>CA</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Connolly</surname>
+							<given-names>AM</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Pestronk</surname>
+							<given-names>A</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Dobbs</surname>
+							<given-names>MB</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Skeletal muscle abnormalities and genetic factors related to vertical talus</article-title>. 
+					<source>
+						Clin Orthop Relat Res.</source>
+					<year>2011</year>
+					<month>Apr</month>;
+					<volume>
+						469</volume>(
+					<issue>
+						4</issue>):
+					<fpage>
+						1167</fpage>-
+					<lpage>
+						74</lpage>. 
+					<comment>
+						Epub 2010 Jul 20</comment>.</mixed-citation>
+			</ref>
+			<ref id="bib10">
+				<label>10</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Chalayon</surname>
+							<given-names>O</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Adams</surname>
+							<given-names>A</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Dobbs</surname>
+							<given-names>MB</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Minimally invasive approach for the treatment of non-isolated congenital vertical talus</article-title>. 
+					<source>
+						J Bone Joint Surg Am.</source>
+					<year>2012</year>
+					<month>Jun</month>
+					<day>6</day>;
+					<volume>
+						94</volume>(
+					<issue>
+						11</issue>):
+					<fpage>
+						e73</fpage>.</mixed-citation>
+			</ref>
+			<ref id="bib11">
+				<label>11</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Yan</surname>
+							<given-names>G</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Yu</surname>
+							<given-names>Z</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Yang</surname>
+							<given-names>Z</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Lu</surname>
+							<given-names>M</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Zhang</surname>
+							<given-names>J</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						[Surgical correction of congenital vertical talus by one-stage comprehensive soft-tissue release and peritalar reduction incorporating tibialis anterior transfer]</article-title>. 
+					<source>
+						Zhonghua Yi Xue Za Zhi.</source>
+					<year>2014</year>
+					<month>May</month>
+					<day>6</day>;
+					<volume>
+						94</volume>(
+					<issue>
+						17</issue>):
+					<fpage>
+						1322</fpage>-
+					<lpage>
+						5</lpage>. 
+					<comment>
+						Chinese</comment>.</mixed-citation>
+			</ref>
+			<ref id="bib12">
+				<label>12</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Coleman</surname>
+							<given-names>SS</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Stelling</surname>
+							<given-names>FH</given-names>
+							<suffix>3rd</suffix>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Jarrett</surname>
+							<given-names>J</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Pathomechanics and treatment of congenital vertical talus</article-title>. 
+					<source>
+						Clin Orthop Relat Res.</source>
+					<year>1970</year>
+					<month>May-Jun</month>;
+					<volume>
+						70</volume>:
+					<fpage>
+						62</fpage>-
+					<lpage>
+						72</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib13">
+				<label>13</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Dodge</surname>
+							<given-names>LD</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Ashley</surname>
+							<given-names>RK</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Gilbert</surname>
+							<given-names>RJ</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Treatment of the congenital vertical talus: a retrospective review of 36 feet with long-term follow-up</article-title>. 
+					<source>
+						Foot Ankle.</source>
+					<year>1987</year>
+					<month>Jun</month>;
+					<volume>
+						7</volume>(
+					<issue>
+						6</issue>):
+					<fpage>
+						326</fpage>-
+					<lpage>
+						32</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib14">
+				<label>14</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Zorer</surname>
+							<given-names>G</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Bagatur</surname>
+							<given-names>AE</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Dogan</surname>
+							<given-names>A</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Single stage surgical correction of congenital vertical talus by complete subtalar release and peritalar reduction by using the Cincinnati incision</article-title>. 
+					<source>
+						J Pediatr Orthop B.</source>
+					<year>2002</year>
+					<month>Jan</month>;
+					<volume>
+						11</volume>(
+					<issue>
+						1</issue>):
+					<fpage>
+						60</fpage>-
+					<lpage>
+						7</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib15">
+				<label>15</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Mazzocca</surname>
+							<given-names>AD</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Thomson</surname>
+							<given-names>JD</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Deluca</surname>
+							<given-names>PA</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Romness</surname>
+							<given-names>MJ</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Comparison of the posterior approach versus the dorsal approach in the treatment of congenital vertical talus</article-title>. 
+					<source>
+						J Pediatr Orthop.</source>
+					<year>2001</year>
+					<month>Mar-Apr</month>;
+					<volume>
+						21</volume>(
+					<issue>
+						2</issue>):
+					<fpage>
+						212</fpage>-
+					<lpage>
+						7</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib16">
+				<label>16</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Hootnick</surname>
+							<given-names>DR</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Dutch</surname>
+							<given-names>WM</given-names>
+							<suffix>Jr</suffix>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Crider</surname>
+							<given-names>RJ</given-names>
+							<suffix>Jr</suffix>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Ischemic necrosis leading to amputation following surgical correction of congenital vertical talus</article-title>. 
+					<source>
+						Am J Orthop (Belle Mead NJ).</source>
+					<year>2005</year>
+					<month>Jan</month>;
+					<volume>
+						34</volume>(
+					<issue>
+						1</issue>):
+					<fpage>
+						35</fpage>-
+					<lpage>
+						7</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib17">
+				<label>17</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Dobbs</surname>
+							<given-names>MB</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Purcell</surname>
+							<given-names>DB</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Nunley</surname>
+							<given-names>R</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Morcuende</surname>
+							<given-names>JA</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Early results of a new method of treatment for idiopathic congenital vertical talus</article-title>. 
+					<source>
+						J Bone Joint Surg Am.</source>
+					<year>2006</year>
+					<month>Jun</month>;
+					<volume>
+						88</volume>(
+					<issue>
+						6</issue>):
+					<fpage>
+						1192</fpage>-
+					<lpage>
+						200</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib18">
+				<label>18</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Dobbs</surname>
+							<given-names>MB</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Purcell</surname>
+							<given-names>DB</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Nunley</surname>
+							<given-names>R</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Morcuende</surname>
+							<given-names>JA</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Early results of a new method of treatment for idiopathic congenital vertical talus. Surgical technique</article-title>. 
+					<source>
+						J Bone Joint Surg Am.</source>
+					<year>2007</year>
+					<month>Mar</month>;
+					<volume>
+						89</volume>(
+					<issue>
+						Suppl 2 Pt.1</issue>):
+					<fpage>
+						111</fpage>-
+					<lpage>
+						21</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib19">
+				<label>19</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Sweet</surname>
+							<given-names>LA</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								OʼNeill</surname>
+							<given-names>LM</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Dobbs</surname>
+							<given-names>MB</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Serial casting for neuromuscular flatfoot and vertical talus in an adolescent with hereditary spastic paraplegia</article-title>. 
+					<source>
+						Pediatr Phys Ther.</source>
+					<year>2014</year>
+					<season>Summer</season>;
+					<volume>
+						26</volume>(
+					<issue>
+						2</issue>):
+					<fpage>
+						253</fpage>-
+					<lpage>
+						64</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib20">
+				<label>20</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Eberhardt</surname>
+							<given-names>O</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Fernandez</surname>
+							<given-names>FF</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Wirth</surname>
+							<given-names>T</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						[Treatment of vertical talus with the Dobbs method]</article-title>. 
+					<source>
+						Z Orthop Unfall.</source>
+					<year>2011</year>
+					<month>Apr</month>;
+					<volume>
+						149</volume>(
+					<issue>
+						2</issue>):
+					<fpage>
+						219</fpage>-
+					<lpage>
+						24</lpage>. 
+					<comment>
+						Epub 2011 Apr 5. German</comment>.</mixed-citation>
+			</ref>
+			<ref id="bib21">
+				<label>21</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Eberhardt</surname>
+							<given-names>O</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Fernandez</surname>
+							<given-names>FF</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Wirth</surname>
+							<given-names>T</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						The talar axis-first metatarsal base angle in CVT treatment: a comparison of idiopathic and non-idiopathic cases treated with the Dobbs method</article-title>. 
+					<source>
+						J Child Orthop.</source>
+					<year>2012</year>
+					<month>Dec</month>;
+					<volume>
+						6</volume>(
+					<issue>
+						6</issue>):
+					<fpage>
+						491</fpage>-
+					<lpage>
+						6</lpage>. 
+					<comment>
+						Epub 2012 Nov 10</comment>.</mixed-citation>
+			</ref>
+			<ref id="bib22">
+				<label>22</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Aslani</surname>
+							<given-names>H</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Sadigi</surname>
+							<given-names>A</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Tabrizi</surname>
+							<given-names>A</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Bazavar</surname>
+							<given-names>M</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Mousavi</surname>
+							<given-names>M</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Primary outcomes of the congenital vertical talus correction using the Dobbs method of serial casting and limited surgery</article-title>. 
+					<source>
+						J Child Orthop.</source>
+					<year>2012</year>
+					<month>Aug</month>;
+					<volume>
+						6</volume>(
+					<issue>
+						4</issue>):
+					<fpage>
+						307</fpage>-
+					<lpage>
+						11</lpage>. 
+					<comment>
+						Epub 2012 Aug 18</comment>.</mixed-citation>
+			</ref>
+			<ref id="bib23">
+				<label>23</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Wright</surname>
+							<given-names>J</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Coggings</surname>
+							<given-names>D</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Maizen</surname>
+							<given-names>C</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Ramachandran</surname>
+							<given-names>M</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Reverse Ponseti-type treatment for children with congenital vertical talus: comparison between idiopathic and teratological patients</article-title>. 
+					<source>
+						Bone Joint J.</source>
+					<year>2014</year>
+					<month>Feb</month>;
+					<volume>
+						96-B</volume>(
+					<issue>
+						2</issue>):
+					<fpage>
+						274</fpage>-
+					<lpage>
+						8</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib24">
+				<label>24</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Khader</surname>
+							<given-names>A</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Huntley</surname>
+							<given-names>JS</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Congenital vertical talus in cri du chat syndrome: a case report</article-title>. 
+					<source>
+						BMC Res Notes.</source>
+					<year>2013</year>;
+					<volume>
+						6</volume>(
+					<issue>
+						1</issue>):
+					<fpage>
+						270</fpage>. 
+					<comment>
+						Epub 2013 Jul 13</comment>.</mixed-citation>
+			</ref>
+			<ref id="bib25">
+				<label>25</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Aydın</surname>
+							<given-names>A</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Atmaca</surname>
+							<given-names>H</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Müezzinoğlu</surname>
+							<given-names>US</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Bilateral congenital vertical talus with severe lower extremity external rotational deformity: treated by reverse Ponseti technique</article-title>. 
+					<source>
+						Foot (Edinb).</source>
+					<year>2012</year>
+					<month>Sep</month>;
+					<volume>
+						22</volume>(
+					<issue>
+						3</issue>):
+					<fpage>
+						252</fpage>-
+					<lpage>
+						4</lpage>. 
+					<comment>
+						Epub 2012 May 4</comment>.</mixed-citation>
+			</ref>
+			<ref id="bib26">
+				<label>26</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Bhaskar</surname>
+							<given-names>A</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Congenital vertical talus: treatment by reverse Ponseti technique</article-title>. 
+					<source>
+						Indian J Orthop.</source>
+					<year>2008</year>
+					<month>Jul</month>;
+					<volume>
+						42</volume>(
+					<issue>
+						3</issue>):
+					<fpage>
+						347</fpage>-
+					<lpage>
+						50</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib27">
+				<label>27</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Alaee</surname>
+							<given-names>F</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Boehm</surname>
+							<given-names>S</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Dobbs</surname>
+							<given-names>MB</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						A new approach to the treatment of congenital vertical talus</article-title>. 
+					<source>
+						J Child Orthop.</source>
+					<year>2007</year>
+					<month>Sep</month>;
+					<volume>
+						1</volume>(
+					<issue>
+						3</issue>):
+					<fpage>
+						165</fpage>-
+					<lpage>
+						74</lpage>. 
+					<comment>
+						Epub 2007 Aug 1</comment>.</mixed-citation>
+			</ref>
+			<ref id="bib28">
+				<label>28</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Stricker</surname>
+							<given-names>SJ</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Rosen</surname>
+							<given-names>E</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Early one-stage reconstruction of congenital vertical talus</article-title>. 
+					<source>
+						Foot Ankle Int.</source>
+					<year>1997</year>
+					<month>Sep</month>;
+					<volume>
+						18</volume>(
+					<issue>
+						9</issue>):
+					<fpage>
+						535</fpage>-
+					<lpage>
+						43</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib29">
+				<label>29</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Colton</surname>
+							<given-names>CL</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						The surgical management of congenital vertical talus</article-title>. 
+					<source>
+						J Bone Joint Surg Br.</source>
+					<year>1973</year>
+					<month>Aug</month>;
+					<volume>
+						55</volume>(
+					<issue>
+						3</issue>):
+					<fpage>
+						566</fpage>-
+					<lpage>
+						74</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib30">
+				<label>30</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Vanderwilde</surname>
+							<given-names>R</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Staheli</surname>
+							<given-names>LT</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Chew</surname>
+							<given-names>DE</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Malagon</surname>
+							<given-names>V</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Measurements on radiographs of the foot in normal infants and children</article-title>. 
+					<source>
+						J Bone Joint Surg Am.</source>
+					<year>1988</year>
+					<month>Mar</month>;
+					<volume>
+						70</volume>(
+					<issue>
+						3</issue>):
+					<fpage>
+						407</fpage>-
+					<lpage>
+						15</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib31">
+				<label>31</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Daltroy</surname>
+							<given-names>LH</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Liang</surname>
+							<given-names>MH</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Fossel</surname>
+							<given-names>AH</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Goldberg</surname>
+							<given-names>MJ</given-names>
+						</string-name>
+					</person-group>; 
+					<collab>
+						Pediatric Outcomes Instrument Development Group</collab>. 
+					<article-title>
+						Pediatric Orthopaedic Society of North America. The POSNA pediatric musculoskeletal functional health questionnaire: report on reliability, validity, and sensitivity to change</article-title>. 
+					<source>
+						J Pediatr Orthop.</source>
+					<year>1998</year>
+					<month>Sep-Oct</month>;
+					<volume>
+						18</volume>(
+					<issue>
+						5</issue>):
+					<fpage>
+						561</fpage>-
+					<lpage>
+						71</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib32">
+				<label>32</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Eberhardt</surname>
+							<given-names>O</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Wirth</surname>
+							<given-names>T</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Fernandez</surname>
+							<given-names>FF</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						[Minimally invasive treatment of congenital foot deformities in infants: new findings and midterm-results]</article-title>. 
+					<source>
+						Orthopade.</source>
+					<year>2013</year>
+					<month>Dec</month>;
+					<volume>
+						42</volume>(
+					<issue>
+						12</issue>):
+					<fpage>
+						1001</fpage>-
+					<lpage>
+						7</lpage>. 
+					<comment>
+						German</comment>.</mixed-citation>
+			</ref>
+			<ref id="bib33">
+				<label>33</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Seimon</surname>
+							<given-names>LP</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Surgical correction of congenital vertical talus under the age of 2 years</article-title>. 
+					<source>
+						J Pediatr Orthop.</source>
+					<year>1987</year>
+					<month>Jul-Aug</month>;
+					<volume>
+						7</volume>(
+					<issue>
+						4</issue>):
+					<fpage>
+						405</fpage>-
+					<lpage>
+						11</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib34">
+				<label>34</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Duncan</surname>
+							<given-names>RD</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Fixsen</surname>
+							<given-names>JA</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Congenital convex pes valgus</article-title>. 
+					<source>
+						J Bone Joint Surg Br.</source>
+					<year>1999</year>
+					<month>Mar</month>;
+					<volume>
+						81</volume>(
+					<issue>
+						2</issue>):
+					<fpage>
+						250</fpage>-
+					<lpage>
+						4</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib35">
+				<label>35</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Napiontek</surname>
+							<given-names>M</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Congenital vertical talus: a retrospective and critical review of 32 feet operated on by peritalar reduction</article-title>. 
+					<source>
+						J Pediatr Orthop B.</source>
+					<year>1995</year>;
+					<volume>
+						4</volume>(
+					<issue>
+						2</issue>):
+					<fpage>
+						179</fpage>-
+					<lpage>
+						87</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib36">
+				<label>36</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Wirth</surname>
+							<given-names>T</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Schuler</surname>
+							<given-names>P</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Griss</surname>
+							<given-names>P</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Early surgical treatment for congenital vertical talus</article-title>. 
+					<source>
+						Arch Orthop Trauma Surg.</source>
+					<year>1994</year>;
+					<volume>
+						113</volume>(
+					<issue>
+						5</issue>):
+					<fpage>
+						248</fpage>-
+					<lpage>
+						53</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib37">
+				<label>37</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Cooper</surname>
+							<given-names>DM</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Dietz</surname>
+							<given-names>FR</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Treatment of idiopathic clubfoot. A thirty-year follow-up note</article-title>. 
+					<source>
+						J Bone Joint Surg Am.</source>
+					<year>1995</year>
+					<month>Oct</month>;
+					<volume>
+						77</volume>(
+					<issue>
+						10</issue>):
+					<fpage>
+						1477</fpage>-
+					<lpage>
+						89</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib38">
+				<label>38</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Dobbs</surname>
+							<given-names>MB</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Nunley</surname>
+							<given-names>R</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Schoenecker</surname>
+							<given-names>PL</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Long-term follow-up of patients with clubfeet treated with extensive soft-tissue release</article-title>. 
+					<source>
+						J Bone Joint Surg Am.</source>
+					<year>2006</year>
+					<month>May</month>;
+					<volume>
+						88</volume>(
+					<issue>
+						5</issue>):
+					<fpage>
+						986</fpage>-
+					<lpage>
+						96</lpage>.</mixed-citation>
+			</ref>
+			<ref id="bib39">
+				<label>39</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Ippolito</surname>
+							<given-names>E</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Farsetti</surname>
+							<given-names>P</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Caterini</surname>
+							<given-names>R</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>
+								Tudisco</surname>
+							<given-names>C</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>
+						Long-term comparative results in patients with congenital clubfoot treated with two different protocols</article-title>. 
+					<source>
+						J Bone Joint Surg Am.</source>
+					<year>2003</year>
+					<month>Jul</month>;
+					<volume>
+						85</volume>(
+					<issue>
+						7</issue>):
+					<fpage>
+						1286</fpage>-
+					<lpage>
+						94</lpage>.</mixed-citation>
+			</ref>
+		</ref-list>
+	</back>
+</article>

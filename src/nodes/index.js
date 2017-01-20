@@ -1,3 +1,3 @@
 module.exports = {
-  "cover": require("./cover")
+  "figure_group": require("./figure_group"),
 };
