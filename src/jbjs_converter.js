@@ -12,15 +12,29 @@ var JbjsConverter = function(options) {
   LensConverter.call(this, options);
 
   this.viewMapping.figure = 'content';
+  this.imageFolder = '';
+  this.docBaseUrl = '';
 };
 
 JbjsConverter.Prototype = function() {
 
-  this.test = function(xmlDoc) {
+  this.test = function(xmlDoc, docUrl) {
+    this.docBaseUrl = docUrl.split('/').slice(0, -1).join('/');
+
 //    var publisherName = xmlDoc.querySelector('publisher-name').textContent;
 //    return publisherName === 'The Journal of Bone and Joint Surgery, Inc.';
     return true;
   };
+
+  this.document = function(state, xmlDoc) {
+    var volume = xmlDoc.querySelector("volume");
+    var issue = xmlDoc.querySelector("issue");
+    var fpage = xmlDoc.querySelector("fpage");
+
+    this.imageFolder = volume.textContent + '_' + issue.textContent + '_' + fpage.textContent + '(1)';
+
+    return this.constructor.Prototype.prototype.document.call(this, state, xmlDoc);
+  }
 
   // Override document factory so we can create a customized Lens article,
   // including overridden node types
@@ -43,9 +57,10 @@ JbjsConverter.Prototype = function() {
     } else {
       // Use special URL resolving for production articles
       return [
-        '/assets/docs/',
-//        state.doc.id,
-//        '/jpg/',
+        this.docBaseUrl,
+        '/',
+        this.imageFolder,
+        '/',
         url,
         '.jpeg'
       ].join('');
