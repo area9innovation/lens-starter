@@ -24,7 +24,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('browserify', function () {
-    return gulp.src('./boot.js')
+    return gulp.src('./embedded.js')
         .pipe(through2.obj(function (file, enc, next) {
             browserify(file.path)
                 .bundle(function (err, res) {
