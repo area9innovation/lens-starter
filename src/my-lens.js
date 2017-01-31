@@ -5,6 +5,7 @@ var Lens = require("lens/reader");
 var JbjsConverter = require("./jbjs_converter");
 
 var LensApp = function(config) {
+  this.config = config;
   Lens.call(this, config);
 };
 
@@ -21,7 +22,7 @@ LensApp.Prototype = function() {
 
   this.getConverters = function(converterOptions) {
     return [
-      new JbjsConverter(converterOptions),
+      new JbjsConverter(converterOptions, this.config),
     ]
   };
 };

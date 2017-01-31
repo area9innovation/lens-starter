@@ -8,10 +8,17 @@ var LensConverter = require('lens/converter');
 var LensArticle = require('lens/article');
 var CustomNodeTypes = require('./nodes');
 
-var JbjsConverter = function(options) {
+var JbjsConverter = function(options, config) {
+  this.config = config;
+
   LensConverter.call(this, options);
 
-  this.viewMapping.figure = 'content';
+  if (!config.show_resources_panel) {
+    this.viewMapping.figure = 'content';
+  } else {
+    delete this._bodyNodes['fig-group'];
+  }
+
   this.imageFolder = '';
   this.docBaseUrl = '';
 };
