@@ -38,8 +38,10 @@ $(function() {
   // --------
   //
   // Injects itself into body
+  $('body').append('<div><div id="lens" style="height: 50%; width: 50%; position:absolute; top:30%; left: 35%;"></div></div>');
 
   var app = new window.Lens({
+    el: '#lens',
     document_url: qs.url ? decodeURIComponent(qs.url) : documentURL,
     show_resources_panel: false
   });

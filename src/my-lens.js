@@ -25,6 +25,15 @@ LensApp.Prototype = function() {
       new JbjsConverter(converterOptions, this.config),
     ]
   };
+
+  this.start = function() {
+    if (this.config.el === undefined) {
+      this.constructor.Prototype.prototype.start.call(this);
+    } else {
+      this.render();
+      this.initRouter();
+    }
+  };
 };
 
 LensApp.Prototype.prototype = Lens.prototype;
