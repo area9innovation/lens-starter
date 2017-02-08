@@ -15,6 +15,9 @@ var JbjsConverter = function(options, config) {
 
   if (!config.show_resources_panel) {
     this.viewMapping.figure = 'content';
+    this.viewMapping.html_table = 'content';
+    this.enhanceArticle = this.enhanceArticleOneColumn;
+    this.createDocument = this.createDocumentOneColumn;
   } else {
     delete this._bodyNodes['fig-group'];
   }
@@ -45,7 +48,7 @@ JbjsConverter.Prototype = function() {
 
   // Override document factory so we can create a customized Lens article,
   // including overridden node types
-  this.createDocument = function() {
+  this.createDocumentOneColumn = function() {
     var doc = new LensArticle({
       nodeTypes: CustomNodeTypes
     });
