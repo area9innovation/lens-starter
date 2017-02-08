@@ -3,6 +3,7 @@
 var Lens = require("lens/reader");
   
 var JbjsConverter = require("./jbjs_converter");
+var FollowCitationRefs = require("./workflows/follow_citation_refs");
 
 var LensApp = function(config) {
   this.config = config;
@@ -24,6 +25,16 @@ LensApp.Prototype = function() {
     return [
       new JbjsConverter(converterOptions, this.config),
     ]
+  };
+
+  this.getWorkflows = function() {
+    if ( this.config.show_resources_panel ) {
+      return this.constructor.Prototype.prototype.getWorkflows.call(this);
+    } else {
+      return [
+        new FollowCitationRefs(),
+      ];
+    }
   };
 
   this.start = function() {
