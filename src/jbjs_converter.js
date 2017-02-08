@@ -116,6 +116,9 @@ JbjsConverter.Prototype = function() {
     return figureGroupNode;
   };
 
+  this.enhanceArticleOneColumn = function(state, article) {
+    _.each(state.doc.get('citations').nodes, function(n) {state.doc.show('content', n);});
+  };
 };
 
 JbjsConverter.Prototype.prototype = LensConverter.prototype;
