@@ -16,10 +16,12 @@ var JbjsConverter = function(options, config) {
   if (!config.show_resources_panel) {
     this.viewMapping.figure = 'content';
     this.viewMapping.html_table = 'content';
-    this.enhanceArticle = this.enhanceArticleOneColumn;
     this.createDocument = this.createDocumentOneColumn;
+    this.enhanceArticle = this.enhanceArticleOneColumn;
+    this.enhanceTable = this.enhanceTableOneColumn;
   } else {
     delete this._bodyNodes['fig-group'];
+    delete this._bodyNodes['table-wrap'];
   }
 
   this.imageFolder = '';
@@ -81,6 +83,10 @@ JbjsConverter.Prototype = function() {
     return this.figureGroup(state, child);
   };
 
+  this._bodyNodes["table-wrap"] = function(state, child) {
+    return this.tableWrap(state, child);
+  };
+
   this.figureGroup = function(state, figureGroup) {
     var doc = state.doc;
     var childNodes = this.bodyNodes(state, util.dom.getChildren(figureGroup));
@@ -118,6 +124,10 @@ JbjsConverter.Prototype = function() {
 
   this.enhanceArticleOneColumn = function(state, article) {
     _.each(state.doc.get('citations').nodes, function(n) {state.doc.show('content', n);});
+  };
+
+  this.enhanceTableOneColumn = function(state, node, tableWrap) {
+    tableWrap._converted = true;
   };
 };
 

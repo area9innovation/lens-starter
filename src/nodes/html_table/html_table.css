@@ -1,0 +1,12 @@
+.lens-article .content-node.html-table .caption {
+  text-align: center;
+}
+
+.lens-article .content-node.html-table table {
+  border-style: solid;
+}
+
+.lens-article .content-node.html-table table caption {
+  text-align: left;
+}
+
