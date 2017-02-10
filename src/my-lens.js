@@ -4,6 +4,7 @@ var Lens = require("lens/reader");
   
 var JbjsConverter = require("./jbjs_converter");
 var FollowCitationRefs = require("./workflows/follow_citation_refs");
+var TableScaling = require("./workflows/table_scaling");
 
 var LensApp = function(config) {
   this.config = config;
@@ -33,6 +34,7 @@ LensApp.Prototype = function() {
     } else {
       return [
         new FollowCitationRefs(),
+        new TableScaling(),
       ];
     }
   };

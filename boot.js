@@ -50,4 +50,5 @@ $(function() {
 
   window.app = app;
 
+  $('#container').css('min-width', '100px');
 });
