@@ -40,6 +40,24 @@ $(function() {
   // Injects itself into body
   $('body').append('<div><div id="lens" style="height: 50%; width: 50%; position:absolute; top:30%; left: 35%;"></div></div>');
 
+  var popup = $('<div id="popup"></div>').css({
+      display: 'none',
+      position: 'fixed',
+      left: 0,
+      top: 0,
+      'z-index': 5000,
+      'background-color': 'white',
+      width: '100%',
+      height: '100%',
+      'text-align': 'center',
+    });
+
+  $(popup).on('click', function(){
+    popup.css('display', 'none');
+  })
+
+  $('body').append(popup);
+
   var app = new window.Lens({
     el: '#lens',
     document_url: qs.url ? decodeURIComponent(qs.url) : documentURL,

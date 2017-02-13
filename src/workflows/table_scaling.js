@@ -24,6 +24,22 @@ TableScaling.Prototype = function() {
     this.DoScaling();
 
     $(window).on("resize", this.DoScaling);
+
+    $('.image-wrapper').children('img').on('click', function(){
+      var img = $(document.createElement('img')).css({
+        'max-width': '100%',
+        'max-height': '100%',
+        position: 'absolute',
+        margin: 'auto',
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      }).prop('src', this.src);
+
+      $('#popup').empty().append(img);
+      $('#popup').css('display', 'block');
+    });
   };
 
   this.DoScaling = function() {
