@@ -3,4 +3,5 @@ module.exports = {
   'figure_reference': require('./figure_reference'),
   'citation': require('./citation'),
   'html_table': require('./html_table'),
+  'figure': require('./figure'),
 };
