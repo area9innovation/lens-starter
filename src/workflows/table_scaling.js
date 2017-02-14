@@ -25,6 +25,8 @@ TableScaling.Prototype = function() {
 
     $(window).on("resize", this.DoScaling);
 
+    var doScaling = this.DoScaling;
+
     $('.image-wrapper').children('img').on('click', function(){
       var img = $(document.createElement('img')).css({
         'max-width': '100%',
@@ -40,6 +42,28 @@ TableScaling.Prototype = function() {
       $('#popup').empty().append(img);
       $('#popup').css('display', 'block');
     });
+
+    $('.table-wrapper').on('click', function(){
+      var tableBlock = $(this).parent().parent().clone();
+
+      $('#popup').empty().append(tableBlock);
+      $('#popup').css({
+        display: 'block',
+        overflow: 'auto',
+      });
+
+      doScaling();
+/*
+      if ( $('#popup').find('table').css('transform') === 'matrix(1, 0, 0, 1, 0, 0)' ) {
+        $('#popup').find('.html-table').css({
+          position: 'relative',
+          top: '50%',
+          transform: 'translateY(-50%)',
+        });
+      }
+*/
+    });
+
   };
 
   this.DoScaling = function() {

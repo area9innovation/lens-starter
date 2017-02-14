@@ -38,9 +38,10 @@ $(function() {
   // --------
   //
   // Injects itself into body
-  $('body').append('<div><div id="lens" style="height: 50%; width: 50%; position:absolute; top:30%; left: 35%;"></div></div>');
+  //$('body').append('<div><div id="lens" style="height: 50%; width: 50%; position:absolute; top:30%; left: 35%;"></div></div>');
+  $('body').append('<div><div id="lens" style="height: 100%; width: 100%; position: absolute;"></div></div>');
 
-  var popup = $('<div id="popup"></div>').css({
+  var popup = $('<div id="popup" class="lens-article"></div>').css({
       display: 'none',
       position: 'fixed',
       left: 0,
@@ -49,7 +50,6 @@ $(function() {
       'background-color': 'white',
       width: '100%',
       height: '100%',
-      'text-align': 'center',
     });
 
   $(popup).on('click', function(){
