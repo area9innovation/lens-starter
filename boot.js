@@ -54,7 +54,7 @@ $(function() {
 
   $(popup).on('click', function(){
     popup.css('display', 'none');
-  })
+  });
 
   $('body').append(popup);
 

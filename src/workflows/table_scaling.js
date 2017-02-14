@@ -21,6 +21,8 @@ TableScaling.Prototype = function() {
     ++this.pass;
     if ( this.pass > 1 ) return;
 
+    $('body').css('position', 'inherit');  
+
     this.DoScaling();
 
     $(window).on("resize", this.DoScaling);
