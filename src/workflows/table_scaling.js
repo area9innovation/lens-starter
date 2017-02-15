@@ -41,29 +41,60 @@ TableScaling.Prototype = function() {
         bottom: 0,
       }).prop('src', this.src);
 
+      
       $('#popup').empty().append(img);
       $('#popup').css('display', 'block');
+      $('#popup').children().panzoom({
+        which: 2,
+        minScale: 1,
+        panOnlyWhenZoomed: true,
+        contain: 'automatic',
+      });
+
     });
 
     $('.table-wrapper').on('click', function(){
       var tableBlock = $(this).parent().parent().clone();
 
-      $('#popup').empty().append(tableBlock);
-      $('#popup').css({
-        display: 'block',
-        overflow: 'auto',
-      });
-
-      doScaling();
-/*
-      if ( $('#popup').find('table').css('transform') === 'matrix(1, 0, 0, 1, 0, 0)' ) {
-        $('#popup').find('.html-table').css({
-          position: 'relative',
-          top: '50%',
-          transform: 'translateY(-50%)',
+      $(tableBlock).find('.focus-handle').remove();
+      $(tableBlock).find('.footers').remove();
+//      $(tableBlock).find('.caption').remove();
+//      $(tableBlock).find('.content').css('padding-top', 0);
+      
+      $(tableBlock).find('table').css({
+        'transform-origin': 'inherit',
+        transform: 'scale(1)',
         });
+
+      $('#popup').empty().append(tableBlock);
+      $('#popup').css('display', 'block');
+
+      var p = $('#popup').height();
+      var t = $('#popup').find('table').outerHeight(true);
+
+      if ( t > p ) {
+        var scale = (p - 60 ) / t;
+        var oScale = p / t;
+        $('#popup').find('table').css({
+          'transform-origin': '0 0 0',
+          transform: 'scale(' + scale  + ')',
+        });
+
+        $('#popup').find('table').parent().height($('#popup').find('table').outerHeight() * scale );
+        $('#popup').find('table').parent().css({
+          position: 'relative',
+          left: ($('#popup').width() - $('#popup').find('table').width() * oScale) / 2,
+          width: '100%',
+        });
+
       }
-*/
+
+      $('#popup').children().children().panzoom({
+        which: 2,
+        minScale: 1,
+        panOnlyWhenZoomed: true,
+        contain: 'automatic',
+      });
     });
 
   };

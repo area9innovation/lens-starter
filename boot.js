@@ -43,7 +43,7 @@ $(function() {
 
   var popup = $('<div id="popup" class="lens-article"></div>').css({
       display: 'none',
-      position: 'fixed',
+      position: 'absolute',
       left: 0,
       top: 0,
       'z-index': 5000,
@@ -53,7 +53,7 @@ $(function() {
     });
 
   $(popup).on('click', function(){
-    popup.css('display', 'none');
+    $(popup).css('display', 'none');
   });
 
   $('body').append(popup);
