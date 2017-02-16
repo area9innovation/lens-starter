@@ -28,6 +28,7 @@ TableScaling.Prototype = function() {
     $(window).on("resize", this.DoScaling);
 
     var panzoomWheel = this.PanzoomWheel;
+    var panzoomEnd = this.PanzoomEnd;
 
     $('.image-wrapper').children('img').on('click', function(){
       var img = $(document.createElement('img')).css({
@@ -55,6 +56,8 @@ TableScaling.Prototype = function() {
       $panzoom.parent().on('mousewheel.focal', function( e ) {
         panzoomWheel( e, $panzoom);
       });
+
+      $panzoom.on('panzoomend', panzoomEnd);
     });
 
     $('.table-wrapper').on('click', function(){
@@ -101,6 +104,8 @@ TableScaling.Prototype = function() {
       $panzoom.parent().on('mousewheel.focal', function( e ) {
         panzoomWheel( e, $panzoom);
       });
+
+      $panzoom.on('panzoomend', panzoomEnd);
     });
   };
 
@@ -140,6 +145,12 @@ TableScaling.Prototype = function() {
       animate: false,
       focal: e
     });
+  };
+
+  this.PanzoomEnd = function( e, panzoom, matrix, changed ) {
+    if ( !changed ) {
+      $('#popup').css('display', 'none');
+    }
   };
 };
 
