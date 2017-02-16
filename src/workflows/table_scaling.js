@@ -91,6 +91,9 @@ TableScaling.Prototype = function() {
           left: ($('#popup').width() - $('#popup').find('table').width() * oScale) / 2,
           width: '100%',
         });
+      } else {
+        $('#popup').find('table').parent().height($('#popup').find('table').outerHeight());
+        $('#popup').children().children().height($('#popup').height());  
       }
 
       $('#popup').children().children().panzoom({
