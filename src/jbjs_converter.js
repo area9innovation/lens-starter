@@ -7,6 +7,7 @@ var LensConverter = require('lens/converter');
 
 var LensArticle = require('lens/article');
 var CustomNodeTypes = require('./nodes');
+var TwoColumnsCustomNodeTypes = require('./nodes/two_columns_index');
 
 var JbjsConverter = function(options, config) {
   this.config = config;
@@ -50,6 +51,13 @@ JbjsConverter.Prototype = function() {
 
   // Override document factory so we can create a customized Lens article,
   // including overridden node types
+  this.createDocument = function() {
+    var doc = new LensArticle({
+      nodeTypes: TwoColumnsCustomNodeTypes
+    });
+    return doc;
+  };
+
   this.createDocumentOneColumn = function() {
     var doc = new LensArticle({
       nodeTypes: CustomNodeTypes
@@ -122,12 +130,42 @@ JbjsConverter.Prototype = function() {
     return figureGroupNode;
   };
 
+  this.enhanceArticle = function(state, article) {
+    this.extractMedia(state, article);
+  };
+
   this.enhanceArticleOneColumn = function(state, article) {
     _.each(state.doc.get('citations').nodes, function(n) {state.doc.show('content', n);});
   };
 
   this.enhanceTableOneColumn = function(state, node, tableWrap) {
     tableWrap._converted = true;
+  };
+
+  this.extractMedia = function(state, xmlDoc) {
+    var figureElements = xmlDoc.querySelectorAll("media");
+    var nodes = [];
+    for (var i = 0; i < figureElements.length; ++i) {
+      var figEl = figureElements[i];
+      if (figEl._converted) continue;
+      var type = util.dom.getNodeType(figEl);
+      var node = null;
+      if (type === "media") {
+        node = this.video(state, figEl);
+      }
+      if (node) {
+        nodes.push(node);
+      }
+    }
+    this.show(state, nodes);
+  };
+
+  this.enhanceVideo = function(state, node, element) {
+    var obj = element.querySelector('object-id[content-type=media-stream-id]');
+    if (obj) {
+//      node.url = obj.textContent;
+        node.url = '4025521336001';
+    }
   };
 };
 
