@@ -113,7 +113,7 @@ TableScaling.Prototype = function() {
   };
 
   this.DoScaling = function() {
-    $('.table-wrapper').each(function(){
+    $('#main .table-wrapper').each(function(){
       var pw = $(this).width();
       var tw = $(this).children('table').width();
       if ( tw > pw ) {
