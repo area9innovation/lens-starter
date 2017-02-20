@@ -110,6 +110,8 @@ TableScaling.Prototype = function() {
 
       $panzoom.on('panzoomend', panzoomEnd);
     });
+
+    return false;
   };
 
   this.DoScaling = function() {

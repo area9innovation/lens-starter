@@ -32,12 +32,13 @@ LensApp.Prototype = function() {
   this.getWorkflows = function() {
     if ( this.config.show_resources_panel ) {
       var ws = this.constructor.Prototype.prototype.getWorkflows.call(this).slice(0);
-      ws.unshift(new BrightcoveVideos(this.config.bcvideo_resolver, this.config.bcvideo_player_id));
+      ws.unshift(new BrightcoveVideos(this.config.bcvideo_account_id, this.config.bcvideo_player_id));
       return ws;
     } else {
       return [
         new FollowCitationRefs(),
         new TableScaling(),
+        new BrightcoveVideos(this.config.bcvideo_account_id, this.config.bcvideo_player_id),
       ];
     }
   };

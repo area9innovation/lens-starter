@@ -4,4 +4,5 @@ module.exports = {
   'citation': require('./citation'),
   'html_table': require('./html_table'),
   'figure': require('./figure'),
+  'video': require('./video'),
 };

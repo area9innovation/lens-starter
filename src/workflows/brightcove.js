@@ -3,9 +3,9 @@
 var _ = require("underscore");
 var Workflow = require('lens/reader/workflows/workflow');
 
-var BrightcoveVideos = function(resolver, playerId) {
+var BrightcoveVideos = function(accountId, playerId) {
   Workflow.apply(this);
-  this.resolver = resolver;
+  this.accountId = accountId;
   this.playerId = playerId;
 };
 
@@ -23,27 +23,18 @@ BrightcoveVideos.Prototype = function() {
     ++this.pass;
     if ( this.pass > 1 ) return;
 
-    var refs = [];
-
-    $('.video-wrapper iframe').each(function(){
-      refs.push($(this).attr('data-id'));
-    });
-
     var playerId = this.playerId;
+    var accountId = this.accountId;
 
-    $.getJSON(this.resolver, {refs:refs}, function( data ) {
-      _.each(data, function( video) {
-        $('.video-wrapper iframe[data-id=' + video.reference_id + ']')
-          .attr('src', [
-            '//players.brightcove.net/', 
-            video.account_id,
-            '/',
-            playerId,
-            '/index.html?videoId=',
-            video.id
-          ].join(''));
-      });
+    $('.video-wrapper video').each(function(){
+      $(this).attr({
+            'data-account': accountId,
+            'data-player': playerId.split('_')[0],
+            'data-embed': playerId.split('_')[1],
+          });
     });
+
+    $('body').append('<script src="//players.brightcove.net/' + accountId + '/' + playerId + '/index.min.js"></script>');
 
     return false;
   };

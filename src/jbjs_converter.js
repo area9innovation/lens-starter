@@ -17,6 +17,7 @@ var JbjsConverter = function(options, config) {
   if (!config.show_resources_panel) {
     this.viewMapping.figure = 'content';
     this.viewMapping.html_table = 'content';
+    this.viewMapping.video = 'content';
     this.createDocument = this.createDocumentOneColumn;
     this.enhanceArticle = this.enhanceArticleOneColumn;
     this.enhanceTable = this.enhanceTableOneColumn;
@@ -93,6 +94,10 @@ JbjsConverter.Prototype = function() {
 
   this._bodyNodes["table-wrap"] = function(state, child) {
     return this.tableWrap(state, child);
+  };
+
+  this._bodyNodes["media"] = function(state, child) {
+    return this.video(state, child);
   };
 
   this.figureGroup = function(state, figureGroup) {

@@ -61,8 +61,8 @@ $(function() {
   var app = new window.Lens({
     el: '#lens',
     document_url: qs.url ? decodeURIComponent(qs.url) : documentURL,
-//    show_resources_panel: false,
-    bcvideo_resolver: '//localhost/refs.php',
+    show_resources_panel: false,
+    bcvideo_account_id: '2324982687001',
     bcvideo_player_id: 'SyhwgKNKl_default',
   });
 

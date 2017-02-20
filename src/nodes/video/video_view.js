@@ -28,11 +28,12 @@ VideoView.Prototype = function() {
             $$('div', {
               style: 'padding-top: 56.25%;',
               children: [
-                $$('iframe', {
+                $$('video', {
+                  'data-application-id': '',
+                  'data-video-id': 'ref:' + node.url,
+                  controls: '',
                   'data-id': node.url,
-                  allowfullscreen: '',
-                  webkitallowfullscreen: '',
-                  mozallowfullscreen: '',
+                  'class': 'video-js',
                   style: 'width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;',
                 })
               ]
