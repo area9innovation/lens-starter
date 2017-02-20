@@ -22,12 +22,22 @@ VideoView.Prototype = function() {
 
     var video = $$('.video-wrapper', {
       children: [
-        $$('iframe', {
-          'data-id': node.url,
-          allowfullscreen: '',
-          webkitallowfullscreen: '',
-          mozallowfullscreen: '',
-          style: 'width:640px;height:360px;',
+        $$('div', {
+          style: 'display: block; position: relative; max-width: 100%;',
+          children: [
+            $$('div', {
+              style: 'padding-top: 56.25%;',
+              children: [
+                $$('iframe', {
+                  'data-id': node.url,
+                  allowfullscreen: '',
+                  webkitallowfullscreen: '',
+                  mozallowfullscreen: '',
+                  style: 'width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;',
+                })
+              ]
+            })
+          ]
         })
       ]
     });
