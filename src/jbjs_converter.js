@@ -163,8 +163,7 @@ JbjsConverter.Prototype = function() {
   this.enhanceVideo = function(state, node, element) {
     var obj = element.querySelector('object-id[content-type=media-stream-id]');
     if (obj) {
-//      node.url = obj.textContent;
-        node.url = '4025521336001';
+      node.url = obj.textContent;
     }
   };
 };

@@ -23,7 +23,7 @@ VideoView.Prototype = function() {
     var video = $$('.video-wrapper', {
       children: [
         $$('iframe', {
-          src: '//players.brightcove.net/2324982687001/SyhwgKNKl_default/index.html?videoId=' + node.url,
+          'data-id': node.url,
           allowfullscreen: '',
           webkitallowfullscreen: '',
           mozallowfullscreen: '',

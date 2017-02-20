@@ -5,6 +5,7 @@ var Lens = require("lens/reader");
 var JbjsConverter = require("./jbjs_converter");
 var FollowCitationRefs = require("./workflows/follow_citation_refs");
 var TableScaling = require("./workflows/table_scaling");
+var BrightcoveVideos = require("./workflows/brightcove");
 
 var LensApp = function(config) {
   this.config = config;
@@ -30,7 +31,9 @@ LensApp.Prototype = function() {
 
   this.getWorkflows = function() {
     if ( this.config.show_resources_panel ) {
-      return this.constructor.Prototype.prototype.getWorkflows.call(this);
+      var ws = this.constructor.Prototype.prototype.getWorkflows.call(this).slice(0);
+      ws.unshift(new BrightcoveVideos(this.config.bcvideo_resolver, this.config.bcvideo_player_id));
+      return ws;
     } else {
       return [
         new FollowCitationRefs(),

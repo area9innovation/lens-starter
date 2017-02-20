@@ -29,8 +29,8 @@ var qs = function () {
 // --------
 
 //var documentURL = "data/example.xml";
-var documentURL = "data/97_16_1354/97_16_1354.xml";
-//var documentURL = "data/5_4_e20/5_4_e20.xml";
+//var documentURL = "data/97_16_1354/97_16_1354.xml";
+var documentURL = "data/5_4_e20/5_4_e20.xml";
 
 $(function() {
 
@@ -61,7 +61,9 @@ $(function() {
   var app = new window.Lens({
     el: '#lens',
     document_url: qs.url ? decodeURIComponent(qs.url) : documentURL,
-    show_resources_panel: false
+//    show_resources_panel: false,
+    bcvideo_resolver: '//localhost/refs.php',
+    bcvideo_player_id: 'SyhwgKNKl_default',
   });
 
   app.start();
