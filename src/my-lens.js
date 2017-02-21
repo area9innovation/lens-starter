@@ -6,6 +6,7 @@ var JbjsConverter = require("./jbjs_converter");
 var FollowCitationRefs = require("./workflows/follow_citation_refs");
 var TableScaling = require("./workflows/table_scaling");
 var BrightcoveVideos = require("./workflows/brightcove");
+var FollowCrossRefs = require("lens/reader/workflows/follow_crossrefs");
 
 var LensApp = function(config) {
   this.config = config;
@@ -36,6 +37,7 @@ LensApp.Prototype = function() {
       return ws;
     } else {
       return [
+        new FollowCrossRefs(),
         new FollowCitationRefs(),
         new TableScaling(),
         new BrightcoveVideos(this.config.bcvideo_account_id, this.config.bcvideo_player_id),
