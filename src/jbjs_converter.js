@@ -8,19 +8,26 @@ var LensConverter = require('lens/converter');
 var LensArticle = require('lens/article');
 var CustomNodeTypes = require('./nodes');
 var TwoColumnsCustomNodeTypes = require('./nodes/two_columns_index');
+var CrossReferenceAbstractOnly = require('./nodes/cross_reference');
 
 var JbjsConverter = function(options, config) {
   this.config = config;
 
   LensConverter.call(this, options);
 
-  if (!config.show_resources_panel) {
+  if ( !config.show_resources_panel || config.show_abstract_only ) {
     this.viewMapping.figure = 'content';
     this.viewMapping.html_table = 'content';
     this.viewMapping.video = 'content';
     this.createDocument = this.createDocumentOneColumn;
     this.enhanceArticle = this.enhanceArticleOneColumn;
     this.enhanceTable = this.enhanceTableOneColumn;
+
+    if ( config.show_abstract_only ) {
+      this.article = this.articleAbstractOnly;
+      CustomNodeTypes['cross_reference'] = CrossReferenceAbstractOnly;
+      TwoColumnsCustomNodeTypes['cross_reference'] = CrossReferenceAbstractOnly;
+    }
   } else {
     delete this._bodyNodes['fig-group'];
     delete this._bodyNodes['table-wrap'];
@@ -170,6 +177,31 @@ JbjsConverter.Prototype = function() {
     if (obj) {
       node.url = obj.textContent;
     }
+  };
+
+  this.articleAbstractOnly = function(state, article) {
+    var doc = state.doc;
+
+    var articleId = article.querySelector("article-id");
+
+    if (articleId) {
+      doc.id = articleId.textContent;
+    } else {
+      doc.id = util.uuid();
+    }
+
+    // Extract authors etc.
+    this.extractAffilitations(state, article);
+    this.extractContributors(state, article);
+
+    // Make up a cover node
+    this.extractCover(state, article);
+
+    // Extract ArticleMeta
+    this.extractArticleMeta(state, article);
+
+    // Populate Publication Info node
+    this.extractPublicationInfo(state, article);
   };
 };
 
