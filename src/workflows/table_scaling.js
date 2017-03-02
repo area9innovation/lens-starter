@@ -21,7 +21,8 @@ TableScaling.Prototype = function() {
     ++this.pass;
     if ( this.pass > 1 ) return;
 
-    $('body').css('position', 'inherit');  
+    $('*').css('position', 'inherit');  
+    $('body').css('overflow', 'auto');  
 
     this.DoScaling();
 
@@ -115,7 +116,14 @@ TableScaling.Prototype = function() {
   };
 
   this.DoScaling = function() {
+    var correction = 0;
+    var wstBefore = $(window).scrollTop();
+
     $('#main .table-wrapper').each(function(){
+
+      var tBefore = $(this).offset().top;
+      var hBefore = $(this).height();
+
       var pw = $(this).width();
       var tw = $(this).children('table').width();
       if ( tw > pw ) {
@@ -138,7 +146,13 @@ TableScaling.Prototype = function() {
 
         $(this).height('100%');
       }
+
+      var hAfter = $(this).height();
+      if ( (tBefore + hBefore) < wstBefore ) correction += hAfter - hBefore;
     });
+
+    var wstAfter = $(window).scrollTop();
+    $(window).scrollTop(wstAfter + correction);
   };
 
   this.PanzoomWheel = function(e, $panzoom) {
