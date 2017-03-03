@@ -1,7 +1,3 @@
 video {
      max-height: unset !important;
 }
-
-.vjs-big-play-button {
-	display: none;
-}

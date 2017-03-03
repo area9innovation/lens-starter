@@ -21,9 +21,11 @@ TableScaling.Prototype = function() {
     ++this.pass;
     if ( this.pass > 1 ) return;
 
-    $('*').not('.video-wrapper *').css('position', 'unset');  
+    $('body *').not('.video-wrapper *').css('position', 'unset');
+    $('body').css('position', 'unset');  
     $('body').css('overflow', 'auto');  
     $('#container').css('height', 'auto');  
+    $('#forlens').css('position', 'relative');  
 
     var popup = $('<div id="popup" class="lens-article"></div>').css({
       display: 'none',

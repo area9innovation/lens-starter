@@ -26,6 +26,7 @@ VideoView.Prototype = function() {
       'data-id': node.url,
       'class': 'video-js',
       style: 'width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;',
+      controls: '',
     });
     $(video).attr(playlist?'data-playlist-id':'data-video-id', 'ref:'+node.url);
 
