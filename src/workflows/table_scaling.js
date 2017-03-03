@@ -21,8 +21,26 @@ TableScaling.Prototype = function() {
     ++this.pass;
     if ( this.pass > 1 ) return;
 
-    $('*').css('position', 'inherit');  
+    $('*').css('position', 'unset');  
     $('body').css('overflow', 'auto');  
+    $('#container').css('height', 'auto');  
+
+    var popup = $('<div id="popup" class="lens-article"></div>').css({
+      display: 'none',
+      position: 'fixed',
+      left: 0,
+      top: 0,
+      'z-index': 5000,
+      'background-color': 'white',
+      width: '100%',
+      height: '100%',
+    });
+
+    $(popup).on('click', function(){
+      $(popup).css('display', 'none');
+    });
+
+    $('body').append(popup);
 
     this.DoScaling();
 
@@ -43,17 +61,23 @@ TableScaling.Prototype = function() {
         bottom: 0,
       }).prop('src', this.src);
 
-      
-      $('#popup').empty().append(img);
+      $('#popup').empty().append('<div>');
+
+      $('#popup div').css('height', '100%').append(img);
+
+      $('#popup div').on('click', function(){
+        $(popup).css('display', 'none');
+      });
+
       $('#popup').css('display', 'block');
-      $('#popup').children().panzoom({
+      $('#popup').children().children().panzoom({
         which: 2,
         minScale: 1,
         panOnlyWhenZoomed: true,
         contain: 'automatic',
       });
 
-      var $panzoom = $('#popup').children().panzoom();
+      var $panzoom = $('#popup').children().children().panzoom();
       $panzoom.parent().on('mousewheel.focal', function( e ) {
         panzoomWheel( e, $panzoom);
       });
@@ -74,6 +98,8 @@ TableScaling.Prototype = function() {
 
       $('#popup').empty().append(tableBlock);
       $('#popup').css('display', 'block');
+      $('#popup *').css('overflow','hidden');  
+      $('#popup').css('overflow','auto');  
 
       var p = $('#popup').height();
       var t = $('#popup').find('table').outerHeight(true);
@@ -86,11 +112,10 @@ TableScaling.Prototype = function() {
           transform: 'scale(' + scale  + ')',
         });
 
-        $('#popup').find('table').parent().height($('#popup').find('table').outerHeight() * scale );
         $('#popup').find('table').parent().css({
-          position: 'relative',
-          left: ($('#popup').width() - $('#popup').find('table').width() * oScale) / 2,
-          width: '100%',
+          height: $('#popup').find('table').outerHeight() * scale,
+          width: $('#popup').find('table').outerWidth() * scale,
+          margin: 'auto',
         });
       } else {
         $('#popup').find('table').parent().height($('#popup').find('table').outerHeight());
