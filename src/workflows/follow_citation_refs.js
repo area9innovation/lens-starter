@@ -27,15 +27,15 @@ FollowCitationRefs.Prototype = function() {
   this.followCitationReference = function(panel, id, element) {
     var ref = this.readerCtrl.getDocument().get(id);
     this.lastFromId = id;
-    this.readerView.contentView.scrollTo(ref.target);
     var citationNode = this.readerView.contentView.findNodeView(ref.target);
+    citationNode.scrollIntoView();
     $(citationNode).addClass('back');
   };
 
   this.citationClick = function(e) {
     if ( this.lastFromId !== undefined) {
       $('.citation').removeClass('back');
-      this.readerView.contentView.scrollTo(this.lastFromId);
+      this.readerView.contentView.findNodeView(this.lastFromId).scrollIntoView();
       this.lastFromId = undefined;
     }
   };

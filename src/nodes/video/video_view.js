@@ -26,7 +26,7 @@ VideoView.Prototype = function() {
           style: 'display: block; position: relative; max-width: 100%;',
           children: [
             $$('div', {
-              style: 'padding-top: 56.25%;',
+              //style: 'padding-top: 56.25%;',
               children: [
                 $$('video', {
                   'data-application-id': '',

@@ -6,7 +6,7 @@ var JbjsConverter = require("./jbjs_converter");
 var FollowCitationRefs = require("./workflows/follow_citation_refs");
 var TableScaling = require("./workflows/table_scaling");
 var BrightcoveVideos = require("./workflows/brightcove");
-var FollowCrossRefs = require("lens/reader/workflows/follow_crossrefs");
+var FollowCrossRefs = require("./workflows/follow_crossrefs");
 var ScrollbarManager = require("./workflows/scrollbar");
 
 var LensApp = function(config) {
