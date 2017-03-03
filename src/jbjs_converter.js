@@ -22,6 +22,9 @@ var JbjsConverter = function(options, config) {
     this.createDocument = this.createDocumentOneColumn;
     this.enhanceArticle = this.enhanceArticleOneColumn;
     this.enhanceTable = this.enhanceTableOneColumn;
+    
+    delete this.ignoredParagraphElements['media'];
+    this.acceptedParagraphElements['media'] =  { handler: 'reducedVideo' };
 
     if ( config.show_abstract_only ) {
       this.article = this.articleAbstractOnly;
@@ -172,7 +175,35 @@ JbjsConverter.Prototype = function() {
     this.show(state, nodes);
   };
 
+  this.reducedVideo = function(state, video) {
+    var doc = state.doc;
+
+    var id = state.nextId('video');
+    var videoNode = {
+      id: id,
+      'source_id': video.getAttribute("id"),
+      type: "video",
+      label: null,
+      title: null,
+      caption: null,
+      poster: null
+    };
+
+    // Add a caption if available
+    var caption = video.querySelector("caption");
+    if (caption) {
+      var captionNode = this.caption(state, caption);
+      if (captionNode) videoNode.caption = captionNode.id;
+    }
+
+    this.enhanceVideo(state, videoNode, video);
+    doc.create(videoNode);
+
+    return videoNode;
+  };
+
   this.enhanceVideo = function(state, node, element) {
+    node['source_id'] = element.getAttribute('xlink:href');
     var obj = element.querySelector('object-id[content-type=media-stream-id]');
     if (obj) {
       node.url = obj.textContent;

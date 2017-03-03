@@ -21,7 +21,7 @@ TableScaling.Prototype = function() {
     ++this.pass;
     if ( this.pass > 1 ) return;
 
-    $('*').not('.video-wrapper div').css('position', 'unset');  
+    $('*').not('.video-wrapper *').css('position', 'unset');  
     $('body').css('overflow', 'auto');  
     $('#container').css('height', 'auto');  
 

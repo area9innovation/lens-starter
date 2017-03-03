@@ -19,6 +19,15 @@ VideoView.Prototype = function() {
 
   this.renderBody = function() {
     var node = this.node;
+    var playlist = node['source_id'].indexOf('Playlist') !== -1;
+
+    var video =  $$('video', {
+      'data-application-id': '',
+      'data-id': node.url,
+      'class': 'video-js',
+      style: 'width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;',
+    });
+    $(video).attr(playlist?'data-playlist-id':'data-video-id', 'ref:'+node.url);
 
     var video = $$('.video-wrapper', {
       children: [
@@ -26,17 +35,13 @@ VideoView.Prototype = function() {
           style: 'display: block; position: relative; max-width: 100%;',
           children: [
             $$('div', {
-              //style: 'padding-top: 56.25%;',
+              style: 'padding-top: 56.25%; position: relative',
               children: [
-                $$('video', {
-                  'data-application-id': '',
-                  'data-video-id': 'ref:' + node.url,
-                  controls: '',
-                  'data-id': node.url,
-                  'class': 'video-js',
-                  style: 'width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;',
-                })
+                video
               ]
+            }),
+            $$('ol', {
+              'class': 'vjs-playlist',
             })
           ]
         })
