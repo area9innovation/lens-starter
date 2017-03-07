@@ -34,6 +34,9 @@ var JbjsConverter = function(options, config) {
   } else {
     delete this._bodyNodes['fig-group'];
     delete this._bodyNodes['table-wrap'];
+
+    delete this.ignoredParagraphElements['media'];
+    this.acceptedParagraphElements['media'] =  { handler: 'video' };
   }
 
   this.imageFolder = '';
@@ -143,10 +146,6 @@ JbjsConverter.Prototype = function() {
     doc.create(figureGroupNode);
 
     return figureGroupNode;
-  };
-
-  this.enhanceArticle = function(state, article) {
-    this.extractMedia(state, article);
   };
 
   this.enhanceArticleOneColumn = function(state, article) {
