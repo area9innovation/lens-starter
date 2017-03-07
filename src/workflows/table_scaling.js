@@ -9,6 +9,7 @@ var TableScaling = function() {
 TableScaling.Prototype = function() {
   this.handlesStateUpdate = true;
   this.pass = 0;
+  this.scroll = 0;
 
   this.registerHandlers = function() {
   };
@@ -44,9 +45,14 @@ TableScaling.Prototype = function() {
 
     $('body').append(popup);
 
-    this.DoScaling();
+    var store = this;
 
-    $(window).on("resize", this.DoScaling);
+    this.DoScroll(store);
+
+    this.DoScaling(store);
+
+    $(window).on("resize", function() { store.DoScaling(store); } );
+    $(window).on("scroll", function() { store.DoScroll(store); } );
 
     var panzoomWheel = this.PanzoomWheel;
     var panzoomEnd = this.PanzoomEnd;
@@ -142,14 +148,9 @@ TableScaling.Prototype = function() {
     return false;
   };
 
-  this.DoScaling = function() {
-    var correction = 0;
-    var wstBefore = $(window).scrollTop();
+  this.DoScaling = function(store) {
 
     $('#main .table-wrapper').each(function(){
-
-      var tBefore = $(this).offset().top;
-      var hBefore = $(this).height();
 
       var pw = $(this).width();
       var tw = $(this).children('table').width();
@@ -163,7 +164,7 @@ TableScaling.Prototype = function() {
           .css('transform-origin', 'left top')
           .css('transform', 'scale(' + wScale + ')');
 
-        $(this).height($(this).children('table').height() * hScale + 5);
+        $(this).height($(this).children('table').outerHeight() * hScale + 5);
 
       } else {
         
@@ -171,15 +172,12 @@ TableScaling.Prototype = function() {
 
         $(this).children('table').css('transform', 'scale(1)');
 
-        $(this).height('100%');
+        $(this).height($(this).children('table').outerHeight() + 5);
       }
 
-      var hAfter = $(this).height();
-      if ( (tBefore + hBefore) < wstBefore ) correction += hAfter - hBefore;
     });
 
-    var wstAfter = $(window).scrollTop();
-    $(window).scrollTop(wstAfter + correction);
+    $(window).scrollTop(store.scroll*$('.nodes').outerHeight());
   };
 
   this.PanzoomWheel = function(e, $panzoom) {
@@ -198,6 +196,10 @@ TableScaling.Prototype = function() {
       $('#popup').css('display', 'none');
     }
   };
+
+  this.DoScroll = function(store) {
+    store.scroll = $(window).scrollTop()/$('.nodes').outerHeight(); 
+  }
 };
 
 TableScaling.Prototype.prototype = Workflow.prototype;
