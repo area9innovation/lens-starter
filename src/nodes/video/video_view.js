@@ -19,7 +19,7 @@ VideoView.Prototype = function() {
 
   this.renderBody = function() {
     var node = this.node;
-    var playlist = node['source_id'].indexOf('Playlist') !== -1;
+    var playlist = node['url_ogv'].indexOf('Playlist') !== -1;
 
     var video =  $$('video', {
       'data-application-id': '',

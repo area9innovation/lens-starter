@@ -176,7 +176,7 @@ JbjsConverter.Prototype = function() {
   };
 
   this.enhanceVideo = function(state, node, element) {
-    node['source_id'] = element.getAttribute('xlink:href');
+    node['url_ogv'] = element.getAttribute('xlink:href');
     var obj = element.querySelector('object-id[content-type=media-stream-id]');
     if (obj) {
       node.url = obj.textContent;
