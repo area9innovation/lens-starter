@@ -153,8 +153,10 @@ TableScaling.Prototype = function() {
   this.DoScaling = function(store) {
     var prevBases = store.bases.slice(0);
     store.bases = [0];
-    
+    var hasTables = false;
+
     $('#main .table-wrapper').each(function(){
+      hasTables = true;
 
       var pw = $(this).width();
       var tw = $(this).children('table').width();
@@ -178,13 +180,15 @@ TableScaling.Prototype = function() {
 
         $(this).height($(this).children('table').outerHeight() + 5);
       }
-      
-      store.bases.push( $(this).offset().top + $(this).height());
     });
 
-    store.bases.push( $('.nodes').outerHeight() );
+    if( hasTables ) {
+      $('#main .nodes > .content-node').each(function(){  
+        store.bases.push( $(this).offset().top );
+      });
 
-    if( prevBases.length > 2 ) {
+      store.bases.push( $('.nodes').outerHeight() );
+
       var scroll = store.prevScroll;
       var baseIdx = prevBases.findIndex(function(base) { return base >= scroll;} ) - 1;
       var rel = (scroll - prevBases[baseIdx])/(prevBases[baseIdx+1] - prevBases[baseIdx]); 
