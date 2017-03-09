@@ -36,13 +36,14 @@ VideoView.Prototype = function() {
           style: 'display: block; position: relative; max-width: 100%;',
           children: [
             $$('div', {
-              style: 'padding-top: 56.25%; position: relative',
+              style: 'padding-top: 50%; position: relative;',
               children: [
                 video
               ]
             }),
-            $$('ol', {
+            $$('div', {
               'class': 'vjs-playlist',
+              style: 'overflow: auto',
             })
           ]
         })

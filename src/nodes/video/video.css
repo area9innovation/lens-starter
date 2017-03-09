@@ -1,3 +1,17 @@
 video {
      max-height: unset !important;
 }
+
+.vjs-playlist img {
+    width: 40%;
+    float: left;
+}
+
+.vjs-playlist-title-container {
+	width: 100%;
+}
+
+.vjs-playlist-name {
+	width: 100%;
+	text-align: right;
+}

@@ -32,6 +32,7 @@ var qs = function () {
 //var documentURL = "data/97_16_1354/97_16_1354.xml";
 //var documentURL = "data/5_4_e20/5_4_e20.xml";
 var documentURL = "data/5_4_e19/5_4_e19.xml";
+//var documentURL = 'data/97_15_1220/97_15_1220.xml';
 
 $(function() {
 
@@ -50,7 +51,7 @@ $(function() {
     show_resources_panel: false,
 //    show_abstract_only: true,
     bcvideo_account_id: '2324982687001',
-    bcvideo_player_id: 'HJuSRJUNx_default',
+    bcvideo_player_id: 'SyhwgKNKl_default',
   });
 
   app.start();
