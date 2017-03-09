@@ -10,6 +10,8 @@ TableScaling.Prototype = function() {
   this.handlesStateUpdate = true;
   this.pass = 0;
   this.scroll = 0;
+  this.scrollPrev = 0;
+  this.bases = [0];
 
   this.registerHandlers = function() {
   };
@@ -51,8 +53,8 @@ TableScaling.Prototype = function() {
 
     this.DoScaling(store);
 
-    $(window).on("resize", function() { store.DoScaling(store); } );
-    $(window).on("scroll", function() { store.DoScroll(store); } );
+    $(window).on('resize', function() { store.DoScaling(store); } );
+    $(window).on('scroll', function() { store.DoScroll(store); } );
 
     var panzoomWheel = this.PanzoomWheel;
     var panzoomEnd = this.PanzoomEnd;
@@ -149,7 +151,9 @@ TableScaling.Prototype = function() {
   };
 
   this.DoScaling = function(store) {
-
+    var prevBases = store.bases.slice(0);
+    store.bases = [0];
+    
     $('#main .table-wrapper').each(function(){
 
       var pw = $(this).width();
@@ -174,10 +178,20 @@ TableScaling.Prototype = function() {
 
         $(this).height($(this).children('table').outerHeight() + 5);
       }
-
+      
+      store.bases.push( $(this).offset().top + $(this).height());
     });
 
-    $(window).scrollTop(store.scroll*$('.nodes').outerHeight());
+    store.bases.push( $('.nodes').outerHeight() );
+
+    if( prevBases.length > 2 ) {
+      var scroll = store.prevScroll;
+      var baseIdx = prevBases.findIndex(function(base) { return base >= scroll;} ) - 1;
+      var rel = (scroll - prevBases[baseIdx])/(prevBases[baseIdx+1] - prevBases[baseIdx]); 
+      store.prevScroll = store.bases[baseIdx] + rel*(store.bases[baseIdx+1] - store.bases[baseIdx]);
+      store.scroll = store.prevScroll;
+      $(window).scrollTop(store.scroll);
+    }
   };
 
   this.PanzoomWheel = function(e, $panzoom) {
@@ -198,8 +212,9 @@ TableScaling.Prototype = function() {
   };
 
   this.DoScroll = function(store) {
-    store.scroll = $(window).scrollTop()/$('.nodes').outerHeight(); 
-  }
+    store.prevScroll = store.scroll;
+    store.scroll = $(window).scrollTop();
+  };
 };
 
 TableScaling.Prototype.prototype = Workflow.prototype;
