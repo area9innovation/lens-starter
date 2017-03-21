@@ -5,4 +5,5 @@ module.exports = {
   'html_table': require('./html_table'),
   'figure': require('./figure'),
   'video': require('./video'),
+  'table_footnote_reference': require('./table_footnote_reference'),
 };

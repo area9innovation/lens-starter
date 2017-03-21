@@ -39,6 +39,8 @@ var JbjsConverter = function(options, config) {
     this.acceptedParagraphElements['media'] =  { handler: 'video' };
   }
 
+  this._refTypeMapping['table-fn'] = 'table_footnote_reference';
+
   this.imageFolder = '';
   this.docBaseUrl = '';
 };
@@ -152,7 +154,22 @@ JbjsConverter.Prototype = function() {
     _.each(state.doc.get('citations').nodes, function(n) {state.doc.show('content', n);});
   };
 
+  this.enhanceTable = function(state, node, tableWrap) {
+    this.enhanceTableFooters(state, node, tableWrap);
+  };
+
+  this.enhanceTableFooters = function(state, node, tableWrap) {
+    var footers = tableWrap.querySelectorAll("table-wrap-foot fn");
+    for (var i = 0; i < footers.length; ++i) {
+      node.footers.push({
+        label: footers[i].querySelector('label').textContent,
+        content: footers[i].querySelector('p').textContent
+      });
+    }
+  };
+
   this.enhanceTableOneColumn = function(state, node, tableWrap) {
+    this.enhanceTableFooters(state, node, tableWrap);
     tableWrap._converted = true;
   };
 

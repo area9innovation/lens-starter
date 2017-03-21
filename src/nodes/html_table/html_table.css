@@ -10,3 +10,6 @@
   text-align: left;
 }
 
+.lens-article .content-node.html-table .footers .footer {
+  line-height: 14px;
+}
