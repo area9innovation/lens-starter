@@ -152,6 +152,16 @@ JbjsConverter.Prototype = function() {
 
   this.enhanceArticleOneColumn = function(state, article) {
     _.each(state.doc.get('citations').nodes, function(n) {state.doc.show('content', n);});
+
+    var header = {
+      'type' : 'heading',
+      'id' : state.nextId('heading'),
+      'level' : 1,
+      'content' : 'Additional information',
+    };
+    doc.create(header);
+    doc.show('content', header.id);
+    doc.show('content', this.pubInfoNodeId);
   };
 
   this.enhanceTable = function(state, node, tableWrap) {
@@ -222,6 +232,59 @@ JbjsConverter.Prototype = function() {
 
     // Populate Publication Info node
     this.extractPublicationInfo(state, article);
+  };
+
+  this.extractNotes = function(state, article) {
+    var nodes = [];
+    var doc = state.doc;
+
+    var discls = article.querySelectorAll('fn[fn-type=financial-disclosure]');
+
+    if ( discls.length > 0 ) {
+      var header = {
+        type : 'heading',
+        id : state.nextId('heading'),
+        level : 3,
+        content : 'Disclosures of Potential Conflicts of Interest',
+      };
+
+      doc.create(header);
+      nodes.push(header.id);
+
+      for (var i = 0; i < discls.length; ++i) {
+        var pars = this.bodyNodes(state, util.dom.getChildren(discls[i]));
+
+        _.each(pars, function(par) {
+          nodes.push(par.id);
+        });
+      }
+
+      var uri = article.querySelector('self-uri[content-type=disclosure-pdf]');
+      if ( uri ) {
+        var supplementNode = {
+          id: state.nextId('supplement'),
+          source_id: null,
+          type: 'supplement',
+          label: 'Disclosures of Potential Conflicts of Interest PDF',
+          url: [
+              this.docBaseUrl,
+              '/',
+              this.imageFolder,
+              '/',
+              uri.getAttribute('xlink:href')
+            ].join(''),
+          caption: null
+        };
+        doc.create(supplementNode);
+        nodes.push(supplementNode.id);
+      }
+    }
+
+    return nodes;
+  };
+
+  this.enhancePublicationInfo = function(state, pubInfoNode) {
+    this.pubInfoNodeId = pubInfoNode.id;
   };
 };
 
