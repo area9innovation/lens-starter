@@ -98,7 +98,7 @@ JbjsConverter.Prototype = function() {
         this.imageFolder,
         '/',
         url,
-        '.jpeg'
+        url.match(/[A-Z]+/)?'.tif':'.jpeg'
       ].join('');
     }
   };
