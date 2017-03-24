@@ -31,8 +31,9 @@ var qs = function () {
 //var documentURL = "data/example.xml";
 //var documentURL = "data/97_16_1354/97_16_1354.xml";
 //var documentURL = "data/5_4_e20/5_4_e20.xml";
-var documentURL = "data/5_4_e19/5_4_e19.xml";
+//var documentURL = "data/5_4_e19/5_4_e19.xml";
 //var documentURL = 'data/97_15_1220/97_15_1220.xml';
+var documentURL = 'data/99_1_10/99_1_10.xml';
 
 $(function() {
 
@@ -44,19 +45,32 @@ $(function() {
   //$('body').append('<div><div id="lens" style="height: 100%; width: 100%; position: absolute;"></div></div>');
   //$('body').append('<div id="lens" style="height: 100%; width: 100%;"></div>');
 
-  
-  var app = new window.Lens({
-//    el: '#lens',
-    document_url: qs.url ? decodeURIComponent(qs.url) : documentURL,
-    show_resources_panel: false,
-//    show_abstract_only: true,
-    bcvideo_account_id: '2324982687001',
-    bcvideo_player_id: 'SyhwgKNKl_default',
-  });
+  var manifest;
+  var path = documentURL.split('/');
+  path[path.length-1] = path[path.length-2] + '(1)/manifest.xml';
 
-  app.start();
+  $.get(path.join('/'))
+    .done(function(data) {
+      if ($.isXMLDoc(data)) {
+        manifest = data;
+      }
+    })
+    .always(function() {
+      var app = new window.Lens({
+//      el: '#lens',
+        document_url: qs.url ? decodeURIComponent(qs.url) : documentURL,
+        show_resources_panel: false,
+//      show_abstract_only: true,
+        bcvideo_account_id: '2324982687001',
+        bcvideo_player_id: 'SyhwgKNKl_default',
+        manifest: manifest
+      });
 
-  window.app = app;
+      app.start();
 
-  $('#container').css('min-width', '100px');
+      window.app = app;
+
+      $('#container').css('min-width', '100px');
+    });
+
 });

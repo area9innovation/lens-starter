@@ -153,6 +153,10 @@ JbjsConverter.Prototype = function() {
   this.enhanceArticleOneColumn = function(state, article) {
     _.each(state.doc.get('citations').nodes, function(n) {state.doc.show('content', n);});
 
+    var doc = state.doc;
+
+    this.enhanceArticleSDC(state, article);
+
     var header = {
       'type' : 'heading',
       'id' : state.nextId('heading'),
@@ -285,6 +289,52 @@ JbjsConverter.Prototype = function() {
 
   this.enhancePublicationInfo = function(state, pubInfoNode) {
     this.pubInfoNodeId = pubInfoNode.id;
+  };
+
+  this.enhanceArticle = function(state, article) {
+    this.enhanceArticleSDC(state, article);
+  };
+
+  this.enhanceArticleSDC = function(state, article) {
+    if ( this.config.manifest === undefined ) return;
+
+    var nodes = [];
+    var doc = state.doc;
+
+    var files = this.config.manifest.querySelectorAll('file');
+
+    if ( files.length > 0 ) {
+      var header = {
+        type : 'heading',
+        id : state.nextId('heading'),
+        level : 1,
+        content : 'Second data suppliment files',
+      };
+
+      doc.create(header);
+      nodes.push(header.id);
+      doc.show('content', header.id);
+
+      for (var i = 0; i < files.length; ++i) {
+        var supplementNode = {
+          id: state.nextId('supplement'),
+          source_id: null,
+          type: 'supplement',
+          label: files[i].querySelector('description').textContent,
+          url: [
+              this.docBaseUrl,
+              '/',
+              this.imageFolder,
+              '/',
+              files[i].querySelector('filename').textContent
+            ].join(''),
+          caption: null
+        };
+        doc.create(supplementNode);
+        nodes.push(supplementNode.id);
+        doc.show('content', supplementNode.id);
+      }
+    }
   };
 };
 
