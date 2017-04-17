@@ -43,6 +43,10 @@ var JbjsConverter = function(options, config) {
 
   this.imageFolder = '';
   this.docBaseUrl = '';
+
+  if( config.storage_layout && config.storage_layout === 'jbjs_jtype' ){
+    this.URLBuilder = this.URLBuilderJBJSType;
+  }
 };
 
 JbjsConverter.Prototype = function() {
@@ -82,6 +86,26 @@ JbjsConverter.Prototype = function() {
     return doc;
   };
 
+  this.URLBuilder = function(url) {
+      return [
+        this.docBaseUrl,
+        '/',
+        this.imageFolder,
+        '/',
+        url,
+        '.jpeg'
+      ].join('');
+  };
+
+  this.URLBuilderJBJSType = function(url) {
+      return [
+        this.docBaseUrl,
+        '/',
+        url,
+        '.jpeg'
+      ].join('');
+  };
+
   this.resolveURL = function(state, url) {
     // Use absolute URL
     if (url.match(/http:\/\//)) return url;
@@ -93,14 +117,7 @@ JbjsConverter.Prototype = function() {
       return [baseURL, url].join('');
     } else {
       // Use special URL resolving for production articles
-      return [
-        this.docBaseUrl,
-        '/',
-        this.imageFolder,
-        '/',
-        url,
-        '.jpeg'
-      ].join('');
+      return this.URLBuilder(url);
     }
   };
 
@@ -323,13 +340,7 @@ JbjsConverter.Prototype = function() {
           source_id: null,
           type: 'supplement',
           label: files[i].querySelector('description').textContent,
-          url: [
-              this.docBaseUrl,
-              '/',
-              this.imageFolder,
-              '/',
-              files[i].querySelector('filename').textContent
-            ].join(''),
+          url: this.URLBuilder(files[i].querySelector('filename').textContent),
           caption: null
         };
         doc.create(supplementNode);
