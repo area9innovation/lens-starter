@@ -265,6 +265,7 @@ JbjsConverter.Prototype = function() {
       }
 
       var uri = article.querySelector('self-uri[content-type=disclosure-pdf]');
+      uri = uri ?uri:article.querySelector('self-uri[content-type=disclosures-pdf]');
       if ( uri ) {
         var supplementNode = {
           id: state.nextId('supplement'),
