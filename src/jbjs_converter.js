@@ -67,7 +67,12 @@ JbjsConverter.Prototype = function() {
     var fpage = xmlDoc.querySelector("article-meta fpage");
     var elocation = xmlDoc.querySelector("article-meta elocation-id");
 
-    this.imageFolder = volume.textContent + '_' + issue.textContent + '_' + (fpage?fpage.textContent:elocation.textContent) + '(1)';
+    var page = fpage?fpage.textContent:elocation.textContent;
+    if( fpage && fpage.hasAttribute('seq') ) {
+      page += 'a';
+    }
+
+    this.imageFolder = volume.textContent + '_' + issue.textContent + '_' + page + '(1)';
 
     return this.constructor.Prototype.prototype.document.call(this, state, xmlDoc);
   }
