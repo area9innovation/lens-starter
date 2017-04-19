@@ -86,23 +86,27 @@ JbjsConverter.Prototype = function() {
     return doc;
   };
 
-  this.URLBuilder = function(url) {
+  this.URLBuilder = function(url, ext) {
       return [
         this.docBaseUrl,
         '/',
         this.imageFolder,
         '/',
         url,
-        '.jpeg'
+        ext
       ].join('');
   };
 
-  this.URLBuilderJBJSType = function(url) {
+  this.ResourceURLBuilder = function(url) {
+    return this.config.resources_url + url;
+  };
+
+  this.URLBuilderJBJSType = function(url, ext) {
       return [
         this.docBaseUrl,
         '/',
         url,
-        '.jpeg'
+        ext
       ].join('');
   };
 
@@ -117,7 +121,7 @@ JbjsConverter.Prototype = function() {
       return [baseURL, url].join('');
     } else {
       // Use special URL resolving for production articles
-      return this.URLBuilder(url);
+      return this.URLBuilder(url, '.jpeg');
     }
   };
 
@@ -260,6 +264,20 @@ JbjsConverter.Prototype = function() {
     var nodes = [];
     var doc = state.doc;
 
+    var pdf = article.querySelector('self-uri[*|title=pdf]');
+    if( pdf ) {
+      var supplementNode = {
+        id: state.nextId('supplement'),
+        source_id: null,
+        type: 'supplement',
+        label: '<img src="' + this.ResourceURLBuilder('Adobe_PDF_file_icon_32x32.png') + '"/> Open article PDF',
+        url: this.URLBuilder(pdf.getAttribute('xlink:href')),
+        caption: null
+      };
+      doc.create(supplementNode);
+      nodes.push(supplementNode.id);
+    }
+
     var discls = article.querySelectorAll('fn[fn-type=financial-disclosure]');
 
     if ( discls.length > 0 ) {
@@ -275,7 +293,6 @@ JbjsConverter.Prototype = function() {
 
       for (var i = 0; i < discls.length; ++i) {
         var pars = this.bodyNodes(state, util.dom.getChildren(discls[i]));
-
         _.each(pars, function(par) {
           nodes.push(par.id);
         });
@@ -289,13 +306,7 @@ JbjsConverter.Prototype = function() {
           source_id: null,
           type: 'supplement',
           label: 'Disclosures of Potential Conflicts of Interest PDF',
-          url: [
-              this.docBaseUrl,
-              '/',
-              this.imageFolder,
-              '/',
-              uri.getAttribute('xlink:href')
-            ].join(''),
+          url: this.URLBuilder(uri.getAttribute('xlink:href')),
           caption: null
         };
         doc.create(supplementNode);
