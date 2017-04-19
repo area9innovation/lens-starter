@@ -74,6 +74,10 @@ JbjsConverter.Prototype = function() {
 
     this.imageFolder = volume.textContent + '_' + issue.textContent + '_' + page + '(1)';
 
+    if ( this.config.uppercase ) {
+      this.imageFolder = this.imageFolder.toUpperCase();
+    }
+
     return this.constructor.Prototype.prototype.document.call(this, state, xmlDoc);
   }
 
