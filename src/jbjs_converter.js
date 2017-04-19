@@ -13,6 +13,8 @@ var CrossReferenceAbstractOnly = require('./nodes/cross_reference');
 var JbjsConverter = function(options, config) {
   this.config = config;
 
+  this.config.storage_layout = config.storage_layout || 'brackets';
+
   LensConverter.call(this, options);
 
   if ( !config.show_resources_panel || config.show_abstract_only ) {
@@ -44,7 +46,7 @@ var JbjsConverter = function(options, config) {
   this.imageFolder = '';
   this.docBaseUrl = '';
 
-  if( config.storage_layout && config.storage_layout === 'jbjs_jtype' ){
+  if( this.config.storage_layout === 'jbjs_jtype' ) {
     this.URLBuilder = this.URLBuilderJBJSType;
   }
 };
@@ -266,12 +268,21 @@ JbjsConverter.Prototype = function() {
 
     var pdf = article.querySelector('self-uri[*|title=pdf]');
     if( pdf ) {
+      var url = this.URLBuilder(pdf.getAttribute('xlink:href'));
+
+      if( this.config.storage_layout === 'jbjs_jtype' ) {
+        var pub_id = article.querySelector('article-id[pub-id-type=publisher-id]');
+        if ( pub_id ) {
+          url = this.URLBuilder(pub_id.textContent, '.pdf');
+        }
+      }
+
       var supplementNode = {
         id: state.nextId('supplement'),
         source_id: null,
         type: 'supplement',
         label: '<img src="' + this.ResourceURLBuilder('Adobe_PDF_file_icon_32x32.png') + '"/> Open article PDF',
-        url: this.URLBuilder(pdf.getAttribute('xlink:href')),
+        url: url,
         caption: null
       };
       doc.create(supplementNode);
