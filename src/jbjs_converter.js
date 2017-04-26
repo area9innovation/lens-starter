@@ -48,13 +48,19 @@ var JbjsConverter = function(options, config) {
 
   if( this.config.storage_layout === 'jbjs_jtype' ) {
     this.URLBuilder = this.URLBuilderJBJSType;
+  } else if ( this.config.storage_layout === 'db' ) {
+    this.URLBuilder = this.URLBuilderDB;
   }
 };
 
 JbjsConverter.Prototype = function() {
 
   this.test = function(xmlDoc, docUrl) {
-    this.docBaseUrl = docUrl.split('/').slice(0, -1).join('/');
+    if ( this.config.storage_layout === 'db' ) {
+      this.docBaseUrl = docUrl;      
+    } else {
+      this.docBaseUrl = docUrl.split('/').slice(0, -1).join('/');      
+    }
 
 //    var publisherName = xmlDoc.querySelector('publisher-name').textContent;
 //    return publisherName === 'The Journal of Bone and Joint Surgery, Inc.';
@@ -118,6 +124,15 @@ JbjsConverter.Prototype = function() {
         '/',
         url,
         ext
+      ].join('');
+  };
+
+  this.URLBuilderDB = function(url, ext) {
+      ext = typeof ext !== 'undefined' ?  ext : '.pdf';
+      return [
+        this.docBaseUrl,
+        '&type=', ext.substr(1),
+        '&name=', url
       ].join('');
   };
 
