@@ -357,6 +357,8 @@ JbjsConverter.Prototype = function() {
   };
 
   this.enhanceArticle = function(state, article) {
+    _.each(state.affiliations, function(n) {state.doc.show('info', n);});
+
     this.enhanceArticleSDC(state, article);
   };
 
