@@ -24,6 +24,7 @@ var JbjsConverter = function(options, config) {
     this.createDocument = this.createDocumentOneColumn;
     this.enhanceArticle = this.enhanceArticleOneColumn;
     this.enhanceTable = this.enhanceTableOneColumn;
+    this.app = this.appOneColumn;
 
     delete this.ignoredParagraphElements['media'];
     this.acceptedParagraphElements['media'] =  { handler: 'video' };
@@ -396,6 +397,13 @@ JbjsConverter.Prototype = function() {
         doc.show('content', supplementNode.id);
       }
     }
+  };
+
+  this.appOneColumn = function(state, app) {
+    delete this._bodyNodes['fig-group'];
+    delete this._bodyNodes['table-wrap'];
+
+    this.constructor.Prototype.prototype.app.call(this, state, app);
   };
 };
 
