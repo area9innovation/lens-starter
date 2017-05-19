@@ -12,11 +12,13 @@ AffiliationView.Prototype = function() {
   this.render = function() {
     NodeView.prototype.render.call(this);
 
-    var header = $$('span.label', {text: this.node.label});
-    this.content.appendChild(header);
+    if ( this.node.relaxed_text ) {
+	    var header = $$('span.label', {text: this.node.label});
+	    this.content.appendChild(header);
 
-    var annoView = this.createTextPropertyView([this.node.id, 'relaxed_text']);
-    this.content.appendChild(annoView.render().el);
+    	var annoView = this.createTextPropertyView([this.node.id, 'relaxed_text']);
+    	this.content.appendChild(annoView.render().el);
+	}
 
     return this;
   };
