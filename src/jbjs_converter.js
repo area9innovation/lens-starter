@@ -56,6 +56,8 @@ var JbjsConverter = function(options, config) {
 
 JbjsConverter.Prototype = function() {
 
+  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc' ];
+
   this.test = function(xmlDoc, docUrl) {
     if ( this.config.storage_layout === 'db' ) {
       this.docBaseUrl = docUrl;      
