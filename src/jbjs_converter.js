@@ -316,6 +316,21 @@ JbjsConverter.Prototype = function() {
       nodes.push(supplementNode.id);
     }
 
+    // separate processing because financial-disclosure may have a few interleaved fn tags
+    var fns = article.querySelectorAll('back fn-group fn');
+
+    for (var i = 0; i < fns.length; ++i) {
+      if ( (!fns[i].hasAttribute('fn-type') 
+      || fns[i].getAttribute('fn-type') !== 'financial-disclosure')
+      && (!fns[i].hasAttribute('id') 
+      || article.querySelector('xref[ref-type=fn][rid=' + fns[i].getAttribute('id') + ']') === null) ) {
+        var pars = this.bodyNodes(state, util.dom.getChildren(fns[i]));
+        _.each(pars, function(par) {
+          nodes.push(par.id);
+        });
+      }
+    }
+
     var discls = article.querySelectorAll('fn[fn-type=financial-disclosure]');
 
     if ( discls.length > 0 ) {
