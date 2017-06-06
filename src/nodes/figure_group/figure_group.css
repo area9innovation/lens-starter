@@ -3,4 +3,13 @@
  
 .content-node.figure-group .content { 
 }
- 
+
+.content-node.figure-group > .content {
+    padding: 15px;
+    border: 1px solid #ddd; 
+}
+
+.content-node.figure-group .caption .caption-title {
+    color: #777;
+}
+
