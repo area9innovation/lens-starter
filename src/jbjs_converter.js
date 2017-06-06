@@ -37,6 +37,7 @@ var JbjsConverter = function(options, config) {
   } else {
     delete this._bodyNodes['fig-group'];
     delete this._bodyNodes['table-wrap'];
+    delete this._bodyNodes['fig'];
 
     delete this.ignoredParagraphElements['media'];
     this.acceptedParagraphElements['media'] =  { handler: 'video' };
@@ -164,6 +165,10 @@ JbjsConverter.Prototype = function() {
 
   this._bodyNodes["media"] = function(state, child) {
     return this.video(state, child);
+  };
+
+  this._bodyNodes["fig"] = function(state, child) {
+    return this.figure(state, child);
   };
 
   this.figureGroup = function(state, figureGroup) {
@@ -419,6 +424,7 @@ JbjsConverter.Prototype = function() {
   this.appOneColumn = function(state, app) {
     delete this._bodyNodes['fig-group'];
     delete this._bodyNodes['table-wrap'];
+    delete this._bodyNodes['fig'];
 
     this.constructor.Prototype.prototype.app.call(this, state, app);
   };
