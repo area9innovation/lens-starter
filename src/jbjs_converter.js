@@ -19,6 +19,7 @@ var JbjsConverter = function(options, config) {
 
   if ( !config.show_resources_panel || config.show_abstract_only ) {
     this.viewMapping.figure = 'content';
+    this.viewMapping.figure_group = 'content';
     this.viewMapping.html_table = 'content';
     this.viewMapping.video = 'content';
     this.createDocument = this.createDocumentOneColumn;
@@ -35,9 +36,7 @@ var JbjsConverter = function(options, config) {
       TwoColumnsCustomNodeTypes['cross_reference'] = CrossReferenceAbstractOnly;
     }
   } else {
-    delete this._bodyNodes['fig-group'];
     delete this._bodyNodes['table-wrap'];
-    delete this._bodyNodes['fig'];
 
     delete this.ignoredParagraphElements['media'];
     this.acceptedParagraphElements['media'] =  { handler: 'video' };
@@ -155,55 +154,12 @@ JbjsConverter.Prototype = function() {
     }
   };
 
-  this._bodyNodes['fig-group'] = function(state, child) {
-    return this.figureGroup(state, child);
-  };
-
   this._bodyNodes["table-wrap"] = function(state, child) {
     return this.tableWrap(state, child);
   };
 
   this._bodyNodes["media"] = function(state, child) {
     return this.video(state, child);
-  };
-
-  this._bodyNodes["fig"] = function(state, child) {
-    return this.figure(state, child);
-  };
-
-  this.figureGroup = function(state, figureGroup) {
-    var doc = state.doc;
-    var childNodes = this.bodyNodes(state, util.dom.getChildren(figureGroup));
-
-    var figureGroupNode = {
-      type: 'figure_group',
-      id: state.nextId('figure_group'),
-      source_id: figureGroup.getAttribute('id'),
-      position: 'float',
-      orientation: 'portrait',
-      caption: null,
-      children: _.pluck(childNodes, 'id'),
-    };
-
-    var caption = figureGroup.querySelector('caption');
-    if (caption) {
-      var captionNode = this.caption(state, caption);
-      if (captionNode) figureGroupNode.caption = captionNode.id;
-    }
-
-    var position = figureGroup.getAttribute('position');
-    if (position) {
-      figureGroupNode.position = position;
-    }
-
-    var orientation = figureGroup.getAttribute('orientaton');
-    if (orientation) {
-      figureGroupNode.orientation = orientation;
-    }
-
-    doc.create(figureGroupNode);
-
-    return figureGroupNode;
   };
 
   this.enhanceArticleOneColumn = function(state, article) {
@@ -422,9 +378,7 @@ JbjsConverter.Prototype = function() {
   };
 
   this.appOneColumn = function(state, app) {
-    delete this._bodyNodes['fig-group'];
     delete this._bodyNodes['table-wrap'];
-    delete this._bodyNodes['fig'];
 
     this.constructor.Prototype.prototype.app.call(this, state, app);
   };

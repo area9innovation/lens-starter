@@ -1,5 +1,4 @@
 module.exports = {
-  'figure_group': require('./figure_group'),
   'citation': require('./citation'),
   'html_table': require('./html_table'),
   'figure': require('./figure'),
