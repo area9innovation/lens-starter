@@ -26,6 +26,7 @@ var JbjsConverter = function(options, config) {
     this.enhanceArticle = this.enhanceArticleOneColumn;
     this.enhanceTable = this.enhanceTableOneColumn;
     this.app = this.appOneColumn;
+    this.figureGroupChildNodes = this.figureGroupChildNodesOneColumn;
 
     delete this.ignoredParagraphElements['media'];
     this.acceptedParagraphElements['media'] =  { handler: 'video' };
@@ -382,6 +383,10 @@ JbjsConverter.Prototype = function() {
 
     this.constructor.Prototype.prototype.app.call(this, state, app);
   };
+
+  this.figureGroupChildNodesOneColumn = function(state, figureGroup) {
+    return this.bodyNodes(state, util.dom.getChildren(figureGroup));
+  }
 };
 
 JbjsConverter.Prototype.prototype = LensConverter.prototype;
