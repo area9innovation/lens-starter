@@ -14,6 +14,7 @@ var JbjsConverter = function(options, config) {
   this.config = config;
 
   this.config.storage_layout = config.storage_layout || 'brackets';
+  this.config.figure_url_lowercase = config.figure_url_lowercase || false;
 
   LensConverter.call(this, options);
 
@@ -151,7 +152,11 @@ JbjsConverter.Prototype = function() {
       return [baseURL, url].join('');
     } else {
       // Use special URL resolving for production articles
-      return this.URLBuilder(url, '.jpeg');
+      return this.URLBuilder(
+        this.config.figure_url_lowercase
+        ?url.toLowerCase()
+        :url
+        , '.jpeg');
     }
   };
 
