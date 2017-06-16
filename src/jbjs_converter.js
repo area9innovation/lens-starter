@@ -31,6 +31,8 @@ var JbjsConverter = function(options, config) {
     delete this.ignoredParagraphElements['media'];
     this.acceptedParagraphElements['media'] =  { handler: 'video' };
 
+    this._refTypeMapping['table-fn'] = 'table_footnote_reference';
+
     if ( config.show_abstract_only ) {
       this.article = this.articleAbstractOnly;
       CustomNodeTypes['cross_reference'] = CrossReferenceAbstractOnly;
@@ -42,8 +44,6 @@ var JbjsConverter = function(options, config) {
     delete this.ignoredParagraphElements['media'];
     this.acceptedParagraphElements['media'] =  { handler: 'video' };
   }
-
-  this._refTypeMapping['table-fn'] = 'table_footnote_reference';
 
   this.imageFolder = '';
   this.docBaseUrl = '';
