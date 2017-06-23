@@ -28,6 +28,7 @@ var JbjsConverter = function(options, config) {
     this.enhanceTable = this.enhanceTableOneColumn;
     this.app = this.appOneColumn;
     this.figureGroupChildNodes = this.figureGroupChildNodesOneColumn;
+    this.back = this.backOneColumn;
 
     delete this.ignoredParagraphElements['media'];
     this.acceptedParagraphElements['media'] =  { handler: 'video' };
@@ -391,7 +392,27 @@ JbjsConverter.Prototype = function() {
 
   this.figureGroupChildNodesOneColumn = function(state, figureGroup) {
     return this.bodyNodes(state, util.dom.getChildren(figureGroup));
-  }
+  };
+
+  this.backOneColumn = function(state, back) {
+    this.constructor.Prototype.prototype.back.call(this, state, back);
+
+    var refList = back.querySelector('ref-list');
+    if( !refList ) return;
+
+    var title = refList.querySelector('title');
+
+    var headingId =state.nextId(heading);
+
+    var heading = state.doc.create({
+      type : 'heading',
+      id : headingId,
+      level : 1,
+      content : title ? this.annotatedText(state, title, [headingId, 'content']) : 'References',
+    });
+
+    this.show(state, [heading]);
+  };
 };
 
 JbjsConverter.Prototype.prototype = LensConverter.prototype;
