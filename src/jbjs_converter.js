@@ -15,6 +15,7 @@ var JbjsConverter = function(options, config) {
 
   this.config.storage_layout = config.storage_layout || 'brackets';
   this.config.figure_url_lowercase = config.figure_url_lowercase || false;
+  this.config.show_abstract_only = config.show_abstract_only || false;
 
   LensConverter.call(this, options);
 
@@ -253,8 +254,41 @@ JbjsConverter.Prototype = function() {
     // Extract ArticleMeta
     this.extractArticleMeta(state, article);
 
+    this.addLoginInfo(state);
+
     // Populate Publication Info node
     this.extractPublicationInfo(state, article);
+  };
+
+  this.addLoginInfo = function(state) {
+    var p = {
+      id: state.nextId('paragraph'),
+      type: 'paragraph',
+      children: null
+    };
+
+    var login = {
+      id: state.nextId('text'),
+      type: 'text',
+      content: 'Please register or login to see full text of this article'
+    };
+
+    doc.create(login);
+
+    var link = {
+      id: state.nextId('link'),
+      type: 'link',
+      url: 'http://devstore2.jbjs.org/login?returnUrl=http%3A%2F%2Ftech.area9innovation.com%2Fjbjs%2Fhub%2Fpages%2Fhome.html',
+      path: [login.id, 'content'],
+      range: [0, login.content.length],
+    };
+
+    state.annotations.push(link);
+
+    p.children = [login.id];
+
+    doc.create(p);
+    this.show(state, [p]);
   };
 
   this.extractNotes = function(state, article) {
@@ -262,7 +296,7 @@ JbjsConverter.Prototype = function() {
     var doc = state.doc;
 
     var pdf = article.querySelector('self-uri[*|title=pdf]');
-    if( pdf ) {
+    if( pdf && ! this.config.show_abstract_only ) {
       var url = this.URLBuilder(pdf.getAttribute('xlink:href'));
 
       if( this.config.storage_layout === 'jbjs_jtype' ) {
