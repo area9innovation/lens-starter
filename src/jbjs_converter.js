@@ -195,8 +195,9 @@ JbjsConverter.Prototype = function() {
   this.enhanceTableFooters = function(state, node, tableWrap) {
     var footers = tableWrap.querySelectorAll("table-wrap-foot fn");
     for (var i = 0; i < footers.length; ++i) {
+      var label = footers[i].querySelector('label');
       node.footers.push({
-        label: footers[i].querySelector('label').textContent,
+        label: label ? label.textContent:'',
         content: footers[i].querySelector('p').textContent
       });
     }
