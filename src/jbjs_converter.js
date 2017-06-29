@@ -254,6 +254,10 @@ JbjsConverter.Prototype = function() {
     // Extract ArticleMeta
     this.extractArticleMeta(state, article);
 
+    if ( ! article.querySelector('front abstract') ) {
+      this.abstractFromParagraph(state, article.querySelector('body p'));
+    }
+
     this.addLoginInfo(state);
 
     // Populate Publication Info node
@@ -289,6 +293,29 @@ JbjsConverter.Prototype = function() {
 
     doc.create(p);
     this.show(state, [p]);
+  };
+
+  this.abstractFromParagraph = function(state, p) {
+    var doc = state.doc;
+    var nodes = [];
+
+    var heading = {
+      id: state.nextId('heading'),
+      type: 'heading',
+      level: 1,
+      content: 'Abstract',
+    };
+
+    doc.create(heading);
+    nodes.push(heading);
+
+    delete this._annotationTypes['xref'];
+
+    nodes = this.paragraphGroup(state, p);
+
+    if ( nodes.length > 0 ) {
+      this.show(state, nodes);
+    }
   };
 
   this.extractNotes = function(state, article) {
