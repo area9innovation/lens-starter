@@ -1,0 +1,8 @@
+.menu-bar .context-toggles.external-menu {
+	float: right;
+    border-left: 1px solid #ddd;
+}
+
+.menu-bar .context-toggles.external-menu a {
+	color: #1B6685;
+}

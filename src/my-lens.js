@@ -8,6 +8,7 @@ var TableScaling = require("./workflows/table_scaling");
 var BrightcoveVideos = require("./workflows/brightcove");
 var FollowCrossRefs = require("./workflows/follow_crossrefs");
 var ScrollbarManager = require("./workflows/scrollbar");
+var ExternalMenu = require("./workflows/external_menu");
 
 var LensApp = function(config) {
   this.config = config;
@@ -41,6 +42,10 @@ LensApp.Prototype = function() {
     if ( this.config.show_resources_panel ) {
       var ws = this.constructor.Prototype.prototype.getWorkflows.call(this).slice(0);
       ws.unshift(new BrightcoveVideos(this.config.bcvideo_account_id, this.config.bcvideo_player_id));
+      
+      if ( this.config.full_screen_toggler ) {
+        ws.unshift(new ExternalMenu(this.config.full_screen_toggler));
+      }
       return ws;
     } else {
       return [

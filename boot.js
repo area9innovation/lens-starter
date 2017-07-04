@@ -119,6 +119,12 @@ $(function() {
   var path = documentURL.split('/');
   path[path.length-1] = path[path.length-2] + '(1)/manifest.xml';
 
+  var inFullScreen = false;
+  var fullScreenToggler = function() {
+    inFullScreen = ! inFullScreen;
+    return inFullScreen ? "Window" : "Full screen";
+  };
+
   $.get(path.join('/'))
     .done(function(data) {
       if ($.isXMLDoc(data)) {
@@ -134,6 +140,7 @@ $(function() {
         bcvideo_account_id: '2324982687001',
         bcvideo_player_id: 'SyhwgKNKl_default',
         manifest: manifest
+        full_screen_toggler: fullScreenToggler,
       });
 
       app.start();
