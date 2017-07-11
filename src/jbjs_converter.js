@@ -61,6 +61,7 @@ var JbjsConverter = function(options, config) {
 JbjsConverter.Prototype = function() {
 
   this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc' ];
+  this.__ignoreCustomMetaNamesHeader = [ 'peer-review-statement' ];
 
   this.test = function(xmlDoc, docUrl) {
     if ( this.config.storage_layout === 'db' ) {
