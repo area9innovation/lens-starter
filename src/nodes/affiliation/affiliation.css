@@ -4,14 +4,16 @@
   color: #888;
 }
 
-.article .resources .nodes > .content-node.affiliation:last-child{
+.article .nodes > .content-node.affiliation:last-child{
   padding-bottom: 20px;
 }
 
-.article .resources .nodes > .content-node.affiliation > .content{
+.article .nodes > .content-node.affiliation > .content{
   padding-bottom: 0;
 }
 
-.article .resources .nodes > .content-node.affiliation {
+.article .nodes > .content-node.affiliation {
   border-bottom: none;
+  padding-top: 0;
+  padding-bottom: 0;
 }

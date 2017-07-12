@@ -186,7 +186,10 @@ JbjsConverter.Prototype = function() {
     };
     doc.create(header);
     doc.show('content', header.id);
-    doc.show('content', this.pubInfoNodeId);
+
+    _.each(doc.get('info').nodes, function(n) {doc.show('content', n);});
+    
+    _.each(state.affiliations, function(n) {state.doc.show('content', n);});
   };
 
   this.enhanceTable = function(state, node, tableWrap) {
