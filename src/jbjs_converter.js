@@ -37,9 +37,7 @@ var JbjsConverter = function(options, config) {
     this._refTypeMapping['table-fn'] = 'table_footnote_reference';
 
     if ( config.show_abstract_only ) {
-      this.article = this.articleAbstractOnly;
-      CustomNodeTypes['cross_reference'] = CrossReferenceAbstractOnly;
-      TwoColumnsCustomNodeTypes['cross_reference'] = CrossReferenceAbstractOnly;
+      this.setAbstractOnly();
     }
   } else {
     delete this._bodyNodes['table-wrap'];
@@ -60,7 +58,7 @@ var JbjsConverter = function(options, config) {
 
 JbjsConverter.Prototype = function() {
 
-  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc' ];
+  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status' ];
   this.__ignoreCustomMetaNamesHeader = [ 'peer-review-statement' ];
 
   this.test = function(xmlDoc, docUrl) {
@@ -75,7 +73,20 @@ JbjsConverter.Prototype = function() {
     return true;
   };
 
+  this.setAbstractOnly = function() {
+      this.article = this.articleAbstractOnly;
+      CustomNodeTypes['cross_reference'] = CrossReferenceAbstractOnly;
+      TwoColumnsCustomNodeTypes['cross_reference'] = CrossReferenceAbstractOnly;
+  };
+
   this.document = function(state, xmlDoc) {
+    var rsuiteStatus = xmlDoc.querySelector("article-meta custom-meta-group#rsuite_processing_status");
+
+    if ( rsuiteStatus ) {
+      this.config.show_abstract_only = true;
+      this.setAbstractOnly();
+    }
+
     var volume = xmlDoc.querySelector("article-meta volume");
     var issue = xmlDoc.querySelector("article-meta issue");
     var fpage = xmlDoc.querySelector("article-meta fpage");
