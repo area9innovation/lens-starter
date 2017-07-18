@@ -298,7 +298,7 @@ JbjsConverter.Prototype = function() {
     var link = {
       id: state.nextId('link'),
       type: 'link',
-      url: 'http://devstore2.jbjs.org/login?returnUrl=http%3A%2F%2Ftech.area9innovation.com%2Fjbjs%2Fhub%2Fpages%2Fhome.html',
+      url: this.config.return_url,
       path: [login.id, 'content'],
       range: [0, login.content.length],
     };
