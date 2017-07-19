@@ -13,3 +13,7 @@
 .lens-article .content-node.html-table .footers .footer {
   line-height: 14px;
 }
+
+.lens-article .content-node.html-table .table-caption-label {
+  padding-right: 16px;
+}

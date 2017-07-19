@@ -10,7 +10,7 @@ InlineHTMLTableView.Prototype = function() {
 
   this.renderBody = function() {
     this.constructor.Prototype.prototype.renderBody.call(this);
-    $(this.content).find('table').prepend('<caption>' + this.node.label + '</caption>');
+    $(this.content).find('.content-node.caption .text .content').prepend('<span class="table-caption-label">' + this.node.label + '</span>');
   };
 };
 
