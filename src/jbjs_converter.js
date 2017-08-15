@@ -353,9 +353,10 @@ JbjsConverter.Prototype = function() {
         id: state.nextId('supplement'),
         source_id: null,
         type: 'supplement',
-        label: '<img src="' + this.ResourceURLBuilder('Adobe_PDF_file_icon_32x32.png') + '"/> Open article PDF',
+        label: 'Open article PDF',
         url: url,
-        caption: null
+        caption: null,
+        icon: this.ResourceURLBuilder('Adobe_PDF_file_icon_32x32.png'),
       };
       doc.create(supplementNode);
       nodes.push(supplementNode.id);
