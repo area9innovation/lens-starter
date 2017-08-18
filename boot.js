@@ -143,6 +143,7 @@ $(function() {
         full_screen_toggler: fullScreenToggler,
       });
 
+      app.listenTo(app.controller, 'loaded:xml', onXmlLoaded);
       app.start();
 
       window.app = app;
@@ -151,3 +152,11 @@ $(function() {
     });
 
 });
+
+function onXmlLoaded(data) {
+  var title = data.querySelector("article-title");
+  var q = title?title.textContent:"";
+  $.get("https://rsuite.tech.area9innovation.com/search?query="+ q +"&count=2&type=article&sortby=relevancy")
+    .done(function(data) {
+    });
+}
