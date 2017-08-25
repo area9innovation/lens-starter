@@ -144,6 +144,7 @@ $(function() {
       });
 
       app.listenTo(app.controller, 'loaded:xml', onXmlLoaded);
+      app.listenTo(app.controller, 'loaded:doc', onDocLoaded);
       app.start();
 
       window.app = app;
@@ -159,4 +160,21 @@ function onXmlLoaded(data) {
   $.get("https://rsuite.tech.area9innovation.com/search?query="+ q +"&count=2&type=article&sortby=relevancy")
     .done(function(data) {
     });
+}
+
+function onDocLoaded(doc, state) {
+  if( !state.focussedNode ) return;
+
+  var fs = state.focussedNode.split('video_ref_');
+
+  if ( fs.length === 2 ) {
+    for(var i=1; doc.nodes['video_'+i]; ++i) {
+      if ( doc.nodes['video_'+i].url === fs[1] ) {
+        state.focussedNode = 'video_'+i;
+        return;
+      }
+    }
+  }
+
+  state.focussedNode = null;
 }
