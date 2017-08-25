@@ -9,6 +9,7 @@ var BrightcoveVideos = require("./workflows/brightcove");
 var FollowCrossRefs = require("./workflows/follow_crossrefs");
 var ScrollbarManager = require("./workflows/scrollbar");
 var ExternalMenu = require("./workflows/external_menu");
+var ScrollToReference = require("./workflows/scrollto");
 
 var LensApp = function(config) {
   this.config = config;
@@ -54,6 +55,7 @@ LensApp.Prototype = function() {
         new FollowCitationRefs(),
         new TableScaling(),
         new BrightcoveVideos(this.config.bcvideo_account_id, this.config.bcvideo_player_id),
+        new ScrollToReference(),
       ];
     }
   };

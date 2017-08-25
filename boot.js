@@ -162,7 +162,7 @@ function onXmlLoaded(data) {
     });
 }
 
-function onDocLoaded(doc, state) {
+function onDocLoaded(reader, doc, state) {
   if( !state.focussedNode ) return;
 
   var fs = state.focussedNode.split('video_ref_');
