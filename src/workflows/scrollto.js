@@ -18,7 +18,6 @@ ScrollToReference.Prototype = function() {
   this.handlesStateUpdate = true;
 
   this.handleStateUpdate = function(state, stateInfo) {
-    console.log(stateInfo.focussedNode);
     if ( stateInfo.focussedNode ) {
       this.readerView.contentView.findNodeView(stateInfo.focussedNode.id).scrollIntoView();
     }
