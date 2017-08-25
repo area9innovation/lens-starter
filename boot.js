@@ -174,7 +174,7 @@ function onDocLoaded(doc, state) {
         return;
       }
     }
-  }
 
-  state.focussedNode = null;
+    state.focussedNode = null;
+  }
 }
