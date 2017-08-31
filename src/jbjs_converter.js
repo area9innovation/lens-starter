@@ -58,7 +58,7 @@ var JbjsConverter = function(options, config) {
 
 JbjsConverter.Prototype = function() {
 
-  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status' ];
+  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status', 'rsuite_topic' ];
   this.__ignoreCustomMetaNamesHeader = [ 'peer-review-statement' ];
 
   this.test = function(xmlDoc, docUrl) {
