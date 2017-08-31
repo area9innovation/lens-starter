@@ -45,7 +45,7 @@ LensApp.Prototype = function() {
       ws.unshift(new BrightcoveVideos(this.config.bcvideo_account_id, this.config.bcvideo_player_id));
       
       if ( this.config.full_screen_toggler ) {
-        ws.unshift(new ExternalMenu(this.config.full_screen_toggler));
+        ws.unshift(new ExternalMenu(this.config.full_screen_toggler, this.config.external_menu_cb));
       }
       return ws;
     } else {

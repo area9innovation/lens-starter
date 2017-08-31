@@ -3,9 +3,10 @@
 var _ = require("underscore");
 var Workflow = require('lens/reader/workflows/workflow');
 
-var ExternalMenu = function(fullScreenToggler) {
+var ExternalMenu = function(fullScreenToggler, externalMenuCB) {
   Workflow.apply(this);
   this.fullScreenToggler = fullScreenToggler;
+  this.externalMenuCB = externalMenuCB;
 };
 
 ExternalMenu.Prototype = function() {
@@ -29,6 +30,8 @@ ExternalMenu.Prototype = function() {
       $('.resources .menu-bar a.fullscreen').text(this_.toggleFullScreen());
     });
 
+    if( this.externalMenuCB ) this.externalMenuCB();
+    
     return false;
   };
 

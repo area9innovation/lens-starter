@@ -26,7 +26,7 @@ TableScaling.Prototype = function() {
     var ie = this.detectIE()
 
     if ( !$('#forlens').length ) {
-      $('body *').not('.video-wrapper *').not('.label').not('.spinner-wrapper').css('position', 'unset');
+      $('body *').not('.video-wrapper *').not('.label').not('.spinner-wrapper').not('.favorite.article').css('position', 'unset');
       $('body').css('position', 'unset');  
       $('body').css('overflow', 'auto');  
       if( ie && ie<=11) {}

@@ -141,10 +141,13 @@ $(function() {
         bcvideo_player_id: 'SyhwgKNKl_default',
         manifest: manifest
         full_screen_toggler: fullScreenToggler,
+        external_menu_cb: onMenuReady,
+        return_url: 'http://devstore2.jbjs.org/login?returnUrl=http%3A%2F%2Ftech.area9innovation.com%2Fjbjs%2Fhub%2Fpages%2Fhome.html',
       });
 
       app.listenTo(app.controller, 'loaded:xml', onXmlLoaded);
       app.listenTo(app.controller, 'loaded:doc', onDocLoaded);
+      app.listenTo(app.controller, 'created:reader', onReaderCreated);
       app.start();
 
       window.app = app;
@@ -177,4 +180,12 @@ function onDocLoaded(reader, doc, state) {
 
     state.focussedNode = null;
   }
+}
+
+function onMenuReady() {
+  $('.resources .menu-bar .external-menu').after('<a class="favorite article" style="float:right; margin:10px 15px; width:20px; height:20px" content_type="article" content_id="1330028"></a>');
+}
+
+function onReaderCreated() {
+  $('body').append('<a class="favorite article" style="position: absolute; right: 1rem; top: 1rem;"; width:2rem; height:2rem" content_type="article" content_id="1330028"></a>');
 }
