@@ -139,7 +139,7 @@ $(function() {
 //      show_abstract_only: true,
         bcvideo_account_id: '2324982687001',
         bcvideo_player_id: 'SyhwgKNKl_default',
-        manifest: manifest
+        manifest: manifest,
         full_screen_toggler: fullScreenToggler,
         external_menu_cb: onMenuReady,
         return_url: 'http://devstore2.jbjs.org/login?returnUrl=http%3A%2F%2Ftech.area9innovation.com%2Fjbjs%2Fhub%2Fpages%2Fhome.html',
@@ -147,7 +147,7 @@ $(function() {
 
       app.listenTo(app.controller, 'loaded:xml', onXmlLoaded);
       app.listenTo(app.controller, 'loaded:doc', onDocLoaded);
-      app.listenTo(app.controller, 'created:reader', onReaderCreated);
+      if(!app.config.show_resources_panel) app.listenTo(app.controller, 'created:reader', onReaderCreated);
       app.start();
 
       window.app = app;
@@ -179,6 +179,21 @@ function onDocLoaded(reader, doc, state) {
     }
 
     state.focussedNode = null;
+    return;
+  }
+
+  fs = state.focussedNode.split('figure_ref_');
+
+  if ( fs.length === 2 ) {
+    for(var i=1; doc.nodes['figure_'+i]; ++i) {
+      if ( doc.nodes['figure_'+i].url.includes(fs[1]) ) {
+        state.focussedNode = 'figure_'+i;
+        return;
+      }
+    }
+
+    state.focussedNode = null;
+    return;
   }
 }
 
@@ -187,5 +202,5 @@ function onMenuReady() {
 }
 
 function onReaderCreated() {
-  $('body').append('<a class="favorite article" style="position: absolute; right: 1rem; top: 1rem;"; width:2rem; height:2rem" content_type="article" content_id="1330028"></a>');
+  $('body').append('<a class="favorite article" style="position: absolute; right: 1rem; top: 1rem; width:2rem; height:2rem; margin:0" content_type="article" content_id="1330028"></a>');
 }
