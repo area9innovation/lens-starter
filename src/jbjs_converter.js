@@ -64,8 +64,10 @@ JbjsConverter.Prototype = function() {
   this.test = function(xmlDoc, docUrl) {
     if ( this.config.storage_layout === 'db' ) {
       this.docBaseUrl = docUrl;      
+      this.imageBaseUrl = this.config.image_url ? this.config.image_url : this.docBaseUrl;
     } else {
-      this.docBaseUrl = docUrl.split('/').slice(0, -1).join('/');      
+      this.docBaseUrl = docUrl.split('/').slice(0, -1).join('/');
+      this.imageBaseUrl = this.docBaseUrl;
     }
 
 //    var publisherName = xmlDoc.querySelector('publisher-name').textContent;
@@ -149,7 +151,7 @@ JbjsConverter.Prototype = function() {
   this.URLBuilderDB = function(url, ext) {
       ext = typeof ext !== 'undefined' ?  ext : '.pdf';
       return [
-        this.docBaseUrl,
+        ext === '.pdf' ? this.docBaseUrl : this.imageBaseUrl,
         '&type=', ext.substr(1),
         '&name=', url
       ].join('');
