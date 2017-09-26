@@ -16,6 +16,7 @@ var JbjsConverter = function(options, config) {
   this.config.storage_layout = config.storage_layout || 'brackets';
   this.config.figure_url_lowercase = config.figure_url_lowercase || false;
   this.config.show_abstract_only = config.show_abstract_only || false;
+  this.config.show_disclosure_href = this.config.show_disclosure_href || false;
 
   LensConverter.call(this, options);
 
@@ -148,12 +149,14 @@ JbjsConverter.Prototype = function() {
       ].join('');
   };
 
-  this.URLBuilderDB = function(url, ext) {
+  this.URLBuilderDB = function(url, ext, subtype) {
       ext = typeof ext !== 'undefined' ?  ext : '.pdf';
+      subtype = typeof subtype !== 'undefined' ?  subtype : '';
       return [
         ext === '.pdf' ? this.docBaseUrl : this.imageBaseUrl,
         '&type=', ext.substr(1),
-        '&name=', url
+        '&name=', url,
+        '&subtype=', subtype,
       ].join('');
   };
 
@@ -399,19 +402,21 @@ JbjsConverter.Prototype = function() {
         });
       }
 
-      var uri = article.querySelector('self-uri[content-type=disclosure-pdf]');
-      uri = uri ?uri:article.querySelector('self-uri[content-type=disclosures-pdf]');
-      if ( uri ) {
-        var supplementNode = {
-          id: state.nextId('supplement'),
-          source_id: null,
-          type: 'supplement',
-          label: 'Disclosures of Potential Conflicts of Interest PDF',
-          url: this.URLBuilder(uri.getAttribute('xlink:href')),
-          caption: null
-        };
-        doc.create(supplementNode);
-        nodes.push(supplementNode.id);
+      if ( this.config.show_disclosure_href ) {
+        var uri = article.querySelector('self-uri[content-type=disclosure-pdf]');
+        uri = uri ?uri:article.querySelector('self-uri[content-type=disclosures-pdf]');
+        if ( uri ) {
+          var supplementNode = {
+            id: state.nextId('supplement'),
+            source_id: null,
+            type: 'supplement',
+            label: 'Disclosures of Potential Conflicts of Interest PDF',
+            url: this.URLBuilder(uri.getAttribute('xlink:href'), '.pdf', 'disclosure'),
+            caption: null
+          };
+          doc.create(supplementNode);
+          nodes.push(supplementNode.id);
+        }
       }
     }
 

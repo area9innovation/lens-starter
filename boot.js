@@ -188,6 +188,7 @@ $(function() {
         full_screen_toggler: fullScreenToggler,
         external_menu_cb: onMenuReady,
         return_url: 'http://devstore2.jbjs.org/login?returnUrl=http%3A%2F%2Ftech.area9innovation.com%2Fjbjs%2Fhub%2Fpages%2Fhome.html',
+        show_disclosure_href: true,
       });
 
       app.listenTo(app.controller, 'loaded:xml', onXmlLoaded);
