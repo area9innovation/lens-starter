@@ -1,3 +1,48 @@
+var mmobile = window.location.href.match(/mobile/);
+var mobileMode = mmobile!=null;
+
+
+var modeThreshold = 980;
+
+getValidWidth = function() {
+  var windowOuterWidth = window.outerWidth>0?window.outerWidth:window.innerWidth;
+  var screenWidth = window.screen.width;
+
+  if ( /iPhone/.test(navigator.appVersion) || /iPad/.test(navigator.appVersion) ) {
+    var landscape = false;
+    if ( window.orientation ) {
+      landscape = Math.abs(window.orientation) === 90; 
+    }
+    else if ( window.screen.orientation ) {
+      landscape = [90, 270].indexOf(window.screen.orientation.angle) > -1;
+    }
+
+    if ( landscape ) {
+        if (screenWidth < window.screen.height) screenWidth = window.screen.height;
+    } else {
+        if (screenWidth > window.screen.height) screenWidth = window.screen.height;
+      } 
+  }
+
+  return Math.min(windowOuterWidth, window.innerWidth, screenWidth);
+};
+
+
+selectMode = function() {
+  if ( !mobileMode && getValidWidth() < 980 ) {
+    window.location = window.origin + "?mobile";
+  }
+
+  if ( mobileMode && getValidWidth() >= 980 ) {
+    window.location = window.location.href.replace("?mobile", "");
+  }
+};
+
+selectMode();
+
+window.onresize = selectMode;
+window.onorientationchange = selectMode;
+
 window.Lens = require("./src/my-lens");
 
 if (!String.prototype.includes) {
@@ -135,7 +180,7 @@ $(function() {
       var app = new window.Lens({
 //      el: '#lens',
         document_url: qs.url ? decodeURIComponent(qs.url) : documentURL,
-        show_resources_panel: false,
+        show_resources_panel: !mobileMode,
 //      show_abstract_only: true,
         bcvideo_account_id: '2324982687001',
         bcvideo_player_id: 'SyhwgKNKl_default',
