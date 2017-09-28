@@ -59,7 +59,7 @@ var JbjsConverter = function(options, config) {
 
 JbjsConverter.Prototype = function() {
 
-  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status', 'rsuite_topics' ];
+  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status', 'rsuite_topics', 'rsuite_files', 'disclosure_pdf' ];
   this.__ignoreCustomMetaNamesHeader = [ 'peer-review-statement' ];
 
   this.test = function(xmlDoc, docUrl) {
@@ -83,11 +83,19 @@ JbjsConverter.Prototype = function() {
   };
 
   this.document = function(state, xmlDoc) {
-    var rsuiteStatus = xmlDoc.querySelector("article-meta custom-meta-group#rsuite_processing_status");
+    var rsuiteStatus = xmlDoc.querySelector('article-meta custom-meta-group#rsuite_processing_status');
 
     if ( rsuiteStatus ) {
       this.config.show_abstract_only = true;
       this.setAbstractOnly();
+    }
+
+    var rsuiteFiles = xmlDoc.querySelector('article-meta custom-meta-group#rsuite_files');
+    if ( rsuiteFiles ) {
+      var file = rsuiteFiles.querySelector('custom-meta meta-value');
+      if ( file ){
+        this.config.show_disclosure_href = (file.textContent == 'present');
+      }
     }
 
     var volume = xmlDoc.querySelector("article-meta volume");
