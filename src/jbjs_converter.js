@@ -284,7 +284,8 @@ JbjsConverter.Prototype = function() {
     this.extractArticleMeta(state, article);
 
     if ( ! article.querySelector('front abstract') ) {
-      this.abstractFromParagraph(state, article.querySelector('body p'));
+      var bodyP = article.querySelector('body p');
+      if ( bodyP ) this.abstractFromParagraph(state, bodyP);
     }
 
     this.addLoginInfo(state);
