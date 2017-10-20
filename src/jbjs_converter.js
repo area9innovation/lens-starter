@@ -83,16 +83,16 @@ JbjsConverter.Prototype = function() {
   };
 
   this.document = function(state, xmlDoc) {
-    var rsuiteStatus = xmlDoc.querySelector('article-meta custom-meta-group#rsuite_processing_status');
+    var rsuiteStatus = $(xmlDoc).find('article-meta custom-meta-group#rsuite_processing_status');
 
-    if ( rsuiteStatus ) {
+    if ( rsuiteStatus[0] ) {
       this.config.show_abstract_only = true;
       this.setAbstractOnly();
     }
 
-    var rsuiteFiles = xmlDoc.querySelector('article-meta custom-meta-group#rsuite_files');
-    if ( rsuiteFiles ) {
-      var file = rsuiteFiles.querySelector('custom-meta meta-value');
+    var rsuiteFiles = $(xmlDoc).find('article-meta custom-meta-group#rsuite_files');
+    if ( rsuiteFiles[0] ) {
+      var file = rsuiteFiles[0].querySelector('custom-meta meta-value');
       if ( file ){
         this.config.show_disclosure_href = (file.textContent == 'present');
       }
