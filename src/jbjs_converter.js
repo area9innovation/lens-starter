@@ -439,10 +439,14 @@ JbjsConverter.Prototype = function() {
   };
 
   this.enhanceArticle = function(state, article) {
-    _.each(state.affiliations, function(n) {state.doc.show('info', n);});
+    this.showAffiliations(state, article);
 
     this.enhanceArticleSDC(state, article);
   };
+
+  this.showAffiliations = function(state, article) {
+    _.each(state.affiliations, function(n) {state.doc.show('info', n);});
+  }
 
   this.enhanceArticleSDC = function(state, article) {
     if ( this.config.manifest === undefined ) return;
