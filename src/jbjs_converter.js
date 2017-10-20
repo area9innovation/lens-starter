@@ -292,6 +292,8 @@ JbjsConverter.Prototype = function() {
 
     // Populate Publication Info node
     this.extractPublicationInfo(state, article);
+
+    this.showAffiliations(state, article);
   };
 
   this.addLoginInfo = function(state) {
