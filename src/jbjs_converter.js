@@ -325,6 +325,8 @@ JbjsConverter.Prototype = function() {
 
     doc.create(p);
     this.show(state, [p]);
+
+    state.doc.show('content', login.id, 0);
   };
 
   this.abstractFromParagraph = function(state, p) {
