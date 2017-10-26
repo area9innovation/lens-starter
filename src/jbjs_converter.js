@@ -455,12 +455,17 @@ JbjsConverter.Prototype = function() {
     var sdcMeta = _.find(article.querySelectorAll('article-meta custom-meta-group#rsuite_files custom-meta'),
       function(cm){ return cm.querySelector('meta-name').textContent == 'sdc'});
 
-    if ( sdcMeta === undefined ) return;
+    var files;
+    if ( sdcMeta ) {
+      files = sdcMeta.querySelectorAll('meta-value inline-supplementary-material');
+    } else if( this.config.manifest ) {
+      files = this.config.manifest.querySelectorAll('file');
+    } else {
+      return;
+    }
 
     var nodes = [];
     var doc = state.doc;
-
-    var files = sdcMeta.querySelectorAll('meta-value inline-supplementary-material');
 
     if ( files.length > 0 ) {
       var header = {
@@ -475,12 +480,22 @@ JbjsConverter.Prototype = function() {
       doc.show('content', header.id);
 
       for (var i = 0; i < files.length; ++i) {
+        var label;
+        var url;
+        if ( sdcMeta ) {
+          label = files[i].textContent?files[i].textContent:'Data Supplement ' + (i+1);
+          url = this.URLBuilder(files[i].getAttribute('href'), '.supplement');
+        } else {
+          label = files[i].querySelector('description').textContent;
+          url = this.URLBuilder(files[i].querySelector('filename').textContent);
+        }
+
         var supplementNode = {
           id: state.nextId('supplement'),
           source_id: null,
           type: 'supplement',
-          label: files[i].textContent?files[i].textContent:'Data Supplement ' + (i+1),
-          url: this.URLBuilder(files[i].getAttribute('href'), '.supplement'),
+          label: label,
+          url: url,
           caption: null
         };
         doc.create(supplementNode);
