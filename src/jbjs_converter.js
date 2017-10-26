@@ -59,7 +59,7 @@ var JbjsConverter = function(options, config) {
 
 JbjsConverter.Prototype = function() {
 
-  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status', 'rsuite_topics', 'rsuite_files', 'disclosure_pdf' ];
+  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status', 'rsuite_topics', 'rsuite_files', 'disclosure_pdf', 'sdc' ];
   this.__ignoreCustomMetaNamesHeader = [ 'peer-review-statement' ];
 
   this.test = function(xmlDoc, docUrl) {
@@ -451,19 +451,23 @@ JbjsConverter.Prototype = function() {
   }
 
   this.enhanceArticleSDC = function(state, article) {
-    if ( this.config.manifest === undefined ) return;
+
+    var sdcMeta = _.find(article.querySelectorAll('article-meta custom-meta-group#rsuite_files custom-meta'),
+      function(cm){ return cm.querySelector('meta-name').textContent == 'sdc'});
+
+    if ( sdcMeta === undefined ) return;
 
     var nodes = [];
     var doc = state.doc;
 
-    var files = this.config.manifest.querySelectorAll('file');
+    var files = sdcMeta.querySelectorAll('meta-value inline-supplementary-material');
 
     if ( files.length > 0 ) {
       var header = {
         type : 'heading',
         id : state.nextId('heading'),
         level : 1,
-        content : 'Second data suppliment files',
+        content : 'Supplementary Content',
       };
 
       doc.create(header);
@@ -475,8 +479,8 @@ JbjsConverter.Prototype = function() {
           id: state.nextId('supplement'),
           source_id: null,
           type: 'supplement',
-          label: files[i].querySelector('description').textContent,
-          url: this.URLBuilder(files[i].querySelector('filename').textContent),
+          label: files[i].textContent?files[i].textContent:'Data Supplement ' + (i+1),
+          url: this.URLBuilder(files[i].getAttribute('href'), '.supplement'),
           caption: null
         };
         doc.create(supplementNode);
