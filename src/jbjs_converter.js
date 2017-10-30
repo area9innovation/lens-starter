@@ -161,7 +161,7 @@ JbjsConverter.Prototype = function() {
       ext = typeof ext !== 'undefined' ?  ext : '.pdf';
       subtype = typeof subtype !== 'undefined' ?  subtype : '';
       return [
-        ext === '.pdf' ? this.docBaseUrl : this.imageBaseUrl,
+        (ext === '.pdf' || ext === '.supplement')? this.docBaseUrl : this.imageBaseUrl,
         '&type=', ext.substr(1),
         '&name=', url,
         '&subtype=', subtype,
