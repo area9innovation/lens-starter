@@ -108,7 +108,10 @@ JbjsConverter.Prototype = function() {
       page += 'a';
     }
 
-    this.imageFolder = volume.textContent + '_' + issue.textContent + '_' + page + '(1)';
+    var volumeText = volume?volume.textContent:'';
+    var issueText = issue?issue.textContent:'';
+
+    this.imageFolder = volumeText + '_' + issueText + '_' + page + '(1)';
 
     if ( this.config.uppercase ) {
       this.imageFolder = this.imageFolder.toUpperCase();
