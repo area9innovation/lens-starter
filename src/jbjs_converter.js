@@ -300,6 +300,8 @@ JbjsConverter.Prototype = function() {
   };
 
   this.addLoginInfo = function(state) {
+    var doc = state.doc;
+
     var p = {
       id: state.nextId('paragraph'),
       type: 'paragraph',
