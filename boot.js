@@ -149,6 +149,7 @@ var qs = function () {
 //var documentURL = "data/5_4_e19/5_4_e19.xml";
 //var documentURL = 'data/97_15_1220/97_15_1220.xml';
 var documentURL = 'data/99_1_10/99_1_10.xml';
+var isPIP = false;
 
 $(function() {
 
@@ -204,6 +205,11 @@ $(function() {
 });
 
 function onXmlLoaded(data) {
+  var volume = data.querySelector("article-meta volume");
+  if( volume ) {
+    isPIP = volume.textContent=='Publish Ahead of Print';
+  }
+
   var title = data.querySelector("article-title");
   var q = title?title.textContent:"";
   $.get("https://rsuite.tech.area9innovation.com/search?query="+ q +"&count=2&type=article&sortby=relevancy")
@@ -245,8 +251,28 @@ function onDocLoaded(reader, doc, state) {
 
 function onMenuReady() {
   $('.resources .menu-bar .external-menu').after('<a class="favorite article" style="float:right; margin:10px 15px; width:20px; height:20px" content_type="article" content_id="1330028"></a>');
+  
+  if( isPIP ) {
+    $('.surface.resource-view.content').prepend('<div style="font-weight:bold;color:blue;position:fixed;z-index:1; width:45%;padding-left:50px;"><center>Abstract and PDF now available.</center><center>Full text HTML will be available upon publication in the next journal issue</center></div>');
+    pipContentCorrection();
+  } 
 }
 
 function onReaderCreated() {
   $('body').append('<a class="favorite article" style="position: absolute; right: 1rem; top: 1rem; width:2rem; height:2rem; margin:0" content_type="article" content_id="1330028"></a>');
+  
+  if( isPIP ) {
+    $('.surface.resource-view.content').prepend('<div class="saveposition" style="font-weight:bold;color:blue;position:fixed; left:35px;right:0;z-index:1;"><center>Abstract and PDF now available.</center><center>Full text HTML will be available upon publication in the next journal issue</center></div>');    
+    pipContentCorrection();
+  }
+}
+
+function pipContentCorrection() {
+  var node = $('.surface.resource-view.content .nodes .content-node')[0];
+
+  if( $(node).hasClass('cover') ) {
+    $( node ).css('padding-top', '55px');
+  } else if( $(node).hasClass('text') ) {
+    $( node ).css('padding-top', '80px');
+  }
 }
