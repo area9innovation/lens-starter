@@ -259,6 +259,9 @@ JbjsConverter.Prototype = function() {
 
   this.enhanceVideo = function(state, node, element) {
     node['url_ogv'] = element.getAttribute('xlink:href');
+    if(!node['url_ogv']) {
+      node['url_ogv'] = element.getAttribute('href');
+    }
     var obj = element.querySelector('object-id[content-type=media-stream-id]');
     if (obj) {
       node.url = obj.textContent;
