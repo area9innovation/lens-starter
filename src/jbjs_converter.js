@@ -17,6 +17,7 @@ var JbjsConverter = function(options, config) {
   this.config.figure_url_lowercase = config.figure_url_lowercase || false;
   this.config.show_abstract_only = config.show_abstract_only || false;
   this.config.show_disclosure_href = this.config.show_disclosure_href || false;
+  this.config.show_pdf_href = this.config.show_pdf_href || false;
 
   LensConverter.call(this, options);
 
@@ -59,7 +60,7 @@ var JbjsConverter = function(options, config) {
 
 JbjsConverter.Prototype = function() {
 
-  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status', 'rsuite_topics', 'rsuite_files', 'disclosure_pdf', 'sdc' ];
+  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status', 'rsuite_topics', 'rsuite_files', 'disclosure_pdf', 'sdc', 'article_pdf' ];
   this.__ignoreCustomMetaNamesHeader = [ 'peer-review-statement' ];
 
   this.test = function(xmlDoc, docUrl) {
@@ -92,9 +93,18 @@ JbjsConverter.Prototype = function() {
 
     var rsuiteFiles = $(xmlDoc).find('article-meta custom-meta-group#rsuite_files');
     if ( rsuiteFiles[0] ) {
-      var file = rsuiteFiles[0].querySelector('custom-meta meta-value');
-      if ( file ){
-        this.config.show_disclosure_href = (file.textContent == 'present');
+      var metas = rsuiteFiles[0].querySelectorAll('custom-meta');
+      for (var i = 0; i < metas.length; ++i) {
+        var name = metas[i].querySelector('meta-name');
+        var value = metas[i].querySelector('meta-value');
+        if( name && value ) {
+          if ( name.textContent == 'disclosure_pdf' ){
+            this.config.show_disclosure_href = (value.textContent == 'present');
+          }
+          if ( name.textContent == 'article_pdf' ){
+            this.config.show_pdf_href = (value.textContent == 'present');
+          }
+        }
       }
     }
 
@@ -363,29 +373,31 @@ JbjsConverter.Prototype = function() {
   this.extractNotes = function(state, article) {
     var nodes = [];
     var doc = state.doc;
+    
+    if ( this.config.show_pdf_href ) {
+      var pdf = article.querySelector('self-uri[*|title=pdf]');
+      if( pdf && ! this.config.show_abstract_only ) {
+        var url = this.URLBuilder(pdf.getAttribute('xlink:href'));
 
-    var pdf = article.querySelector('self-uri[*|title=pdf]');
-    if( pdf && ! this.config.show_abstract_only ) {
-      var url = this.URLBuilder(pdf.getAttribute('xlink:href'));
-
-      if( this.config.storage_layout === 'jbjs_jtype' ) {
-        var pub_id = article.querySelector('article-id[pub-id-type=publisher-id]');
-        if ( pub_id ) {
-          url = this.URLBuilder(pub_id.textContent, '.pdf');
+        if( this.config.storage_layout === 'jbjs_jtype' ) {
+          var pub_id = article.querySelector('article-id[pub-id-type=publisher-id]');
+          if ( pub_id ) {
+            url = this.URLBuilder(pub_id.textContent, '.pdf');
+          }
         }
-      }
 
-      var supplementNode = {
-        id: state.nextId('supplement'),
-        source_id: null,
-        type: 'supplement',
-        label: 'Open article PDF',
-        url: url,
-        caption: null,
-        icon: this.ResourceURLBuilder('Adobe_PDF_file_icon_32x32.png'),
-      };
-      doc.create(supplementNode);
-      nodes.push(supplementNode.id);
+        var supplementNode = {
+          id: state.nextId('supplement'),
+          source_id: null,
+          type: 'supplement',
+          label: 'Open article PDF',
+          url: url,
+          caption: null,
+          icon: this.ResourceURLBuilder('Adobe_PDF_file_icon_32x32.png'),
+        };
+        doc.create(supplementNode);
+        nodes.push(supplementNode.id);
+      }
     }
 
     // separate processing because financial-disclosure may have a few interleaved fn tags
