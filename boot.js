@@ -260,6 +260,8 @@ function onMenuReady() {
 
 function onReaderCreated() {
   $('body').append('<a class="favorite article" style="position: absolute; right: 1rem; top: 1rem; width:2rem; height:2rem; margin:0" content_type="article" content_id="1330028"></a>');
+
+  $('a:contains("Please register or login to see full text of this article")').parent().css('padding-right','15px');
   
   if( isPIP ) {
     $('.surface.resource-view.content').prepend('<div class="saveposition" style="font-weight:bold;color:blue;position:fixed; left:35px;right:0;z-index:1;"><center>Abstract and PDF now available.</center><center>Full text HTML will be available upon publication in the next journal issue</center></div>');    
