@@ -256,6 +256,9 @@ function onMenuReady() {
     $('.surface.resource-view.content').prepend('<div style="font-weight:bold;color:blue;position:fixed;z-index:1; width:45%;padding-left:50px;"><center>Abstract and PDF now available.</center><center>Full text HTML will be available upon publication in the next journal issue</center></div>');
     pipContentCorrection();
   } 
+
+//  $('.pubmed').css('display', 'none');
+//  $('.googlescholar').css('display', 'none');
 }
 
 function onReaderCreated() {
