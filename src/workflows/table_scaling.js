@@ -1,6 +1,5 @@
 "use strict";
 
-var _ = require("underscore");
 var Workflow = require('lens/reader/workflows/workflow');
 
 var TableScaling = function() {
@@ -28,10 +27,13 @@ TableScaling.Prototype = function() {
 
     if ( !$('#forlens').length ) {
       $('body *').not('.video-wrapper *').not('.label').not('.spinner-wrapper').not('.favorite.article').not('.saveposition').css('position', 'unset');
-      $('body').css('position', 'unset');
-      $('.article .document .surface.content').css('height', '100%');
+      $('body').css('position', 'unset');  
+      $('body').css('overflow', 'auto');  
+      if( ie && ie<=11) {}
+      else {
+        $('#container').css('height', 'auto');  
+      }
     }
-
 
     var popup = $('<div id="popup" class="lens-article"></div>').css({
       display: 'none',
@@ -54,16 +56,10 @@ TableScaling.Prototype = function() {
 
     this.DoScroll(store);
 
-    _.delay(function() {
-      store.DoScaling(store);
-    }, 1000);
-
     this.DoScaling(store);
 
     $(window).on('resize', function() { store.DoScaling(store); } );
     $(window).on('scroll', function() { store.DoScroll(store); } );
-
-    $('.article .document .surface.content').on('scroll', function() { store.DoScroll(store); } );
 
     var panzoomWheel = this.PanzoomWheel;
     var panzoomEnd = this.PanzoomEnd;
