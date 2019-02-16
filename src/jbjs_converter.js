@@ -453,6 +453,26 @@ JbjsConverter.Prototype = function() {
       }
     }
 
+    // datasharing 
+    var ds = article.querySelector('back sec[type=data-availability]');
+    if (ds) {
+        var title = ds.querySelector('title');
+        var headingId = state.nextId('heading');
+        var header = {
+          type : 'heading',
+          id : headingId,
+          level : 3,
+          content : title ? title.textContent : 'Data Sharing'
+        };
+
+        doc.create(header);
+        nodes.push(header.id);
+
+        var pars = this.bodyNodes(state, util.dom.getChildren(ds), {ignore : ["title"]});
+        _.each(pars, function(par) {
+          nodes.push(par.id);
+        });
+    }
     return nodes;
   };
 
