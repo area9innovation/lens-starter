@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE datasupp PUBLIC "-//HIGHWIRE//DTD HighWire Data Supplement Manifest//EN" "http://schema.highwire.org/public/hwx/ds/datasupplement_manifest.dtd">
+<datasupp sitecode="jbjsam">
+<resource type="doi">10.2106/JBJS.15.01455</resource>
+<linktext>Supplemental Content</linktext>
+<title>Supplemental Content</title>
+<file>
+<filename>jbjsam.D1501455_ds01.pdf</filename>
+<linktext>Supplemental Content</linktext>
+<description>Tables showing the prediction models for inpatient mortality, prolonged length of stay, 90-day post-discharge deaths without readmission, and 90-day readmissions in the developmental database for total hip and knee replacement in Medicare patients</description>
+</file>
+</datasupp>
