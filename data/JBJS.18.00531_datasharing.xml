@@ -1,0 +1,1904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC '-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN'
+  'JATS-journalpublishing1.dtd'>
+<article article-type="research-article" dtd-version="1.0" xml:lang="EN" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<front>
+		<journal-meta>
+			<journal-id journal-id-type="hwp">jbjsam</journal-id>
+			<journal-id journal-id-type="nlm-ta">J Bone Joint Surg Am</journal-id>
+			<journal-id journal-id-type="publisher-id">jbjsam1</journal-id>
+			<journal-title-group>
+				<journal-title>The Journal of Bone and Joint Surgery</journal-title>
+				<abbrev-journal-title abbrev-type="full">The Journal of Bone and Joint Surgery</abbrev-journal-title>
+			</journal-title-group>
+			<issn pub-type="ppub">0021-9355</issn>
+			<issn pub-type="epub">1535-1386</issn>
+			<publisher>
+				<publisher-name>The Journal of Bone and Joint Surgery, Inc.</publisher-name>
+			</publisher>
+		</journal-meta>
+		<article-meta>
+			<article-id pub-id-type="publisher-id">JBJS-D-18-00531</article-id>
+			<article-id pub-id-type="doi">10.2106/JBJS.18.00531</article-id>
+			<article-id pub-id-type="art-access-id">00006</article-id>
+			<article-categories>
+				<subj-group subj-group-type="hwp-journal-coll">
+					<subject>0120</subject>
+					<subject>0150</subject>
+				</subj-group>
+				<subj-group subj-group-type="heading">
+					<subject>Scientific Articles</subject>
+				</subj-group>
+			</article-categories>
+			<title-group>
+				<article-title>Three-Dimensional Computed Tomography Analysis of Spinal Canal Length Increase After Surgery for Adolescent Idiopathic Scoliosis</article-title>
+				<subtitle>A Multicenter Study</subtitle>
+			</title-group>
+			<contrib-group>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9304-3728</contrib-id>
+					<name>
+						<surname>Yahara</surname>
+						<given-names>Yasuhito</given-names>
+					</name>
+					<degrees>MD, PhD</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+					<xref ref-type="fn" rid="fn1">*</xref>
+				</contrib>
+				<contrib contrib-type="author" corresp="yes">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9930-5100</contrib-id>
+					<name>
+						<surname>Seki</surname>
+						<given-names>Shoji</given-names>
+					</name>
+					<degrees>MD, PhD</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+					<xref ref-type="fn" rid="fn1">*</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0286-4489</contrib-id>
+					<name>
+						<surname>Makino</surname>
+						<given-names>Hiroto</given-names>
+					</name>
+					<degrees>MD, PhD</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8743-7074</contrib-id>
+					<name>
+						<surname>Watanabe</surname>
+						<given-names>Kei</given-names>
+					</name>
+					<degrees>MD, PhD</degrees>
+					<xref ref-type="aff" rid="aff2">
+						<sup>2</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0718-6357</contrib-id>
+					<name>
+						<surname>Uehara</surname>
+						<given-names>Masashi</given-names>
+					</name>
+					<degrees>MD, PhD</degrees>
+					<xref ref-type="aff" rid="aff3">
+						<sup>3</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5227-2900</contrib-id>
+					<name>
+						<surname>Takahashi</surname>
+						<given-names>Jun</given-names>
+					</name>
+					<degrees>MD, PhD</degrees>
+					<xref ref-type="aff" rid="aff3">
+						<sup>3</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1417-8371</contrib-id>
+					<name>
+						<surname>Kimura</surname>
+						<given-names>Tomoatsu</given-names>
+					</name>
+					<degrees>MD, PhD</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+				</contrib>
+				<aff id="aff1">
+					<label>1</label>Department of Orthopaedic Surgery, Faculty of Medicine, University of Toyama, Toyama, Japan</aff>
+				<aff id="aff2">
+					<label>2</label>Department of Orthopaedic Surgery, Niigata University Medicine and Dental General Hospital, Niigata, Japan</aff>
+				<aff id="aff3">
+					<label>3</label>Department of Orthopaedic Surgery, Shinshu University School of Medicine, Matsumoto, Japan</aff>
+			</contrib-group>
+			<author-notes>
+				<corresp id="cor1">E-mail address for S. Seki: 
+					<email>seki@med.u-toyama.ac.jp</email></corresp>
+				<fn fn-type="equal" id="fn1">
+					<label>*</label>
+					<p>Yasuhito Yahara, MD, PhD, and Shoji Seki, MD, PhD, contributed equally to the writing of this article.</p>
+				</fn>
+				<fn id="fn2">
+					<p>Investigation performed at the University of Toyama, Toyama, Japan</p>
+				</fn>
+				<fn fn-type="financial-disclosure" id="fn3">
+					<p>
+						<bold>Disclosure:</bold>This research was supported by Grants-in-Aid for Scientific Research C) 16K10816. The authors report no conflict of interest concerning the materials or methods used in this study or the findings specified in this paper. The 
+						<bold>Disclosure of Potential Conflicts of Interest</bold>
+						forms are provided with the online version of the article (
+						<ext-link ext-link-type="uri" xlink:href="http://links.lww.com/JBJS/E980" xmlns:xlink="http://www.w3.org/1999/xlink">http://links.lww.com/JBJS/E980</ext-link>
+						).</p>
+				</fn>
+			</author-notes>
+			<pub-date pub-type="ppub">
+				<day>2</day>
+				<month>1</month>
+				<year>2019</year>
+			</pub-date>
+			<pub-date pub-type="collection">
+				<day>2</day>
+				<month>1</month>
+				<year>2019</year>
+			</pub-date>
+			<volume>101</volume>
+			<issue>1</issue>
+			<fpage>48</fpage>
+			<lpage>55</lpage>
+			<permissions>
+				<copyright-statement>Copyright © 2019 The Authors. Published by The Journal of Bone and Joint Surgery, Incorporated</copyright-statement>
+				<copyright-year>2019</copyright-year>
+				<license>
+					<license-p>This is an open-access article distributed under the terms of the 
+						<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-Non Commercial-No Derivatives License 4.0</ext-link>
+						(CCBY-NC-ND), where it is permissible to download and share the work provided it is properly cited. The work cannot be changed in any way or used commercially without permission from the journal.</license-p>
+				</license>
+			</permissions>
+			<self-uri xlink:href="JBJS.18.00531.pdf" xlink:title="pdf"/>
+			<self-uri content-type="disclosure-pdf" xlink:href="JBJS.18.00531.disclosure.pdf"/>
+			<self-uri xlink:href="JBJS.18.00531.dataavailability.pdf" xlink:title="data-availability-pdf"/>
+			<abstract>
+				<sec>
+					<title>Background:</title>
+					<p>The most severe complication after surgery for adolescent idiopathic scoliosis is spinal cord injury. There is a relationship between corrective surgery and subsequent elongation of the spinal canal. We sought to investigate which factors are involved in this phenomenon.</p>
+				</sec>
+				<sec>
+					<title>Methods:</title>
+					<p>Seventy-seven patients with adolescent idiopathic scoliosis (49 with Lenke type 1 and 28 with type 2) who underwent spinal correction surgery were included. The mean patient age at surgery was 14.2 years (range, 11 to 20 years). The spines of all patients were fused within the range of T2 to L2, and computed tomography (CT) data were retrospectively collected. We measured the preoperative and postoperative lengths of the spinal canal from T2 to L2 using 3-dimensional (3D) CT-based imaging software. We also examined the association between the change in T2-L2 spinal canal length and the radiographic parameters.</p>
+				</sec>
+				<sec>
+					<title>Results:</title>
+					<p>The length of the spinal canal from T2 to L2 was increased by a mean of 8.5 mm in the patients with Lenke type 1, 12.7 mm in those with type 2, and 10.1 mm overall. Elongation was positively associated with the preoperative main thoracic Cobb angle in both the type-1 group (R = 0.43, p &lt; 0.005) and the type-2 group (R = 0.77, p &lt; 0.000001). The greatest elongation was observed in the periapical vertebral levels of the main thoracic curves.</p>
+				</sec>
+				<sec>
+					<title>Conclusions:</title>
+					<p>Corrective surgery for adolescent idiopathic scoliosis elongated the spinal canal. The preoperative proximal, main thoracic, and thoracolumbar/lumbar Cobb angles are moderate predictors of postoperative spinal canal length after scoliosis surgery.</p>
+				</sec>
+				<sec>
+					<title>Clinical Relevance:</title>
+					<p>It is important to understand how much the spinal canal is elongated after surgery to lessen the risk of intraoperative and postoperative neurological complications.</p>
+				</sec>
+			</abstract>
+			<counts>
+				<page-count count="8"/>
+			</counts>
+			<custom-meta-group>
+				<custom-meta>
+					<meta-name>OPEN-ACCESS</meta-name>
+					<meta-value>TRUE</meta-value>
+				</custom-meta>
+			</custom-meta-group>
+		</article-meta>
+	</front>
+	<body>
+		<p>Posterior spinal instrumentation and correction is the current standard technique for the treatment of adolescent idiopathic scoliosis. Since the introduction of Harrington instrumentation
+			<sup>
+				<xref ref-type="bibr" rid="bib1">1</xref></sup>, effective procedures for surgical correction of adolescent idiopathic scoliosis have developed rapidly
+			<sup>
+				<xref ref-type="bibr" rid="bib2">2</xref></sup>. These techniques have made it possible to correct all 3 dimensions of the scoliotic deformity
+			<sup>
+				<xref ref-type="bibr" rid="bib3">3</xref></sup>. The rate of complications associated with deformity correction in adolescent idiopathic scoliosis ranges from 5% to 23%
+			<sup>
+				<xref ref-type="bibr" rid="bib4 bib5 bib6">4</xref>
+				-
+				<xref ref-type="bibr" rid="bib7">7</xref></sup>. The Scoliosis Research Society has reported that neurological defects occur after approximately 0.8% of surgical procedures for correction of adolescent idiopathic scoliosis
+			<sup>
+				<xref ref-type="bibr" rid="bib6">6</xref>
+				,
+				<xref ref-type="bibr" rid="bib8">8</xref>
+				,
+				<xref ref-type="bibr" rid="bib9">9</xref></sup>. The most severe neurological complications are incomplete spinal cord injury and nerve root compression, traction, or other injury. A recent meta-analysis of perioperative complications revealed a frequency of neurological complications of 0.5% and a frequency of spinal cord injury of 0.14%
+			<sup>
+				<xref ref-type="bibr" rid="bib10">10</xref></sup>. Signal changes demonstrated by intraoperative neurophysiological monitoring were most frequently associated with spinal traction or patient positioning
+			<sup>
+				<xref ref-type="bibr" rid="bib11">11</xref></sup>. Several animal models have demonstrated that distraction of the spinal canal results in histological evidence of spinal cord damage
+			<sup>
+				<xref ref-type="bibr" rid="bib12 bib13">12</xref>
+				-
+				<xref ref-type="bibr" rid="bib14">14</xref></sup>. These findings suggest that it is important to understand the relationship between correction of scoliotic deformity and the distraction distance of the spinal canal to lessen the risk of intraoperative and postoperative neurological complications.</p>
+		<p>In this study, we used 3-dimensional (3D) computed tomography (CT)-based imaging analysis to calculate the change in spinal canal length resulting from spinal deformity correction. We also assessed the preoperative and postoperative radiographic measurements of Cobb angles, flexibility, Risser grade, apical vertebral translation, thoracic kyphosis, and lumbar lordosis to determine whether they were associated with changes in spinal canal length.</p>
+		<sec sec-type="materials|methods">
+			<title>Materials and Methods</title>
+			<sec>
+				<title>Subjects</title>
+				<p>Seventy-seven patients who underwent corrective surgery for adolescent idiopathic scoliosis at a total of 3 hospitals (University of Toyama, Niigata University, and Shinshu University Hospitals) from 2011 to 2017 were included in this study. Four patients were male and the other 73 patients were female. The mean age at surgery was 14.2 years (range, 11 to 20 years). According to the Lenke classification
+					<sup>
+						<xref ref-type="bibr" rid="bib15">15</xref></sup>, 49 patients had a type-1 (single thoracic) curve and 28 had a type-2 (double thoracic) curve. The apex of all of the curves was between T7 and T11 (T7 in 2 patients, T8 in 26, T9 in 29, T10 in 14, and T11 in 6). If the apex was pinpointed within an intervertebral disc, it was expressed as the number of the vertebra above it. We divided the spine from T2 to L2 into 4 subsegments: an upper thoracic region (T2-T5), an upper middle thoracic region (T5-T8), a lower middle thoracic region (T8-T11), and a thoracolumbar region (T11-L2).</p>
+				<p>This study was approved by the ethical review board of our hospital (number 28-108).</p>
+			</sec>
+			<sec>
+				<title>Surgical Methods</title>
+				<p>Surgery was performed with the patient under general anesthesia and in the prone position. Pedicle screw insertion was performed with navigation in 36 patients and with a freehand technique in 41. After pedicle screws were inserted into the vertebrae, the articular cartilage of the facet joints was removed. If the scoliotic curve was rigid, a Ponte procedure was performed on the apical vertebrae
+					<sup>
+						<xref ref-type="bibr" rid="bib16">16</xref></sup>. Sixty patients underwent Ponte osteotomies (5 intervertebral spaces were operated on in 2 patients; 4 intervertebral spaces, in 6; and 3, in 52). Depending on the level of the scoliosis, a concave rod (5.5-mm CoCr or 6.35-mm Ti alloy) was rotated 90° to transform the scoliosis into a thoracic kyphosis or a lumbar lordosis. Then a convex rod was inserted, and the rib hump was reduced using a differential rod-contouring technique. Finally, segmental direct vertebral rotation was performed on each vertebra. Spinal cord monitoring of motor and somatosensory evoked potentials was performed during all operations, and none of the patients demonstrated signal changes during surgery.</p>
+			</sec>
+			<sec>
+				<title>Radiographic Analysis</title>
+				<p>A standing whole-spine radiograph in addition to supine side-bending and traction radiographs were made for all patients no more than 3 months before surgery. The Cobb angles of the proximal thoracic curve, main thoracic curve, and thoracolumbar/lumbar curve were measured on the standing radiograph and the Cobb angle of the main thoracic curve was measured on the bending and traction radiographs as well. Additional measurements included the thoracic kyphosis (T5-T12) angle, lumbar lordosis (T12-S1) angle, and thoracic apical vertebral translation. Preoperative curve flexibility was based on the supine side-bending and traction radiographs. Standing whole-spine radiographs were also made within 1 month (inpatient) after surgery, and the radiographs were analyzed and measured. The postoperative proximal thoracic, main thoracic, and thoracolumbar/lumbar Cobb angles; thoracic kyphosis; lumbar lordosis; and percent correction of the main thoracic curve were also measured.</p>
+			</sec>
+			<sec>
+				<title>3D-CT-Based Measurement of Spinal Canal Length</title>
+				<p>All patients underwent CT imaging no more than 1 month before surgery and within 1 month (inpatient) after surgery. To calculate the spinal canal distance from T2 to L2, we used 3D-CT imaging software (ZedView; LEXI). The center of the spinal canal was determined as follows. First, the center point of both pedicles of each vertebra was identified, as the point of intersection between the major axis and minor axis of the circle or ellipse, in the coronal plane (
+					<xref ref-type="fig" rid="fig1">Fig. 1-A</xref>
+					, left). Next, the axial plane was defined as a plane passing through the centers of the 2 pedicles of the vertebra and parallel to the surface of the cranial end plate (
+					<xref ref-type="fig" rid="fig1">Fig. 1-A</xref>
+					, middle). The center of the spinal canal in the axial plane was determined by the intersection of 2 lines: one bisecting the angle formed by lines drawn on the ventral side of each lamina, and the other representing the major axis of the circle or ellipse approximating the spinal canal (
+					<xref ref-type="fig" rid="fig1">Fig. 1-A</xref>
+					, right). The distances between each consecutive center of the spinal canal were added from T2 to L2 (
+					<xref ref-type="fig" rid="fig1">Fig. 1-B</xref>
+					). The delta T2-L2 length (postoperative minus preoperative) was calculated for each patient (
+					<xref ref-type="fig" rid="fig1">Fig. 1-C</xref>
+					). We examined the correlation between the delta T2-L2 length and each of the abovementioned preoperative and postoperative measurements, such as the main thoracic curve. We also examined how much each spinal subsegment contributed to the change in spinal canal length.</p>
+				<fig fig-type="figure" id="fig1" position="float">
+					<label>Fig. 1</label>
+					<caption>
+						<p>
+							<bold>Figs. 1-A, 1-B, and 1-C</bold>Methodology for the assessment of spinal canal length. 
+							<bold>Fig. 1-A</bold>
+							The center of the spinal canal is represented by the black dot on the axial CT image. 
+							<bold>Fig. 1-B</bold>
+							The dots indicate the midpoint between the pedicles at each vertebra. The spinal canal length was calculated by adding the distances between all dots. 
+							<bold>Fig. 1-C</bold>
+							Delta T2-L2 spinal canal length was calculated by subtracting the preoperative spinal canal length from the postoperative spinal canal length.</p>
+					</caption>
+					<graphic xlink:href="JBJS.18.00531f1"/>
+				</fig>
+			</sec>
+			<sec>
+				<title>Measurement of the Error Between Straight and Curved-Line Methods</title>
+				<p>To calculate the error between a curved-line (spline curve) and straight-line measurement, we also examined the curved spinal canal length of 10 randomly selected patients with x-ray-based methods. First, we defined the midpoint between the 2 pedicles as the reference point of each vertebra on a standing anteroposterior radiograph and placed “anchors” (the black dots in Fig. E-1 in the 
+					<xref ref-type="sec" rid="app1">Appendix</xref>
+					) on these reference points from T2 to L2 using Adobe Illustrator CS6 (Adobe). Then a curve passing through all anchor points was drawn (white line in Fig. E-1 in the 
+					<xref ref-type="sec" rid="app1">Appendix</xref>
+					), and its total length was automatically calculated. For the straight-line measurement, each anchor point was connected by a straight line (black line in Fig. E-1 in the 
+					<xref ref-type="sec" rid="app1">Appendix</xref>
+					). The total length of the line was automatically calculated.</p>
+			</sec>
+			<sec>
+				<title>Statistical Analysis</title>
+				<p>Data are shown as the mean and standard deviation (SD). The Student t test (2-sided) and Welch t test were used for statistical analysis. In the comparison of spinal canal elongation among the 4 segments, we used analysis of variance followed by the Tukey-Kramer post-hoc test. The Pearson correlation test was used to analyze the correlation between the spinal canal elongation and several radiographic parameters. Statistical analysis was performed using commercial software (Statcel3; OMS). P values of &lt;0.05 were considered significant.</p>
+			</sec>
+		</sec>
+		<sec sec-type="results">
+			<title>Results</title>
+			<p>There were no significant differences between the single-thoracic-curve (Lenke type-1) and double-thoracic-curve (Lenke type-2) groups regarding mean age, height, weight, or Risser grade (
+				<xref ref-type="table" rid="tbl1">Table I</xref>
+				). However, the preoperative main thoracic and proximal thoracic Cobb angles of the double-curve group were significantly larger than those of the single-curve group. Other preoperative radiographic parameters showed no significant differences between the 2 groups.</p>
+			<table-wrap id="tbl1">
+				<label>TABLE I</label>
+				<caption>
+					<p>Characteristics of Patients with Adolescent Idiopathic Scoliosis</p>
+				</caption>
+				<table frame="hsides" rules="groups">
+					<thead>
+						<tr>
+							<td/>
+							<td align="center" colspan="3">Mean ± SD
+								<hr/></td>
+							<td/>
+						</tr>
+						<tr>
+							<td/>
+							<td align="center">All Cases (N = 77)</td>
+							<td align="center">Single Thoracic Curve (Lenke Type 1) (N = 49)</td>
+							<td align="center">Double Thoracic Curve (Lenke Type 2) (N = 28)</td>
+							<td align="center">P Value
+								<xref ref-type="table-fn" rid="tblfn1">*</xref></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Age 
+								<italic>(yr)</italic></td>
+							<td align="center">14.2 ± 2.1</td>
+							<td align="center">14.4 ± 2.1</td>
+							<td align="center">13.9 ± 1.9</td>
+							<td align="center">0.28</td>
+						</tr>
+						<tr>
+							<td>Height 
+								<italic>(cm)</italic></td>
+							<td align="center">155.5 ± 6.5</td>
+							<td align="center">154.9 ± 6.0</td>
+							<td align="center">156.5 ± 7.4</td>
+							<td align="center">0.3</td>
+						</tr>
+						<tr>
+							<td>Weight 
+								<italic>(kg)</italic></td>
+							<td align="center">46.6 ± 6.6</td>
+							<td align="center">46.6 ± 6.4</td>
+							<td align="center">46.6 ± 7.1</td>
+							<td align="center">0.99</td>
+						</tr>
+						<tr>
+							<td>Risser 
+								<italic>(grade)</italic></td>
+							<td align="center">3.2 ± 1.3</td>
+							<td align="center">3.4 ± 1.3</td>
+							<td align="center">2.9 ± 1.3</td>
+							<td align="center">0.11</td>
+						</tr>
+						<tr>
+							<td>Preop. radiographic factors</td>
+							<td/>
+							<td/>
+							<td/>
+							<td/>
+						</tr>
+						<tr>
+							<td>Cobb angle 
+								<italic>(°)</italic></td>
+							<td/>
+							<td/>
+							<td/>
+							<td/>
+						</tr>
+						<tr>
+							<td>  Proximal thoracic</td>
+							<td align="center">27.4 ± 11.1</td>
+							<td align="center">20.2 ± 5.9</td>
+							<td align="center">39.6 ± 6.4</td>
+							<td align="center">&lt;0.01</td>
+						</tr>
+						<tr>
+							<td>  Main thoracic</td>
+							<td align="center">54.4 ± 8.9</td>
+							<td align="center">52.0 ± 6.9</td>
+							<td align="center">58.6 ± 10.2</td>
+							<td align="center">&lt;0.01</td>
+						</tr>
+						<tr>
+							<td>  Thoracolumbar/lumbar</td>
+							<td align="center">25.9 ± 9.8</td>
+							<td align="center">26.6 ± 9.7</td>
+							<td align="center">24.7 ± 10.1</td>
+							<td align="center">0.42</td>
+						</tr>
+						<tr>
+							<td>  Thoracic kyphosis</td>
+							<td align="center">16.2 ± 10.6</td>
+							<td align="center">17.3 ± 10.1</td>
+							<td align="center">14.3 ± 11.2</td>
+							<td align="center">0.25</td>
+						</tr>
+						<tr>
+							<td>  Lumbar lordosis</td>
+							<td align="center">48.8 ± 12.4</td>
+							<td align="center">50.8 ± 11.8</td>
+							<td align="center">45.3 ± 12.7</td>
+							<td align="center">0.06</td>
+						</tr>
+						<tr>
+							<td>  Traction-main thoracic</td>
+							<td align="center">34.3 ± 8.1</td>
+							<td align="center">31.5 ± 6.5</td>
+							<td align="center">39.3 ± 8.3</td>
+							<td align="center">&lt;0.01</td>
+						</tr>
+						<tr>
+							<td>  Bending-main thoracic</td>
+							<td align="center">36.4 ± 10.0</td>
+							<td align="center">33.5 ± 9.9</td>
+							<td align="center">41.5 ± 8.1</td>
+							<td align="center">&lt;0.01</td>
+						</tr>
+						<tr>
+							<td>Traction flexibility 
+								<italic>(%)</italic></td>
+							<td align="center">36.4 ± 13.2</td>
+							<td align="center">39.3 ± 10.3</td>
+							<td align="center">32.9 ± 15.9</td>
+							<td align="center">0.05</td>
+						</tr>
+						<tr>
+							<td>Bending flexibility 
+								<italic>(%)</italic></td>
+							<td align="center">32.6 ± 17.7</td>
+							<td align="center">35.6 ± 17.1</td>
+							<td align="center">29.1 ± 17.4</td>
+							<td align="center">0.07</td>
+						</tr>
+						<tr>
+							<td>Thoracic apical vertebral translation 
+								<italic>(mm)</italic></td>
+							<td align="center">44.0 ± 14.7</td>
+							<td align="center">43.1 ± 13.8</td>
+							<td align="center">45.8 ± 16.1</td>
+							<td align="center">0.44</td>
+						</tr>
+					</tbody>
+				</table>
+				<table-wrap-foot>
+					<fn id="tblfn1">
+						<label>*</label>
+						<p>Statistical analysis was performed using the unpaired t test to compare the single-thoracic-curve (Lenke type-1) group with the double-thoracic-curve (Lenke type-2) group.</p>
+					</fn>
+				</table-wrap-foot>
+			</table-wrap>
+			<p>The mean postoperative proximal thoracic Cobb angle of the double-curve group was significantly larger than that of the single-curve group (
+				<xref ref-type="table" rid="tbl2">Table II</xref>
+				). Although longer posterior fusion was performed for the patients with a double curve, there were no significant differences in the other postoperative radiographic parameters between the groups. The overall T2-L2 spinal canal length was increased by a mean of 10.1 ± 6.2 mm (range, 2.3 to 28.8 mm) after the correction surgery. The mean change in T2-L2 length in the patients with a double thoracic curve (12.7 ± 6.4 mm; range, 4.4 to 28.8 mm) was significantly larger than that in the patients with a single thoracic curve (8.5 ± 5.6 mm; range, 2.3 to 25.4) (p &lt; 0.01). The mean elongation of the spinal canal was 10.2 mm in the patients who underwent Ponte osteotomy and 9.7 mm in those treated without Ponte osteotomy. There was no significant difference in spinal canal lengthening between the patients with and those without Ponte osteotomy (p = 0.76).</p>
+			<table-wrap id="tbl2">
+				<label>TABLE II</label>
+				<caption>
+					<p>Postoperative Results</p>
+				</caption>
+				<table frame="hsides" rules="groups">
+					<thead>
+						<tr>
+							<td/>
+							<td align="center" colspan="3">Mean ± SD
+								<hr/></td>
+							<td/>
+						</tr>
+						<tr>
+							<td/>
+							<td align="center">All Cases (N = 77)</td>
+							<td align="center">Single Thoracic Curve (Lenke Type 1) (N = 49)</td>
+							<td align="center">Double Thoracic Curve (Lenke Type 2) (N = 28)</td>
+							<td align="center">P Value
+								<xref ref-type="table-fn" rid="tblfn2">*</xref></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Postop. radiographic factors</td>
+							<td/>
+							<td/>
+							<td/>
+							<td/>
+						</tr>
+						<tr>
+							<td>Cobb angle 
+								<italic>(°)</italic></td>
+							<td/>
+							<td/>
+							<td/>
+							<td/>
+						</tr>
+						<tr>
+							<td>  Proximal thoracic</td>
+							<td align="center">13.4 ± 6.0</td>
+							<td align="center">11.4 ± 4.4</td>
+							<td align="center">16.8 ± 6.8</td>
+							<td align="center">&lt;0.01</td>
+						</tr>
+						<tr>
+							<td>  Main thoracic</td>
+							<td align="center">16.4 ± 5.9</td>
+							<td align="center">15.4 ± 6.6</td>
+							<td align="center">17.9 ± 3.9</td>
+							<td align="center">0.08</td>
+						</tr>
+						<tr>
+							<td>  Thoracolumbar/lumbar</td>
+							<td align="center">10.5 ± 5.7</td>
+							<td align="center">10.2 ± 6.1</td>
+							<td align="center">11.0 ± 4.8</td>
+							<td align="center">0.58</td>
+						</tr>
+						<tr>
+							<td>  Thoracic kyphosis</td>
+							<td align="center">18.1 ± 6.25</td>
+							<td align="center">19.8 ± 5.4</td>
+							<td align="center">16.8 ± 7.06</td>
+							<td align="center">0.187</td>
+						</tr>
+						<tr>
+							<td>  Lumbar lordosis</td>
+							<td align="center">48.9 ± 10.0</td>
+							<td align="center">48.5 ± 10.2</td>
+							<td align="center">49.8 ± 9.4</td>
+							<td align="center">0.735</td>
+						</tr>
+						<tr>
+							<td>Correction rate 
+								<italic>(%)</italic></td>
+							<td align="center">70.1 ± 10.6</td>
+							<td align="center">70.2 ± 12.3</td>
+							<td align="center">69.8 ± 6.7</td>
+							<td align="center">0.88</td>
+						</tr>
+						<tr>
+							<td>Total no. of fixed intervertebral spaces</td>
+							<td align="center">9.7 ± 1.8</td>
+							<td align="center">8.8 ± 1.6</td>
+							<td align="center">11.1 ± 0.99</td>
+							<td align="center">&lt;0.01</td>
+						</tr>
+						<tr>
+							<td>Delta T2-L2 length 
+								<italic>(mm)</italic></td>
+							<td align="center">10.1 ± 6.2</td>
+							<td align="center">8.5 ± 5.6</td>
+							<td align="center">12.7 ± 6.4</td>
+							<td align="center">&lt;0.01</td>
+						</tr>
+					</tbody>
+				</table>
+				<table-wrap-foot>
+					<fn id="tblfn2">
+						<label>*</label>
+						<p>Statistical analysis was performed using the unpaired t test to compare the single-thoracic-curve (Lenke type-1) group with the double-thoracic-curve (Lenke type-2) group.</p>
+					</fn>
+				</table-wrap-foot>
+			</table-wrap>
+			<p>Analyses of the radiographic measurements revealed that the preoperative proximal thoracic, main thoracic, and thoracolumbar/lumbar Cobb angles were positively correlated with the delta T2-L2 spinal canal length (
+				<xref ref-type="table" rid="tbl3">Table III</xref>
+				). Additionally, thoracic apical vertebral translation was associated with the delta T2-L2 spinal canal length. Furthermore, the postoperative main thoracic Cobb angle, the preoperative-postoperative change in the proximal thoracic, main thoracic, and thoracolumbar/lumbar Cobb angles, and the number of fixed intervertebral spaces had a weak correlation with the spinal canal elongation. The changes in spinal canal length in the 4 subsegments—T2-T5, T5-T8, T8-T11, and T11-L2—are shown in 
+				<xref ref-type="fig" rid="fig2">Figure 2</xref>
+				, and overall the subsegments were changed by 2.1 ± 1.0 (range, −3.5 to 10.7), 2.9 ± 1.0 (range, −3.2 to 9.5), 3.5 ± 1.1 (range, −4.3 to 13.5), and 1.6 ± 0.9 (range, −2.8 to 8.9) mm, respectively. The elongation of the T8-T11 segment by the correction surgery was significantly greater in most of the comparisons with the other segments in both the single and the double-curve group. The T8-11 segment was the most often included in the apical vertebrae. The double-curve group showed a bimodal peak. These phenomena suggest that the preoperative proximal thoracic Cobb angle is associated with spinal canal elongation. We also examined the association between the preoperative main thoracic Cobb angle and the delta T2-L2 spinal canal length in the single and double-curve groups (
+				<xref ref-type="fig" rid="fig3">Fig. 3</xref>
+				) and found a high association in the double-curve group. There was more variation in the single-curve group than in the double-curve group, suggesting that the number of fixed intervertebral spaces and the preoperative proximal thoracic and main thoracic Cobb angles may be related to this variation.</p>
+			<table-wrap id="tbl3">
+				<label>TABLE III</label>
+				<caption>
+					<p>Correlation of Spinal Canal Elongation with Each Factor</p>
+				</caption>
+				<table frame="hsides" rules="groups">
+					<thead>
+						<tr>
+							<td/>
+							<td align="center">R Value
+								<xref ref-type="table-fn" rid="tblfn3">*</xref></td>
+							<td align="center">P Value</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Age 
+								<italic>(yr)</italic></td>
+							<td align="center">−0.150</td>
+							<td align="center">0.193</td>
+						</tr>
+						<tr>
+							<td>Height 
+								<italic>(cm)</italic></td>
+							<td align="center">−0.110</td>
+							<td align="center">0.353</td>
+						</tr>
+						<tr>
+							<td>Weight 
+								<italic>(kg)</italic></td>
+							<td align="center">0.068</td>
+							<td align="center">0.557</td>
+						</tr>
+						<tr>
+							<td>Risser 
+								<italic>(grade)</italic></td>
+							<td align="center">−0.103</td>
+							<td align="center">0.372</td>
+						</tr>
+						<tr>
+							<td>Preop. radiographic factors</td>
+							<td/>
+							<td/>
+						</tr>
+						<tr>
+							<td>Cobb angle 
+								<italic>(°)</italic></td>
+							<td/>
+							<td/>
+						</tr>
+						<tr>
+							<td>  Proximal thoracic</td>
+							<td align="center">0.300</td>
+							<td align="center">&lt;0.009</td>
+						</tr>
+						<tr>
+							<td>  Main thoracic</td>
+							<td align="center">0.592</td>
+							<td align="center">&lt;0.00000005</td>
+						</tr>
+						<tr>
+							<td>  Thoracolumbar/lumbar</td>
+							<td align="center">0.492</td>
+							<td align="center">&lt;0.000006</td>
+						</tr>
+						<tr>
+							<td>  Thoracic kyphosis</td>
+							<td align="center">−0.155</td>
+							<td align="center">0.176</td>
+						</tr>
+						<tr>
+							<td>  Lumbar lordosis</td>
+							<td align="center">0.155</td>
+							<td align="center">0.175</td>
+						</tr>
+						<tr>
+							<td>  Traction-main thoracic</td>
+							<td align="center">0.430</td>
+							<td align="center">&lt;0.00009</td>
+						</tr>
+						<tr>
+							<td>  Bending-main thoracic</td>
+							<td align="center">0.212</td>
+							<td align="center">0.064</td>
+						</tr>
+						<tr>
+							<td>Traction flexibility 
+								<italic>(%)</italic></td>
+							<td align="center">0.015</td>
+							<td align="center">0.890</td>
+						</tr>
+						<tr>
+							<td>Bending flexibility 
+								<italic>(%)</italic></td>
+							<td align="center">0.188</td>
+							<td align="center">0.100</td>
+						</tr>
+						<tr>
+							<td>Thoracic apical vertebral translation 
+								<italic>(mm)</italic></td>
+							<td align="center">0.311</td>
+							<td align="center">&lt;0.007</td>
+						</tr>
+						<tr>
+							<td>Postop. radiographic factors</td>
+							<td/>
+							<td/>
+						</tr>
+						<tr>
+							<td>Cobb angle 
+								<italic>(°)</italic></td>
+							<td/>
+							<td/>
+						</tr>
+						<tr>
+							<td>  Proximal thoracic</td>
+							<td align="center">0.216</td>
+							<td align="center">0.059</td>
+						</tr>
+						<tr>
+							<td>  Main thoracic</td>
+							<td align="center">0.418</td>
+							<td align="center">&lt;0.0005</td>
+						</tr>
+						<tr>
+							<td>  Thoracolumbar/lumbar</td>
+							<td align="center">0.232</td>
+							<td align="center">0.041</td>
+						</tr>
+						<tr>
+							<td>  Thoracic kyphosis</td>
+							<td align="center">0.213</td>
+							<td align="center">0.327</td>
+						</tr>
+						<tr>
+							<td>  Lumbar lordosis</td>
+							<td align="center">−0.065</td>
+							<td align="center">0.765</td>
+						</tr>
+						<tr>
+							<td>Correction rate 
+								<italic>(%)</italic></td>
+							<td align="center">−0.185</td>
+							<td align="center">0.107</td>
+						</tr>
+						<tr>
+							<td>Preop.-postop. change in Cobb angle 
+								<italic>(°)</italic></td>
+							<td align="center">0.225</td>
+							<td align="center">&lt;0.05</td>
+						</tr>
+						<tr>
+							<td> Proximal thoracic</td>
+							<td/>
+							<td/>
+						</tr>
+						<tr>
+							<td> Main thoracic</td>
+							<td align="center">0.328</td>
+							<td align="center">&lt;0.005</td>
+						</tr>
+						<tr>
+							<td> Thoracolumbar/lumbar</td>
+							<td align="center">0.371</td>
+							<td align="center">&lt;0.001</td>
+						</tr>
+						<tr>
+							<td>Total no. of fixed intervertebral spaces</td>
+							<td align="center">0.285</td>
+							<td align="center">&lt;0.05</td>
+						</tr>
+					</tbody>
+				</table>
+				<table-wrap-foot>
+					<fn id="tblfn3">
+						<label>*</label>
+						<p>The Pearson correlation test was used to analyze the correlation between the spinal canal elongation and the radiographic parameters.</p>
+					</fn>
+				</table-wrap-foot>
+			</table-wrap>
+			<fig fig-type="figure" id="fig2" position="float">
+				<label>Fig. 2</label>
+				<caption>
+					<p>
+						<bold>Figs. 2-A, 2-B, and 2-C</bold>The changes in spinal canal length in each of the 4 subsegments, T2-T5, T5-T8, T8-T11, and T11-L2. *P &lt; 0.05, Tukey-Kramer post-hoc test. The bars and error bars denote the means and SDs. 
+						<bold>Fig. 2-A</bold>
+						Overall data (n = 77). 
+						<bold>Fig. 2-B</bold>
+						Single-thoracic-curve group (n = 49). 
+						<bold>Fig. 2-C</bold>
+						Double-thoracic-curve group (n = 28).</p>
+				</caption>
+				<graphic xlink:href="JBJS.18.00531f2"/>
+			</fig>
+			<fig fig-type="figure" id="fig3" position="float">
+				<label>Fig. 3</label>
+				<caption>
+					<p>
+						<bold>Figs. 3-A, 3-B, and 3-C</bold>Associations between the preoperative major thoracic Cobb angle and delta T2-L2 spinal canal length. The Pearson correlation test was used. 
+						<bold>Fig. 3-A</bold>
+						Single-thoracic-curve group (n = 49). 
+						<bold>Fig. 3-B</bold>
+						Double-thoracic-curve group (n = 28). 
+						<bold>Fig. 3-C</bold>
+						Overall data (n = 77).</p>
+				</caption>
+				<graphic xlink:href="JBJS.18.00531f3"/>
+			</fig>
+			<p>The mean error of measurement of the spinal canal elongation between the curved and straight-line methods was 0.31 ± 0.29 mm (r = 0.38, p = 0.27) (see 
+				<xref ref-type="sec" rid="app1">Appendix</xref>
+				).</p>
+		</sec>
+		<sec sec-type="discussion">
+			<title>Discussion</title>
+			<p>Studies of several animal models demonstrated that excessive distraction of the spinal column was associated with spinal cord injury. In a study of 16 pigs, Yang et al. distracted the spinal cord directly until the signals of neurological monitoring disappeared or decreased by &gt;80% compared with the baseline amplitude
+				<sup>
+					<xref ref-type="bibr" rid="bib14">14</xref></sup>. They found that parallel distraction of approximately 3.6% of the thoracolumbar length resulted in spinal cord injury. In our study, the mean overall preoperative T2-L2 length of the spinal canal was 281.7 mm, so 3.6% of the spinal canal length was 10.1 mm. The mean elongation equaled this value in our overall group (10.1 mm) and exceeded it in the Lenke type-2 group (12.7 mm), suggesting that the maximal elongation before injury differs in humans. Bridwell et al. reported that patients in whom thoracic scoliosis had been treated with posterior spinal correction demonstrated 10 mm of lengthening of the spinal canal on radiographs
+				<sup>
+					<xref ref-type="bibr" rid="bib17">17</xref></sup>. Because their study was small and they analyzed radiographs, analysis of larger groups with 3D CT was the next step, especially to identify which curve types or factors were associated with a risk of spinal canal elongation, which was still unknown. In our large detailed study, we measured spinal column elongation with 3D CT and found it to be associated with posterior deformity correction maneuvers for adolescent idiopathic scoliosis.</p>
+			<p>The correlation between the preoperative main thoracic, proximal thoracic, and thoracolumbar/lumbar Cobb angles and spinal canal elongation might be caused by the character of the screw-rod interface. In almost all cases, following uniplanar pedicle screw insertion and Ponte osteotomy, a hyperkyphotic concave rod was rotated 90° to transform the scoliosis into a thoracic kyphosis, after which cantilever reduction of the rib hump was accomplished using an undercontoured convex rod. Those procedures introduced the centroposterior translation and derotation of the vertebral segments around the apical vertebrae. At the same time, uniplanar screws allow angulation in the sagittal direction, and the screw-rod interface transmits the distraction force in each adjacent vertebra around the apex. This would explain why larger main thoracic, proximal thoracic, and thoracolumbar/lumbar Cobb angles might be associated with more elongation of the spinal canal. The periapical region of the main thoracic curve was more elongated than the periapical region of the minor curve in this study of patients with adolescent idiopathic scoliosis. If the main thoracic curve is being corrected, it is always desirable to apply compression force during the correction to avoid elongation of the spinal canal. In patients with Lenke type-2 scoliosis, because the proximal thoracic curve also causes elongation of the spinal canal, it might be necessary to apply compression force to both the main thoracic and the proximal thoracic curve.</p>
+			<p>Posterior column lengthening in Ponte osteotomy also might contribute to the elongation of the spinal canal. It is well known that segmental pedicle screw instrumentation and Ponte osteotomy improve the coronal and sagittal radiographic parameters
+				<sup>
+					<xref ref-type="bibr" rid="bib18 bib19 bib20 bib21">18</xref>
+					-
+					<xref ref-type="bibr" rid="bib22">22</xref></sup>. Removing the facets, ligamentum flavum, and soft tissue around the posterior elements allows for greater distraction of the posterior aspect of the spinal column
+				<sup>
+					<xref ref-type="bibr" rid="bib23">23</xref></sup>. The mean elongation of the spinal canal was 10.2 mm in our patients who underwent Ponte osteotomy and 9.7 mm in those treated without Ponte osteotomy (p = 0.76). This study was not intended to evaluate the effect of Ponte osteotomy because Ponte osteotomies were used to make rigid scoliotic curves flexible. Additional randomized prospective analyses are necessary.</p>
+			<p>To reduce the risk of neurological complications, intraoperative neurophysiological monitoring is now standard
+				<sup>
+					<xref ref-type="bibr" rid="bib24 bib25">24</xref>
+					-
+					<xref ref-type="bibr" rid="bib26">26</xref></sup>and is recommended by the Scoliosis Research Society
+				<sup>
+					<xref ref-type="bibr" rid="bib27">27</xref></sup>. In an analysis of 62,038 monitored spine operations, Tamkus et al. reported that 22 patients (0.04%) with a new postoperative neurological deficit had a “false-negative” monitoring result, a deficit that developed postoperatively, failure to monitor a pathway, absent baseline data, or another technical problem
+				<sup>
+					<xref ref-type="bibr" rid="bib24">24</xref></sup>. Although the rate is very low, these issues make it difficult to predict the risk of neurological complications from correction maneuvers for adolescent idiopathic scoliosis on the basis of intraoperative monitoring alone. Although no neurological events or signal changes were detected by neurological monitoring in our study, our small sample size may have limited the detection of very infrequent complications.</p>
+			<p>This study had a number of limitations. First, the surgical technique differed slightly among the hospitals. Nevertheless, pedicle screws, Ponte osteotomy, differential rod contouring, and direct vertebral rotation were used at all sites. Second, we are not sure whether elongation of the spinal canal is involved in extension of the spinal cord. The spinal cord does not follow the center of the canal in scoliosis but takes the shortest route by going off-center to touch the concave parts of the curve. We may need to pay attention to elongation of the spinal canal during surgery for scoliosis because the spinal cord is stretched more severely than it is when the spinal cord passes through the center of the spinal canal. Additional study of changes in the spinal cord resulting from elongation of the spinal canal may be necessary. Third, although the error between the curved-line and straight-line measurements was relatively small (0.3 mm), it may be necessary to consider that error as a factor that can influence the amount of spinal canal elongation. However, because this measurement of a curved line did not always pass through the actual center of the spinal canal, we believe that the distance of the curved line was overestimated. Finally, this study included a limited number of curve types. Future investigators should consider including other curve types, such as thoracolumbar/lumbar curves.</p>
+			<p>In conclusion, we demonstrated that corrective surgery for adolescent idiopathic scoliosis is associated with spinal canal lengthening, which positively correlates with the preoperative main thoracic, proximal thoracic, and thoracolumbar/lumbar Cobb angles. Those angles may be moderate predictors of postoperative spinal canal elongation.</p>
+		</sec>
+		<sec id="app1">
+			<title>Appendix</title>
+			<p>A figure showing measurement of the error between the straight and curved lines is available with the online version of this article as a data supplement at 
+				<ext-link ext-link-type="uri" xlink:href="http://jbjs.org" xmlns:xlink="http://www.w3.org/1999/xlink">jbjs.org</ext-link>
+				(
+				<ext-link ext-link-type="uri" xlink:href="http://links.lww.com/JBJS/E981" xmlns:xlink="http://www.w3.org/1999/xlink">http://links.lww.com/JBJS/E981</ext-link>
+				).</p>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<p>N
+				<sc>ote</sc>
+				: The authors thank Libby Cone, MD, MA, from DMC Corp. for editing drafts of this manuscript.</p>
+		</ack>
+		<sec type="data-availability">
+			<title>Data Sharing</title>
+			<p>A 
+				<bold>data-sharing statement</bold>
+				is provided with the online version of the article(
+				<ext-link ext-link-type="uri" xlink:href="http://links.lww.com/JBJS/XXXX" xmlns:xlink="http://www.w3.org/1999/xlink">http://links.lww.com/JBJS/XXXX</ext-link>
+				).</p>
+		</sec>
+		<ref-list>
+			<title>References</title>
+			<ref id="bib1">
+				<label>1</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Harrington</surname>
+							<given-names>PR</given-names>
+						</string-name>
+					</person-group>. 
+					<article-title>Treatment of scoliosis. Correction and internal fixation by spine instrumentation</article-title>
+					. 
+					<source>J Bone Joint Surg Am.</source>
+					<year>1962</year>
+					<month>Jun</month>
+					;
+					<volume>44</volume>
+					:
+					<fpage>591</fpage>
+					-
+					<lpage>610</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib2">
+				<label>2</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Lee</surname>
+							<given-names>SM</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Suk</surname>
+							<given-names>SI</given-names></string-name>, 
+						<string-name>
+							<surname>Chung</surname>
+							<given-names>ER</given-names></string-name>
+					</person-group>. 
+					<article-title>Direct vertebral rotation: a new technique of three-dimensional deformity correction with segmental pedicle screw fixation in adolescent idiopathic scoliosis</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2004</year>
+					<month>Feb</month>
+					<day>1</day>
+					;
+					<volume>29</volume>
+					(
+					<issue>3</issue>
+					):
+					<fpage>343</fpage>
+					-
+					<lpage>9</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib3">
+				<label>3</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Wang</surname>
+							<given-names>X</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Boyer</surname>
+							<given-names>L</given-names></string-name>, 
+						<string-name>
+							<surname>Le Naveaux</surname>
+							<given-names>F</given-names></string-name>, 
+						<string-name>
+							<surname>Schwend</surname>
+							<given-names>RM</given-names></string-name>, 
+						<string-name>
+							<surname>Aubin</surname>
+							<given-names>CE</given-names></string-name>
+					</person-group>. 
+					<article-title>How does differential rod contouring contribute to 3-dimensional correction and affect the bone-screw forces in adolescent idiopathic scoliosis instrumentation?</article-title>
+					<source>Clin Biomech (Bristol, Avon).</source>
+					<year>2016</year>
+					<month>Nov</month>
+					;
+					<volume>39</volume>
+					:
+					<fpage>115</fpage>
+					-
+					<lpage>21</lpage>
+					. 
+					<comment>Epub 2016 Oct 6</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib4">
+				<label>4</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>De la Garza Ramos</surname>
+							<given-names>R</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Goodwin</surname>
+							<given-names>CR</given-names></string-name>, 
+						<string-name>
+							<surname>Abu-Bonsrah</surname>
+							<given-names>N</given-names></string-name>, 
+						<string-name>
+							<surname>Jain</surname>
+							<given-names>A</given-names></string-name>, 
+						<string-name>
+							<surname>Miller</surname>
+							<given-names>EK</given-names></string-name>, 
+						<string-name>
+							<surname>Huang</surname>
+							<given-names>N</given-names></string-name>, 
+						<string-name>
+							<surname>Kebaish</surname>
+							<given-names>KM</given-names></string-name>, 
+						<string-name>
+							<surname>Sponseller</surname>
+							<given-names>PD</given-names></string-name>, 
+						<string-name>
+							<surname>Sciubba</surname>
+							<given-names>DM</given-names></string-name>
+					</person-group>. 
+					<article-title>Patient and operative factors associated with complications following adolescent idiopathic scoliosis surgery: an analysis of 36,335 patients from the Nationwide Inpatient Sample</article-title>
+					. 
+					<source>J Neurosurg Pediatr.</source>
+					<year>2016</year>
+					<month>Dec</month>
+					;
+					<volume>25</volume>
+					(
+					<issue>6</issue>
+					):
+					<fpage>730</fpage>
+					-
+					<lpage>6</lpage>
+					. 
+					<comment>Epub 2016 Aug 26</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib5">
+				<label>5</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Murphy</surname>
+							<given-names>RF</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Mooney</surname>
+							<given-names>JF</given-names>
+							<suffix>3rd</suffix></string-name>
+					</person-group>. 
+					<article-title>Complications following spine fusion for adolescent idiopathic scoliosis</article-title>
+					. 
+					<source>Curr Rev Musculoskelet Med.</source>
+					<year>2016</year>
+					<month>Dec</month>
+					;
+					<volume>9</volume>
+					(
+					<issue>4</issue>
+					):
+					<fpage>462</fpage>
+					-
+					<lpage>9</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib6">
+				<label>6</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Reames</surname>
+							<given-names>DL</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Smith</surname>
+							<given-names>JS</given-names></string-name>, 
+						<string-name>
+							<surname>Fu</surname>
+							<given-names>KM</given-names></string-name>, 
+						<string-name>
+							<surname>Polly</surname>
+							<given-names>DW</given-names>
+							<suffix>Jr</suffix></string-name>, 
+						<string-name>
+							<surname>Ames</surname>
+							<given-names>CP</given-names></string-name>, 
+						<string-name>
+							<surname>Berven</surname>
+							<given-names>SH</given-names></string-name>, 
+						<string-name>
+							<surname>Perra</surname>
+							<given-names>JH</given-names></string-name>, 
+						<string-name>
+							<surname>Glassman</surname>
+							<given-names>SD</given-names></string-name>, 
+						<string-name>
+							<surname>McCarthy</surname>
+							<given-names>RE</given-names></string-name>, 
+						<string-name>
+							<surname>Knapp</surname>
+							<given-names>RD</given-names>
+							<suffix>Jr</suffix></string-name>, 
+						<string-name>
+							<surname>Heary</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name>
+							<surname>Shaffrey</surname>
+							<given-names>CI</given-names></string-name>
+					</person-group>; 
+					<article-title>Scoliosis Research Society Morbidity and Mortality Committee. Complications in the surgical treatment of 19,360 cases of pediatric scoliosis: a review of the Scoliosis Research Society Morbidity and Mortality database</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2011</year>
+					<month>Aug</month>
+					<day>15</day>
+					;
+					<volume>36</volume>
+					(
+					<issue>18</issue>
+					):
+					<fpage>1484</fpage>
+					-
+					<lpage>91</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib7">
+				<label>7</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Thirumala</surname>
+							<given-names>PD</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Crammond</surname>
+							<given-names>DJ</given-names></string-name>, 
+						<string-name>
+							<surname>Loke</surname>
+							<given-names>YK</given-names></string-name>, 
+						<string-name>
+							<surname>Cheng</surname>
+							<given-names>HL</given-names></string-name>, 
+						<string-name>
+							<surname>Huang</surname>
+							<given-names>J</given-names></string-name>, 
+						<string-name>
+							<surname>Balzer</surname>
+							<given-names>JR</given-names></string-name>
+					</person-group>. 
+					<article-title>Diagnostic accuracy of motor evoked potentials to detect neurological deficit during idiopathic scoliosis correction: a systematic review</article-title>
+					. 
+					<source>J Neurosurg Spine.</source>
+					<year>2017</year>
+					<month>Mar</month>
+					;
+					<volume>26</volume>
+					(
+					<issue>3</issue>
+					):
+					<fpage>374</fpage>
+					-
+					<lpage>83</lpage>
+					. 
+					<comment>Epub 2016 Dec 9</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib8">
+				<label>8</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>MacEwen</surname>
+							<given-names>GD</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Bunnell</surname>
+							<given-names>WP</given-names></string-name>, 
+						<string-name>
+							<surname>Sriram</surname>
+							<given-names>K</given-names></string-name>
+					</person-group>. 
+					<article-title>Acute neurological complications in the treatment of scoliosis. A report of the Scoliosis Research Society</article-title>
+					. 
+					<source>J Bone Joint Surg Am.</source>
+					<year>1975</year>
+					<month>Apr</month>
+					;
+					<volume>57</volume>
+					(
+					<issue>3</issue>
+					):
+					<fpage>404</fpage>
+					-
+					<lpage>8</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib9">
+				<label>9</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Hamilton</surname>
+							<given-names>DK</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Smith</surname>
+							<given-names>JS</given-names></string-name>, 
+						<string-name>
+							<surname>Sansur</surname>
+							<given-names>CA</given-names></string-name>, 
+						<string-name>
+							<surname>Glassman</surname>
+							<given-names>SD</given-names></string-name>, 
+						<string-name>
+							<surname>Ames</surname>
+							<given-names>CP</given-names></string-name>, 
+						<string-name>
+							<surname>Berven</surname>
+							<given-names>SH</given-names></string-name>, 
+						<string-name>
+							<surname>Polly</surname>
+							<given-names>DW</given-names>
+							<suffix>Jr</suffix></string-name>, 
+						<string-name>
+							<surname>Perra</surname>
+							<given-names>JH</given-names></string-name>, 
+						<string-name>
+							<surname>Knapp</surname>
+							<given-names>DR</given-names></string-name>, 
+						<string-name>
+							<surname>Boachie-Adjei</surname>
+							<given-names>O</given-names></string-name>, 
+						<string-name>
+							<surname>McCarthy</surname>
+							<given-names>RE</given-names></string-name>, 
+						<string-name>
+							<surname>Shaffrey</surname>
+							<given-names>CI</given-names></string-name>
+					</person-group>; 
+					<article-title>Scoliosis Research Society Morbidity and Mortality Committee. Rates of new neurological deficit associated with spine surgery based on 108,419 procedures: a report of the Scoliosis Research Society Morbidity and Mortality Committee</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2011</year>
+					<month>Jul</month>
+					<day>1</day>
+					;
+					<volume>36</volume>
+					(
+					<issue>15</issue>
+					):
+					<fpage>1218</fpage>
+					-
+					<lpage>28</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib10">
+				<label>10</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Bartley</surname>
+							<given-names>CE</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Yaszay</surname>
+							<given-names>B</given-names></string-name>, 
+						<string-name>
+							<surname>Bastrom</surname>
+							<given-names>TP</given-names></string-name>, 
+						<string-name>
+							<surname>Shah</surname>
+							<given-names>SA</given-names></string-name>, 
+						<string-name>
+							<surname>Lonner</surname>
+							<given-names>BS</given-names></string-name>, 
+						<string-name>
+							<surname>Asghar</surname>
+							<given-names>J</given-names></string-name>, 
+						<string-name>
+							<surname>Miyanji</surname>
+							<given-names>F</given-names></string-name>, 
+						<string-name>
+							<surname>Samdani</surname>
+							<given-names>A</given-names></string-name>, 
+						<string-name>
+							<surname>Newton</surname>
+							<given-names>PO</given-names></string-name>
+					</person-group>. 
+					<article-title>Perioperative and delayed major complications following surgical treatment of adolescent idiopathic scoliosis</article-title>
+					. 
+					<source>J Bone Joint Surg Am.</source>
+					<year>2017</year>
+					<month>Jul</month>
+					<day>19</day>
+					;
+					<volume>99</volume>
+					(
+					<issue>14</issue>
+					):
+					<fpage>1206</fpage>
+					-
+					<lpage>12</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib11">
+				<label>11</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Bjerke</surname>
+							<given-names>BT</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Zuchelli</surname>
+							<given-names>DM</given-names></string-name>, 
+						<string-name>
+							<surname>Nemani</surname>
+							<given-names>VM</given-names></string-name>, 
+						<string-name>
+							<surname>Emerson</surname>
+							<given-names>RG</given-names></string-name>, 
+						<string-name>
+							<surname>Kim</surname>
+							<given-names>HJ</given-names></string-name>, 
+						<string-name>
+							<surname>Boachie-Adjei</surname>
+							<given-names>O</given-names></string-name>
+					</person-group>. 
+					<article-title>Prognosis of significant intraoperative neurophysiologic monitoring events in severe spinal deformity surgery</article-title>
+					. 
+					<source>Spine Deform.</source>
+					<year>2017</year>
+					<month>Mar</month>
+					;
+					<volume>5</volume>
+					(
+					<issue>2</issue>
+					):
+					<fpage>117</fpage>
+					-
+					<lpage>23</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib12">
+				<label>12</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Cusick</surname>
+							<given-names>JF</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Myklebust</surname>
+							<given-names>J</given-names></string-name>, 
+						<string-name>
+							<surname>Zyvoloski</surname>
+							<given-names>M</given-names></string-name>, 
+						<string-name>
+							<surname>Sances</surname>
+							<given-names>A</given-names>
+							<suffix>Jr</suffix></string-name>, 
+						<string-name>
+							<surname>Houterman</surname>
+							<given-names>C</given-names></string-name>, 
+						<string-name>
+							<surname>Larson</surname>
+							<given-names>SJ</given-names></string-name>
+					</person-group>. 
+					<article-title>Effects of vertebral column distraction in the monkey</article-title>
+					. 
+					<source>J Neurosurg.</source>
+					<year>1982</year>
+					<month>Nov</month>
+					;
+					<volume>57</volume>
+					(
+					<issue>5</issue>
+					):
+					<fpage>651</fpage>
+					-
+					<lpage>9</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib13">
+				<label>13</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Jarzem</surname>
+							<given-names>PF</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Quance</surname>
+							<given-names>DR</given-names></string-name>, 
+						<string-name>
+							<surname>Doyle</surname>
+							<given-names>DJ</given-names></string-name>, 
+						<string-name>
+							<surname>Begin</surname>
+							<given-names>LR</given-names></string-name>, 
+						<string-name>
+							<surname>Kostuik</surname>
+							<given-names>JP</given-names></string-name>
+					</person-group>. 
+					<article-title>Spinal cord tissue pressure during spinal cord distraction in dogs</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>1992</year>
+					<month>Aug</month>
+					;
+					<volume>17</volume>
+					(
+					<issue>8</issue>
+					)(
+					<supplement>Suppl</supplement>
+					):
+					<fpage>S227</fpage>
+					-
+					<lpage>34</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib14">
+				<label>14</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Yang</surname>
+							<given-names>JH</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Suh</surname>
+							<given-names>SW</given-names></string-name>, 
+						<string-name>
+							<surname>Modi</surname>
+							<given-names>HN</given-names></string-name>, 
+						<string-name>
+							<surname>Ramani</surname>
+							<given-names>ET</given-names></string-name>, 
+						<string-name>
+							<surname>Hong</surname>
+							<given-names>JY</given-names></string-name>, 
+						<string-name>
+							<surname>Hwang</surname>
+							<given-names>JH</given-names></string-name>, 
+						<string-name>
+							<surname>Jung</surname>
+							<given-names>WY</given-names></string-name>
+					</person-group>. 
+					<article-title>Effects of vertebral column distraction on transcranial electrical stimulation-motor evoked potential and histology of the spinal cord in a porcine model</article-title>
+					. 
+					<source>J Bone Joint Surg Am.</source>
+					<year>2013</year>
+					<month>May</month>
+					<day>1</day>
+					;
+					<volume>95</volume>
+					(
+					<issue>9</issue>
+					):
+					<fpage>835</fpage>
+					-
+					<lpage>42</lpage>
+					: 
+					<comment>S1-2</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib15">
+				<label>15</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Lenke</surname>
+							<given-names>LG</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Betz</surname>
+							<given-names>RR</given-names></string-name>, 
+						<string-name>
+							<surname>Harms</surname>
+							<given-names>J</given-names></string-name>, 
+						<string-name>
+							<surname>Bridwell</surname>
+							<given-names>KH</given-names></string-name>, 
+						<string-name>
+							<surname>Clements</surname>
+							<given-names>DH</given-names></string-name>, 
+						<string-name>
+							<surname>Lowe</surname>
+							<given-names>TG</given-names></string-name>, 
+						<string-name>
+							<surname>Blanke</surname>
+							<given-names>K</given-names></string-name>
+					</person-group>. 
+					<article-title>Adolescent idiopathic scoliosis: a new classification to determine extent of spinal arthrodesis</article-title>
+					. 
+					<source>J Bone Joint Surg Am.</source>
+					<year>2001</year>
+					<month>Aug</month>
+					;
+					<volume>83</volume>
+					(
+					<issue>8</issue>
+					):
+					<fpage>1169</fpage>
+					-
+					<lpage>81</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib16">
+				<label>16</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Geck</surname>
+							<given-names>MJ</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Macagno</surname>
+							<given-names>A</given-names></string-name>, 
+						<string-name>
+							<surname>Ponte</surname>
+							<given-names>A</given-names></string-name>, 
+						<string-name>
+							<surname>Shufflebarger</surname>
+							<given-names>HL</given-names></string-name>
+					</person-group>. 
+					<article-title>The Ponte procedure: posterior only treatment of Scheuermann’s kyphosis using segmental posterior shortening and pedicle screw instrumentation</article-title>
+					. 
+					<source>J Spinal Disord Tech.</source>
+					<year>2007</year>
+					<month>Dec</month>
+					;
+					<volume>20</volume>
+					(
+					<issue>8</issue>
+					):
+					<fpage>586</fpage>
+					-
+					<lpage>93</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib17">
+				<label>17</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Bridwell</surname>
+							<given-names>KH</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Kuklo</surname>
+							<given-names>TR</given-names></string-name>, 
+						<string-name>
+							<surname>Lewis</surname>
+							<given-names>SJ</given-names></string-name>, 
+						<string-name>
+							<surname>Sweet</surname>
+							<given-names>FA</given-names></string-name>, 
+						<string-name>
+							<surname>Lenke</surname>
+							<given-names>LG</given-names></string-name>, 
+						<string-name>
+							<surname>Baldus</surname>
+							<given-names>C</given-names></string-name>
+					</person-group>. 
+					<article-title>String test measurement to assess the effect of spinal deformity correction on spinal canal length</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2001</year>
+					<month>Sep</month>
+					<day>15</day>
+					;
+					<volume>26</volume>
+					(
+					<issue>18</issue>
+					):
+					<fpage>2013</fpage>
+					-
+					<lpage>9</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib18">
+				<label>18</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Shah</surname>
+							<given-names>SA</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Dhawale</surname>
+							<given-names>AA</given-names></string-name>, 
+						<string-name>
+							<surname>Oda</surname>
+							<given-names>JE</given-names></string-name>, 
+						<string-name>
+							<surname>Yorgova</surname>
+							<given-names>P</given-names></string-name>, 
+						<string-name>
+							<surname>Neiss</surname>
+							<given-names>GI</given-names></string-name>, 
+						<string-name>
+							<surname>Holmes</surname>
+							<given-names>L</given-names>
+							<suffix>Jr</suffix></string-name>, 
+						<string-name>
+							<surname>Gabos</surname>
+							<given-names>PG</given-names></string-name>
+					</person-group>. 
+					<article-title>Ponte osteotomies with pedicle screw instrumentation in the treatment of adolescent idiopathic scoliosis</article-title>
+					. 
+					<source>Spine Deform.</source>
+					<year>2013</year>
+					<month>May</month>
+					;
+					<volume>1</volume>
+					(
+					<issue>3</issue>
+					):
+					<fpage>196</fpage>
+					-
+					<lpage>204</lpage>
+					. 
+					<comment>Epub 2013 Jun 6</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib19">
+				<label>19</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Demura</surname>
+							<given-names>S</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Yaszay</surname>
+							<given-names>B</given-names></string-name>, 
+						<string-name>
+							<surname>Carreau</surname>
+							<given-names>JH</given-names></string-name>, 
+						<string-name>
+							<surname>Upasani</surname>
+							<given-names>VV</given-names></string-name>, 
+						<string-name>
+							<surname>Bastrom</surname>
+							<given-names>TP</given-names></string-name>, 
+						<string-name>
+							<surname>Bartley</surname>
+							<given-names>CE</given-names></string-name>, 
+						<string-name>
+							<surname>Newton</surname>
+							<given-names>PO</given-names></string-name>
+					</person-group>. 
+					<article-title>Maintenance of thoracic kyphosis in the 3D correction of thoracic adolescent idiopathic scoliosis using direct vertebral derotation</article-title>
+					. 
+					<source>Spine Deform.</source>
+					<year>2013</year>
+					<month>Jan</month>
+					;
+					<volume>1</volume>
+					(
+					<issue>1</issue>
+					):
+					<fpage>46</fpage>
+					-
+					<lpage>50</lpage>
+					. 
+					<comment>Epub 2013 Jan 3</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib20">
+				<label>20</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Badve</surname>
+							<given-names>SA</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Goodwin</surname>
+							<given-names>RC</given-names></string-name>, 
+						<string-name>
+							<surname>Gurd</surname>
+							<given-names>D</given-names></string-name>, 
+						<string-name>
+							<surname>Kuivila</surname>
+							<given-names>T</given-names></string-name>, 
+						<string-name>
+							<surname>Kurra</surname>
+							<given-names>S</given-names></string-name>, 
+						<string-name>
+							<surname>Lavelle</surname>
+							<given-names>WF</given-names></string-name>
+					</person-group>. 
+					<article-title>Uniplanar versus fixed pedicle screws in the correction of thoracic kyphosis in the treatment of adolescent idiopathic scoliosis (AIS)</article-title>
+					. 
+					<source>J Pediatr Orthop.</source>
+					<year>2017</year>
+					<month>Dec</month>
+					;
+					<volume>37</volume>
+					(
+					<issue>8</issue>
+					):
+					<fpage>e558</fpage>
+					-
+					<lpage>62</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib21">
+				<label>21</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Lowenstein</surname>
+							<given-names>JE</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Matsumoto</surname>
+							<given-names>H</given-names></string-name>, 
+						<string-name>
+							<surname>Vitale</surname>
+							<given-names>MG</given-names></string-name>, 
+						<string-name>
+							<surname>Weidenbaum</surname>
+							<given-names>M</given-names></string-name>, 
+						<string-name>
+							<surname>Gomez</surname>
+							<given-names>JA</given-names></string-name>, 
+						<string-name>
+							<surname>Lee</surname>
+							<given-names>FY</given-names></string-name>, 
+						<string-name>
+							<surname>Hyman</surname>
+							<given-names>JE</given-names></string-name>, 
+						<string-name>
+							<surname>Roye</surname>
+							<given-names>DP</given-names>
+							<suffix>Jr</suffix></string-name>
+					</person-group>. 
+					<article-title>Coronal and sagittal plane correction in adolescent idiopathic scoliosis: a comparison between all pedicle screw versus hybrid thoracic hook lumbar screw constructs</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2007</year>
+					<month>Feb</month>
+					<day>15</day>
+					;
+					<volume>32</volume>
+					(
+					<issue>4</issue>
+					):
+					<fpage>448</fpage>
+					-
+					<lpage>52</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib22">
+				<label>22</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Seki</surname>
+							<given-names>S</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Kawaguchi</surname>
+							<given-names>Y</given-names></string-name>, 
+						<string-name>
+							<surname>Nakano</surname>
+							<given-names>M</given-names></string-name>, 
+						<string-name>
+							<surname>Makino</surname>
+							<given-names>H</given-names></string-name>, 
+						<string-name>
+							<surname>Mine</surname>
+							<given-names>H</given-names></string-name>, 
+						<string-name>
+							<surname>Kimura</surname>
+							<given-names>T</given-names></string-name>
+					</person-group>. 
+					<article-title>Rod rotation and differential rod contouring followed by direct vertebral rotation for treatment of adolescent idiopathic scoliosis: effect on thoracic and thoracolumbar or lumbar curves assessed with intraoperative computed tomography</article-title>
+					. 
+					<source>Spine J.</source>
+					<year>2016</year>
+					<month>Mar</month>
+					;
+					<volume>16</volume>
+					(
+					<issue>3</issue>
+					):
+					<fpage>365</fpage>
+					-
+					<lpage>71</lpage>
+					. 
+					<comment>Epub 2015 Dec 2</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib23">
+				<label>23</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Newton</surname>
+							<given-names>PO</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Yaszay</surname>
+							<given-names>B</given-names></string-name>, 
+						<string-name>
+							<surname>Upasani</surname>
+							<given-names>VV</given-names></string-name>, 
+						<string-name>
+							<surname>Pawelek</surname>
+							<given-names>JB</given-names></string-name>, 
+						<string-name>
+							<surname>Bastrom</surname>
+							<given-names>TP</given-names></string-name>, 
+						<string-name>
+							<surname>Lenke</surname>
+							<given-names>LG</given-names></string-name>, 
+						<string-name>
+							<surname>Lowe</surname>
+							<given-names>T</given-names></string-name>, 
+						<string-name>
+							<surname>Crawford</surname>
+							<given-names>A</given-names></string-name>, 
+						<string-name>
+							<surname>Betz</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name>
+							<surname>Lonner</surname>
+							<given-names>B</given-names></string-name>
+					</person-group>; 
+					<article-title>Harms Study Group. Preservation of thoracic kyphosis is critical to maintain lumbar lordosis in the surgical treatment of adolescent idiopathic scoliosis</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2010</year>
+					<month>Jun</month>
+					<day>15</day>
+					;
+					<volume>35</volume>
+					(
+					<issue>14</issue>
+					):
+					<fpage>1365</fpage>
+					-
+					<lpage>70</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib24">
+				<label>24</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Tamkus</surname>
+							<given-names>AA</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Rice</surname>
+							<given-names>KS</given-names></string-name>, 
+						<string-name>
+							<surname>McCaffrey</surname>
+							<given-names>MT</given-names></string-name>
+					</person-group>. 
+					<article-title>Perils of intraoperative neurophysiological monitoring: analysis of “false-negative” results in spine surgeries</article-title>
+					. 
+					<source>Spine J.</source>
+					<year>2018</year>
+					<month>Feb</month>
+					;
+					<volume>18</volume>
+					(
+					<issue>2</issue>
+					):
+					<fpage>276</fpage>
+					-
+					<lpage>84</lpage>
+					. 
+					<comment>Epub 2017 Jul 13</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib25">
+				<label>25</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Tamaki</surname>
+							<given-names>T</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Takano</surname>
+							<given-names>H</given-names></string-name>, 
+						<string-name>
+							<surname>Takakuwa</surname>
+							<given-names>K</given-names></string-name>
+					</person-group>. 
+					<article-title>Spinal cord monitoring: basic principles and experimental aspects</article-title>
+					. 
+					<source>Cent Nerv Syst Trauma.</source>
+					<year>1985</year>
+					<season>Summer</season>
+					;
+					<volume>2</volume>
+					(
+					<issue>2</issue>
+					):
+					<fpage>137</fpage>
+					-
+					<lpage>49</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib26">
+				<label>26</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Berven</surname>
+							<given-names>SH</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Lowe</surname>
+							<given-names>T</given-names></string-name>
+					</person-group>. 
+					<article-title>The Scoliosis Research Society classification for adult spinal deformity</article-title>
+					. 
+					<source>Neurosurg Clin N Am.</source>
+					<year>2007</year>
+					<month>Apr</month>
+					;
+					<volume>18</volume>
+					(
+					<issue>2</issue>
+					):
+					<fpage>207</fpage>
+					-
+					<lpage>13</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib27">
+				<label>27</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name>
+							<surname>Dawson</surname>
+							<given-names>EG</given-names>
+						</string-name>, 
+						<string-name>
+							<surname>Sherman</surname>
+							<given-names>JE</given-names></string-name>, 
+						<string-name>
+							<surname>Kanim</surname>
+							<given-names>LE</given-names></string-name>, 
+						<string-name>
+							<surname>Nuwer</surname>
+							<given-names>MR</given-names></string-name>
+					</person-group>. 
+					<article-title>Spinal cord monitoring. Results of the Scoliosis Research Society and the European Spinal Deformity Society survey</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>1991</year>
+					<month>Aug</month>
+					;
+					<volume>16</volume>
+					(
+					<issue>8</issue>
+					)(
+					<supplement>Suppl</supplement>
+					):
+					<fpage>S361</fpage>
+					-
+					<lpage>4</lpage>
+					.</mixed-citation>
+			</ref>
+		</ref-list>
+	</back>
+</article>

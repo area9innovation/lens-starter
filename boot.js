@@ -1,3 +1,16 @@
+var documentURL = "data/" +
+"JBJS.18.00531_datasharing.xml"
+//"99_1_10/99_1_10.xml"
+//"JBJSOA-D-17-00063-mathml.xml"
+//"example.xml"
+//"97_16_1354/97_16_1354.xml"
+//"5_4_e20/5_4_e20.xml"
+//"5_4_e19/5_4_e19.xml"
+//'97_15_1220/97_15_1220.xml'
+//'99_1_10/99_1_10.xml'
+;
+
+
 var mmobile = window.location.href.match(/mobile/);
 var mobileMode = mmobile!=null;
 
@@ -143,12 +156,6 @@ var qs = function () {
 // This document gets loaded by default
 // --------
 
-//var documentURL = "data/example.xml";
-//var documentURL = "data/97_16_1354/97_16_1354.xml";
-//var documentURL = "data/5_4_e20/5_4_e20.xml";
-//var documentURL = "data/5_4_e19/5_4_e19.xml";
-//var documentURL = 'data/97_15_1220/97_15_1220.xml';
-var documentURL = 'data/99_1_10/99_1_10.xml';
 var isPIP = false;
 
 $(function() {
