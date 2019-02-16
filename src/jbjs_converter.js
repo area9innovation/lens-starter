@@ -18,6 +18,7 @@ var JbjsConverter = function(options, config) {
   this.config.show_abstract_only = config.show_abstract_only || false;
   this.config.show_disclosure_href = this.config.show_disclosure_href || false;
   this.config.show_pdf_href = this.config.show_pdf_href || false;
+  this.config.show_datasharing_href = this.config.show_datasharing_href || false;
 
   LensConverter.call(this, options);
 
@@ -60,7 +61,7 @@ var JbjsConverter = function(options, config) {
 
 JbjsConverter.Prototype = function() {
 
-  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status', 'rsuite_topics', 'rsuite_files', 'disclosure_pdf', 'sdc', 'article_pdf' ];
+  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status', 'rsuite_topics', 'rsuite_files', 'disclosure_pdf', 'sdc', 'article_pdf', 'datasharing_pdf' ];
   this.__ignoreCustomMetaNamesHeader = [ 'peer-review-statement' ];
 
   this.test = function(xmlDoc, docUrl) {
@@ -103,6 +104,9 @@ JbjsConverter.Prototype = function() {
           }
           if ( name.textContent == 'article_pdf' ){
             this.config.show_pdf_href = (value.textContent == 'present');
+          }
+          if ( name.textContent == 'datasharing_pdf' ){
+            this.config.show_datasharing_href = (value.textContent == 'present');
           }
         }
       }
@@ -472,6 +476,25 @@ JbjsConverter.Prototype = function() {
         _.each(pars, function(par) {
           nodes.push(par.id);
         });
+
+        if (this.config.show_datasharing_href ) {
+            var uri = article.querySelector('self-uri[*|title=data-availability-pdf]');
+            if ( uri ) {
+                var url = uri.getAttribute('xlink:href');
+                var ext = '.pdf';
+              var supplementNode = {
+                id: state.nextId('supplement'),
+                source_id: null,
+                type: 'supplement',
+                label: 'Data Sharing PDF',
+                url: this.URLBuilder(url, url.substr(-ext.length) == ext ? '' : ext, 'dataavailability'),
+                caption: null
+              };
+              doc.create(supplementNode);
+              nodes.push(supplementNode.id);
+            }
+        }
+
     }
     return nodes;
   };

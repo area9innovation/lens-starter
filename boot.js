@@ -1,5 +1,5 @@
 var documentURL = "data/" +
-"JBJS.18.00531_datasharing.xml"
+"101_1_48/JBJS.18.00531_datasharing.xml"
 //"99_1_10/99_1_10.xml"
 //"JBJSOA-D-17-00063-mathml.xml"
 //"example.xml"
@@ -197,6 +197,7 @@ $(function() {
         external_menu_cb: onMenuReady,
         return_url: 'http://devstore2.jbjs.org/login?returnUrl=http%3A%2F%2Ftech.area9innovation.com%2Fjbjs%2Fhub%2Fpages%2Fhome.html',
         show_disclosure_href: true,
+        show_datasharing_href: true
       });
 
       app.listenTo(app.controller, 'loaded:xml', onXmlLoaded);
