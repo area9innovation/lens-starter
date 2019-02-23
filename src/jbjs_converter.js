@@ -151,14 +151,17 @@ JbjsConverter.Prototype = function() {
   };
 
   this.URLBuilder = function(url, ext) {
-      return [
-        this.docBaseUrl,
-        '/',
-        this.imageFolder,
-        '/',
-        url,
-        ext
-      ].join('');
+    if (url.substring(url.length - ext.length) === ext) {
+      ext = '';
+    }
+    return [
+      this.docBaseUrl,
+      '/',
+      this.imageFolder,
+      '/',
+      url,
+      ext
+    ].join('');
   };
 
   this.ResourceURLBuilder = function(url) {
@@ -166,7 +169,10 @@ JbjsConverter.Prototype = function() {
   };
 
   this.URLBuilderJBJSType = function(url, ext) {
-      return [
+    if (url.substring(url.length - ext.length) === ext) {
+      ext = '';
+    }      
+    return [
         this.docBaseUrl,
         '/',
         url,
@@ -480,14 +486,14 @@ JbjsConverter.Prototype = function() {
         if (this.config.show_datasharing_href ) {
             var uri = article.querySelector('self-uri[*|title=data-availability-pdf]');
             if ( uri ) {
-                var url = uri.getAttribute('xlink:href');
-                var ext = '.pdf';
+              var url = uri.getAttribute('xlink:href');
+              var ext = '.pdf';
               var supplementNode = {
                 id: state.nextId('supplement'),
                 source_id: null,
                 type: 'supplement',
                 label: 'Data Sharing PDF',
-                url: this.URLBuilder(url, url.substr(-ext.length) == ext ? '' : ext, 'dataavailability'),
+                url: this.URLBuilder(url, ext, 'dataavailability'),
                 caption: null
               };
               doc.create(supplementNode);
