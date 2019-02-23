@@ -464,7 +464,8 @@ JbjsConverter.Prototype = function() {
     }
 
     // datasharing 
-    var ds = article.querySelector('back sec[type=data-availability]');
+    var ds = article.querySelector('back sec[type=data-availability]')
+          || article.querySelector('back sec[sec-type=data-availability]');
     if (ds) {
         var title = ds.querySelector('title');
         var headingId = state.nextId('heading');
