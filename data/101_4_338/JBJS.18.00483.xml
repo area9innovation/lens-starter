@@ -1,0 +1,3046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC '-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN'
+  'JATS-journalpublishing1.dtd'>
+<article article-type="research-article" dtd-version="1.0" r:rsuiteId="1948305" xml:lang="EN" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:r="http://www.rsuitecms.com/rsuite/ns/metadata" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<front>
+		<journal-meta>
+			<journal-id journal-id-type="hwp">jbjsam</journal-id>
+			<journal-id journal-id-type="nlm-ta">J Bone Joint Surg Am</journal-id>
+			<journal-id journal-id-type="publisher-id">jbjsam</journal-id>
+			<journal-title-group>
+				<journal-title>The Journal of Bone and Joint Surgery</journal-title>
+				<abbrev-journal-title abbrev-type="full">The Journal of Bone and Joint Surgery</abbrev-journal-title>
+			</journal-title-group>
+			<issn pub-type="ppub">0021-9355</issn>
+			<issn pub-type="epub">1535-1386</issn>
+			<publisher>
+				<publisher-name>The Journal of Bone and Joint Surgery, Inc.</publisher-name>
+			</publisher>
+		</journal-meta>
+		<article-meta>
+			<article-id pub-id-type="publisher-id">JBJS-D-18-00483</article-id>
+			<article-id pub-id-type="doi">10.2106/JBJS.18.00483</article-id>
+			<article-id pub-id-type="art-access-id">00007</article-id>
+			<article-categories>
+				<subj-group subj-group-type="hwp-journal-coll">
+					<subject>0150</subject>
+				</subj-group>
+				<subj-group subj-group-type="heading">
+					<subject>Scientific Articles</subject>
+				</subj-group>
+			</article-categories>
+			<title-group>
+				<article-title>Operative Versus Nonoperative Treatment for Adult Symptomatic Lumbar Scoliosis</article-title>
+			</title-group>
+			<contrib-group>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6221-7406</contrib-id>
+					<name name-style="western">
+						<surname>Kelly</surname>
+						<given-names>Michael P.</given-names>
+					</name>
+					<degrees>MD, MSc</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-5672-7725</contrib-id>
+					<name name-style="western">
+						<surname>Lurie</surname>
+						<given-names>Jon D.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff2">
+						<sup>2</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5835-0201</contrib-id>
+					<name name-style="western">
+						<surname>Yanik</surname>
+						<given-names>Elizabeth L.</given-names>
+					</name>
+					<degrees>PhD, ScM</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9760-8386</contrib-id>
+					<name name-style="western">
+						<surname>Shaffrey</surname>
+						<given-names>Christopher I.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff3">
+						<sup>3</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2927-7401</contrib-id>
+					<name name-style="western">
+						<surname>Baldus</surname>
+						<given-names>Christine R.</given-names>
+					</name>
+					<degrees>RN, MHS</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3604-115X</contrib-id>
+					<name name-style="western">
+						<surname>Boachie-Adjei</surname>
+						<given-names>Oheneba</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff4">
+						<sup>4</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8880-8490</contrib-id>
+					<name name-style="western">
+						<surname>Buchowski</surname>
+						<given-names>Jacob M.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7685-9036</contrib-id>
+					<name name-style="western">
+						<surname>Carreon</surname>
+						<given-names>Leah Y.</given-names>
+					</name>
+					<degrees>MD, MSc</degrees>
+					<xref ref-type="aff" rid="aff5">
+						<sup>5</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4197-4023</contrib-id>
+					<name name-style="western">
+						<surname>Crawford</surname>
+						<given-names>Charles H.</given-names>
+						<suffix>III</suffix>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff5">
+						<sup>5</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4936-8768</contrib-id>
+					<name name-style="western">
+						<surname>Edwards</surname>
+						<given-names>Charles</given-names>
+						<suffix>II</suffix>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff6">
+						<sup>6</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5375-328X</contrib-id>
+					<name name-style="western">
+						<surname>Errico</surname>
+						<given-names>Thomas J.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff7">
+						<sup>7</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5488-9357</contrib-id>
+					<name name-style="western">
+						<surname>Glassman</surname>
+						<given-names>Steven D.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff5">
+						<sup>5</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0777-1559</contrib-id>
+					<name name-style="western">
+						<surname>Gupta</surname>
+						<given-names>Munish C.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5595-4958</contrib-id>
+					<name name-style="western">
+						<surname>Lenke</surname>
+						<given-names>Lawrence G.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff8">
+						<sup>8</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3415-4871</contrib-id>
+					<name name-style="western">
+						<surname>Lewis</surname>
+						<given-names>Stephen J.</given-names>
+					</name>
+					<degrees>MD, MSc, FRCSC</degrees>
+					<xref ref-type="aff" rid="aff9">
+						<sup>9</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7482-6994</contrib-id>
+					<name name-style="western">
+						<surname>Kim</surname>
+						<given-names>Han Jo</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff10">
+						<sup>10</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2094-2452</contrib-id>
+					<name name-style="western">
+						<surname>Koski</surname>
+						<given-names>Tyler</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff11">
+						<sup>11</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4854-2816</contrib-id>
+					<name name-style="western">
+						<surname>Parent</surname>
+						<given-names>Stefan</given-names>
+					</name>
+					<degrees>MD, PhD</degrees>
+					<xref ref-type="aff" rid="aff12">
+						<sup>12</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6666-725X</contrib-id>
+					<name name-style="western">
+						<surname>Schwab</surname>
+						<given-names>Frank J.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff10">
+						<sup>10</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-7314-7896</contrib-id>
+					<name name-style="western">
+						<surname>Smith</surname>
+						<given-names>Justin S.</given-names>
+					</name>
+					<degrees>MD, PhD</degrees>
+					<xref ref-type="aff" rid="aff3">
+						<sup>3</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3591-4780</contrib-id>
+					<name name-style="western">
+						<surname>Zebala</surname>
+						<given-names>Lukas P.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+				</contrib>
+				<contrib contrib-type="author" corresp="yes">
+					<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9228-8782</contrib-id>
+					<name name-style="western">
+						<surname>Bridwell</surname>
+						<given-names>Keith H.</given-names>
+					</name>
+					<degrees>MD</degrees>
+					<xref ref-type="aff" rid="aff1">
+						<sup>1</sup>
+					</xref>
+				</contrib>
+				<aff id="aff1">
+					<label>1</label>Department of Orthopedic Surgery, Washington University School of Medicine, St. Louis, Missouri</aff>
+				<aff id="aff2">
+					<label>2</label>Department of Medicine, Dartmouth Medical School, Hanover, New Hampshire</aff>
+				<aff id="aff3">
+					<label>3</label>Department of Neurological Surgery, University of Virginia, Charlottesville, Virginia</aff>
+				<aff id="aff4">
+					<label>4</label>FOCOS Orthopedic Hospital, Accra, Ghana</aff>
+				<aff id="aff5">
+					<label>5</label>Norton Leatherman Spine Center, Louisville, Kentucky</aff>
+				<aff id="aff6">
+					<label>6</label>Mercy Medical Center, Baltimore, Maryland</aff>
+				<aff id="aff7">
+					<label>7</label>NYU Hospital for Joint Diseases, New York, NY</aff>
+				<aff id="aff8">
+					<label>8</label>Department of Orthopedic Surgery, Columbia University, New York, NY</aff>
+				<aff id="aff9">
+					<label>9</label>UHN-Orthopedics, Toronto Western Hospital, Toronto, Ontario, Canada</aff>
+				<aff id="aff10">
+					<label>10</label>Hospital for Special Surgery, New York, NY</aff>
+				<aff id="aff11">
+					<label>11</label>Department of Neurological Surgery, Northwestern University, Evanston, Illinois</aff>
+				<aff id="aff12">
+					<label>12</label>Sainte-Justine University Hospital, Montreal, Quebec, Canada</aff>
+			</contrib-group>
+			<author-notes>
+				<corresp id="cor1">E-mail address for K.H. Bridwell: 
+					<email>bridwellk@wustl.edu</email></corresp>
+				<fn id="fn1">
+					<p>
+						<bold>A commentary by Andrew J. Schoenfeld, MD, MSc,</bold>is linked to the online version of this article at 
+						<ext-link ext-link-type="uri" xlink:href="http://jbjs.org">jbjs.org</ext-link>
+						.</p>
+				</fn>
+				<fn fn-type="financial-disclosure" id="fn2">
+					<p>
+						<bold>Disclosure:</bold>Funding was exclusively from the National Institute of Arthritis and Musculoskeletal and Skin Diseases of the U.S. National Institutes of Health (R01AR055176). On the 
+						<bold>Disclosure of Potential Conflicts of Interest</bold>
+						forms, 
+						<italic>which are provided with the online version of the article,</italic>
+						one or more of the authors checked “yes” to indicate that the author had a relevant financial relationship in the biomedical arena outside the submitted work; “yes” to indicate that the author had a patent and/or copyright, planned, pending, or issued, broadly relevant to this work; and “yes” to indicate that the author had other relationships or activities that could be perceived to influence, or have the potential to influence, what was written in this work (
+						<ext-link ext-link-type="uri" xlink:href="http://links.lww.com/JBJS/F140">http://links.lww.com/JBJS/F140</ext-link>
+						).</p>
+				</fn>
+			</author-notes>
+			<pub-date pub-type="ppub">
+				<day>20</day>
+				<month>2</month>
+				<year>2019</year>
+			</pub-date>
+			<pub-date pub-type="collection">
+				<day>20</day>
+				<month>2</month>
+				<year>2019</year>
+			</pub-date>
+			<volume>101</volume>
+			<issue>4</issue>
+			<fpage>338</fpage>
+			<lpage>352</lpage>
+			<permissions>
+				<copyright-statement>Copyright © 2019 by The Journal of Bone and Joint Surgery, Incorporated</copyright-statement>
+				<copyright-year>2019</copyright-year>
+			</permissions>
+			<self-uri xlink:href="JBJS.18.00483.pdf" xlink:title="pdf"/>
+			<self-uri content-type="disclosure-pdf" xlink:href="JBJS.18.00483.disclosure.pdf"/>
+			<self-uri xlink:href="JBJS.18.00483.dataavailability.pdf" xlink:title="data-availability-pdf"/>
+			<abstract>
+				<sec>
+					<title>Background:</title>
+					<p>The effectiveness of operative compared with nonoperative treatment at initial presentation (no prior fusion) for adult lumbar scoliosis has not, to our knowledge, been evaluated in controlled trials. The goals of this study were to evaluate the effects of operative and nonoperative treatment and to assess the benefits of these treatments to help treating physicians determine whether patients are better managed operatively or nonoperatively.</p>
+				</sec>
+				<sec>
+					<title>Methods:</title>
+					<p>Patients with adult symptomatic lumbar scoliosis (aged 40 to 80 years, with a coronal Cobb angle measurement of ≥30° and an Oswestry Disability Index [ODI] score of ≥20 or Scoliosis Research Society [SRS]-22 score of ≤4.0) from 9 North American centers were enrolled in concurrent randomized or observational cohorts to evaluate operative versus nonoperative treatment. The primary outcomes were differences in the mean change from baseline in the SRS-22 subscore and ODI at 2-year follow-up. For the randomized cohort, the initial sample-size calculation estimated that 41 patients per group (82 total) would provide 80% power with alpha equal to 0.05, anticipating 10% loss to follow-up and 20% nonadherence in the nonoperative arm. However, an interim sample-size calculation estimated that 18 patients per group would be sufficient.</p>
+				</sec>
+				<sec>
+					<title>Results:</title>
+					<p>Sixty-three patients were enrolled in the randomized cohort: 30 in the operative group and 33 in the nonoperative group. Two hundred and twenty-three patients were enrolled in the observational cohort: 112 in the operative group and 111 in the nonoperative group. The intention-to-treat analysis of the randomized cohort found that, at 2 years of follow-up, outcomes did not differ between the groups. Nonadherence was high in the randomized cohort (64% nonoperative-to-operative crossover). In the as-treated analysis of the randomized cohort, operative treatment was associated with greater improvement at the 2-year follow-up in the SRS-22 subscore (adjusted mean difference, 0.7 [95% confidence interval (CI), 0.5 to 1.0]) and in the ODI (adjusted mean difference, −16 [95% CI, −22 to −10]) (p &lt; 0.001 for both). Surgery was also superior to nonoperative care in the observational cohort at 2 years after treatment on the basis of SRS-22 subscore and ODI outcomes (p &lt; 0.001). In an overall responder analysis, more operative patients achieved improvement meeting or exceeding the minimal clinically important difference (MCID) in the SRS-22 subscore (85.7% versus 38.7%; p &lt; 0.001) and the ODI (77.4% versus 38.3%; p &lt; 0.001). Thirty-four revision surgeries were performed in 24 (14%) of the operative patients.</p>
+				</sec>
+				<sec>
+					<title>Conclusions:</title>
+					<p>On the basis of as-treated and MCID analyses, if a patient with adult symptomatic lumbar scoliosis is satisfied with current spine-related health, nonoperative treatment is advised, with the understanding that improvement is unlikely. If a patient is not satisfied with current spine health and expects improvement, surgery is preferred.</p>
+				</sec>
+				<sec>
+					<title>Level of Evidence:</title>
+					<p>Therapeutic 
+						<underline>Level II</underline>
+						. See Instructions for Authors for a complete description of levels of evidence.</p>
+				</sec>
+			</abstract>
+			<counts>
+				<page-count count="15"/>
+			</counts>
+		</article-meta>
+	</front>
+	<body>
+		<p>Adult spinal deformity affects 15% of the U.S. population
+			<sup>
+				<xref ref-type="bibr" rid="bib1">1</xref>
+				,
+				<xref ref-type="bibr" rid="bib2">2</xref></sup>. Adult symptomatic lumbar scoliosis is the most common form of adult spinal deformity and is associated with disability similar to that of other chronic conditions such as diabetes mellitus and rheumatoid arthritis
+			<sup>
+				<xref ref-type="bibr" rid="bib3">3</xref></sup>.</p>
+		<p>Surgical treatment of lumbar scoliosis is costly, with readmissions and revision surgeries
+			<sup>
+				<xref ref-type="bibr" rid="bib4">4</xref>
+				,
+				<xref ref-type="bibr" rid="bib5">5</xref></sup>. Nonoperative treatments may not improve health-related quality of life
+			<sup>
+				<xref ref-type="bibr" rid="bib6">6</xref>
+				,
+				<xref ref-type="bibr" rid="bib7">7</xref></sup>. Little data exist to determine the efficacy of operative versus nonoperative care
+			<sup>
+				<xref ref-type="bibr" rid="bib8 bib9">8</xref>
+				-
+				<xref ref-type="bibr" rid="bib10">10</xref></sup>.</p>
+		<p>We present results from a multicenter trial with randomized and observational cohorts, ASLS-1 (Adult Symptomatic Lumbar Scoliosis-1), comparing the effects of operative and nonoperative treatment at primary presentation (no prior fusion) on health-related quality of life among patients with adult symptomatic lumbar scoliosis and assessing the benefits of these treatments.</p>
+		<sec sec-type="materials|methods">
+			<title>Materials and Methods</title>
+			<p>This study was registered at ClinicalTrials.gov (number NCT00854828).</p>
+			<sec>
+				<title>Trial Design</title>
+				<p>ASLS-1 was conducted at 9 centers in North America and included randomized and observational cohorts of patients
+					<sup>
+						<xref ref-type="bibr" rid="bib11">11</xref></sup>. All sites individually obtained institutional review board approval.</p>
+			</sec>
+			<sec>
+				<title>Trial Oversight</title>
+				<p>An independent data safety monitoring board and safety officer evaluated safety and the completeness of data collection biannually. Investigators collected the data and approved the final submission.</p>
+			</sec>
+			<sec>
+				<title>Patient Population</title>
+				<p>Eligible were patients 40 to 80 years of age who had adult symptomatic lumbar scoliosis, defined as a lumbar curve with a coronal Cobb angle measurement of ≥30° and an Oswestry Disability Index (ODI) score of ≥20 or Scoliosis Research Society (SRS)-22 score of ≤4.0 in the domains of pain, function, and/or self-image, who presented to a spinal-deformity surgeon. It is uncommon to see patients &lt;40 years of age with degenerative changes. Patients &gt;80 years of age are frequently too frail to be considered surgical candidates. Enrolled patients did not have prior spinal fusion or multilevel decompression surgery. A past, single-level laminotomy for disc herniation was not an exclusion. The SRS-22 is a disease-specific, validated instrument for spinal deformity, and the ODI is a disease-specific instrument for lumbar spine disability. The SRS-22 consists of 5 domains, the subscore being the average, excluding satisfaction.</p>
+				<p>Patients, all deemed surgical candidates by the treating physician, were offered enrollment. The patients in the randomized cohort received assignment through permuted block randomization, with block sizes of 4, 6, and 8, which were stratified by site, age group (40 to 59 and 60 to 80 years), sex, and Cobb angle-based severity (30° to 54°, 55° to 100°). Patients in the concurrent observational cohort who declined randomization chose which treatment to receive (operative or nonoperative). Enrollment in both cohorts began in April 2010, and was closed in July 2014.</p>
+			</sec>
+			<sec>
+				<title>Trial Interventions</title>
+				<p>Surgical procedures included instrumented spinal fusion for all patients, with laminectomies for symptomatic spinal stenosis. Surgical goals were 30% to 50% correction in the coronal plane and normalization of the sagittal plane. At each site, a physician was prespecified to direct nonoperative care, which included physical therapy (muscle strengthening and aerobic conditioning), injections, oral medications, and complementary resources. The care was standardized across centers. The physical therapy was tailored to each patient, not protocolized. However, back pain was treated with physical therapy, facet injections, and nonsteroidal medications (NSAIDs [nonsteroidal anti-inflammatory drugs]) with intermittent opioids. Leg pain was treated with activity modification, gabapentin, and nerve-root injections as well as with physical therapy. “Usual care” was employed for patients treated both operatively and nonoperatively to make results more generalizable, as advocated by Dawson et al.
+					<sup>
+						<xref ref-type="bibr" rid="bib12">12</xref></sup>and Weinstein et al.
+					<sup>
+						<xref ref-type="bibr" rid="bib13">13</xref></sup>, and to reduce nonoperative care sought outside the study by offering patients all available nonoperative treatment options.</p>
+			</sec>
+			<sec>
+				<title>Trial Outcomes</title>
+				<p>The primary outcomes were differences in the mean change from baseline to the 2-year follow-up between the operative and nonoperative groups (treatment effect) in the SRS-22 subscore and in the ODI. Assessments were made at enrollment and at 3-month intervals until 2 years. For the randomized cohort, enrollment data served as the baseline for all patients in the intention-to-treat analysis. In the as-treated analysis, enrollment data served as the baseline for patients in the nonoperative cohort while baseline data for surgical patients were updated if necessary within 4 months of surgery.</p>
+				<p>Specified radiographic parameters were based on 36-inch (91.4 cm) standing radiographs for operatively and nonoperatively treated patients, obtained at enrollment and 2 years post-treatment. Adverse events and changes in comorbidities were recorded by study coordinators at each site, with quality analysis by a single, centralized study coordinator. Serious adverse events (SAEs) were defined as death, a life-threatening event, hospitalization, a new disability, and/or any unexpected related event.</p>
+			</sec>
+			<sec>
+				<title>Statistical Analysis</title>
+				<p>For the randomized cohort, an a priori sample size of 82 patients (41 per treatment arm) was estimated to provide 80% power, anticipating 10% loss to follow-up and 20% crossover from nonoperative to operative intervention. An interim sample-size estimation was performed on 1-year outcomes for this study for 26 randomized patients using bootstrapping for 1,000 samples and found that 18 patients per group (36 total randomized), assuming an SRS-22 subscore treatment effect of ≥0.714, would provide 80% power with alpha equal to 0.05. Enrollment in the randomized cohort was stopped in 2014, with 63 patients, to allow 2-year follow-up by the end of 2016.</p>
+				<p>Baseline characteristics were compared between the groups using the chi-square test for categorical variables (or the Fisher exact test when there were counts of &lt;5) and Wilcoxon rank-sum test for continuous variables. Baseline health-related quality-of-life scores and patient characteristics associated with treatment (p &lt; 0.05) were also compared between patients who adhered to the initial treatment assignment and patients who crossed to the other treatment arm. Counts and SAE rates were described for each treatment arm of the cohorts. The noninferiority margin was defined as the minimum detectable measurement difference (SRS-22: 0.4; ODI: 7.0)
+					<sup>
+						<xref ref-type="bibr" rid="bib14">14</xref></sup>.</p>
+				<p>An intention-to-treat analysis was performed for the randomized cohort using generalized linear mixed models (GLMMs) controlling for baseline outcome-measure scores. As-treated analyses were performed with similar models evaluating treatment as a time-varying covariate for both the randomized cohort and observational cohort. To account for potential confounding, baseline characteristics defined a priori as important outcome predictors or identified as associated with treatment in initial analyses were considered for inclusion in the models. Interpretation of this study as pragmatic in approach is preferred; pragmatic trials offer insight into the effectiveness of interventions, as they most closely approximate clinical practice, offering high external validity
+					<sup>
+						<xref ref-type="bibr" rid="bib15">15</xref>
+						,
+						<xref ref-type="bibr" rid="bib16">16</xref></sup>.</p>
+				<p>Rates of missing data were compared between groups, and patient-level comparisons were made using the Wilcoxon rank-sum test for continuous variables and Fisher exact test for categorical data. The GLMM used all information available, with missing data treated as missing at random.</p>
+				<p>To determine whether changes in health-related quality-of-life measures were clinically meaningful, responder analyses were performed, evaluating the time to a minimal clinically important difference (MCID) for the primary outcomes (MCID for ODI = 10.9, and MCID for SRS-22 subscore = 0.43)
+					<sup>
+						<xref ref-type="bibr" rid="bib17">17</xref>
+						,
+						<xref ref-type="bibr" rid="bib18">18</xref></sup>among patients adherent to initial treatment, out to 2 years. Follow-up time started at study entry and was censored at the first of: study withdrawal, death, crossover, or last follow-up visit. Patient data were included up to the point of crossover for those who were not adherent to their treatment assignment/selection. Multivariable Cox regression was used to evaluate associations between treatment and MCID achievement while accounting for baseline characteristics. MCID analyses were performed for the randomized cohort and for the combined randomized and observational cohorts.</p>
+				<p>All statistical tests were 2-sided, and significance was determined on the basis of an alpha of 0.05. Secondary analyses were exploratory, and no corrections for multiple comparisons were made.</p>
+			</sec>
+		</sec>
+		<sec sec-type="results">
+			<title>Results</title>
+			<p>Two hundred and eighty-six of 582 eligible patients were enrolled: 63 in the randomized cohort and 223 in the observational cohort (
+				<xref ref-type="fig" rid="fig1">Fig. 1</xref>
+				). As noted above, enrollment in the randomized cohort was stopped in 2014 with 63 patients to allow 2-year follow-up by the end of 2016. Two hundred and fifty-six (90%) completed exact 2-year follow-up. There were 12 withdrawals (4.2% of 286), including 1 death.</p>
+			<fig fig-type="figure" id="fig1" orientation="portrait" position="float">
+				<label>Fig. 1</label>
+				<caption>
+					<p>Flow of participants from screening and enrollment through 2-year follow-up (F/U) in the randomized and observational cohorts. Follow-up time points indicate the time since first treatment occurred. The numbers of those who withdrew, died, or underwent surgery are cumulative across follow-up time points. Individuals who opted for surgery outside of the study were counted as patients who underwent surgery and as withdrawals at the time of surgery. Withdrawal counts do not include deaths.</p>
+				</caption>
+				<graphic orientation="portrait" position="float" xlink:href="JBJS.18.00483f1"/>
+			</fig>
+			<sec>
+				<title>Treatment</title>
+				<p>In the randomized cohort, 33 patients were assigned to nonoperative care and 30, to operative care. Of those assigned to operative care, 6 (20%) crossed from operative to nonoperative care. Of those assigned to nonoperative care, 15 (45%) underwent surgery by 1 year, and 6 (18%) underwent surgery between 1 and 2 years (
+					<xref ref-type="fig" rid="fig1">Fig. 1</xref>
+					). Among those with 2-year follow-up, 45 patients had been treated operatively and 13 patients, nonoperatively.</p>
+				<p>In the observational cohort, 111 chose nonoperative care and 112 chose surgery. Of those who opted for nonoperative care, 14 (13%) underwent surgery by 2 years. No patient in the group that chose operative treatment crossed over to nonoperative treatment, and thus, the overall crossover rate for the observational cohort was 6.3% (14 of 223) (
+					<xref ref-type="fig" rid="fig1">Fig. 1</xref>
+					). Among those with 2-year follow-up, 118 patients had been treated operatively and 80 patients, nonoperatively.</p>
+			</sec>
+			<sec>
+				<title>Patient Characteristics</title>
+				<p>The randomized groups did not differ significantly with respect to baseline characteristics (
+					<xref ref-type="table" rid="tbl1">Table I</xref>
+					). Adjusted models (for as-treated analyses) accounted for baseline age, body mass index, psychiatric diagnosis, lumbar Cobb angle, lumbar lordosis, stenosis levels, education, osteoporosis, numerical rating scale (NRS) for back pain, Short Form (SF)-12 physical component summary (PCS) score, SRS-22 subscore, and ODI. Adjustments address nonoperative observational patients’ presentation with somewhat less pathology (e.g., median SRS-22 subscore, 3.4; median ODI, 32) than operative patients (e.g., median SRS-22 subscore, 3.1; median ODI, 37).</p>
+				<table-wrap id="tbl1" orientation="portrait" position="float">
+					<label>TABLE I</label>
+					<caption>
+						<p>Baseline Data</p>
+					</caption>
+					<table frame="hsides" rules="groups">
+						<thead>
+							<tr>
+								<td colspan="7" rowspan="1">Baseline</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="2">Baseline/Enrollment Variable</td>
+								<td align="center" colspan="3" rowspan="1">Randomized Cohort</td>
+								<td align="center" colspan="3" rowspan="1">Observational Cohort</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="1" rowspan="1">Operative (N = 30)</td>
+								<td align="center" colspan="1" rowspan="1">Nonoperative (N = 33)</td>
+								<td align="center" colspan="1" rowspan="1">P Value</td>
+								<td align="center" colspan="1" rowspan="1">Operative (N = 112)</td>
+								<td align="center" colspan="1" rowspan="1">Nonoperative (N = 111)</td>
+								<td align="center" colspan="1" rowspan="1">P Value</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="1" rowspan="1">Age
+									<xref ref-type="table-fn" rid="tblfn1">*</xref>
+									<italic>(yr)</italic></td>
+								<td align="center" colspan="1" rowspan="1">63 (53, 66)</td>
+								<td align="center" colspan="1" rowspan="1">63 (57, 69)</td>
+								<td align="center" colspan="1" rowspan="1">0.47</td>
+								<td align="center" colspan="1" rowspan="1">59 (53, 64)</td>
+								<td align="center" colspan="1" rowspan="1">61 (54, 69)</td>
+								<td align="center" colspan="1" rowspan="1">0.06</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Female sex 
+									<italic>(no. [%])</italic></td>
+								<td align="center" colspan="1" rowspan="1">26 (86.7)</td>
+								<td align="center" colspan="1" rowspan="1">29 (87.9)</td>
+								<td align="center" colspan="1" rowspan="1">0.89</td>
+								<td align="center" colspan="1" rowspan="1">102 (91.1)</td>
+								<td align="center" colspan="1" rowspan="1">101 (91.0)</td>
+								<td align="center" colspan="1" rowspan="1">0.98</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Race 
+									<italic>(no. [%])</italic></td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.60</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.08</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> White</td>
+								<td align="center" colspan="1" rowspan="1">28 (93.3)</td>
+								<td align="center" colspan="1" rowspan="1">32 (97.0)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">108 (96.4)</td>
+								<td align="center" colspan="1" rowspan="1">100 (90.1)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Black</td>
+								<td align="center" colspan="1" rowspan="1">2 (6.7)</td>
+								<td align="center" colspan="1" rowspan="1">1 (3.0)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">2 (1.8)</td>
+								<td align="center" colspan="1" rowspan="1">9 (8.1)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Other</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">2 (1.8)</td>
+								<td align="center" colspan="1" rowspan="1">2 (1.8)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Ethnicity 
+									<italic>(no. [%])</italic></td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">1.00</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.25</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Hispanic</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">3 (2.8)</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Non-Hispanic</td>
+								<td align="center" colspan="1" rowspan="1">29 (100)</td>
+								<td align="center" colspan="1" rowspan="1">31 (100)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">106 (97.3)</td>
+								<td align="center" colspan="1" rowspan="1">104 (100)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Did not report</td>
+								<td colspan="1" rowspan="1">1</td>
+								<td colspan="1" rowspan="1">2</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1">3</td>
+								<td colspan="1" rowspan="1">7</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Education 
+									<italic>(no. [%])</italic></td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.64</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.14</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Less than high school</td>
+								<td align="center" colspan="1" rowspan="1">1 (3.3)</td>
+								<td align="center" colspan="1" rowspan="1">4 (12.1)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">1 (0.9)</td>
+								<td align="center" colspan="1" rowspan="1">3 (2.7)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> High school or general equivalency diploma (GED)</td>
+								<td align="center" colspan="1" rowspan="1">7 (23.3)</td>
+								<td align="center" colspan="1" rowspan="1">5 (15.2)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">26 (23.2)</td>
+								<td align="center" colspan="1" rowspan="1">38 (34.2)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Technical or associate degree</td>
+								<td align="center" colspan="1" rowspan="1">8 (26.7)</td>
+								<td align="center" colspan="1" rowspan="1">11 (33.3)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">18 (16.1)</td>
+								<td align="center" colspan="1" rowspan="1">13 (11.7)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Bachelor’s degree</td>
+								<td align="center" colspan="1" rowspan="1">7 (23.3)</td>
+								<td align="center" colspan="1" rowspan="1">6 (18.2)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">28 (25.0)</td>
+								<td align="center" colspan="1" rowspan="1">31 (27.9)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Graduate degree</td>
+								<td align="center" colspan="1" rowspan="1">7 (23.3)</td>
+								<td align="center" colspan="1" rowspan="1">7 (21.2)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">39 (34.8)</td>
+								<td align="center" colspan="1" rowspan="1">26 (23.4)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Income per yr 
+									<italic>(no. [%])</italic></td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.63</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.23</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> &lt;$20,000</td>
+								<td align="center" colspan="1" rowspan="1">1 (4.4)</td>
+								<td align="center" colspan="1" rowspan="1">2 (6.7)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">6 (6.5)</td>
+								<td align="center" colspan="1" rowspan="1">8 (8.1)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> $20,000-$39,999</td>
+								<td align="center" colspan="1" rowspan="1">1 (4.4)</td>
+								<td align="center" colspan="1" rowspan="1">5 (16.7)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">11 (11.8)</td>
+								<td align="center" colspan="1" rowspan="1">14 (14.1)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> $40,000-$74,999</td>
+								<td align="center" colspan="1" rowspan="1">9 (39.1)</td>
+								<td align="center" colspan="1" rowspan="1">10 (33.3)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">15 (16.1)</td>
+								<td align="center" colspan="1" rowspan="1">26 (26.3)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> ≥$75,000</td>
+								<td align="center" colspan="1" rowspan="1">12 (52.2)</td>
+								<td align="center" colspan="1" rowspan="1">13 (43.3)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">61 (65.6)</td>
+								<td align="center" colspan="1" rowspan="1">51 (51.5)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Did not report</td>
+								<td colspan="1" rowspan="1">7</td>
+								<td colspan="1" rowspan="1">3</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1">19</td>
+								<td colspan="1" rowspan="1">12</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Smoking 
+									<italic>(no. [%])</italic></td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.59</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.93</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Current</td>
+								<td align="center" colspan="1" rowspan="1">1 (3.3)</td>
+								<td align="center" colspan="1" rowspan="1">3 (9.1)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">6 (5.4)</td>
+								<td align="center" colspan="1" rowspan="1">7 (6.3)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Former</td>
+								<td align="center" colspan="1" rowspan="1">11 (36.7)</td>
+								<td align="center" colspan="1" rowspan="1">13 (39.4)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">31 (27.7)</td>
+								<td align="center" colspan="1" rowspan="1">32 (28.8)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Never</td>
+								<td align="center" colspan="1" rowspan="1">18 (60.0)</td>
+								<td align="center" colspan="1" rowspan="1">17 (51.5)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">75 (67.0)</td>
+								<td align="center" colspan="1" rowspan="1">72 (64.9)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Body mass index
+									<xref ref-type="table-fn" rid="tblfn1">*</xref>
+									<italic>(kg/m</italic>
+									<sup>
+										<italic>2</italic></sup>
+									<italic>)</italic>
+								</td>
+								<td align="center" colspan="1" rowspan="1">28 (23, 31)</td>
+								<td align="center" colspan="1" rowspan="1">25 (23, 30)</td>
+								<td align="center" colspan="1" rowspan="1">0.34</td>
+								<td align="center" colspan="1" rowspan="1">26 (23, 29)</td>
+								<td align="center" colspan="1" rowspan="1">25 (22, 30)</td>
+								<td align="center" colspan="1" rowspan="1">0.59</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Osteopenia/osteoporosis 
+									<italic>(no. [%])</italic></td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.69</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.32</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> None/does not apply</td>
+								<td align="center" colspan="1" rowspan="1">11 (36.7)</td>
+								<td align="center" colspan="1" rowspan="1">11 (33.3)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">42 (37.5)</td>
+								<td align="center" colspan="1" rowspan="1">48 (43.2)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> T-score −1 to −1.5</td>
+								<td align="center" colspan="1" rowspan="1">12 (40.0)</td>
+								<td align="center" colspan="1" rowspan="1">11 (33.3)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">32 (28.6)</td>
+								<td align="center" colspan="1" rowspan="1">20 (18.0)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> T-score −1.6 to −2.4</td>
+								<td align="center" colspan="1" rowspan="1">6 (20.0)</td>
+								<td align="center" colspan="1" rowspan="1">7 (21.2)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">29 (25.9)</td>
+								<td align="center" colspan="1" rowspan="1">33 (29.7)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> T-score −2.5 or worse (or vertebral compression fracture)</td>
+								<td align="center" colspan="1" rowspan="1">1 (3.3)</td>
+								<td align="center" colspan="1" rowspan="1">4 (12.1)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">9 (8.0)</td>
+								<td align="center" colspan="1" rowspan="1">10 (9.0)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Hypertension (uncontrolled or requiring medications) 
+									<italic>(no. [%])</italic></td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.71</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.95</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> No</td>
+								<td align="center" colspan="1" rowspan="1">16 (53.3)</td>
+								<td align="center" colspan="1" rowspan="1">17 (51.5)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">70 (62.5)</td>
+								<td align="center" colspan="1" rowspan="1">68 (61.3)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Yes, controlled with diet/exercise</td>
+								<td align="center" colspan="1" rowspan="1">1 (3.3)</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">4 (3.6)</td>
+								<td align="center" colspan="1" rowspan="1">4 (3.6)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Yes, controlled with medication</td>
+								<td align="center" colspan="1" rowspan="1">13 (43.3)</td>
+								<td align="center" colspan="1" rowspan="1">16 (48.5)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">37 (33.0)</td>
+								<td align="center" colspan="1" rowspan="1">39 (35.1)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Yes, poorly controlled with medication</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">1 (0.9)</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Diabetes (uncontrolled or requiring medications) 
+									<italic>(no. [%])</italic></td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.24</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0.39</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> No</td>
+								<td align="center" colspan="1" rowspan="1">29 (96.7)</td>
+								<td align="center" colspan="1" rowspan="1">29 (87.9)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">108 (96.4)</td>
+								<td align="center" colspan="1" rowspan="1">106 (95.5)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Yes, controlled with diet</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td align="center" colspan="1" rowspan="1">2 (1.8)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Yes, controlled with oral hypoglycemics</td>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td align="center" colspan="1" rowspan="1">3 (9.1)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">4 (3.6)</td>
+								<td align="center" colspan="1" rowspan="1">2 (1.8)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Yes, insulin-dependent</td>
+								<td align="center" colspan="1" rowspan="1">1 (3.3)</td>
+								<td align="center" colspan="1" rowspan="1">1 (3.0)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0 (0)</td>
+								<td align="center" colspan="1" rowspan="1">1 (0.9)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Depression/anxiety/psychiatric disorder 
+									<italic>(no. [%])</italic></td>
+								<td align="center" colspan="1" rowspan="1">11 (36.7)</td>
+								<td align="center" colspan="1" rowspan="1">9 (27.3)</td>
+								<td align="center" colspan="1" rowspan="1">0.42</td>
+								<td align="center" colspan="1" rowspan="1">35 (31.3)</td>
+								<td align="center" colspan="1" rowspan="1">22 (19.8)</td>
+								<td align="center" colspan="1" rowspan="1">0.05</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Duration of back symptoms
+									<xref ref-type="table-fn" rid="tblfn1">*</xref>
+									<italic>(mo)</italic></td>
+								<td align="center" colspan="1" rowspan="1">36 (0, 80)</td>
+								<td align="center" colspan="1" rowspan="1">96 (12, 240)</td>
+								<td align="center" colspan="1" rowspan="1">0.08</td>
+								<td align="center" colspan="1" rowspan="1">12 (0, 60)</td>
+								<td align="center" colspan="1" rowspan="1">24 (2, 120)</td>
+								<td align="center" colspan="1" rowspan="1">0.07</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Duration of leg symptoms
+									<xref ref-type="table-fn" rid="tblfn1">*</xref>
+									<italic>(mo)</italic></td>
+								<td align="center" colspan="1" rowspan="1">3 (0, 48)</td>
+								<td align="center" colspan="1" rowspan="1">0 (0, 12)</td>
+								<td align="center" colspan="1" rowspan="1">0.53</td>
+								<td align="center" colspan="1" rowspan="1">0 (0, 12)</td>
+								<td align="center" colspan="1" rowspan="1">0 (0, 12)</td>
+								<td align="center" colspan="1" rowspan="1">0.93</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Lumbar Cobb angle
+									<xref ref-type="table-fn" rid="tblfn1">*</xref>
+									<italic>(°)</italic></td>
+								<td align="center" colspan="1" rowspan="1">55 (47, 62)</td>
+								<td align="center" colspan="1" rowspan="1">48 (37, 63)</td>
+								<td align="center" colspan="1" rowspan="1">0.25</td>
+								<td align="center" colspan="1" rowspan="1">57 (45, 69)</td>
+								<td align="center" colspan="1" rowspan="1">48 (39, 57)</td>
+								<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Lumbar lordosis (T12-sacrum)
+									<xref ref-type="table-fn" rid="tblfn1">*</xref>
+									<italic>(°)</italic></td>
+								<td align="center" colspan="1" rowspan="1">−32 (−56, −22)</td>
+								<td align="center" colspan="1" rowspan="1">−38 (−47, −20)</td>
+								<td align="center" colspan="1" rowspan="1">0.78</td>
+								<td align="center" colspan="1" rowspan="1">−38 (−49, −28)</td>
+								<td align="center" colspan="1" rowspan="1">−45 (−55, −32)</td>
+								<td align="center" colspan="1" rowspan="1">0.05</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Sagittal balance absolute value
+									<xref ref-type="table-fn" rid="tblfn1">*</xref>
+									<xref ref-type="table-fn" rid="tblfn2">†</xref>
+									<italic>(mm)</italic></td>
+								<td align="center" colspan="1" rowspan="1">27 (17, 57)</td>
+								<td align="center" colspan="1" rowspan="1">34 (21, 70)</td>
+								<td align="center" colspan="1" rowspan="1">0.23</td>
+								<td align="center" colspan="1" rowspan="1">26 (11, 56)</td>
+								<td align="center" colspan="1" rowspan="1">33 (16, 55)</td>
+								<td align="center" colspan="1" rowspan="1">0.33</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Coronal balance absolute value
+									<xref ref-type="table-fn" rid="tblfn1">*</xref>
+									<xref ref-type="table-fn" rid="tblfn2">†</xref>
+									<italic>(mm)</italic></td>
+								<td align="center" colspan="1" rowspan="1">13 (6, 30)</td>
+								<td align="center" colspan="1" rowspan="1">23 (14, 38)</td>
+								<td align="center" colspan="1" rowspan="1">0.08</td>
+								<td align="center" colspan="1" rowspan="1">19 (9, 35)</td>
+								<td align="center" colspan="1" rowspan="1">14 (8, 26)</td>
+								<td align="center" colspan="1" rowspan="1">0.05</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Pelvic incidence-lumbar lordosis mismatch
+									<xref ref-type="table-fn" rid="tblfn1">*</xref>
+									<xref ref-type="table-fn" rid="tblfn3">‡</xref>
+									<italic>(°)</italic></td>
+								<td align="center" colspan="1" rowspan="1">14 (2, 32)</td>
+								<td align="center" colspan="1" rowspan="1">25 (15, 34)</td>
+								<td align="center" colspan="1" rowspan="1">0.11</td>
+								<td align="center" colspan="1" rowspan="1">15 (5, 30)</td>
+								<td align="center" colspan="1" rowspan="1">13 (1, 28)</td>
+								<td align="center" colspan="1" rowspan="1">0.10</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">No. of stenosis levels
+									<xref ref-type="table-fn" rid="tblfn1">*</xref></td>
+								<td align="center" colspan="1" rowspan="1">1 (0, 3)</td>
+								<td align="center" colspan="1" rowspan="1">0 (0, 1)</td>
+								<td align="center" colspan="1" rowspan="1">0.05</td>
+								<td align="center" colspan="1" rowspan="1">1 (0, 2)</td>
+								<td align="center" colspan="1" rowspan="1">0 (0, 1)</td>
+								<td align="center" colspan="1" rowspan="1">0.003</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Listhesis 
+									<italic>(no. [%])</italic></td>
+								<td align="center" colspan="1" rowspan="1">27 (90.0)</td>
+								<td align="center" colspan="1" rowspan="1">28 (84.9)</td>
+								<td align="center" colspan="1" rowspan="1">0.71</td>
+								<td align="center" colspan="1" rowspan="1">104 (92.9)</td>
+								<td align="center" colspan="1" rowspan="1">95 (85.6)</td>
+								<td align="center" colspan="1" rowspan="1">0.08</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Baseline patient-reported outcomes
+									<xref ref-type="table-fn" rid="tblfn1">*</xref>
+									<xref ref-type="table-fn" rid="tblfn4">§</xref></td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> SRS-22 subscore</td>
+								<td align="center" colspan="1" rowspan="1">3.2 (2.7, 3.5)</td>
+								<td align="center" colspan="1" rowspan="1">2.9 (2.7, 3.5)
+									<xref ref-type="table-fn" rid="tblfn5">#</xref></td>
+								<td align="center" colspan="1" rowspan="1">0.41</td>
+								<td align="center" colspan="1" rowspan="1">3.1 (2.7, 3.5)</td>
+								<td align="center" colspan="1" rowspan="1">3.4 (3.0, 3.7)
+									<xref ref-type="table-fn" rid="tblfn5">#</xref></td>
+								<td align="center" colspan="1" rowspan="1">0.003</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> SRS-22 pain</td>
+								<td align="center" colspan="1" rowspan="1">3 (2.6, 3.4)</td>
+								<td align="center" colspan="1" rowspan="1">2.8 (2.2, 3.2)</td>
+								<td align="center" colspan="1" rowspan="1">0.10</td>
+								<td align="center" colspan="1" rowspan="1">2.8 (2.2, 3.3)</td>
+								<td align="center" colspan="1" rowspan="1">3.0 (2.6, 3.6)</td>
+								<td align="center" colspan="1" rowspan="1">0.008</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> SRS-22 function</td>
+								<td align="center" colspan="1" rowspan="1">3.2 (2.8, 3.8)</td>
+								<td align="center" colspan="1" rowspan="1">3.0 (2.8, 3.6)</td>
+								<td align="center" colspan="1" rowspan="1">0.70</td>
+								<td align="center" colspan="1" rowspan="1">3.2 (2.6, 3.8)</td>
+								<td align="center" colspan="1" rowspan="1">3.4 (3.0, 3.8)</td>
+								<td align="center" colspan="1" rowspan="1">0.008</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> SRS-22 self-image</td>
+								<td align="center" colspan="1" rowspan="1">2.8 (2.3, 3.3)</td>
+								<td align="center" colspan="1" rowspan="1">2.8 (2.5, 3.2)</td>
+								<td align="center" colspan="1" rowspan="1">1.00</td>
+								<td align="center" colspan="1" rowspan="1">2.8 (2.2, 3.3)</td>
+								<td align="center" colspan="1" rowspan="1">3.0 (2.7, 3.5)</td>
+								<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> SRS-22 mental health</td>
+								<td align="center" colspan="1" rowspan="1">3.8 (3, 4.4)</td>
+								<td align="center" colspan="1" rowspan="1">4.0 (3.2, 4.0)</td>
+								<td align="center" colspan="1" rowspan="1">0.77</td>
+								<td align="center" colspan="1" rowspan="1">3.8 (3.2, 4.2)</td>
+								<td align="center" colspan="1" rowspan="1">3.8 (3.2, 4.4)</td>
+								<td align="center" colspan="1" rowspan="1">0.83</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> SRS-22 satisfaction</td>
+								<td align="center" colspan="1" rowspan="1">2.5 (2, 3)</td>
+								<td align="center" colspan="1" rowspan="1">3.0 (2.5, 4.0)</td>
+								<td align="center" colspan="1" rowspan="1">0.11</td>
+								<td align="center" colspan="1" rowspan="1">3.0 (2.0, 3.0)</td>
+								<td align="center" colspan="1" rowspan="1">3.0 (2.5, 3.5)</td>
+								<td align="center" colspan="1" rowspan="1">0.06</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> ODI score</td>
+								<td align="center" colspan="1" rowspan="1">34 (24, 46)</td>
+								<td align="center" colspan="1" rowspan="1">46 (28, 54)
+									<xref ref-type="table-fn" rid="tblfn6">**</xref></td>
+								<td align="center" colspan="1" rowspan="1">0.07</td>
+								<td align="center" colspan="1" rowspan="1">37 (26, 48)</td>
+								<td align="center" colspan="1" rowspan="1">32 (22, 40)
+									<xref ref-type="table-fn" rid="tblfn6">**</xref></td>
+								<td align="center" colspan="1" rowspan="1">0.008</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn id="tblfn1">
+							<label>*</label>
+							<p>The values are given as the median, with the interquartile range in parentheses.</p>
+						</fn>
+						<fn id="tblfn2">
+							<label>†</label>
+							<p>Information on sagittal and coronal balance was missing for 1 patient assigned to operative treatment in the randomized cohort because baseline images were done at an outside facility and did not include scales to permit linear measurements.</p>
+						</fn>
+						<fn id="tblfn3">
+							<label>‡</label>
+							<p>Information on pelvic incidence-lumbar lordosis mismatch was missing for 17 patients because femoral heads were not visible on radiographs. This included 3 patients assigned to nonoperative treatment in the randomized cohort. Among the observational cohort patients, 7 in the operative group and 7 in the nonoperative group did not have pelvic incidence-lumbar lordosis mismatch information.</p>
+						</fn>
+						<fn id="tblfn4">
+							<label>§</label>
+							<p>SRS scale: 1 to 5, with 5 indicating no pathology; and ODI scale: 0 to 100, with 0 indicating no pathology.</p>
+						</fn>
+						<fn id="tblfn5">
+							<label>#</label>
+							<p>Nonoperative randomized versus nonoperative observational, p = 0.01.</p>
+						</fn>
+						<fn id="tblfn6">
+							<label>**</label>
+							<p>Nonoperative randomized versus nonoperative observational, p = 0.002.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+				<p>Early and late crossover proportions among patients originally in the nonoperative treatment arms are shown in 
+					<xref ref-type="table" rid="tbl2">Table II</xref>
+					.</p>
+				<table-wrap id="tbl2" orientation="portrait" position="float">
+					<label>TABLE II</label>
+					<caption>
+						<p>Early and Late Crossover Proportions Among Patients Originally in the Nonoperative Treatment Arms</p>
+					</caption>
+					<table frame="hsides" rules="groups">
+						<thead>
+							<tr>
+								<td colspan="1" rowspan="2">Cohort</td>
+								<td align="center" colspan="3" rowspan="1">Early Crossover (Within 6 Mo of Enrollment)</td>
+								<td align="center" colspan="3" rowspan="1">Late Crossover (&gt;6 Mo After Enrollment)</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">align=&quot;center&quot;Crossed Over 
+									<italic>(no.)</italic></td>
+								<td align="center" colspan="1" rowspan="1">Proportion of Crossovers</td>
+								<td align="center" colspan="1" rowspan="1">P Value</td>
+								<td align="center" colspan="1" rowspan="1">Crossed Over 
+									<italic>(no.)</italic></td>
+								<td align="center" colspan="1" rowspan="1">Plroportion of Crossovers
+									<xref ref-type="table-fn" rid="tblfn7">*</xref></td>
+								<td align="center" colspan="1" rowspan="1">P Value</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="1" rowspan="1">Randomized</td>
+								<td align="center" colspan="1" rowspan="1">7</td>
+								<td align="center" colspan="1" rowspan="1">7/33 (21.2%)</td>
+								<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								<td align="center" colspan="1" rowspan="1">14</td>
+								<td align="center" colspan="1" rowspan="1">14/26 (53.8%)</td>
+								<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Observational</td>
+								<td align="center" colspan="1" rowspan="1">3</td>
+								<td align="center" colspan="1" rowspan="1">3/111 (2.7%)</td>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">11</td>
+								<td align="center" colspan="1" rowspan="1">11/104 (10.6%)</td>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn id="tblfn7">
+							<label>*</label>
+							<p>Denominators represent the number of remaining patients who had not crossed over or withdrawn in the first 6 months. (In the randomized cohort, 7 patients crossed over in first 6 months. In the observational cohort, 3 patients crossed over and 4 patients withdrew in the first 6 months).</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+				<p>In the randomized cohort, the characteristics of patients who crossed over to operative treatment within 6 months of enrollment (7 patients) did not differ from those of patients who did not cross over (“adherent” patients). Patients who crossed over to operative treatment after 6 months (14 patients) had significantly worse SRS-22 subscore values, and worse ODI scores as well as worsening in ODI at 6 months compared with the adherent randomized patients (
+					<xref ref-type="table" rid="tbl3">Table III</xref>
+					).</p>
+				<table-wrap id="tbl3" orientation="portrait" position="float">
+					<label>TABLE III</label>
+					<caption>
+						<p>Characteristics of Patients Assigned to Nonoperative Treatment in the Randomized Cohort, by Adherence, and Predictors of Crossovers</p>
+					</caption>
+					<table frame="hsides" rules="groups">
+						<thead>
+							<tr>
+								<td align="center" colspan="1" rowspan="3">Characteristic</td>
+								<td align="center" colspan="6" rowspan="1">Nonoperative Treatment Group in the Randomized Cohort at Baseline</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="3" rowspan="1">Adherence in First 6 Mo</td>
+								<td align="center" colspan="3" rowspan="1">Adherence After 6 Mo</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="1" rowspan="1">Adherent (N = 26)
+									<xref ref-type="table-fn" rid="tblfn8">*</xref></td>
+								<td align="center" colspan="1" rowspan="1">Crossover to Operative (N = 7)
+									<xref ref-type="table-fn" rid="tblfn8">*</xref></td>
+								<td align="center" colspan="1" rowspan="1">P Value
+									<xref ref-type="table-fn" rid="tblfn9">†</xref></td>
+								<td align="center" colspan="1" rowspan="1">Adherent (N = 12)
+									<xref ref-type="table-fn" rid="tblfn8">*</xref></td>
+								<td align="center" colspan="1" rowspan="1">Crossover to Operative (N = 14)
+									<xref ref-type="table-fn" rid="tblfn8">*</xref></td>
+								<td align="center" colspan="1" rowspan="1">P Value
+									<xref ref-type="table-fn" rid="tblfn9">†</xref></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="1" rowspan="1">At enrollment</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">Pelvic incidence-lumbar lordosis mismatch
+									<xref ref-type="table-fn" rid="tblfn10">‡</xref>
+									<italic>(°</italic>
+									)</td>
+								<td align="center" colspan="1" rowspan="1">24.5 (15.5, 34.5)</td>
+								<td align="center" colspan="1" rowspan="1">26.5 (8, 34)</td>
+								<td align="center" colspan="1" rowspan="1">1.00</td>
+								<td align="center" colspan="1" rowspan="1">18 (−2, 32)</td>
+								<td align="center" colspan="1" rowspan="1">31 (18, 45)</td>
+								<td align="center" colspan="1" rowspan="1">0.08</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> SRS-22 subscore</td>
+								<td align="center" colspan="1" rowspan="1">3.1 (2.7, 3.5)</td>
+								<td align="center" colspan="1" rowspan="1">2.9 (2.6, 3.2)</td>
+								<td align="center" colspan="1" rowspan="1">0.29</td>
+								<td align="center" colspan="1" rowspan="1">3.6 (3.3, 3.8)</td>
+								<td align="center" colspan="1" rowspan="1">2.8 (2.6, 3.1)</td>
+								<td align="center" colspan="1" rowspan="1">0.01</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> ODI score</td>
+								<td align="center" colspan="1" rowspan="1">44 (24, 50)</td>
+								<td align="center" colspan="1" rowspan="1">50 (46, 60)</td>
+								<td align="center" colspan="1" rowspan="1">0.05</td>
+								<td align="center" colspan="1" rowspan="1">22 (15, 40)</td>
+								<td align="center" colspan="1" rowspan="1">48 (44, 54)</td>
+								<td align="center" colspan="1" rowspan="1">0.01</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1">At 6 mo</td>
+								<td align="center" colspan="1" rowspan="1">—</td>
+								<td align="center" colspan="1" rowspan="1">—</td>
+								<td align="center" colspan="1" rowspan="1">—</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> SRS-22 subscore</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">3.5 (3.3, 4.0)</td>
+								<td align="center" colspan="1" rowspan="1">2.6 (2.1, 3.2)</td>
+								<td align="center" colspan="1" rowspan="1">0.004</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Change in SRS-22 subscore over first 6 mo</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">0 (−0.2, 0.2)</td>
+								<td align="center" colspan="1" rowspan="1">−0.1 (−0.3, 0)</td>
+								<td align="center" colspan="1" rowspan="1">0.20</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> ODI score</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">27 (11, 33)</td>
+								<td align="center" colspan="1" rowspan="1">54 (44, 62)</td>
+								<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+							</tr>
+							<tr>
+								<td colspan="1" rowspan="1"> Change in ODI score over first 6 mo</td>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td colspan="1" rowspan="1"/>
+								<td align="center" colspan="1" rowspan="1">−7 (−11, 3)</td>
+								<td align="center" colspan="1" rowspan="1">5 (−2, 16)</td>
+								<td align="center" colspan="1" rowspan="1">0.04</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn id="tblfn8">
+							<label>*</label>
+							<p>The values are given as the median, with the interquartile range in parentheses.</p>
+						</fn>
+						<fn id="tblfn9">
+							<label>†</label>
+							<p>Wilcoxon rank-sum tests for continuous variables.</p>
+						</fn>
+						<fn id="tblfn10">
+							<label>‡</label>
+							<p>Information on pelvic incidence-lumbar lordosis mismatch was missing for 2 patients because femoral heads were not visible on radiographs.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+			</sec>
+			<sec>
+				<title>Missing Data</title>
+				<p>Rates of missing data were low for both cohorts and did not differ between the groups at 2 years: 90% of the operative and 94% of the nonoperative patients in the randomized cohort attended their 2-year visit, and 93% of the operative and 85% of the nonoperative patients in the observational cohort attended their 2-year visit (
+					<xref ref-type="fig" rid="fig1">Fig. 1</xref>
+					).</p>
+			</sec>
+			<sec>
+				<title>Nonoperative Treatment</title>
+				<p>Nonoperative treatments did not differ between the randomized cohort and the observational cohort and included NSAIDs or gabapentin (76%), opioids (52%), physical therapy (57%), and spinal injections (34%).</p>
+			</sec>
+			<sec>
+				<title>Operative Treatment</title>
+				<p>Of patients treated operatively, 3 patients opted for surgery outside the trial when they crossed over from nonoperative treatment and were considered withdrawn from the trial. On average, the operative time was 386 minutes, 10.9 levels were fused, and estimated blood loss was 2,047 mL in 171 patients.</p>
+			</sec>
+			<sec>
+				<title>Primary Outcomes</title>
+				<sec>
+					<title>Intention-to-Treat</title>
+					<p>In the intention-to-treat analysis of the randomized cohort, operative treatment was associated with greater improvement compared with nonoperative treatment at the 1-year follow-up with respect to both the SRS-22 subscore (unadjusted mean difference, 0.5 [95% confidence interval (CI), 0.2 to 0.7]) and ODI (unadjusted mean difference, −15 [95% CI, −22 to −8]). At the 2-year follow-up, the change from baseline in the SRS-22 subscore (unadjusted mean difference, 0.1 [95% CI, −0.2 to 0.4]) and in the ODI (unadjusted mean difference, −4 [95% CI, −13 to 4]) did not differ significantly between the groups (
+						<xref ref-type="fig" rid="fig2a">Figs. 2-A</xref>
+						and 
+						<xref ref-type="fig" rid="fig2b">2-B</xref>
+						).</p>
+					<fig-group id="fig2" orientation="portrait" position="float">
+						<caption>
+							<p>
+								<bold>Figs. 2-A through 2-F</bold>Comparison of operative versus nonoperative treatment for patient-reported primary outcomes from the intention-to-treat and as-treated analyses of the randomized cohort and the as-treated analyses of the observational cohort. Graphs and tables show the intention-to-treat analyses of the randomized cohort for the Scoliosis Research Society (SRS)-22 subscore (
+								<bold>Fig. 2-A</bold>
+								) and the Oswestry Disability Index (ODI) score (
+								<bold>Fig. 2-B</bold>
+								); the as-treated analyses of the randomized cohort for the SRS-22 subscore (
+								<bold>Fig. 2-C</bold>
+								) and the ODI score (
+								<bold>Fig. 2-D</bold>
+								); and the as-treated analyses of the observational cohort for the SRS-22 subscore (
+								<bold>Fig. 2-E</bold>
+								) and the ODI score (
+								<bold>Fig. 2-F</bold>
+								). The observed mean baseline scores (0 months) and scores based on estimates from the generalized linear mixed models (all other follow-up time points) are provided. Error bars indicate the 95% confidence interval. The SRS-22 subscore ranges from 1 to 5, with a higher score indicating a better outcome. The ODI score ranges from 0 to 100, with a higher score indicating greater disability. Estimated changes from baseline in both study groups (operative and nonoperative) may not add/subtract exactly due to rounding of all data points and differences between modeled score estimates versus observed scores.</p>
+						</caption>
+						<fig fig-type="figure" id="fig2a" orientation="portrait" position="float">
+							<label>Fig. 2-A</label>
+							<graphic orientation="portrait" position="float" xlink:href="JBJS.18.00483f2a"/>
+						</fig>
+						<fig fig-type="figure" id="fig2b" orientation="portrait" position="float">
+							<label>Fig. 2-B</label>
+							<graphic orientation="portrait" position="float" xlink:href="JBJS.18.00483f2b"/>
+						</fig>
+						<fig fig-type="figure" id="fig2c" orientation="portrait" position="float">
+							<label>Fig. 2-C</label>
+							<graphic orientation="portrait" position="float" xlink:href="JBJS.18.00483f2c"/>
+						</fig>
+						<fig fig-type="figure" id="fig2d" orientation="portrait" position="float">
+							<label>Fig. 2-D</label>
+							<graphic orientation="portrait" position="float" xlink:href="JBJS.18.00483f2d"/>
+						</fig>
+						<fig fig-type="figure" id="fig2e" orientation="portrait" position="float">
+							<label>Fig. 2-E</label>
+							<graphic orientation="portrait" position="float" xlink:href="JBJS.18.00483f2e"/>
+						</fig>
+						<fig fig-type="figure" id="fig2f" orientation="portrait" position="float">
+							<label>Fig. 2-F</label>
+							<graphic orientation="portrait" position="float" xlink:href="JBJS.18.00483f2f"/>
+						</fig>
+					</fig-group>
+				</sec>
+				<sec>
+					<title>As-Treated</title>
+					<p>In the as-treated analysis of the randomized cohort, operative treatment was associated with greater improvement (p &lt; 0.001) compared with nonoperative treatment at 2 years in the SRS-22 subscore (unadjusted mean difference, 0.7 [95% CI, 0.5 to 1.0]); adjusted mean difference, 0.7 [95% CI, 0.5 to 1.0]) and ODI (unadjusted mean difference, −15 [95% CI, −22 to −9]; adjusted mean difference, −16 [95% CI, −22 to −10]) (
+						<xref ref-type="fig" rid="fig2c">Figs. 2-C</xref>
+						and 
+						<xref ref-type="fig" rid="fig2d">2-D</xref>
+						). Similarly, in the as-treated analysis of the observational cohort, operative treatment was significantly (p &lt; 0.001) associated with greater improvement in the SRS-22 subscore and ODI measures at the 2-year follow-up (
+						<xref ref-type="fig" rid="fig2e">Figs. 2-E</xref>
+						and 
+						<xref ref-type="fig" rid="fig2f">2-F</xref>
+						). Outcome measures did not differ from enrollment in the nonoperative group at the 2-year follow-up for either outcome, in both the randomized cohort and observational cohort; on average, nonoperatively treated patients did not improve from baseline.</p>
+				</sec>
+				<sec>
+					<title>Adverse Events</title>
+					<p>There were 114 SAEs among the operative patients. Four (3%) of the nonoperative patients sustained SAEs related to NSAID use. New neurological deficits occurred in 9.9% of the operative patients (17 of 171); 4 were major (American Spinal Injury Association [ASIA] C classification). One patient with a major deficit died; 2 others improved to ASIA D. There were 34 revision surgeries performed in 24 (14%) of the patients. The most common reasons for reoperation were failure to achieve fusion (pseudarthrosis) (n = 10) and proximal junctional failure (n = 9). Patients sustaining a surgery-related SAE experienced less improvement in outcome measures than did those without an SAE but did still improve compared with nonoperative patients (
+						<xref ref-type="table" rid="tbl4 tbl5 tbl6">Tables IV</xref>
+						through 
+						<xref ref-type="table" rid="tbl7">VII</xref>
+						).</p>
+					<table-wrap id="tbl4" orientation="portrait" position="float">
+						<label>TABLE IV</label>
+						<caption>
+							<p>Serious Adverse Events (SAEs) in the As-Treated Operative and Nonoperative Groups</p>
+						</caption>
+						<table frame="hsides" rules="groups">
+							<thead>
+								<tr>
+									<td colspan="1" rowspan="2"/>
+									<td align="center" colspan="5" rowspan="1">Operative</td>
+									<td align="center" colspan="5" rowspan="1">Nonoperative</td>
+									<td align="center" colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td align="center" colspan="2" rowspan="1">Randomized Cohort</td>
+									<td align="center" colspan="2" rowspan="1">Observational Cohort</td>
+									<td align="center" colspan="1" rowspan="1"/>
+									<td align="center" colspan="2" rowspan="1">Randomized Cohort</td>
+									<td align="center" colspan="2" rowspan="1">Observational Cohort</td>
+									<td align="center" colspan="1" rowspan="1"/>
+									<td align="center" colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td align="center" colspan="1" rowspan="1">SAE</td>
+									<td align="center" colspan="1" rowspan="1">No.</td>
+									<td align="center" colspan="1" rowspan="1">Incidence Rate
+										<xref ref-type="table-fn" rid="tblfn11">*</xref></td>
+									<td align="center" colspan="1" rowspan="1">No.</td>
+									<td align="center" colspan="1" rowspan="1">Incidence Rate
+										<xref ref-type="table-fn" rid="tblfn11">*</xref></td>
+									<td align="center" colspan="1" rowspan="1">Total No.</td>
+									<td align="center" colspan="1" rowspan="1">No.</td>
+									<td align="center" colspan="1" rowspan="1">Incidence Rate
+										<xref ref-type="table-fn" rid="tblfn11">*</xref></td>
+									<td align="center" colspan="1" rowspan="1">No.</td>
+									<td align="center" colspan="1" rowspan="1">Incidence Rate
+										<xref ref-type="table-fn" rid="tblfn11">*</xref></td>
+									<td align="center" colspan="1" rowspan="1">Total No.</td>
+									<td align="center" colspan="1" rowspan="1">P Value
+										<xref ref-type="table-fn" rid="tblfn12">†</xref></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="1" rowspan="1">Surgery unrelated to ASLS
+										<xref ref-type="table-fn" rid="tblfn13">‡</xref></td>
+									<td align="center" colspan="1" rowspan="1">5</td>
+									<td align="center" colspan="1" rowspan="1">5.88</td>
+									<td align="center" colspan="1" rowspan="1">14</td>
+									<td align="center" colspan="1" rowspan="1">5.57</td>
+									<td align="center" colspan="1" rowspan="1">19</td>
+									<td align="center" colspan="1" rowspan="1">4</td>
+									<td align="center" colspan="1" rowspan="1">4.44</td>
+									<td align="center" colspan="1" rowspan="1">16</td>
+									<td align="center" colspan="1" rowspan="1">4.05</td>
+									<td align="center" colspan="1" rowspan="1">20</td>
+									<td align="center" colspan="1" rowspan="1">0.35</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Spine (neurological deficits excluded)</td>
+									<td align="center" colspan="1" rowspan="1">9</td>
+									<td align="center" colspan="1" rowspan="1">10.58</td>
+									<td align="center" colspan="1" rowspan="1">22</td>
+									<td align="center" colspan="1" rowspan="1">8.76</td>
+									<td align="center" colspan="1" rowspan="1">31</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">0.25</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Neurological deficits related to intervention§</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">1.18</td>
+									<td align="center" colspan="1" rowspan="1">16</td>
+									<td align="center" colspan="1" rowspan="1">6.37</td>
+									<td align="center" colspan="1" rowspan="1">17</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Neurological SAEs not related to intervention
+										<xref ref-type="table-fn" rid="tblfn14">#</xref></td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td colspan="1" rowspan="1">—</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Pulmonary</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">1.18</td>
+									<td align="center" colspan="1" rowspan="1">10</td>
+									<td align="center" colspan="1" rowspan="1">3.98</td>
+									<td align="center" colspan="1" rowspan="1">11</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">1.11</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">0.51</td>
+									<td align="center" colspan="1" rowspan="1">3</td>
+									<td align="center" colspan="1" rowspan="1">0.11</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Gastrointestinal</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">1.18</td>
+									<td align="center" colspan="1" rowspan="1">5</td>
+									<td align="center" colspan="1" rowspan="1">1.99</td>
+									<td align="center" colspan="1" rowspan="1">6</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">1.11</td>
+									<td align="center" colspan="1" rowspan="1">7</td>
+									<td align="center" colspan="1" rowspan="1">1.77</td>
+									<td align="center" colspan="1" rowspan="1">8</td>
+									<td align="center" colspan="1" rowspan="1">0.32</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Cancer</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">0.80</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">1.11</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">0.51</td>
+									<td align="center" colspan="1" rowspan="1">3</td>
+									<td align="center" colspan="1" rowspan="1">0.47</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Cardiovascular</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">1.18</td>
+									<td align="center" colspan="1" rowspan="1">3</td>
+									<td align="center" colspan="1" rowspan="1">1.19</td>
+									<td align="center" colspan="1" rowspan="1">4</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">4</td>
+									<td align="center" colspan="1" rowspan="1">1.01</td>
+									<td align="center" colspan="1" rowspan="1">4</td>
+									<td align="center" colspan="1" rowspan="1">0.72</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Circulatory</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">2.35</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">0.80</td>
+									<td align="center" colspan="1" rowspan="1">4</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">2.22</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">0.61</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Genitourinary</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">6</td>
+									<td align="center" colspan="1" rowspan="1">2.39</td>
+									<td align="center" colspan="1" rowspan="1">6</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">0.51</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">0.30</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Death</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">1.18</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">1.00</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Misc.</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">2.35</td>
+									<td align="center" colspan="1" rowspan="1">11</td>
+									<td align="center" colspan="1" rowspan="1">4.38</td>
+									<td align="center" colspan="1" rowspan="1">13</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">4</td>
+									<td align="center" colspan="1" rowspan="1">1.01</td>
+									<td align="center" colspan="1" rowspan="1">4</td>
+									<td align="center" colspan="1" rowspan="1">0.10</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Total</td>
+									<td align="center" colspan="1" rowspan="1">23</td>
+									<td align="center" colspan="1" rowspan="1">27.03</td>
+									<td align="center" colspan="1" rowspan="1">91</td>
+									<td align="center" colspan="1" rowspan="1">36.22</td>
+									<td align="center" colspan="1" rowspan="1">114</td>
+									<td align="center" colspan="1" rowspan="1">9</td>
+									<td align="center" colspan="1" rowspan="1">9.99</td>
+									<td align="center" colspan="1" rowspan="1">38</td>
+									<td align="center" colspan="1" rowspan="1">9.62</td>
+									<td align="center" colspan="1" rowspan="1">47</td>
+									<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								</tr>
+							</tbody>
+						</table>
+						<table-wrap-foot>
+							<fn id="tblfn11">
+								<label>*</label>
+								<p>Incidence rates are per 100 person-years.</p>
+							</fn>
+							<fn id="tblfn12">
+								<label>†</label>
+								<p>From Poisson models comparing SAE incidence rates between all follow-up time after operative treatment and all follow-up time during nonoperative treatment. Exact tests were used when 0 counts were observed.</p>
+							</fn>
+							<fn id="tblfn13">
+								<label>‡</label>
+								<p>ASLS = adult symptomatic lumbar scoliosis. §Four major deficits (ASIA C); 13 minor deficits (ASIA D).</p>
+							</fn>
+							<fn id="tblfn14">
+								<label>#</label>
+								<p>Non-spine-related (thalamic stroke and traumatic brain injury).</p>
+							</fn>
+						</table-wrap-foot>
+					</table-wrap>
+					<table-wrap id="tbl5" orientation="portrait" position="float">
+						<label>TABLE V</label>
+						<caption>
+							<p>Details of Serious Adverse Events (SAEs) Requiring Revision Spine Surgery</p>
+						</caption>
+						<table frame="hsides" rules="groups">
+							<thead>
+								<tr>
+									<td colspan="1" rowspan="1"/>
+									<td align="center" colspan="5" rowspan="1">As-Treated Operative</td>
+								</tr>
+								<tr>
+									<td align="center" colspan="1" rowspan="2">SAE</td>
+									<td align="center" colspan="2" rowspan="1">Randomized Cohort</td>
+									<td align="center" colspan="2" rowspan="1">Observational Cohort</td>
+									<td align="center" colspan="1" rowspan="1">Total</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">No.</td>
+									<td align="center" colspan="1" rowspan="1">Incidence Rate
+										<xref ref-type="table-fn" rid="tblfn15">*</xref></td>
+									<td align="center" colspan="1" rowspan="1">No.</td>
+									<td align="center" colspan="1" rowspan="1">Incidence Rate
+										<xref ref-type="table-fn" rid="tblfn15">*</xref></td>
+									<td align="center" colspan="1" rowspan="1">No.</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="1" rowspan="1">During index procedure hospitalization</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td colspan="1" rowspan="1"/>
+									<td align="center" colspan="1" rowspan="1">6</td>
+									<td colspan="1" rowspan="1"/>
+									<td align="center" colspan="1" rowspan="1">6</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Malpositioned screw (or minor neurological deficit)</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td colspan="1" rowspan="1"/>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td colspan="1" rowspan="1"/>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Major neurological deficit</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td colspan="1" rowspan="1"/>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td colspan="1" rowspan="1"/>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Wound issues</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td colspan="1" rowspan="1"/>
+									<td align="center" colspan="1" rowspan="1">3</td>
+									<td colspan="1" rowspan="1"/>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Within 90 days after index procedure</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">8.70</td>
+									<td align="center" colspan="1" rowspan="1">5</td>
+									<td align="center" colspan="1" rowspan="1">15.69</td>
+									<td align="center" colspan="1" rowspan="1">6</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Proximal junctional failure</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">3</td>
+									<td align="center" colspan="1" rowspan="1">9.41</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Major neurological deficit</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">8.70</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Wound issues</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">3.14</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Cerebrospinal fluid leak</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">3.14</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">91 days-1 yr after index procedure</td>
+									<td align="center" colspan="1" rowspan="1">3</td>
+									<td align="center" colspan="1" rowspan="1">8.99</td>
+									<td align="center" colspan="1" rowspan="1">9</td>
+									<td align="center" colspan="1" rowspan="1">9.54</td>
+									<td align="center" colspan="1" rowspan="1">12</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Malpositioned screw (or minor neurological deficit)</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">2.12</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Major neurological deficit</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">3.00</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Proximal junctional failure</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">3</td>
+									<td align="center" colspan="1" rowspan="1">3.18</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Implant failure/pseudarthrosis</td>
+									<td align="center" colspan="1" rowspan="1">0</td>
+									<td align="center" colspan="1" rowspan="1">0.00</td>
+									<td align="center" colspan="1" rowspan="1">3</td>
+									<td align="center" colspan="1" rowspan="1">3.18</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Other implant issues</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">6.00</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">1.06</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">1-2 yr after index procedure</td>
+									<td align="center" colspan="1" rowspan="1">3</td>
+									<td align="center" colspan="1" rowspan="1">7.46</td>
+									<td align="center" colspan="1" rowspan="1">7</td>
+									<td align="center" colspan="1" rowspan="1">5.60</td>
+									<td align="center" colspan="1" rowspan="1">10</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Proximal junctional failure</td>
+									<td align="center" colspan="1" rowspan="1">2</td>
+									<td align="center" colspan="1" rowspan="1">4.97</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">0.80</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1"> Implant failure/pseudarthrosis</td>
+									<td align="center" colspan="1" rowspan="1">1</td>
+									<td align="center" colspan="1" rowspan="1">2.49</td>
+									<td align="center" colspan="1" rowspan="1">6</td>
+									<td align="center" colspan="1" rowspan="1">4.80</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Total</td>
+									<td align="center" colspan="1" rowspan="1">7</td>
+									<td align="center" colspan="1" rowspan="1">8.23</td>
+									<td align="center" colspan="1" rowspan="1">27</td>
+									<td align="center" colspan="1" rowspan="1">10.75</td>
+									<td align="center" colspan="1" rowspan="1">34</td>
+								</tr>
+							</tbody>
+						</table>
+						<table-wrap-foot>
+							<fn id="tblfn15">
+								<label>*</label>
+								<p>Incidence rates are per 100 person-years.</p>
+							</fn>
+						</table-wrap-foot>
+					</table-wrap>
+					<table-wrap id="tbl6" orientation="portrait" position="float">
+						<label>TABLE VI</label>
+						<caption>
+							<p>Effect of Related Serious Adverse Events (SAEs) on Primary Outcomes Among Operative Patients, from the Combined (Randomized and Observational) As-Treated Analysis
+								<xref ref-type="table-fn" rid="tblfn16">*</xref></p>
+						</caption>
+						<table frame="hsides" rules="groups">
+							<thead>
+								<tr>
+									<td colspan="1" rowspan="3"/>
+									<td align="center" colspan="4" rowspan="1">2 Yr</td>
+								</tr>
+								<tr>
+									<td align="center" colspan="2" rowspan="1">Mean Change from Baseline (SE)</td>
+									<td align="center" colspan="1" rowspan="1"/>
+									<td align="center" colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td align="center" colspan="1" rowspan="1">SAE</td>
+									<td align="center" colspan="1" rowspan="1">No SAE</td>
+									<td align="center" colspan="1" rowspan="1">Difference in Mean Change (95% CI)</td>
+									<td align="center" colspan="1" rowspan="1">P Value</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="1" rowspan="1">SRS-22 subscore</td>
+									<td align="center" colspan="1" rowspan="1">0.52 (0.08)</td>
+									<td align="center" colspan="1" rowspan="1">0.79 (0.06)</td>
+									<td align="center" colspan="1" rowspan="1">−0.27 (−0.45, −0.09)</td>
+									<td align="center" colspan="1" rowspan="1">0.004</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">ODI score</td>
+									<td align="center" colspan="1" rowspan="1">−11.59 (2.07)</td>
+									<td align="center" colspan="1" rowspan="1">−17.34 (1.35)</td>
+									<td align="center" colspan="1" rowspan="1">5.76 (0.87, 10.64)</td>
+									<td align="center" colspan="1" rowspan="1">0.02</td>
+								</tr>
+							</tbody>
+						</table>
+						<table-wrap-foot>
+							<fn id="tblfn16">
+								<label>*</label>
+								<p>SE = standard error, and CI = confidence interval. Estimates for the SRS-22 subscore and ODI score are from generalized linear mixed-effects models accounting for the correlation among repeated measures using a heterogeneous autoregressive covariance matrix. SAE was considered a time-varying covariate, for which all outcomes measured after an SAE occurrence were categorized as being for an SAE. Results were adjusted for the baseline value of each outcome. All models were also adjusted for the following baseline characteristics: age, body mass index, depression/anxiety/psychiatric disorder, lumbar Cobb angle, lumbar lordosis, stenosis levels, education, osteoporosis, SRS-22 subscore, ODI, NRS for back pain, and SF-12 PCS.</p>
+							</fn>
+						</table-wrap-foot>
+					</table-wrap>
+					<table-wrap id="tbl7" orientation="portrait" position="float">
+						<label>TABLE VII</label>
+						<caption>
+							<p>Comparison of Primary Outcomes for Operative Patients with and without a Serious Adverse Event (SAE) and Nonoperative Patients, from the As-Treated Analysis Combining Randomized and Observational Cohorts
+								<xref ref-type="table-fn" rid="tblfn17">*</xref></p>
+						</caption>
+						<table frame="hsides" rules="groups">
+							<thead>
+								<tr>
+									<td colspan="2" rowspan="2"/>
+									<td align="center" colspan="3" rowspan="1">2 Yr</td>
+								</tr>
+								<tr>
+									<td align="center" colspan="1" rowspan="1">Mean Change from Baseline (SE)</td>
+									<td align="center" colspan="1" rowspan="1">Difference in Mean Change (95% CI)</td>
+									<td align="center" colspan="1" rowspan="1">P Value</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="1" rowspan="3">SRS -22 subscore</td>
+									<td colspan="1" rowspan="1">Nonoperative</td>
+									<td align="center" colspan="1" rowspan="1">0.11 (0.05)</td>
+									<td align="center" colspan="1" rowspan="1">Ref.</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Operative with an SAE</td>
+									<td align="center" colspan="1" rowspan="1">0.51 (0.07)</td>
+									<td align="center" colspan="1" rowspan="1">0.39 (0.22, 0.56)</td>
+									<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Operative with no SAE</td>
+									<td align="center" colspan="1" rowspan="1">0.75 (0.05)</td>
+									<td align="center" colspan="1" rowspan="1">0.64 (0.50, 0.77)</td>
+									<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="3">ODI score</td>
+									<td colspan="1" rowspan="1">Nonoperative</td>
+									<td align="center" colspan="1" rowspan="1">−1.57 (1.26)</td>
+									<td align="center" colspan="1" rowspan="1">Ref.</td>
+									<td colspan="1" rowspan="1"/>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Operative with an SAE</td>
+									<td align="center" colspan="1" rowspan="1">−10.51 (1.91)</td>
+									<td align="center" colspan="1" rowspan="1">−8.94 (−13.34, −4.54)</td>
+									<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Operative with no SAE</td>
+									<td align="center" colspan="1" rowspan="1">−15.79 (1.29)</td>
+									<td align="center" colspan="1" rowspan="1">−14.22 (−17.59, −10.85)</td>
+									<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								</tr>
+							</tbody>
+						</table>
+						<table-wrap-foot>
+							<fn id="tblfn17">
+								<label>*</label>
+								<p>SE = standard error, and CI = confidence interval. Estimates for the SRS-22 subscore and ODI score are from generalized linear mixed-effects models accounting for the correlation among repeated measures using a heterogeneous autoregressive covariance matrix. SAE was considered a time-varying covariate, for which all outcomes measured after an SAE occurrence were categorized as being for an SAE. Results were adjusted for the baseline value of each outcome. All models were also adjusted for the following baseline characteristics: age, body mass index, depression/anxiety/psychiatric disorder, lumbar Cobb angle, lumbar lordosis, stenosis levels, education, osteoporosis, SRS-22 subscore, ODI, NRS for back pain, and SF-12 PCS.</p>
+							</fn>
+						</table-wrap-foot>
+					</table-wrap>
+				</sec>
+				<sec>
+					<title>Radiographic Measurements</title>
+					<p>In a combined as-treated analysis of data from 2 years post-treatment, radiographic deterioration was uncommon with nonoperative care. Most operative patients achieved a reproducible radiographic improvement for the lumbar Cobb angle and sagittal parameters (
+						<xref ref-type="table" rid="tbl8">Table VIII</xref>
+						).</p>
+					<table-wrap id="tbl8" orientation="portrait" position="float">
+						<label>TABLE VIII</label>
+						<caption>
+							<p>Comparison of Radiographic Outcomes from the As-Treated Analysis Combining Randomized and Observational Cohorts
+								<xref ref-type="table-fn" rid="tblfn18">*</xref></p>
+						</caption>
+						<table frame="hsides" rules="groups">
+							<thead>
+								<tr>
+									<td colspan="1" rowspan="2">Radiographic Outcome</td>
+									<td align="center" colspan="2" rowspan="1">Achieved Reproducible Radiographic Difference At 2 Yr
+										<xref ref-type="table-fn" rid="tblfn19">†</xref>
+										<italic>(no. [%])</italic></td>
+									<td align="center" colspan="1" rowspan="2">Odds Ratio (95% CI)
+										<xref ref-type="table-fn" rid="tblfn20">‡</xref></td>
+									<td align="center" colspan="1" rowspan="2">P Value</td>
+								</tr>
+								<tr>
+									<td align="center" colspan="1" rowspan="1">Operative</td>
+									<td align="center" colspan="1" rowspan="1">Nonoperative</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="1" rowspan="1">Lumbar Cobb angle 
+										<italic>(°)</italic></td>
+									<td align="center" colspan="1" rowspan="1">134 (99%)</td>
+									<td align="center" colspan="1" rowspan="1">23 (25%)</td>
+									<td align="center" colspan="1" rowspan="1">349.62 (65.73, 1,859.68)</td>
+									<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Coronal balance (absolute value) 
+										<italic>(mm)</italic></td>
+									<td align="center" colspan="1" rowspan="1">39 (29%)</td>
+									<td align="center" colspan="1" rowspan="1">15 (16%)</td>
+									<td align="center" colspan="1" rowspan="1">1.59 (0.71, 3.58)</td>
+									<td align="center" colspan="1" rowspan="1">0.26</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Lumbar lordosis (T12-sacrum) 
+										<italic>(°)</italic></td>
+									<td align="center" colspan="1" rowspan="1">95 (70%)</td>
+									<td align="center" colspan="1" rowspan="1">12 (13%)</td>
+									<td align="center" colspan="1" rowspan="1">24.60 (10.15, 59.62)</td>
+									<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Sagittal balance (absolute value) 
+										<italic>(mm)</italic></td>
+									<td align="center" colspan="1" rowspan="1">53 (40%)</td>
+									<td align="center" colspan="1" rowspan="1">16 (18%)</td>
+									<td align="center" colspan="1" rowspan="1">4.81 (1.91, 12.10)</td>
+									<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								</tr>
+								<tr>
+									<td colspan="1" rowspan="1">Pelvic incidence-lumbar lordosis mismatch 
+										<italic>(°)</italic></td>
+									<td align="center" colspan="1" rowspan="1">91 (70%)</td>
+									<td align="center" colspan="1" rowspan="1">12 (14%)</td>
+									<td align="center" colspan="1" rowspan="1">26.67 (10.29, 69.12)</td>
+									<td align="center" colspan="1" rowspan="1">&lt;0.001</td>
+								</tr>
+							</tbody>
+						</table>
+						<table-wrap-foot>
+							<fn id="tblfn18">
+								<label>*</label>
+								<p>Reproducible radiographic differences were defined as a difference of at least 5° for the lumbar Cobb angle, lumbar lordosis, and pelvic incidence-lumbar lordosis mismatch or a difference of 10 mm for coronal and sagittal balance. Odds ratios comparing the odds of achieving a reproducible radiographic difference in operative versus nonoperative patients were estimated using logistic regression.</p>
+							</fn>
+							<fn id="tblfn19">
+								<label>†</label>
+								<p>For radiographic analyses, patients were only included if they had available results from a radiograph within 1 year prior to the start of intervention and a follow-up radiograph between 1 and 3 years after the start of intervention. There were 136 operative and 92 nonoperative patients who met these criteria. Information was not available at both baseline and 2 years regarding coronal balance for 2 operative patients, regarding sagittal balance for 2 operative patients and 1 nonoperative patient, and regarding pelvic incidence-lumbar lordosis mismatch for 6 operative and 9 nonoperative patients.</p>
+							</fn>
+							<fn id="tblfn20">
+								<label>‡</label>
+								<p>CI = confidence interval.</p>
+							</fn>
+						</table-wrap-foot>
+					</table-wrap>
+				</sec>
+			</sec>
+			<sec>
+				<title>Responder Analysis</title>
+				<p>In the randomized cohort responder analysis, more operative than nonoperative patients achieved improvements meeting or exceeding the MCID for both primary outcome measures, the SRS-22 subscore (80.8% versus 17.0%; p &lt; 0.001) and ODI (80.8% versus 40.1%; p = 0.004) at 2 years. The combined cohort results were consistent, with more operative patients achieving improvement meeting or achieving the MCID in the SRS-22 subscore (85.7% versus 38.7%; p &lt; 0.001) and ODI (77.4% versus 38.3%; p &lt; 0.001).</p>
+			</sec>
+		</sec>
+		<sec sec-type="discussion">
+			<title>Discussion</title>
+			<p>The as-treated analyses of the randomized and observational cohorts found benefits for operative over nonoperative treatment when controlling for potential confounders (could not control for unmeasured variables or resolve patient or surgeon selection bias), with improvements in the SRS-22 subscore and ODI at the 2-year follow-up. We also performed a responder analysis, which showed that a minority of patients in the nonoperative group achieved a minimal clinically important improvement, while &gt;80% achieved this improvement in the group randomized to surgery and in the combined population.</p>
+			<p>For the randomized cohort, when studied as assigned (intention-to-treat), we found that surgery was more effective than nonoperative treatment at the 1-year follow-up, but at the 2-year follow-up, average changes in the SRS-22 subscore and ODI did not differ significantly between the treatment groups. Randomization was successful in distributing baseline covariates; however, there was substantial nonadherence to treatment assignment, particularly in the group randomized to nonoperative treatment, where we observed substantial resistance to assigned treatment. The crossover rate at 2 years was in excess of 50%, mostly nonoperative to operative, with similar numbers of patients treated operatively in each group at 2 years. Crossover rates this high would require an unachievable sample size to reach significance in an intention-to-treat analysis. Therefore, our study conclusions are drawn mainly from the 2-year as-treated (randomized cohort and observational cohort) and MCID analyses.</p>
+			<p>In the as-treated analyses of the randomized cohort and the observational cohort, nonoperative treatment was not found to be associated with a worsening of quality of life for treatment-adherent patients, on the basis of SRS-22 subscore and ODI measures. Conclusions regarding specific nonoperative therapies are limited because interventions were tailored to patients with back and leg pain treated differently. The muscle-strengthening and aerobic conditioning (physical therapy) treatments were not protocolized. This decision was made because there is no accepted “usual care” and we are aware of no comparative study to have defined the appropriate physical therapy for this class of patients. Our intent was to provide “usual care” to both operative and nonoperative patients so that our results would be generalizable
+				<sup>
+					<xref ref-type="bibr" rid="bib12">12</xref></sup>.</p>
+			<p>Complications related to surgery were substantial, with a high number of SAEs in the operative cohort. One patient who sustained a major neurological deficit died as a result of surgery. This devastating complication must be considered when discussing the potential benefits of surgery as it is not appreciated in the inferential analysis. Despite the high frequency of surgery-related SAEs, these patients did improve with respect to primary outcome measures, although less so than patients without SAEs.</p>
+			<p>Few reports have compared operative and nonoperative care in adult spinal deformity
+				<sup>
+					<xref ref-type="bibr" rid="bib8 bib9">8</xref>
+					-
+					<xref ref-type="bibr" rid="bib10">10</xref></sup>. The European Spine Study Group (ESSG), the International Spine Study Group (ISSG), and the Spinal Deformity Study Group (SDSG) maintain registries of patients with adult spinal deformity, of which those with lumbar scoliosis are a subset, and have contributed the largest series. As with most registries, these reports are limited by their heterogeneity, nonconsecutive enrollment, and substantial loss to follow-up. In particular, the ISSG and ESSG studies included revision adult deformity, a diagnosis distinctly different from primary (no prior fusion) adult lumbar scoliosis
+				<sup>
+					<xref ref-type="bibr" rid="bib19">19</xref></sup>. Loss to follow-up of the nonoperative patients in these cohorts approached 50%. We focused on primary treatment for adult symptomatic lumbar scoliosis and report 90% follow-up at 2 years after enrollment.</p>
+			<p>There were important limitations to this study. First was the nonprotocolization of physical therapy for the nonoperatively treated patients. Second was the difficulty in formulating conclusions for the randomized cohort when analyzed as assigned (intention-to-treat) due to limited enrollment numbers and high crossover by 2 years. Third, there was the potential for selection, indication, and expertise bias to have influenced results. The findings may not be applicable to all clinical contexts outside the 9 centers in North America in which the work was conducted.</p>
+			<p>In conclusion, lower enrollment than anticipated and a high rate of crossovers in the randomized cohort limit conclusions and interpretation of the intention-to-treat analysis. The as-treated analyses of the randomized cohort and concomitant observational cohort found surgery to be superior to nonoperative care at the 2-year follow-up, as did the MCID responder analyses of cohorts. Within the limitations of those analyses, we recommend nonoperative treatment for patients content with current spine-related health with the understanding that improvement is unlikely. If a patient is not satisfied with current spine-related health and has an expectation of improvement, surgery is preferred and is likely to provide improvement, although complications, including unplanned reoperation and neurological deficits, are common. If a patient starts with nonoperative treatment and is subsequently dissatisfied or spine health deteriorates with time, surgery may then be considered with an expectation of benefit from surgery.</p>
+		</sec>
+	</body>
+	<back>
+		<sec sec-type="data-availability">
+			<title>Data Sharing</title>
+			<p>A 
+				<bold>data-sharing statement</bold>
+				is provided with the online version of the article (
+				<ext-link ext-link-type="uri" xlink:href="http://links.lww.com/JBJS/F141">http://links.lww.com/JBJS/F141</ext-link>
+				).</p>
+		</sec>
+		<ref-list>
+			<title>References</title>
+			<ref id="bib1">
+				<label>1</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Kebaish</surname>
+							<given-names>KM</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Neubauer</surname>
+							<given-names>PR</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Voros</surname>
+							<given-names>GD</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Khoshnevisan</surname>
+							<given-names>MA</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Skolasky</surname>
+							<given-names>RL</given-names></string-name>
+					</person-group>. 
+					<article-title>Scoliosis in adults aged forty years and older: prevalence and relationship to age, race, and gender</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2011</year>
+					<month>Apr</month>
+					<day>20</day>
+					;
+					<volume>36</volume>
+					(
+					<issue>9</issue>
+					):
+					<fpage>731</fpage>
+					-
+					<lpage>6</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib2">
+				<label>2</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Schwab</surname>
+							<given-names>F</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Dubey</surname>
+							<given-names>A</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Gamez</surname>
+							<given-names>L</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>El Fegoun</surname>
+							<given-names>AB</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hwang</surname>
+							<given-names>K</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Pagala</surname>
+							<given-names>M</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Farcy</surname>
+							<given-names>JP</given-names></string-name>
+					</person-group>. 
+					<article-title>Adult scoliosis: prevalence, SF-36, and nutritional parameters in an elderly volunteer population</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2005</year>
+					<month>May</month>
+					<day>1</day>
+					;
+					<volume>30</volume>
+					(
+					<issue>9</issue>
+					):
+					<fpage>1082</fpage>
+					-
+					<lpage>5</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib3">
+				<label>3</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Bess</surname>
+							<given-names>S</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Line</surname>
+							<given-names>B</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Fu</surname>
+							<given-names>KM</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>McCarthy</surname>
+							<given-names>I</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Lafage</surname>
+							<given-names>V</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Schwab</surname>
+							<given-names>F</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Shaffrey</surname>
+							<given-names>C</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Ames</surname>
+							<given-names>C</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Akbarnia</surname>
+							<given-names>B</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Jo</surname>
+							<given-names>H</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Kelly</surname>
+							<given-names>M</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Burton</surname>
+							<given-names>D</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hart</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Klineberg</surname>
+							<given-names>E</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Kebaish</surname>
+							<given-names>K</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hostin</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Mundis</surname>
+							<given-names>G</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Mummaneni</surname>
+							<given-names>P</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Smith</surname>
+							<given-names>JS</given-names></string-name>
+					</person-group>; 
+					<collab>International Spine Study Group</collab>
+					. 
+					<article-title>The health impact of symptomatic adult spinal deformity: comparison of deformity types to United States population norms and chronic diseases</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2016</year>
+					<month>Feb</month>
+					;
+					<volume>41</volume>
+					(
+					<issue>3</issue>
+					):
+					<fpage>224</fpage>
+					-
+					<lpage>33</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib4">
+				<label>4</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>McCarthy</surname>
+							<given-names>IM</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Hostin</surname>
+							<given-names>RA</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>O’Brien</surname>
+							<given-names>MF</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Fleming</surname>
+							<given-names>NS</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Ogola</surname>
+							<given-names>G</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Kudyakov</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Richter</surname>
+							<given-names>KM</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Saigal</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Berven</surname>
+							<given-names>SH</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Ames</surname>
+							<given-names>CP</given-names></string-name>
+					</person-group>; 
+					<collab>International Spine Study Group</collab>
+					. 
+					<article-title>Analysis of the direct cost of surgery for four diagnostic categories of adult spinal deformity</article-title>
+					. 
+					<source>Spine J.</source>
+					<year>2013</year>
+					<month>Dec</month>
+					;
+					<volume>13</volume>
+					(
+					<issue>12</issue>
+					):
+					<fpage>1843</fpage>
+					-
+					<lpage>8</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib5">
+				<label>5</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>McCarthy</surname>
+							<given-names>IM</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Hostin</surname>
+							<given-names>RA</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Ames</surname>
+							<given-names>CP</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Kim</surname>
+							<given-names>HJ</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Smith</surname>
+							<given-names>JS</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Boachie-Adjei</surname>
+							<given-names>O</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Schwab</surname>
+							<given-names>FJ</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Klineberg</surname>
+							<given-names>EO</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Shaffrey</surname>
+							<given-names>CI</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Gupta</surname>
+							<given-names>MC</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Polly</surname>
+							<given-names>DW</given-names></string-name>
+					</person-group>; 
+					<collab>International Spine Study Group</collab>
+					. 
+					<article-title>Total hospital costs of surgical treatment for adult spinal deformity: an extended follow-up study</article-title>
+					. 
+					<source>Spine J.</source>
+					<year>2014</year>
+					<month>Oct</month>
+					<day>1</day>
+					;
+					<volume>14</volume>
+					(
+					<issue>10</issue>
+					):
+					<fpage>2326</fpage>
+					-
+					<lpage>33</lpage>
+					. 
+					<comment>Epub 2014 Jan 24</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib6">
+				<label>6</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Glassman</surname>
+							<given-names>SD</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Berven</surname>
+							<given-names>S</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Kostuik</surname>
+							<given-names>J</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Dimar</surname>
+							<given-names>JR</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Horton</surname>
+							<given-names>WC</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Bridwell</surname>
+							<given-names>K</given-names></string-name>
+					</person-group>. 
+					<article-title>Nonsurgical resource utilization in adult spinal deformity</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2006</year>
+					<month>Apr</month>
+					<day>15</day>
+					;
+					<volume>31</volume>
+					(
+					<issue>8</issue>
+					):
+					<fpage>941</fpage>
+					-
+					<lpage>7</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib7">
+				<label>7</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Glassman</surname>
+							<given-names>SD</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Carreon</surname>
+							<given-names>LY</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Shaffrey</surname>
+							<given-names>CI</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Polly</surname>
+							<given-names>DW</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Ondra</surname>
+							<given-names>SL</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Berven</surname>
+							<given-names>SH</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Bridwell</surname>
+							<given-names>KH</given-names></string-name>
+					</person-group>. 
+					<article-title>The costs and benefits of nonoperative management for adult scoliosis</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2010</year>
+					<month>Mar</month>
+					<day>1</day>
+					;
+					<volume>35</volume>
+					(
+					<issue>5</issue>
+					):
+					<fpage>578</fpage>
+					-
+					<lpage>82</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib8">
+				<label>8</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Acaroglu</surname>
+							<given-names>E</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Yavuz</surname>
+							<given-names>AC</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Guler</surname>
+							<given-names>UO</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Yuksel</surname>
+							<given-names>S</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Yavuz</surname>
+							<given-names>Y</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Domingo-Sabat</surname>
+							<given-names>M</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Pellise</surname>
+							<given-names>F</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Alanay</surname>
+							<given-names>A</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Perez Grueso</surname>
+							<given-names>FS</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Kleinstück</surname>
+							<given-names>F</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Obeid</surname>
+							<given-names>I</given-names></string-name>
+					</person-group>; 
+					<collab>European Spine Study Group</collab>
+					. 
+					<article-title>A decision analysis to identify the ideal treatment for adult spinal deformity: is surgery better than non-surgical treatment in improving health-related quality of life and decreasing the disease burden?</article-title>
+					<source>Eur Spine J.</source>
+					<year>2016</year>
+					<month>Aug</month>
+					;
+					<volume>25</volume>
+					(
+					<issue>8</issue>
+					):
+					<fpage>2390</fpage>
+					-
+					<lpage>400</lpage>
+					. 
+					<comment>Epub 2016 Jan 28</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib9">
+				<label>9</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Bridwell</surname>
+							<given-names>KH</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Glassman</surname>
+							<given-names>S</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Horton</surname>
+							<given-names>W</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Shaffrey</surname>
+							<given-names>C</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Schwab</surname>
+							<given-names>F</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Zebala</surname>
+							<given-names>LP</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Lenke</surname>
+							<given-names>LG</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hilton</surname>
+							<given-names>JF</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Shainline</surname>
+							<given-names>M</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Baldus</surname>
+							<given-names>C</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Wootten</surname>
+							<given-names>D</given-names></string-name>
+					</person-group>. 
+					<article-title>Does treatment (nonoperative and operative) improve the two-year quality of life in patients with adult symptomatic lumbar scoliosis: a prospective multicenter evidence-based medicine study</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2009</year>
+					<month>Sep</month>
+					<day>15</day>
+					;
+					<volume>34</volume>
+					(
+					<issue>20</issue>
+					):
+					<fpage>2171</fpage>
+					-
+					<lpage>8</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib10">
+				<label>10</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Smith</surname>
+							<given-names>JS</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Lafage</surname>
+							<given-names>V</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Shaffrey</surname>
+							<given-names>CI</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Schwab</surname>
+							<given-names>F</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Lafage</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hostin</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>OʼBrien</surname>
+							<given-names>M</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Boachie-Adjei</surname>
+							<given-names>O</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Akbarnia</surname>
+							<given-names>BA</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Mundis</surname>
+							<given-names>GM</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Errico</surname>
+							<given-names>T</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Kim</surname>
+							<given-names>HJ</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Protopsaltis</surname>
+							<given-names>TS</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hamilton</surname>
+							<given-names>DK</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Scheer</surname>
+							<given-names>JK</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Sciubba</surname>
+							<given-names>D</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Ailon</surname>
+							<given-names>T</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Fu</surname>
+							<given-names>KM</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Kelly</surname>
+							<given-names>MP</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Zebala</surname>
+							<given-names>L</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Line</surname>
+							<given-names>B</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Klineberg</surname>
+							<given-names>E</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Gupta</surname>
+							<given-names>M</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Deviren</surname>
+							<given-names>V</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hart</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Burton</surname>
+							<given-names>D</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Bess</surname>
+							<given-names>S</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Ames</surname>
+							<given-names>CP</given-names></string-name>
+					</person-group>; 
+					<collab>International Spine Study Group</collab>
+					. 
+					<article-title>Outcomes of operative and nonoperative treatment for adult spinal deformity: a prospective, multicenter, propensity-matched cohort assessment with minimum 2-year follow-up</article-title>
+					. 
+					<source>Neurosurgery.</source>
+					<year>2016</year>
+					<month>Jun</month>
+					;
+					<volume>78</volume>
+					(
+					<issue>6</issue>
+					):
+					<fpage>851</fpage>
+					-
+					<lpage>61</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib11">
+				<label>11</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Tunis</surname>
+							<given-names>SR</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Stryer</surname>
+							<given-names>DB</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Clancy</surname>
+							<given-names>CM</given-names></string-name>
+					</person-group>. 
+					<article-title>Practical clinical trials: increasing the value of clinical research for decision making in clinical and health policy</article-title>
+					. 
+					<source>JAMA.</source>
+					<year>2003</year>
+					<month>Sep</month>
+					<day>24</day>
+					;
+					<volume>290</volume>
+					(
+					<issue>12</issue>
+					):
+					<fpage>1624</fpage>
+					-
+					<lpage>32</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib12">
+				<label>12</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Dawson</surname>
+							<given-names>L</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Zarin</surname>
+							<given-names>DA</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Emanuel</surname>
+							<given-names>EJ</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Friedman</surname>
+							<given-names>LM</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Chaudhari</surname>
+							<given-names>B</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Goodman</surname>
+							<given-names>SN</given-names></string-name>
+					</person-group>. 
+					<article-title>Considering usual medical care in clinical trial design</article-title>
+					. 
+					<source>PLoS Med.</source>
+					<year>2009</year>
+					<month>Sep</month>
+					;
+					<volume>6</volume>
+					(
+					<issue>9</issue>
+					):
+					<fpage>e1000111</fpage>
+					. 
+					<comment>Epub 2009 Sep 29</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib13">
+				<label>13</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Weinstein</surname>
+							<given-names>JN</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Lurie</surname>
+							<given-names>JD</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Tosteson</surname>
+							<given-names>TD</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hanscom</surname>
+							<given-names>B</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Tosteson</surname>
+							<given-names>ANA</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Blood</surname>
+							<given-names>EA</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Birkmeyer</surname>
+							<given-names>NJO</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hilibrand</surname>
+							<given-names>AS</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Herkowitz</surname>
+							<given-names>H</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Cammisa</surname>
+							<given-names>FP</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Albert</surname>
+							<given-names>TJ</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Emery</surname>
+							<given-names>SE</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Lenke</surname>
+							<given-names>LG</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Abdu</surname>
+							<given-names>WA</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Longley</surname>
+							<given-names>M</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Errico</surname>
+							<given-names>TJ</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hu</surname>
+							<given-names>SS</given-names></string-name>
+					</person-group>. 
+					<article-title>Surgical versus nonsurgical treatment for lumbar degenerative spondylolisthesis</article-title>
+					. 
+					<source>N Engl J Med.</source>
+					<year>2007</year>
+					<month>May</month>
+					<day>31</day>
+					;
+					<volume>356</volume>
+					(
+					<issue>22</issue>
+					):
+					<fpage>2257</fpage>
+					-
+					<lpage>70</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib14">
+				<label>14</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Kelly</surname>
+							<given-names>MP</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Kim</surname>
+							<given-names>HJ</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Ames</surname>
+							<given-names>CP</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Burton</surname>
+							<given-names>DC</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Carreon</surname>
+							<given-names>LY</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Polly</surname>
+							<given-names>DW</given-names>
+							<suffix>Jr</suffix></string-name>, 
+						<string-name name-style="western">
+							<surname>Hostin</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Jain</surname>
+							<given-names>A</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Gum</surname>
+							<given-names>JL</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Lafage</surname>
+							<given-names>V</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Schwab</surname>
+							<given-names>FJ</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Shaffrey</surname>
+							<given-names>CI</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Smith</surname>
+							<given-names>JS</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Bess</surname>
+							<given-names>S</given-names></string-name>
+					</person-group>, 
+					<collab>International Spine Study Group</collab>
+					. 
+					<article-title>Minimum detectable measurement difference for health related quality of life measures varies with age and disability in adult spinal deformity: implications for calculating minimal clinically important difference</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2018</year>
+					<month>Jul</month>
+					<day>1</day>
+					;
+					<volume>43</volume>
+					(
+					<issue>13</issue>
+					):
+					<fpage>E790</fpage>
+					-
+					<lpage>5.8</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib15">
+				<label>15</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Ford</surname>
+							<given-names>I</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Norrie</surname>
+							<given-names>J</given-names></string-name>
+					</person-group>. 
+					<article-title>Pragmatic trials</article-title>
+					. 
+					<source>N Engl J Med.</source>
+					<year>2016</year>
+					<month>Aug</month>
+					<day>4</day>
+					;
+					<volume>375</volume>
+					(
+					<issue>5</issue>
+					):
+					<fpage>454</fpage>
+					-
+					<lpage>63</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib16">
+				<label>16</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Lurie</surname>
+							<given-names>JD</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Morgan</surname>
+							<given-names>TS</given-names></string-name>
+					</person-group>. 
+					<article-title>Pros and cons of pragmatic clinical trials</article-title>
+					. 
+					<source>J Comp Eff Res.</source>
+					<year>2013</year>
+					<month>Jan</month>
+					;
+					<volume>2</volume>
+					(
+					<issue>1</issue>
+					):
+					<fpage>53</fpage>
+					-
+					<lpage>8</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib17">
+				<label>17</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Crawford</surname>
+							<given-names>CH</given-names>
+							<suffix>3rd</suffix>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Glassman</surname>
+							<given-names>SD</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Bridwell</surname>
+							<given-names>KH</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Berven</surname>
+							<given-names>SH</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Carreon</surname>
+							<given-names>LY</given-names></string-name>
+					</person-group>. 
+					<article-title>The minimum clinically important difference in SRS-22R total score, appearance, activity and pain domains after surgical treatment of adult spinal deformity</article-title>
+					. 
+					<source>Spine (Phila Pa 1976).</source>
+					<year>2015</year>
+					<month>Mar</month>
+					<day>15</day>
+					;
+					<volume>40</volume>
+					(
+					<issue>6</issue>
+					):
+					<fpage>377</fpage>
+					-
+					<lpage>81</lpage>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib18">
+				<label>18</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Hägg</surname>
+							<given-names>O</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Fritzell</surname>
+							<given-names>P</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Nordwall</surname>
+							<given-names>A</given-names></string-name>
+					</person-group>; 
+					<collab>Swedish Lumbar Spine Study Group</collab>
+					. 
+					<article-title>The clinical importance of changes in outcome scores after treatment for chronic low back pain</article-title>
+					. 
+					<source>Eur Spine J.</source>
+					<year>2003</year>
+					<month>Feb</month>
+					;
+					<volume>12</volume>
+					(
+					<issue>1</issue>
+					):
+					<fpage>12</fpage>
+					-
+					<lpage>20</lpage>
+					. 
+					<comment>Epub 2002 Oct 24</comment>
+					.</mixed-citation>
+			</ref>
+			<ref id="bib19">
+				<label>19</label>
+				<mixed-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<string-name name-style="western">
+							<surname>Ailon</surname>
+							<given-names>T</given-names>
+						</string-name>, 
+						<string-name name-style="western">
+							<surname>Smith</surname>
+							<given-names>JS</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Shaffrey</surname>
+							<given-names>CI</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Soroceanu</surname>
+							<given-names>A</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Lafage</surname>
+							<given-names>V</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Schwab</surname>
+							<given-names>F</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Burton</surname>
+							<given-names>D</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hart</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Kim</surname>
+							<given-names>HJ</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Gum</surname>
+							<given-names>J</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Hostin</surname>
+							<given-names>R</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Kelly</surname>
+							<given-names>MP</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Glassman</surname>
+							<given-names>S</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Scheer</surname>
+							<given-names>JK</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Bess</surname>
+							<given-names>S</given-names></string-name>, 
+						<string-name name-style="western">
+							<surname>Ames</surname>
+							<given-names>CP</given-names></string-name>
+					</person-group>; 
+					<collab>International Spine Study Group</collab>
+					. 
+					<article-title>Patients with adult spinal deformity with previous fusions have an equal chance of reaching substantial clinical benefit thresholds in health-related quality of life measures but do not reach the same absolute level of improvement</article-title>
+					. 
+					<source>World Neurosurg.</source>
+					<year>2018</year>
+					<month>Aug</month>
+					;
+					<volume>116</volume>
+					:
+					<fpage>e354</fpage>
+					-
+					<lpage>61</lpage>
+					. 
+					<comment>Epub 2018 May 9</comment>
+					.</mixed-citation>
+			</ref>
+		</ref-list>
+	</back>
+</article>
