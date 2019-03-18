@@ -1,5 +1,6 @@
 var documentURL = "data/" +
-"101_4_338/JBJS.18.00483.xml"
+"example/inline_graphic.xml"
+//"101_4_338/JBJS.18.00483.xml"
 //"101_1_48/JBJS.18.00531_datasharing.xml"
 //"99_1_10/99_1_10.xml"
 //"mathml/JBJSOA-D-17-00063.xml"
@@ -25,7 +26,7 @@ getValidWidth = function() {
   if ( /iPhone/.test(navigator.appVersion) || /iPad/.test(navigator.appVersion) ) {
     var landscape = false;
     if ( window.orientation ) {
-      landscape = Math.abs(window.orientation) === 90; 
+      landscape = Math.abs(window.orientation) === 90;
     }
     else if ( window.screen.orientation ) {
       landscape = [90, 270].indexOf(window.screen.orientation.angle) > -1;
@@ -35,7 +36,7 @@ getValidWidth = function() {
         if (screenWidth < window.screen.height) screenWidth = window.screen.height;
     } else {
         if (screenWidth > window.screen.height) screenWidth = window.screen.height;
-      } 
+      }
   }
 
   return Math.min(windowOuterWidth, window.innerWidth, screenWidth);
@@ -260,13 +261,13 @@ function onDocLoaded(reader, doc, state) {
 
 function onMenuReady() {
   $('.resources .menu-bar .external-menu').after('<a class="favorite article" style="float:right; margin:10px 15px; width:20px; height:20px" content_type="article" content_id="1330028"></a>');
-  
+
   $('.resources .menu-bar .external-menu').after('<a class="socialshare article" style="float:right; margin:10px 15px 10px -5px; width:20px; height:20px; cursor: pointer;"><img style="width: 20px" src="https://tech.area9innovation.com/jbjs/hub/pages/images/share_icon.png"></a>');
-  
+
   if( isPIP ) {
     $('.surface.resource-view.content').prepend('<div style="font-weight:bold;color:blue;position:fixed;z-index:1; width:45%;padding-left:50px;"><center>Abstract and PDF now available.</center><center>Full text HTML will be available upon publication in the next journal issue</center></div>');
     pipContentCorrection();
-  } 
+  }
 
 //  $('.pubmed').css('display', 'none');
 //  $('.googlescholar').css('display', 'none');
@@ -276,11 +277,11 @@ function onReaderCreated() {
   $('body').append('<a class="favorite article" style="position: absolute; right: 4rem; top: 1rem; width:2rem; height:2rem; margin:0" content_type="article" content_id="1330028"></a>');
 
   $('body').append('<a class="socialshare saveposition article" style="position: absolute; right: 1rem; top: 1rem; width:2rem; height:2rem; margin:0; cursor: pointer;"><img style="width: 2rem;" src="https://tech.area9innovation.com/jbjs/hub/pages/images/share_icon.png"></a>');
-  
+
   $('a:contains("Please register or login to see full text of this article")').parent().css('padding-right','4.5rem');
 
   if( isPIP ) {
-    $('.surface.resource-view.content').prepend('<div class="saveposition" style="font-weight:bold;color:blue;position:fixed; left:35px;right:0;z-index:1;"><center>Abstract and PDF now available.</center><center>Full text HTML will be available upon publication in the next journal issue</center></div>');    
+    $('.surface.resource-view.content').prepend('<div class="saveposition" style="font-weight:bold;color:blue;position:fixed; left:35px;right:0;z-index:1;"><center>Abstract and PDF now available.</center><center>Full text HTML will be available upon publication in the next journal issue</center></div>');
     pipContentCorrection();
   }
 }
