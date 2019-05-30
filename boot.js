@@ -1,7 +1,10 @@
 var documentURL = "data/" +
-"example/inline_graphic.xml"
+//"example/inline_graphic.xml"
 //"101_4_338/JBJS.18.00483.xml"
 //"101_1_48/JBJS.18.00531_datasharing.xml"
+//"1996476/1996476.xml"
+"links_in_refs/Predatory Publishing in Orthopaedic Research.xml"
+//"links_in_refs/Influence of Acetabular Coverage on Hip Survival After Free Vascularized Fibular Grafting for Femoral Head Osteonecrosis.xml"
 //"99_1_10/99_1_10.xml"
 //"mathml/JBJSOA-D-17-00063.xml"
 //"example.xml"
