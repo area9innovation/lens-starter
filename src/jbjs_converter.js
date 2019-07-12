@@ -66,7 +66,7 @@ JbjsConverter.Prototype = function() {
 
   this.test = function(xmlDoc, docUrl) {
     if ( this.config.storage_layout === 'db' ) {
-      this.docBaseUrl = docUrl;      
+      this.docBaseUrl = docUrl;
       this.imageBaseUrl = this.config.image_url ? this.config.image_url : this.docBaseUrl;
     } else {
       this.docBaseUrl = docUrl.split('/').slice(0, -1).join('/');
@@ -171,7 +171,7 @@ JbjsConverter.Prototype = function() {
   this.URLBuilderJBJSType = function(url, ext) {
     if (url.substring(url.length - ext.length) === ext) {
       ext = '';
-    }      
+    }
     return [
         this.docBaseUrl,
         '/',
@@ -235,8 +235,10 @@ JbjsConverter.Prototype = function() {
     doc.show('content', header.id);
 
     _.each(doc.get('info').nodes, function(n) {doc.show('content', n);});
-    
+
     _.each(state.affiliations, function(n) {state.doc.show('content', n);});
+
+    _.each(state.authorNotes, function(n) {state.doc.show('content', n);});
   };
 
   this.enhanceTable = function(state, node, tableWrap) {
@@ -302,6 +304,7 @@ JbjsConverter.Prototype = function() {
     // Extract authors etc.
     this.extractAffilitations(state, article);
     this.extractContributors(state, article);
+    this.extractAuthorNotes(state, article);
 
     // Make up a cover node
     this.extractCover(state, article);
@@ -320,6 +323,7 @@ JbjsConverter.Prototype = function() {
     this.extractPublicationInfo(state, article);
 
     this.showAffiliations(state, article);
+    this.showAuthorNotes(state, article);
   };
 
   this.addLoginInfo = function(state) {
@@ -383,7 +387,7 @@ JbjsConverter.Prototype = function() {
   this.extractNotes = function(state, article) {
     var nodes = [];
     var doc = state.doc;
-    
+
     if ( this.config.show_pdf_href ) {
       var pdf = article.querySelector('self-uri[*|title=pdf]');
       if( pdf && ! this.config.show_abstract_only ) {
@@ -414,10 +418,11 @@ JbjsConverter.Prototype = function() {
     var fns = article.querySelectorAll('back fn-group fn');
 
     for (var i = 0; i < fns.length; ++i) {
-      if ( (!fns[i].hasAttribute('fn-type') 
-      || fns[i].getAttribute('fn-type') !== 'financial-disclosure')
-      && (!fns[i].hasAttribute('id') 
-      || article.querySelector('xref[ref-type=fn][rid=' + fns[i].getAttribute('id') + ']') === null) ) {
+      if ( (!fns[i].hasAttribute('fn-type')
+            || fns[i].getAttribute('fn-type') !== 'financial-disclosure')
+            && (!fns[i].hasAttribute('id')
+            || article.querySelector('xref[ref-type=fn][rid=' + fns[i].getAttribute('id') + ']') === null)
+        ) {
         var pars = this.bodyNodes(state, util.dom.getChildren(fns[i]));
         _.each(pars, function(par) {
           nodes.push(par.id);
@@ -463,7 +468,7 @@ JbjsConverter.Prototype = function() {
       }
     }
 
-    // datasharing 
+    // datasharing
     var ds = article.querySelector('back sec[type=data-availability]')
           || article.querySelector('back sec[sec-type=data-availability]');
     if (ds) {
@@ -512,12 +517,19 @@ JbjsConverter.Prototype = function() {
 
   this.enhanceArticle = function(state, article) {
     this.showAffiliations(state, article);
+    this.showAuthorNotes(state, article);
 
     this.enhanceArticleSDC(state, article);
   };
 
   this.showAffiliations = function(state, article) {
     _.each(state.affiliations, function(n) {state.doc.show('info', n);});
+  }
+
+  this.showAuthorNotes = function(state, article) {
+    _.each(state.authorNotes, function(n) {
+      state.doc.show('info', n);
+    });
   }
 
   this.enhanceArticleSDC = function(state, article) {
