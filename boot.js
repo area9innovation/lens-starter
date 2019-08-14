@@ -1,5 +1,5 @@
 var documentURL = "data/" +
-"authorship_notes/2020412.xml"
+//"authorship_notes/2020412.xml"
 //"example/inline_graphic.xml"
 //"101_4_338/JBJS.18.00483.xml"
 //"101_1_48/JBJS.18.00531_datasharing.xml"
@@ -7,7 +7,7 @@ var documentURL = "data/" +
 //"links_in_refs/Predatory Publishing in Orthopaedic Research.xml"
 //"links_in_refs/Influence of Acetabular Coverage on Hip Survival After Free Vascularized Fibular Grafting for Femoral Head Osteonecrosis.xml"
 //"99_1_10/99_1_10.xml"
-//"mathml/JBJSOA-D-17-00063.xml"
+"mathml/JBJSOA-D-17-00063.xml"
 //"example.xml"
 //"97_16_1354/97_16_1354.xml"
 //"5_4_e20/5_4_e20.xml"

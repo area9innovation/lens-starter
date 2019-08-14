@@ -11,6 +11,14 @@ var ScrollbarManager = require("./workflows/scrollbar");
 var ExternalMenu = require("./workflows/external_menu");
 var ScrollToReference = require("./workflows/scrollto");
 
+var infographicsPanel = require('./panels/infographics');
+var videosummaryPanel = require('./panels/videosummary');
+
+var panels = Lens.getDefaultPanels();
+
+panels.push(infographicsPanel);
+panels.push(videosummaryPanel);
+
 var LensApp = function(config) {
   this.config = config;
   
@@ -37,6 +45,10 @@ LensApp.Prototype = function() {
     return [
       new JbjsConverter(converterOptions, this.config),
     ]
+  };
+
+  this.getPanels = function() {
+    return panels.slice(0);
   };
 
   this.getWorkflows = function() {

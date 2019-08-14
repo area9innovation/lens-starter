@@ -27,6 +27,8 @@ var JbjsConverter = function(options, config) {
     this.viewMapping.figure_group = 'content';
     this.viewMapping.html_table = 'content';
     this.viewMapping.video = 'content';
+    this.viewMapping.infographics = 'content';
+    this.viewMapping.videosummary = 'content';
     this.createDocument = this.createDocumentOneColumn;
     this.enhanceArticle = this.enhanceArticleOneColumn;
     this.enhanceTable = this.enhanceTableOneColumn;
@@ -43,6 +45,9 @@ var JbjsConverter = function(options, config) {
       this.setAbstractOnly();
     }
   } else {
+    this.viewMapping.infographics = 'infographics';
+    this.viewMapping.videosummary = 'videosummary';
+
     delete this._bodyNodes['table-wrap'];
 
     delete this.ignoredParagraphElements['media'];
@@ -137,6 +142,9 @@ JbjsConverter.Prototype = function() {
   // Override document factory so we can create a customized Lens article,
   // including overridden node types
   this.createDocument = function() {
+    LensArticle.views.push('infographics');
+    LensArticle.views.push('videosummary');
+
     var doc = new LensArticle({
       nodeTypes: TwoColumnsCustomNodeTypes
     });
@@ -218,6 +226,14 @@ JbjsConverter.Prototype = function() {
     return this.video(state, child);
   };
 
+  this._bodyNodes['infographics'] = function(state, child) {
+    return this.infographics(state, child);
+  };
+
+  this._bodyNodes['video-summary'] = function(state, child) {
+    return this.videoSummary(state, child);
+  };
+
   this.enhanceArticleOneColumn = function(state, article) {
     _.each(state.doc.get('citations').nodes, function(n) {state.doc.show('content', n);});
 
@@ -288,6 +304,62 @@ JbjsConverter.Prototype = function() {
     if (obj) {
       node.url = obj.textContent;
     }
+  };
+
+  this.extractVideoSummary = function(state, xmlDoc) {
+    var videoSummaryElements = xmlDoc.querySelectorAll("video-summary");
+    var nodes = [];
+
+    for (var i = 0; i < videoSummaryElements.length; i++) {
+      var el = videoSummaryElements[i];
+
+      if (el._converted) continue;
+
+      var type = util.dom.getNodeType(el);
+      var node = null;
+
+      node = this.videoSummary(state, el);
+
+      if (node) {
+        nodes.push(node);
+      }
+    }
+
+    this.show(state, nodes);
+  };
+
+  this.videoSummary = function(state, el) {
+    var doc = state.doc;
+
+    var videoSummaryNode = {
+      "id": state.nextId("videosummary"),
+      "type": "videosummary",
+      "url": el.getAttribute('video-id'),
+      "url_webm": "By Id",
+      "poster": el.getAttribute('poster-url')
+    };
+
+    doc.create(videoSummaryNode);
+
+    el._converted = true;
+
+    return videoSummaryNode;
+  };
+
+  this.infographics = function(state, el) {
+    var doc = state.doc;
+
+    var infographicsNode = {
+      "id": state.nextId("infographics"),
+      "type": "infographics",
+      "url": el.getAttribute('url')
+    };
+
+    doc.create(infographicsNode);
+
+    el._converted = true;
+
+    return infographicsNode;
   };
 
   this.articleAbstractOnly = function(state, article) {

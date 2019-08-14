@@ -19,7 +19,8 @@ VideoView.Prototype = function() {
 
   this.renderBody = function() {
     var node = this.node;
-    var playlist = node['url_ogv'].indexOf('Playlist') !== -1;
+    var byId = node['url_webm'] && node['url_webm'].indexOf('By Id') !== -1;
+    var playlist = node['url_ogv'] && node['url_ogv'].indexOf('Playlist') !== -1;
 
     var video =  $$('video', {
       'data-application-id': '',
@@ -28,7 +29,7 @@ VideoView.Prototype = function() {
       style: 'width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;',
       controls: '',
     });
-    $(video).attr(playlist?'data-playlist-id':'data-video-id', 'ref:'+node.url);
+    $(video).attr(playlist?'data-playlist-id':'data-video-id', (!byId ? 'ref:' : '') + node.url);
 
     var video = $$('.video-wrapper', {
       children: [

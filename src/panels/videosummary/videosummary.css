@@ -1,0 +1,20 @@
+.videosummary-panel {
+    padding: 70px;
+    padding-top: 20px;
+}
+
+.videosummary-panel .videosummary .label {
+    padding-top: 20px;
+    font-size: 15px;
+    color: #999;
+}
+
+.videosummary-panel .videosummary .value {
+    font-size: 26px;
+}
+
+.videosummary-panel .videosummary .copyright {
+    padding-top: 50px;
+    color: #666;
+    font-style: italic;
+}
