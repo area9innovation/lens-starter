@@ -226,22 +226,36 @@ JbjsConverter.Prototype = function() {
     return this.video(state, child);
   };
 
-  this._bodyNodes['infographics'] = function(state, child) {
-    return this.infographics(state, child);
-  };
-
-  this._bodyNodes['video-summary'] = function(state, child) {
-    return this.videoSummary(state, child);
-  };
-
   this.enhanceArticleOneColumn = function(state, article) {
     _.each(state.doc.get('citations').nodes, function(n) {state.doc.show('content', n);});
 
     var doc = state.doc;
 
+    var header = {
+      'type' : 'heading',
+      'id' : state.nextId('heading'),
+      'level' : 1,
+      'content' : 'Infographics',
+    };
+    doc.create(header);
+    doc.show('content', header.id);
+
+    this.extractInfographics(state, article);
+
+    header = {
+      'type' : 'heading',
+      'id' : state.nextId('heading'),
+      'level' : 1,
+      'content' : 'Video Summary',
+    };
+    doc.create(header);
+    doc.show('content', header.id);
+
+    this.extractVideoSummary(state, article);
+
     this.enhanceArticleSDC(state, article);
 
-    var header = {
+    header = {
       'type' : 'heading',
       'id' : state.nextId('heading'),
       'level' : 1,
@@ -307,11 +321,11 @@ JbjsConverter.Prototype = function() {
   };
 
   this.extractVideoSummary = function(state, xmlDoc) {
-    var videoSummaryElements = xmlDoc.querySelectorAll("video-summary");
+    var els = xmlDoc.querySelectorAll("video-summary");
     var nodes = [];
 
-    for (var i = 0; i < videoSummaryElements.length; i++) {
-      var el = videoSummaryElements[i];
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
 
       if (el._converted) continue;
 
@@ -344,6 +358,28 @@ JbjsConverter.Prototype = function() {
     el._converted = true;
 
     return videoSummaryNode;
+  };
+
+  this.extractInfographics = function(state, xmlDoc) {
+    var els = xmlDoc.querySelectorAll("infographics");
+    var nodes = [];
+
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+
+      if (el._converted) continue;
+
+      var type = util.dom.getNodeType(el);
+      var node = null;
+
+      node = this.infographics(state, el);
+
+      if (node) {
+        nodes.push(node);
+      }
+    }
+
+    this.show(state, nodes);
   };
 
   this.infographics = function(state, el) {
@@ -592,6 +628,9 @@ JbjsConverter.Prototype = function() {
     this.showAuthorNotes(state, article);
 
     this.enhanceArticleSDC(state, article);
+
+    this.extractInfographics(state, article);
+    this.extractVideoSummary(state, article);
   };
 
   this.showAffiliations = function(state, article) {
