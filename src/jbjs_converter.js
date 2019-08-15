@@ -432,6 +432,8 @@ JbjsConverter.Prototype = function() {
 
     this.showAffiliations(state, article);
     this.showAuthorNotes(state, article);
+
+    this.extractVideoSummary(state, article);
   };
 
   this.addLoginInfo = function(state) {
