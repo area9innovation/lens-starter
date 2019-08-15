@@ -433,6 +433,7 @@ JbjsConverter.Prototype = function() {
     this.showAffiliations(state, article);
     this.showAuthorNotes(state, article);
 
+    this.extractInfographics(state, article);
     this.extractVideoSummary(state, article);
   };
 

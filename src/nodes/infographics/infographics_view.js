@@ -34,12 +34,7 @@ InfographicsView.Prototype = function() {
     if (node.url) {
       var el = $$('.infographics-wrapper', {
         children: [
-          $$("object", {
-            data: node.url,
-            type: "application/pdf",
-            width: "100%",
-            height: "100%"
-          })
+          $$("iframe", { src: node.url, style: "width:100%; height:100%; border:0" })
         ]
       });
       this.content.appendChild(el);
