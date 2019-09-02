@@ -22,6 +22,10 @@ VideoView.Prototype = function() {
     var byId = node['url_webm'] && node['url_webm'].indexOf('By Id') !== -1;
     var playlist = node['url_ogv'] && node['url_ogv'].indexOf('Playlist') !== -1;
 
+    if (node.label) {
+      this.content.appendChild($$('.label', { text: node.label }));
+    }
+
     var video =  $$('video', {
       'data-application-id': '',
       'data-id': node.url,

@@ -27,7 +27,7 @@ var JbjsConverter = function(options, config) {
     this.viewMapping.figure_group = 'content';
     this.viewMapping.html_table = 'content';
     this.viewMapping.video = 'content';
-    this.viewMapping.infographics = 'content';
+    this.viewMapping.infographic = 'content';
     this.viewMapping.videosummary = 'content';
     this.createDocument = this.createDocumentOneColumn;
     this.enhanceArticle = this.enhanceArticleOneColumn;
@@ -45,8 +45,8 @@ var JbjsConverter = function(options, config) {
       this.setAbstractOnly();
     }
   } else {
-    this.viewMapping.infographics = 'infographics';
-    this.viewMapping.videosummary = 'videosummary';
+    this.viewMapping.infographic = 'supplemental';
+    this.viewMapping.videosummary = 'supplemental';
 
     delete this._bodyNodes['table-wrap'];
 
@@ -142,8 +142,7 @@ JbjsConverter.Prototype = function() {
   // Override document factory so we can create a customized Lens article,
   // including overridden node types
   this.createDocument = function() {
-    LensArticle.views.push('infographics');
-    LensArticle.views.push('videosummary');
+    LensArticle.views.push('supplemental');
 
     var doc = new LensArticle({
       nodeTypes: TwoColumnsCustomNodeTypes
@@ -235,12 +234,12 @@ JbjsConverter.Prototype = function() {
       'type' : 'heading',
       'id' : state.nextId('heading'),
       'level' : 1,
-      'content' : 'Infographics',
+      'content' : 'Infographic',
     };
     doc.create(header);
     doc.show('content', header.id);
 
-    this.extractInfographics(state, article);
+    this.extractInfographic(state, article);
 
     header = {
       'type' : 'heading',
@@ -346,11 +345,12 @@ JbjsConverter.Prototype = function() {
     var doc = state.doc;
 
     var videoSummaryNode = {
-      "id": state.nextId("videosummary"),
-      "type": "videosummary",
-      "url": el.getAttribute('video-id'),
-      "url_webm": "By Id",
-      "poster": el.getAttribute('poster-url')
+      id: state.nextId('videosummary'),
+      type: 'videosummary',
+      label: 'Video Summary',
+      url: el.getAttribute('video-id'),
+      url_webm: 'By Id',
+      poster: el.getAttribute('poster-url')
     };
 
     doc.create(videoSummaryNode);
@@ -360,8 +360,8 @@ JbjsConverter.Prototype = function() {
     return videoSummaryNode;
   };
 
-  this.extractInfographics = function(state, xmlDoc) {
-    var els = xmlDoc.querySelectorAll("infographics");
+  this.extractInfographic = function(state, xmlDoc) {
+    var els = xmlDoc.querySelectorAll("infographic");
     var nodes = [];
 
     for (var i = 0; i < els.length; i++) {
@@ -372,7 +372,7 @@ JbjsConverter.Prototype = function() {
       var type = util.dom.getNodeType(el);
       var node = null;
 
-      node = this.infographics(state, el);
+      node = this.infographic(state, el);
 
       if (node) {
         nodes.push(node);
@@ -382,20 +382,21 @@ JbjsConverter.Prototype = function() {
     this.show(state, nodes);
   };
 
-  this.infographics = function(state, el) {
+  this.infographic = function(state, el) {
     var doc = state.doc;
 
-    var infographicsNode = {
-      "id": state.nextId("infographics"),
-      "type": "infographics",
-      "url": el.getAttribute('url')
+    var infographicNode = {
+      id: state.nextId('infographic'),
+      type: 'infographic',
+      label: 'Infographic',
+      url: el.getAttribute('url')
     };
 
-    doc.create(infographicsNode);
+    doc.create(infographicNode);
 
     el._converted = true;
 
-    return infographicsNode;
+    return infographicNode;
   };
 
   this.articleAbstractOnly = function(state, article) {
@@ -433,17 +434,17 @@ JbjsConverter.Prototype = function() {
     this.showAffiliations(state, article);
     this.showAuthorNotes(state, article);
 
-    // Infographics and Video Summary
+    // Infographic and Video Summary
     var header = {
       'type' : 'heading',
       'id' : state.nextId('heading'),
       'level' : 1,
-      'content' : 'Infographics',
+      'content' : 'Infographic',
     };
     doc.create(header);
     doc.show('content', header.id);
 
-    this.extractInfographics(state, article);
+    this.extractInfographic(state, article);
 
     header = {
       'type' : 'heading',
@@ -652,7 +653,7 @@ JbjsConverter.Prototype = function() {
 
     this.enhanceArticleSDC(state, article);
 
-    this.extractInfographics(state, article);
+    this.extractInfographic(state, article);
     this.extractVideoSummary(state, article);
   };
 

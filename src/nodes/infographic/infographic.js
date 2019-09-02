@@ -2,12 +2,12 @@
 
 var Document = require('lens/substance/document');
 
-var Infographics = function(node, document) {
+var Infographic = function(node, document) {
   Document.Composite.call(this, node, document);
 };
 
 
-Infographics.type = {
+Infographic.type = {
   "parent": "content",
   "properties": {
     "source_id": "string",
@@ -17,7 +17,7 @@ Infographics.type = {
   }
 };
 
-Infographics.config = {
+Infographic.config = {
   "zoomable": true
 };
 
@@ -25,16 +25,16 @@ Infographics.config = {
 // -----------------
 //
 
-Infographics.description = {
-  "name": "Infographics",
+Infographic.description = {
+  "name": "Infographic",
   "remarks": [
-    "An infographics PDF.",
+    "An infographic PDF.",
   ],
   "properties": {
-    "label": "Label used as header for the infographics cards",
+    "label": "Label used as header for the infographic cards",
     "url": "Image url",
-    "caption": "A reference to a caption node that describes the infographics",
-    "attrib": "Infographics attribution"
+    "caption": "A reference to a caption node that describes the infographic",
+    "attrib": "Infographic attribution"
   }
 };
 
@@ -42,14 +42,14 @@ Infographics.description = {
 // -----------------
 //
 
-Infographics.example = {
-  "id": "infographics_1",
-  "label": "Infographics 1",
+Infographic.example = {
+  "id": "infographic_1",
+  "label": "Infographic 1",
   "url": "http://example.com/fig1.png",
   "caption": "caption_1"
 };
 
-Infographics.Prototype = function() {
+Infographic.Prototype = function() {
   this.getCaption = function() {
     if (this.properties.caption) return this.document.get(this.properties.caption);
   };
@@ -59,10 +59,10 @@ Infographics.Prototype = function() {
   };
 };
 
-Infographics.Prototype.prototype = Document.Node.prototype;
-Infographics.prototype = new Infographics.Prototype();
-Infographics.prototype.constructor = Infographics;
+Infographic.Prototype.prototype = Document.Node.prototype;
+Infographic.prototype = new Infographic.Prototype();
+Infographic.prototype.constructor = Infographic;
 
-Document.Node.defineProperties(Infographics);
+Document.Node.defineProperties(Infographic);
 
-module.exports = Infographics;
+module.exports = Infographic;

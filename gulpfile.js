@@ -7,6 +7,8 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var through2 = require('through2');
 var path = require('path');
+var streamify = require('gulp-streamify');
+var source = require('vinyl-source-stream');
 
 gulp.task('assets', function() {
   gulp.src('assets/**/*', {base:"./assets"})
@@ -23,10 +25,11 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('browserify', function () {
+gulp.task('bundle', function () {
     return gulp.src('./embedded.js')
         .pipe(through2.obj(function (file, enc, next) {
             browserify(file.path)
+                .ignore(require.resolve('pdfjs-dist/build/pdf.worker')) // Reducing size
                 .bundle(function (err, res) {
                     if (err) { return next(err); }
                     file.contents = res;
@@ -42,4 +45,19 @@ gulp.task('browserify', function () {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['assets', 'sass', 'browserify']);
+gulp.task('worker', function() {
+    // We can create our own viewer (see worker.js) or use already defined one.
+    var workerSrc = require.resolve('pdfjs-dist/build/pdf.worker.entry');
+    return browserify(workerSrc, { output: 'lens.worker.tmp', })
+        .bundle()
+        .pipe(source('lens.worker.tmp'))
+        .pipe(streamify(uglify({
+            compress: {
+                sequences: false, // Chrome has issue with the generated code if true
+            },
+        })))
+        .pipe(rename('lens.worker.js'))
+        .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('default', ['assets', 'sass', 'bundle', 'worker']);

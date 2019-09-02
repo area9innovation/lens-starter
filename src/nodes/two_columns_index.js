@@ -3,6 +3,6 @@ module.exports = {
   'table_footnote_reference': require('./table_footnote_reference'),
   "affiliation": require("./affiliation"),
   'affiliation_reference': require('./affiliation_reference'),
-  'infographics': require('./infographics'),
+  'infographic': require('./infographic'),
   'videosummary': require('./video')
 };

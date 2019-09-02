@@ -11,13 +11,11 @@ var ScrollbarManager = require("./workflows/scrollbar");
 var ExternalMenu = require("./workflows/external_menu");
 var ScrollToReference = require("./workflows/scrollto");
 
-var infographicsPanel = require('./panels/infographics');
-var videosummaryPanel = require('./panels/videosummary');
+var supplementalPanel = require('./panels/supplemental');
 
 var panels = Lens.getDefaultPanels();
 
-panels.push(infographicsPanel);
-panels.push(videosummaryPanel);
+panels.push(supplementalPanel);
 
 var LensApp = function(config) {
   this.config = config;
