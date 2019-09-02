@@ -1,3 +1,7 @@
+.surface.content > .nodes > .content-node.videosummary > .content > .label {
+    display: none;
+}
+
 video {
      max-height: unset !important;
 }
