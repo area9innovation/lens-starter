@@ -434,27 +434,7 @@ JbjsConverter.Prototype = function() {
     this.showAffiliations(state, article);
     this.showAuthorNotes(state, article);
 
-    // Infographic and Video Summary
-    var header = {
-      'type' : 'heading',
-      'id' : state.nextId('heading'),
-      'level' : 1,
-      'content' : 'Infographic',
-    };
-    doc.create(header);
-    doc.show('content', header.id);
-
     this.extractInfographic(state, article);
-
-    header = {
-      'type' : 'heading',
-      'id' : state.nextId('heading'),
-      'level' : 1,
-      'content' : 'Video Summary',
-    };
-    doc.create(header);
-    doc.show('content', header.id);
-
     this.extractVideoSummary(state, article);
   };
 
