@@ -5,6 +5,7 @@ var $$ = require ("lens/substance/application").$$;
 var ResourceView = require('lens/article/resource_view');
 var NodeView = require("lens/article/nodes/node").View;
 var pdfjsLib = require('pdfjs-dist');
+var screenfull = require('screenfull');
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'elensreader/lens.worker.js';
 
@@ -21,8 +22,7 @@ var InfographicView = function (node, viewFactory, options) {
 InfographicView.Prototype = function() {
   var minScale = 0.1,
     maxScale = 10,
-    scaleDelta = 1.2,
-    dragScroll = true;
+    scaleDelta = 1.2;
 
   // Mix-in
   _.extend(this, ResourceView.prototype);
@@ -43,10 +43,12 @@ InfographicView.Prototype = function() {
 
     if (!node.url) return;
 
+    var isFullscreen = screenfull.enabled && screenfull.isFullscreen;
+
     var el = $$('.infographic-wrapper', {
       children: [
         $$('div', {
-          class: 'viewer' + (that.isFullscreen() ? ' fullscreen' : ''),
+          class: 'viewer' + (isFullscreen ? ' fullscreen' : ''),
           children: [
             $$('div', { class: 'progress-bar' }),
             $$('div', { class: 'pages' }),
@@ -57,7 +59,7 @@ InfographicView.Prototype = function() {
                 //$$('button', { id: 'next-page', text: '>' }),
                 $$('button', { id: 'zoom-out', text: '-' }),
                 $$('button', { id: 'zoom-in', text: '+' }),
-                $$('button', { id: 'fullscreen', text: 'Fullscreen ' + (that.isFullscreen() ? 'OFF' : 'ON') })
+                screenfull.enabled && $$('button', { id: 'fullscreen', text: 'Fullscreen ' + (isFullscreen ? 'OFF' : 'ON') }) || null
               ]
             })
           ]
@@ -80,16 +82,17 @@ InfographicView.Prototype = function() {
     };
 
     loadingTask.promise.then(function (pdf) {
-      document.addEventListener('fullscreenchange', function () { that.onFullScreenChange(); }); // webkitfullscreenchange mozfullscreenchange
-      document.addEventListener('MSFullscreenChange', function () { that.onFullScreenChange(); });
-
       document.getElementById('zoom-in').addEventListener('click', function () { that.zoomIn(); });
       document.getElementById('zoom-out').addEventListener('click', function () { that.zoomOut(); });
 
-      document.getElementById('fullscreen').addEventListener('click', function () { 
-        if (that.isFullscreen()) that.requestFullScreenOff(); 
-        else that.requestFullScreenOn(); 
-      });
+      if (screenfull.enabled) {
+        screenfull.on('change', function () { that.onFullScreenChange(); });
+
+        document.getElementById('fullscreen').addEventListener('click', function () { 
+          if (screenfull.isFullscreen) screenfull.exit(); 
+          else screenfull.request(that.viewerContainer); 
+        });
+      }
 
       that.renderPdf(pdf);
 
@@ -102,7 +105,7 @@ InfographicView.Prototype = function() {
   this.onFullScreenChange = function (e) {
     var el = document.getElementById('fullscreen');
 
-    if (this.isFullscreen()) {
+    if (screenfull.isFullscreen) {
       this.viewerContainer.classList.add('fullscreen');
       el.textContent = 'Fullscreen OFF';
     } else {
@@ -166,42 +169,6 @@ InfographicView.Prototype = function() {
     if (this.currentScale < minScale) this.currentScale = minScale;
 
     this.renderPage(0);
-  }
-
-  this.requestFullScreenOn = function () {
-    if (this.viewerContainer.requestFullscreen) {
-      this.viewerContainer.requestFullscreen();
-    } else if (this.viewerContainer.webkitRequestFullscreen) {
-      this.viewerContainer.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-    } else if (this.viewerContainer.mozRequestFullScreen) {
-      this.viewerContainer.mozRequestFullScreen();
-    } else if (this.viewerContainer.msRequestFullscreen) {
-      this.viewerContainer.msRequestFullscreen();
-    } else {
-      return false;
-    }
-
-    return true;
-  }
-
-  this.requestFullScreenOff = function () {
-    if (document.exitFullscreen) {
-      document.exitFullscreen();
-    } else if (document.webkitExitFullscreen) {
-      document.webkitExitFullscreen();
-    } else if (document.mozCancelFullScreen) {
-      document.mozCancelFullScreen();
-    } else if (document.msExitFullscreen) {
-      document.msExitFullscreen();
-    } else {
-      return false;
-    }
-
-    return true;
-  }
-
-  this.isFullscreen = function () {
-    return !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
   }
 
   this.setDragScrollHandler = function () {

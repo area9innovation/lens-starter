@@ -6,6 +6,7 @@
     "express": "3.3.x",
     "gulp-streamify": "^1.0.2",
     "lens": "github:area9innovation/lens#develop",
+    "screenfull": "^4.2.1",
     "underscore": "1.8.x",
     "vinyl-source-stream": "^2.0.0"
   },
