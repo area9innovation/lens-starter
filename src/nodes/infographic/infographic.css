@@ -59,13 +59,13 @@
     box-shadow: 0 0 4px 3px;
 }
 
-.infographic-wrapper > .viewer > .tool-bar {
+.infographic-wrapper > .viewer > .toolbar {
     position: absolute !important;
     bottom: 0;
     width: 100%;
 }
 
-.infographic-wrapper > .viewer > .tool-bar > button {
+.infographic-wrapper > .viewer > .toolbar > button {
     margin: 8px;
     min-width: 32px;
     height: 32px;

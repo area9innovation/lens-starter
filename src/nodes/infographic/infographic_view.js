@@ -43,7 +43,17 @@ InfographicView.Prototype = function() {
 
     if (!node.url) return;
 
-    var isFullscreen = screenfull.enabled && screenfull.isFullscreen;
+    var isFullscreen = screenfull.enabled && screenfull.isFullscreen,
+      toolbar = [
+        //$$('button', { id: 'prev-page', text: '<' }),
+        //$$('button', { id: 'next-page', text: '>' }),
+        $$('button', { id: 'zoom-out', text: '-' }),
+        $$('button', { id: 'zoom-in', text: '+' })
+      ];
+
+    if (screenfull.enabled) {
+      toolbar.push($$('button', { id: 'fullscreen', text: 'Fullscreen ' + (isFullscreen ? 'OFF' : 'ON') }));
+    }
 
     var el = $$('.infographic-wrapper', {
       children: [
@@ -53,14 +63,8 @@ InfographicView.Prototype = function() {
             $$('div', { class: 'progress-bar' }),
             $$('div', { class: 'pages' }),
             $$('div', { 
-              class: 'tool-bar', 
-              children: [
-                //$$('button', { id: 'prev-page', text: '<' }),
-                //$$('button', { id: 'next-page', text: '>' }),
-                $$('button', { id: 'zoom-out', text: '-' }),
-                $$('button', { id: 'zoom-in', text: '+' }),
-                screenfull.enabled && $$('button', { id: 'fullscreen', text: 'Fullscreen ' + (isFullscreen ? 'OFF' : 'ON') }) || null
-              ]
+              class: 'toolbar', 
+              children: toolbar
             })
           ]
         })
