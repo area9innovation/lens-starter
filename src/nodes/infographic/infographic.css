@@ -11,12 +11,21 @@
     overflow: auto;
 }
 
+.content-node.infographic > .content > .label {
+    display: inline-block;
+    margin-right: 40px;
+}
+
 .surface.content > .nodes > .content-node.infographic > .content > .label {
     font-size: 24px;
     font-weight: 600;
     line-height: 40px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.content-node.infographic > .content > .link {
+    display: inline-block;
 }
 
 .infographic-wrapper > .viewer {

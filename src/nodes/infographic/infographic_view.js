@@ -37,11 +37,13 @@ InfographicView.Prototype = function() {
     var node = this.node;
     var that = this;
 
+    if (!node.url) return;
+
     if (node.label) {
       this.content.appendChild($$('.label', { text: node.label }));
     }
 
-    if (!node.url) return;
+    this.content.appendChild($$('a', { class: 'link', href: node.url, text: 'Download' }));
 
     var isFullscreen = screenfull.enabled && screenfull.isFullscreen,
       toolbar = [
