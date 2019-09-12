@@ -302,6 +302,9 @@ JbjsConverter.Prototype = function() {
 
   this.extractVideoSummary = function(state, xmlDoc) {
     var el = xmlDoc.querySelector('video-summary');
+
+    if (!el) return;
+
     var nodes = [];
 
     if (el._converted) return;
@@ -352,6 +355,9 @@ JbjsConverter.Prototype = function() {
 
   this.extractInfographic = function(state, xmlDoc) {
     var el = xmlDoc.querySelector('infographic');
+
+    if (!el) return;
+
     var nodes = [];
 
     if (el._converted) return;
