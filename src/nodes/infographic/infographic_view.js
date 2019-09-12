@@ -79,7 +79,8 @@ InfographicView.Prototype = function() {
     this.progressBar = this.viewerContainer.firstChild;
     this.pagesContainer = this.progressBar.nextElementSibling;
     this.currentScale = 0;
-    this.pages = [];
+    this.pages = [], 
+    this.lastScrollTop = 0;
 
     var loadingTask = pdfjsLib.getDocument({ url: node.url })
 
@@ -95,8 +96,13 @@ InfographicView.Prototype = function() {
         screenfull.on('change', function () { that.onFullScreenChange(); });
 
         document.getElementById('fullscreen').addEventListener('click', function () { 
-          if (screenfull.isFullscreen) screenfull.exit(); 
-          else screenfull.request(that.viewerContainer); 
+          if (screenfull.isFullscreen) {
+            screenfull.exit();
+          }
+          else {
+            that.lastScrollTop = (node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop;
+            screenfull.request(that.viewerContainer); 
+          }
         });
       }
 
@@ -117,6 +123,7 @@ InfographicView.Prototype = function() {
     } else {
       this.viewerContainer.classList.remove('fullscreen');
       el.textContent = 'Fullscreen ON';
+      (this.node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop = this.lastScrollTop;
     }
   }
 

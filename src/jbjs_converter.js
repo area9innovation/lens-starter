@@ -301,23 +301,16 @@ JbjsConverter.Prototype = function() {
   };
 
   this.extractVideoSummary = function(state, xmlDoc) {
-    var els = xmlDoc.querySelectorAll("video-summary");
+    var el = xmlDoc.querySelector('video-summary');
     var nodes = [];
 
-    for (var i = 0; i < els.length; i++) {
-      var el = els[i];
+    if (el._converted) return;
 
-      if (el._converted) continue;
+    var node = this.videoSummary(state, el);
+    var refNode = this.videoSummaryReference(state, el, node);
 
-      var type = util.dom.getNodeType(el);
-      var node = null;
-
-      node = this.videoSummary(state, el);
-
-      if (node) {
-        nodes.push(node);
-      }
-    }
+    refNode && nodes.push(refNode);
+    node && nodes.push(node);
 
     this.show(state, nodes);
   };
@@ -326,7 +319,7 @@ JbjsConverter.Prototype = function() {
     var doc = state.doc;
 
     var videoSummaryNode = {
-      id: state.nextId('videosummary'),
+      id: 'videosummary',
       type: 'videosummary',
       label: 'Video Summary',
       url: el.getAttribute('video-id'),
@@ -341,36 +334,46 @@ JbjsConverter.Prototype = function() {
     return videoSummaryNode;
   };
 
+  this.videoSummaryReference = function(state, el, node) {
+    var doc = state.doc;
+
+    var videoSummaryReferenceNode = {
+      id: 'videosummary_reference',
+      type: 'videosummary_reference',
+      path: [ node.id, 'content' ],
+      range: [ 0, node.length ],
+      target: node.id
+    };
+
+    doc.create(videoSummaryReferenceNode);
+
+    return videoSummaryReferenceNode;
+  };
+
   this.extractInfographic = function(state, xmlDoc) {
-    var els = xmlDoc.querySelectorAll("infographic");
+    var el = xmlDoc.querySelector('infographic');
     var nodes = [];
 
-    for (var i = 0; i < els.length; i++) {
-      var el = els[i];
+    if (el._converted) return;
 
-      if (el._converted) continue;
+    var node = this.infographic(state, el, !this.config.show_resources_panel);
+    var refNode = this.infographicReference(state, el, node);
 
-      var type = util.dom.getNodeType(el);
-      var node = null;
-
-      node = this.infographic(state, el);
-
-      if (node) {
-        nodes.push(node);
-      }
-    }
+    refNode && nodes.push(refNode);
+    node && nodes.push(node);
 
     this.show(state, nodes);
   };
 
-  this.infographic = function(state, el) {
+  this.infographic = function(state, el, isMobile) {
     var doc = state.doc;
 
     var infographicNode = {
-      id: state.nextId('infographic'),
+      id: 'infographic',
       type: 'infographic',
       label: 'Infographic',
-      url: el.getAttribute('url')
+      url: el.getAttribute('url'),
+      isMobile: isMobile
     };
 
     doc.create(infographicNode);
@@ -378,6 +381,22 @@ JbjsConverter.Prototype = function() {
     el._converted = true;
 
     return infographicNode;
+  };
+
+  this.infographicReference = function(state, el, node) {
+    var doc = state.doc;
+
+    var infographicReferenceNode = {
+      id: 'infographic_reference',
+      type: 'infographic_reference',
+      path: [ node.id, 'content' ],
+      range: [ 0, node.length ],
+      target: node.id
+    };
+
+    doc.create(infographicReferenceNode);
+
+    return infographicReferenceNode;
   };
 
   this.articleAbstractOnly = function(state, article) {

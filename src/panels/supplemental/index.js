@@ -9,6 +9,7 @@ var panel = new ContainerPanel({
   container: 'supplemental',
   title: 'Supplemental',
   icon: 'fa-picture-o',
+  references: ['infographic_reference', 'videosummary_reference']
 });
 
 module.exports = panel;

@@ -6,14 +6,15 @@ var Infographic = function(node, document) {
   Document.Composite.call(this, node, document);
 };
 
-
 Infographic.type = {
   "parent": "content",
   "properties": {
-    "source_id": "string",
+    "id": "string",
+    "type": "string",
     "label": "string",
     "url": "string",
     "caption": "caption",
+    "isMobile": "boolean"
   }
 };
 
@@ -44,9 +45,11 @@ Infographic.description = {
 
 Infographic.example = {
   "id": "infographic_1",
+  "type": "infographic",
   "label": "Infographic 1",
   "url": "http://example.com/fig1.png",
-  "caption": "caption_1"
+  "caption": "caption_1",
+  "isMobile": false
 };
 
 Infographic.Prototype = function() {
