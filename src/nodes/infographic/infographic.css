@@ -59,7 +59,7 @@
     cursor: grabbing;
 }
 
-.infographic-wrapper > .viewer.fullscreen > .pages {
+.infographic-wrapper > .viewer.full-screen > .pages {
     height: 100% !important;
 }
 

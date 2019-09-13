@@ -1,0 +1,13 @@
+.full-screen-pseudo {
+	overflow: hidden !important;
+}
+
+.full-screen-pseudo .full-screen {
+	position: fixed !important;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	z-index: 9999999;
+}
