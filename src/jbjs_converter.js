@@ -230,8 +230,8 @@ JbjsConverter.Prototype = function() {
 
     var doc = state.doc;
 
-    this.extractInfographic(state, article);
     this.extractVideoSummary(state, article);
+    this.extractInfographic(state, article);
 
     this.enhanceArticleSDC(state, article);
 
@@ -440,8 +440,8 @@ JbjsConverter.Prototype = function() {
     this.showAffiliations(state, article);
     this.showAuthorNotes(state, article);
 
-    this.extractInfographic(state, article);
     this.extractVideoSummary(state, article);
+    this.extractInfographic(state, article);
   };
 
   this.addLoginInfo = function(state) {
@@ -639,8 +639,8 @@ JbjsConverter.Prototype = function() {
 
     this.enhanceArticleSDC(state, article);
 
-    this.extractInfographic(state, article);
     this.extractVideoSummary(state, article);
+    this.extractInfographic(state, article);
   };
 
   this.showAffiliations = function(state, article) {
