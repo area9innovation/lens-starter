@@ -35,7 +35,6 @@ InfographicView.Prototype = function() {
 
   this.renderBody = function () {
     var node = this.node;
-    var that = this;
 
     if (!node.url) return;
 
@@ -79,17 +78,31 @@ InfographicView.Prototype = function() {
     this.progressBar = this.viewerContainer.firstChild;
     this.pagesContainer = this.progressBar.nextElementSibling;
 
+    this.currentOrientation = null;
     this.currentScale = 0;
     this.pages = [], 
     this.lastScrollTop = 0;
-
-    var loadingTask = pdfjsLib.getDocument({ url: node.url })
+  
+    var that = this,
+      loadingTask = pdfjsLib.getDocument({ url: node.url });
 
     loadingTask.onProgress = function (progressData) {
       that.progressBar.style.width = (progressData.loaded / progressData.total) * 100 + '%';
     };
 
     loadingTask.promise.then(function (pdf) {
+      window.addEventListener('deviceorientation', _.throttle(
+        function () { 
+          const orientation = Math.abs(window.orientation) === 90 ? "landscape" : "portrait";
+
+          if (that.currentOrientation === orientation) return;
+
+          that.currentOrientation = orientation;
+          that.onResize(); 
+        }
+        , 1000
+      ), false);
+
       document.getElementById('zoom-in').addEventListener('click', function () { that.zoomIn(); });
       document.getElementById('zoom-out').addEventListener('click', function () { that.zoomOut(); });
 
@@ -100,8 +113,9 @@ InfographicView.Prototype = function() {
           if (fullscreen.isFullscreen()) 
             fullscreen.exit()
             .then(function () {
-              el.textContent = 'Full screen ON';
+              that.onResize();
 
+              el.textContent = 'Full screen ON';
               (that.node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop = that.lastScrollTop;
             });
           else {
@@ -109,6 +123,8 @@ InfographicView.Prototype = function() {
 
             fullscreen.request(that.viewerContainer)
             .then(function () {
+              that.onResize();
+
               el.textContent = 'Full screen OFF';
             }); 
           }
@@ -123,6 +139,10 @@ InfographicView.Prototype = function() {
     });
   };
 
+  this.onResize = function () {
+    this.calcNewScale() && this.renderPage();
+  }
+
   this.renderPdf = function (pdf) {
     var that = this;
 
@@ -131,29 +151,43 @@ InfographicView.Prototype = function() {
     });
   }
 
+  this.calcNewScale = function(page) {
+    page = page || this.pages[0].page;
+
+    var viewport = page.getViewport({ scale: 1 }),
+      wc = this.pagesContainer.clientWidth,
+      hc = this.pagesContainer.clientHeight,
+      wv = viewport.width,
+      hv = viewport.height,
+      dimension = ((wc / hc) < (wv / hv)) ? 'Width' : 'Height',    
+      newScale = (this.pagesContainer['client' + dimension] - 32) / viewport[dimension.toLowerCase()],
+      result = this.currentScale !== newScale;
+
+    this.currentScale = newScale;
+
+    return result;
+  }
+
   this.initPage = function (page) {
-    var canvas = document.createElement('canvas'),
-      viewport;
+    var canvas = document.createElement('canvas');
 
     canvas.classList.add('page');
     this.pagesContainer.appendChild(canvas);
 
-    if (!this.pages.length) {
-      viewport = page.getViewport({ scale: 1 });
-      this.currentScale = (this.pagesContainer.clientWidth - 32) / viewport.width;
-    }
+    if (!this.pages.length) this.calcNewScale(page);
 
     this.pages.push({
       page: page,
       canvas: canvas
     });
 
-    this.renderPage(0);
+    this.renderPage();
   }
 
-  this.renderPage = function (pageIndex) {
-    var currentPage = this.pages[pageIndex],
-      page = currentPage.page,
+  this.renderPage = function (currentPage) {
+    currentPage = currentPage || this.pages[0];
+
+    var page = currentPage.page,
       canvas = currentPage.canvas,
       viewport = page.getViewport({ scale: this.currentScale });
 
@@ -170,14 +204,14 @@ InfographicView.Prototype = function() {
     if (this.currentScale < maxScale) this.currentScale *= scaleDelta;
     if (this.currentScale > maxScale) this.currentScale = maxScale;
 
-    this.renderPage(0);
+    this.renderPage();
   }
 
   this.zoomOut = function () {
     if (this.currentScale > minScale) this.currentScale /= scaleDelta;
     if (this.currentScale < minScale) this.currentScale = minScale;
 
-    this.renderPage(0);
+    this.renderPage();
   }
 
   this.setDragScrollHandler = function () {
