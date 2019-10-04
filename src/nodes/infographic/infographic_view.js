@@ -78,10 +78,10 @@ InfographicView.Prototype = function() {
     this.progressBar = this.viewerContainer.firstChild;
     this.pagesContainer = this.progressBar.nextElementSibling;
 
-    this.currentOrientation = null;
     this.currentScale = 0;
     this.pages = [], 
     this.lastScrollTop = 0;
+    this.isReady = true;
   
     var that = this,
       loadingTask = pdfjsLib.getDocument({ url: node.url });
@@ -91,17 +91,9 @@ InfographicView.Prototype = function() {
     };
 
     loadingTask.promise.then(function (pdf) {
-      window.addEventListener('deviceorientation', _.throttle(
-        function () { 
-          const orientation = Math.abs(window.orientation) === 90 ? "landscape" : "portrait";
-
-          if (that.currentOrientation === orientation) return;
-
-          that.currentOrientation = orientation;
-          that.onResize(); 
-        }
-        , 1000
-      ), false);
+      that.node.isMobile 
+        && window.addEventListener('deviceorientation', _.throttle(function () { that.onResize(); }, 500), false)
+        || window.addEventListener('resize', _.debounce(function () { that.onResize(); }, 100));
 
       document.getElementById('zoom-in').addEventListener('click', function () { that.zoomIn(); });
       document.getElementById('zoom-out').addEventListener('click', function () { that.zoomOut(); });
@@ -112,9 +104,7 @@ InfographicView.Prototype = function() {
 
           if (fullscreen.isFullscreen()) 
             fullscreen.exit()
-            .then(function () {
-              that.onResize();
-
+            .then(function () { 
               el.textContent = 'Full screen ON';
               (that.node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop = that.lastScrollTop;
             });
@@ -122,9 +112,7 @@ InfographicView.Prototype = function() {
             that.lastScrollTop = (node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop;
 
             fullscreen.request(that.viewerContainer)
-            .then(function () {
-              that.onResize();
-
+            .then(function () { 
               el.textContent = 'Full screen OFF';
             }); 
           }
@@ -139,8 +127,12 @@ InfographicView.Prototype = function() {
     });
   };
 
+  this.print = function (m) {
+    console.log((Date.now() / 1000) + ' ' + m + ' - width: ' + this.pagesContainer.clientWidth + ' height: ' + this.pagesContainer.clientHeight);
+  }
+
   this.onResize = function () {
-    this.calcNewScale() && this.renderPage();
+    this.isReady && this.calcNewScale() && this.renderPage();
   }
 
   this.renderPdf = function (pdf) {
@@ -163,7 +155,7 @@ InfographicView.Prototype = function() {
       newScale = (this.pagesContainer['client' + dimension] - 32) / viewport[dimension.toLowerCase()],
       result = this.currentScale !== newScale;
 
-    this.currentScale = newScale;
+    if (result) this.currentScale = newScale;
 
     return result;
   }
@@ -185,9 +177,12 @@ InfographicView.Prototype = function() {
   }
 
   this.renderPage = function (currentPage) {
+    this.isReady = false;
+
     currentPage = currentPage || this.pages[0];
 
-    var page = currentPage.page,
+    var that = this,
+      page = currentPage.page,
       canvas = currentPage.canvas,
       viewport = page.getViewport({ scale: this.currentScale });
 
@@ -197,7 +192,7 @@ InfographicView.Prototype = function() {
     page.render({
       canvasContext: canvas.getContext('2d'),
       viewport: viewport
-    });
+    }).promise.then(function () { that.isReady = true; });
   }
 
   this.zoomIn = function () {
