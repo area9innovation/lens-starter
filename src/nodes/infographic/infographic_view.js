@@ -105,6 +105,8 @@ InfographicView.Prototype = function() {
           if (fullscreen.isFullscreen()) 
             fullscreen.exit()
             .then(function () { 
+              window.fullscreenMode = false;
+              window.selectMode();
               el.textContent = 'Full screen ON';
               (that.node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop = that.lastScrollTop;
             });
@@ -113,6 +115,7 @@ InfographicView.Prototype = function() {
 
             fullscreen.request(that.viewerContainer)
             .then(function () { 
+              window.fullscreenMode = true;
               el.textContent = 'Full screen OFF';
             }); 
           }
@@ -214,27 +217,34 @@ InfographicView.Prototype = function() {
       pages = that.pagesContainer,
       pushed, 
       lastClientX, 
-      lastClientY;
+      lastClientY,
+      isTouch = 'ontouchstart' in window,
+      startEvent = isTouch ? 'touchstart' : 'mousedown',
+      endEvent = isTouch ? 'touchend' : 'mouseup',
+      moveEvent = isTouch ? 'touchmove' : 'mousemove';
 
-    pages.addEventListener('mousedown', function (e) {
+    pages.addEventListener(startEvent, function (e) {
+      var d = isTouch ? e.changedTouches[0] : e;
+
       pushed = 1;
-      lastClientX = e.clientX;
-      lastClientY = e.clientY;
+      lastClientX = d.clientX;
+      lastClientY = d.clientY;
 
-      e.preventDefault();
+      isTouch || e.preventDefault();
       e.stopPropagation();
     }, 0);
 
-    pages.addEventListener('mouseup', function (e) { pushed = 0; }, 0);
+    pages.addEventListener(endEvent, function (e) { pushed = 0; }, 0);
 
-    pages.addEventListener('mousemove', function (e) { 
+    pages.addEventListener(moveEvent, function (e) { 
       if (!pushed) return;
 
-      var newScrollX, 
+      var d = isTouch ? e.changedTouches[0] : e,
+        newScrollX, 
         newScrollY;
 
-      pages.scrollLeft -= newScrollX = (-lastClientX + (lastClientX = e.clientX));
-      pages.scrollTop -= newScrollY = (-lastClientY + (lastClientY = e.clientY));
+      pages.scrollLeft -= newScrollX = (-lastClientX + (lastClientX = d.clientX));
+      pages.scrollTop -= newScrollY = (-lastClientY + (lastClientY = d.clientY));
     }, 0);
   }
 };
