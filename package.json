@@ -17,7 +17,7 @@
     "gulp-sass": "^2.0.3",
     "gulp-uglify": "^1.2.0",
     "node-sass": "3.x",
-    "pdfjs-dist": "^2.1.266",
+    "pdfjs-dist": "^2.2.228",
     "through2": "^2.0.0"
   },
   "version": "2.0.0"

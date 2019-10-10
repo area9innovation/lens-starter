@@ -82,6 +82,7 @@ InfographicView.Prototype = function() {
     this.pages = [], 
     this.lastScrollTop = 0;
     this.isReady = true;
+    this.isManualZoom = false;
   
     var that = this,
       loadingTask = pdfjsLib.getDocument({ url: node.url });
@@ -101,6 +102,8 @@ InfographicView.Prototype = function() {
       if (fullscreen.enabled()) {
         document.getElementById('full-screen').addEventListener('click', function () { 
           var el = document.getElementById('full-screen');
+
+          that.isManualZoom = false;
 
           if (fullscreen.isFullscreen()) 
             fullscreen.exit()
@@ -135,7 +138,7 @@ InfographicView.Prototype = function() {
   }
 
   this.onResize = function () {
-    this.isReady && this.calcNewScale() && this.renderPage();
+    this.isReady && !this.isManualZoom && this.calcNewScale() && this.renderPage();
   }
 
   this.renderPdf = function (pdf) {
@@ -199,6 +202,8 @@ InfographicView.Prototype = function() {
   }
 
   this.zoomIn = function () {
+    this.isManualZoom = true;
+
     if (this.currentScale < maxScale) this.currentScale *= scaleDelta;
     if (this.currentScale > maxScale) this.currentScale = maxScale;
 
@@ -206,6 +211,8 @@ InfographicView.Prototype = function() {
   }
 
   this.zoomOut = function () {
+    this.isManualZoom = true;
+
     if (this.currentScale > minScale) this.currentScale /= scaleDelta;
     if (this.currentScale < minScale) this.currentScale = minScale;
 
