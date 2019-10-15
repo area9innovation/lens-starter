@@ -81,7 +81,7 @@ InfographicView.Prototype = function() {
     this.currentScale = 0;
     this.pages = [], 
     this.lastScrollTop = 0;
-    this.isReady = true;
+    this.isReady = false;
     this.isManualZoom = false;
   
     var that = this,
@@ -92,61 +92,62 @@ InfographicView.Prototype = function() {
     };
 
     loadingTask.promise.then(function (pdf) {
-      window.addEventListener('deviceorientation', _.throttle(function () { that.onResize(); }, 200), false);
+      that.initPdf(pdf).then(function () {
+        document.getElementById('zoom-in').addEventListener('click', function () { that.zoomIn(); });
+        document.getElementById('zoom-out').addEventListener('click', function () { that.zoomOut(); });
 
-      document.getElementById('zoom-in').addEventListener('click', function () { that.zoomIn(); });
-      document.getElementById('zoom-out').addEventListener('click', function () { that.zoomOut(); });
+        if (fullscreen.enabled()) {
+          document.getElementById('full-screen').addEventListener('click', function () { 
+            var el = document.getElementById('full-screen');
 
-      if (fullscreen.enabled()) {
-        document.getElementById('full-screen').addEventListener('click', function () { 
-          var el = document.getElementById('full-screen');
+            that.isManualZoom = false;
 
-          that.isManualZoom = false;
+            if (fullscreen.isFullscreen()) 
+              fullscreen.exit()
+              .then(function () { 
+                el.textContent = 'Full screen ON';
+                (that.node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop = that.lastScrollTop;
+              });
+            else {
+              that.lastScrollTop = (node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop;
 
-          if (fullscreen.isFullscreen()) 
-            fullscreen.exit()
-            .then(function () { 
-              el.textContent = 'Full screen ON';
-              (that.node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop = that.lastScrollTop;
-            });
-          else {
-            that.lastScrollTop = (node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop;
+              fullscreen.request(that.viewerContainer)
+              .then(function () { 
+                el.textContent = 'Full screen OFF';
+              }); 
+            }
+          });
+        }
 
-            fullscreen.request(that.viewerContainer)
-            .then(function () { 
-              el.textContent = 'Full screen OFF';
-            }); 
-          }
-        });
-      }
+        that.setDragScrollHandler();
 
-      that.renderPdf(pdf);
+        window.addEventListener('deviceorientation', _.throttle(function () { that.onResize(); }, 200), false);
+        setInterval(function () { window.dispatchEvent(new Event('deviceorientation')); }, 200);
 
-      that.progressBar.style.display = 'none';
-
-      that.setDragScrollHandler();
-
-      setInterval(function () { window.dispatchEvent(new Event('deviceorientation')); }, 200);
+        that.progressBar.style.display = 'none';
+      });
     });
   };
-
+/*
   this.print = function (m) {
     console.log((Date.now() / 1000) + ' ' + m + ' - width: ' + this.pagesContainer.clientWidth + ' height: ' + this.pagesContainer.clientHeight);
   }
-
+*/
   this.onResize = function () {
-    this.isReady && !this.isManualZoom && this.calcNewScale() && this.renderPage();
+    this.isReady && !this.isManualZoom && this.calcAutoScale() && this.renderPage();
   }
 
-  this.renderPdf = function (pdf) {
+  this.initPdf = function (pdf) {
     var that = this;
 
-    pdf.getPage(1).then(function (page) {
-      that.initPage(page);
+    return new Promise(function (resolve, reject) {
+      pdf.getPage(1).then(function (page) {
+        that.initPage(page).then(function () { resolve(); });
+      });
     });
   }
 
-  this.calcNewScale = function(page) {
+  this.calcAutoScale = function(page) {
     page = page || this.pages[0].page;
 
     var viewport = page.getViewport({ scale: 1 }),
@@ -164,19 +165,22 @@ InfographicView.Prototype = function() {
   }
 
   this.initPage = function (page) {
-    var canvas = document.createElement('canvas');
+    var that = this,
+      canvas = document.createElement('canvas');
 
     canvas.classList.add('page');
     this.pagesContainer.appendChild(canvas);
 
-    if (!this.pages.length) this.calcNewScale(page);
+    if (!this.pages.length) this.calcAutoScale(page);
 
     this.pages.push({
       page: page,
       canvas: canvas
     });
 
-    this.renderPage();
+    return new Promise(function (resolve, reject) {
+      that.renderPage().then(function () { resolve(); });
+    });
   }
 
   this.renderPage = function (currentPage) {
@@ -192,10 +196,15 @@ InfographicView.Prototype = function() {
     canvas.width = viewport.width;
     canvas.height = viewport.height;
 
-    page.render({
-      canvasContext: canvas.getContext('2d'),
-      viewport: viewport
-    }).promise.then(function () { that.isReady = true; });
+    return new Promise(function (resolve, reject) {
+      page.render({
+        canvasContext: canvas.getContext('2d'),
+        viewport: viewport
+      }).promise.then(function () { 
+        that.isReady = true; 
+        resolve(); 
+      });
+    });
   }
 
   this.zoomIn = function () {
