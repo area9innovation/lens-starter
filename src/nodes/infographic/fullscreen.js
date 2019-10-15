@@ -8,12 +8,14 @@ var Fullscreen = function () {
         el.classList.add('full-screen');
         fullscreenElement = el;
         isFullscreen = true;
+        window.dispatchEvent(new Event('full-screen-on'));
     };
 
     var onFullscreenOff = function (el) {
         el.classList.remove('full-screen');
         fullscreenElement = null;
         isFullscreen = false;
+        window.dispatchEvent(new Event('full-screen-off'));
     };
 
     return {

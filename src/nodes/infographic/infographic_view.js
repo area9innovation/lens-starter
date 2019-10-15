@@ -92,9 +92,7 @@ InfographicView.Prototype = function() {
     };
 
     loadingTask.promise.then(function (pdf) {
-      that.node.isMobile 
-        && window.addEventListener('deviceorientation', _.throttle(function () { that.onResize(); }, 500), false)
-        || window.addEventListener('resize', _.debounce(function () { that.onResize(); }, 100));
+      window.addEventListener('deviceorientation', _.throttle(function () { that.onResize(); }, 200), false);
 
       document.getElementById('zoom-in').addEventListener('click', function () { that.zoomIn(); });
       document.getElementById('zoom-out').addEventListener('click', function () { that.zoomOut(); });
@@ -108,8 +106,6 @@ InfographicView.Prototype = function() {
           if (fullscreen.isFullscreen()) 
             fullscreen.exit()
             .then(function () { 
-              window.fullscreenMode = false;
-              window.selectMode();
               el.textContent = 'Full screen ON';
               (that.node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop = that.lastScrollTop;
             });
@@ -118,7 +114,6 @@ InfographicView.Prototype = function() {
 
             fullscreen.request(that.viewerContainer)
             .then(function () { 
-              window.fullscreenMode = true;
               el.textContent = 'Full screen OFF';
             }); 
           }
@@ -130,6 +125,8 @@ InfographicView.Prototype = function() {
       that.progressBar.style.display = 'none';
 
       that.setDragScrollHandler();
+
+      setInterval(function () { window.dispatchEvent(new Event('deviceorientation')); }, 200);
     });
   };
 
