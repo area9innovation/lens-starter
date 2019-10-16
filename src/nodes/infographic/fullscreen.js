@@ -1,22 +1,25 @@
-var screenfull = require('screenfull');
+var screenfull = require('screenfull'),
+    createCustomEvent = require('./utils').createCustomEvent;
 
 var Fullscreen = function () {
     var isFullscreen = screenfull.enabled ? screenfull.isFullscreen : false,
         fullscreenElement = null,
-        parentNode = null;
+        parentNode = null,
+        fullscreenOnEvent = createCustomEvent('full-screen-on'),
+        fullscreenOffEvent = createCustomEvent('full-screen-off');
 
     var onFullscreenOn = function (el) {
         el.classList.add('full-screen');
         fullscreenElement = el;
         isFullscreen = true;
-        window.dispatchEvent(new Event('full-screen-on'));
+        window.dispatchEvent(fullscreenOnEvent);
     };
 
     var onFullscreenOff = function (el) {
         el.classList.remove('full-screen');
         fullscreenElement = null;
         isFullscreen = false;
-        window.dispatchEvent(new Event('full-screen-off'));
+        window.dispatchEvent(fullscreenOffEvent);
     };
 
     return {
