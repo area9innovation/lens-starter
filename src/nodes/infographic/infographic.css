@@ -3,7 +3,6 @@
 
 .surface.supplemental > .nodes > .content-node > .content > .infographic-wrapper > .viewer > .pages {
     height: 500px;
-    overflow: hidden;
 }
 
 .surface.content > .nodes > .content-node > .content > .infographic-wrapper > .viewer > .pages {
@@ -28,12 +27,12 @@
     display: inline-block;
 }
 
-.infographic-wrapper > .viewer {
+.viewer {
     position: relative !important;
     text-align: center; 
 }
 
-.infographic-wrapper > .viewer > .progress-bar {
+.viewer > .progress-bar {
     position: absolute !important;
     top: 0;
     left: 0;    
@@ -42,7 +41,8 @@
     background-color: blue;
 }
 
-.infographic-wrapper > .viewer > .pages {
+.viewer > .pages {
+    overflow: hidden;
     text-align: center; 
     background-color: #808080;
     padding: 16px 16px 0;
@@ -52,29 +52,29 @@
     cursor: grab;
 }
 
-.infographic-wrapper > .viewer > .pages:active {
+.viewer > .pages:active {
     cursor: -webkit-grabbing;
     cursor: -moz-grabbing;
     cursor: -o-grabbing;
     cursor: grabbing;
 }
 
-.infographic-wrapper > .viewer.full-screen > .pages {
+.viewer.full-screen > .pages {
     height: 100% !important;
 }
 
-.infographic-wrapper > .viewer > .pages > .page {
+.viewer > .pages > .page {
     margin-bottom: 16px;
     box-shadow: 0 0 4px 3px;
 }
 
-.infographic-wrapper > .viewer > .toolbar {
+.viewer > .toolbar {
     position: absolute !important;
     bottom: 0;
     width: 100%;
 }
 
-.infographic-wrapper > .viewer > .toolbar > button {
+.viewer > .toolbar > button {
     margin: 8px;
     min-width: 32px;
     height: 32px;

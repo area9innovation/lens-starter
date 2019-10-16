@@ -1,8 +1,9 @@
 var screenfull = require('screenfull');
 
 var Fullscreen = function () {
-    var fullscreenElement = null,
-        isFullscreen = screenfull.enabled ? screenfull.isFullscreen : false;
+    var isFullscreen = screenfull.enabled ? screenfull.isFullscreen : false,
+        fullscreenElement = null,
+        parentNode = null;
 
     var onFullscreenOn = function (el) {
         el.classList.add('full-screen');
@@ -25,19 +26,23 @@ var Fullscreen = function () {
             if (screenfull.enabled) 
                 return screenfull.request(el).then(function () { onFullscreenOn(el); });
 
+            parentNode = el.parentNode;
+
+            document.body.appendChild(el);
             document.body.classList.add('full-screen-pseudo');
             onFullscreenOn(el);
 
             return Promise.resolve();
         },
-        exit: function (el) {
-            el = el || fullscreenElement;
-
+        exit: function () {
             if (screenfull.enabled) 
-                return screenfull.exit(el).then(function () { onFullscreenOff(el); });
+                return screenfull.exit(fullscreenElement).then(function () { onFullscreenOff(fullscreenElement); });
 
+            parentNode.appendChild(fullscreenElement);
             document.body.classList.remove('full-screen-pseudo');
-            onFullscreenOff(el);
+            onFullscreenOff(fullscreenElement);
+
+            parentNode = null;
 
             return Promise.resolve();
         }

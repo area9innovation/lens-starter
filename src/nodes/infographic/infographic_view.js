@@ -121,19 +121,15 @@ InfographicView.Prototype = function() {
 
         that.setDragScrollHandler();
 
-        window.addEventListener('deviceorientation', _.throttle(function () { that.onResize(); }, 200), false);
+        window.addEventListener('deviceorientation', _.throttle(function () { that.onOrientationChange(); }, 200), false);
         setInterval(function () { window.dispatchEvent(new Event('deviceorientation')); }, 200);
 
         that.progressBar.style.display = 'none';
       });
     });
   };
-/*
-  this.print = function (m) {
-    console.log((Date.now() / 1000) + ' ' + m + ' - width: ' + this.pagesContainer.clientWidth + ' height: ' + this.pagesContainer.clientHeight);
-  }
-*/
-  this.onResize = function () {
+
+  this.onOrientationChange = function () {
     this.isReady && !this.isManualZoom && this.calcAutoScale() && this.renderPage();
   }
 
@@ -252,12 +248,10 @@ InfographicView.Prototype = function() {
     pages.addEventListener(moveEvent, function (e) { 
       if (!pushed) return;
 
-      var d = isTouch ? e.changedTouches[0] : e,
-        newScrollX, 
-        newScrollY;
+      var d = isTouch ? e.changedTouches[0] : e;
 
-      pages.scrollLeft -= newScrollX = (-lastClientX + (lastClientX = d.clientX));
-      pages.scrollTop -= newScrollY = (-lastClientY + (lastClientY = d.clientY));
+      pages.scrollLeft -= -lastClientX + (lastClientX = d.clientX);
+      pages.scrollTop -= -lastClientY + (lastClientY = d.clientY);
     }, 0);
   }
 };
