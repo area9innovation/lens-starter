@@ -6,7 +6,6 @@ var ResourceView = require('lens/article/resource_view');
 var NodeView = require("lens/article/nodes/node").View;
 var pdfjsLib = require('pdfjs-dist');
 var fullscreen = require('./fullscreen');
-var createCustomEvent = require('./utils').createCustomEvent;
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'elensreader/lens.worker.js';
 
@@ -123,9 +122,6 @@ InfographicView.Prototype = function() {
         that.setDragScrollHandler();
 
         window.addEventListener('deviceorientation', _.throttle(function () { that.onOrientationChange(); }, 200), false);
-
-        var event = createCustomEvent('deviceorientation');
-        setInterval(function () { window.dispatchEvent(event); }, 200);
 
         that.progressBar.style.display = 'none';
       });
