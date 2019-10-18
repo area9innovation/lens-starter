@@ -6,6 +6,11 @@
     margin-bottom: 5px;
 }
 
+// Bug fix - video player control panel was visible on other tabs
+.article > .resources > .panel.hidden .video-js {
+    display: none;
+}
+
 video {
      max-height: unset !important;
 }
