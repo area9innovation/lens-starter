@@ -66,8 +66,21 @@ var JbjsConverter = function(options, config) {
 
 JbjsConverter.Prototype = function() {
 
-  this.__ignoreCustomMetaNames = [ 'jbjs-published-as-jbjscc', 'rsuite_processing_status', 'rsuite_topics', 'rsuite_files', 'disclosure_pdf', 'sdc', 'article_pdf', 'datasharing_pdf' ];
-  this.__ignoreCustomMetaNamesHeader = [ 'peer-review-statement' ];
+  this.__ignoreCustomMetaNames = [
+    'jbjs-published-as-jbjscc',
+    'rsuite_processing_status',
+    'rsuite_topics',
+    'rsuite_files',
+    'disclosure_pdf',
+    'sdc',
+    'article_pdf',
+    'datasharing_pdf'
+  ];
+  this.__ignoreCustomMetaNamesHeader = [
+    'peer-review-statement'
+   ];
+  // ignore all <custom-meta> tags. This duplicates the two above.
+  this.__ignoreAllCustomMeta = true;
 
   this.test = function(xmlDoc, docUrl) {
     if ( this.config.storage_layout === 'db' ) {
