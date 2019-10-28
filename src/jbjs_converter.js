@@ -171,7 +171,7 @@ JbjsConverter.Prototype = function() {
   };
 
   this.URLBuilder = function(url, ext) {
-    if (url.substring(url.length - ext.length) === ext) {
+    if (!ext || url.substring(url.length - ext.length) === ext) {
       ext = '';
     }
     return [
@@ -189,7 +189,7 @@ JbjsConverter.Prototype = function() {
   };
 
   this.URLBuilderJBJSType = function(url, ext) {
-    if (url.substring(url.length - ext.length) === ext) {
+    if (!ext || url.substring(url.length - ext.length) === ext) {
       ext = '';
     }
     return [
