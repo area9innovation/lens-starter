@@ -268,6 +268,8 @@ function onMenuReady() {
 
   $('.resources .menu-bar .external-menu').after('<a class="socialshare article" style="float:right; margin:10px 15px 10px -5px; width:20px; height:20px; cursor: pointer;"><img style="width: 20px" src="https://tech.area9innovation.com/jbjs/hub/pages/images/share_icon.png"></a>');
 
+  $('img.orcid').attr('src', 'https://tech.area9innovation.com/jbjs/hub/pages/images/orcid_logo.png');
+
   if( isPIP ) {
     $('.surface.resource-view.content').prepend('<div style="font-weight:bold;color:blue;position:fixed;z-index:1; width:45%;padding-left:50px;"><center>Abstract and PDF now available.</center><center>Full text HTML will be available upon publication in the next journal issue</center></div>');
     pipContentCorrection();
