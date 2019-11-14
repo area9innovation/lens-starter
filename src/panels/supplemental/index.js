@@ -8,7 +8,7 @@ var panel = new ContainerPanel({
   name: 'supplemental',
   container: 'supplemental',
   title: 'Supplemental',
-  icon: 'fa-picture-o',
+  icon: 'fa-photo-video',
   references: ['infographic_reference', 'videosummary_reference']
 });
 
