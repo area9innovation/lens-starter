@@ -10,19 +10,23 @@ var path = require('path');
 var streamify = require('gulp-streamify');
 var source = require('vinyl-source-stream');
 
-gulp.task('assets', function() {
-  gulp.src('assets/**/*', {base:"./assets"})
+gulp.task('assets', function (done) {
+    gulp.src('assets/**/*', {base:"./assets"})
         .pipe(gulp.dest('dist'));
 
-  gulp.src('data/**/*', {base:"."})
+    gulp.src('data/**/*', {base:"."})
         .pipe(gulp.dest('dist'));
+
+    done();
 });
 
-gulp.task('sass', function () {
-  gulp.src('./lens.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(rename('lens.css'))
-    .pipe(gulp.dest('./dist'));
+gulp.task('sass', function (done) {
+    gulp.src('./lens.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(rename('lens.css'))
+        .pipe(gulp.dest('./dist'));
+
+    done();
 });
 
 gulp.task('bundle', function () {
@@ -45,7 +49,7 @@ gulp.task('bundle', function () {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('worker', function() {
+gulp.task('worker', function () {
     // We can create our own viewer (see worker.js) or use already defined one.
     var workerSrc = require.resolve('pdfjs-dist/build/pdf.worker.entry');
     return browserify(workerSrc, { output: 'lens.worker.tmp', })
@@ -60,4 +64,4 @@ gulp.task('worker', function() {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['assets', 'sass', 'bundle', 'worker']);
+gulp.task('default', gulp.series('assets', 'sass', 'bundle', 'worker'));
