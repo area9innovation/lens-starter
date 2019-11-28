@@ -2,7 +2,7 @@
   "name": "lens-starter",
   "description": "Custom Lens bundle.",
   "dependencies": {
-    "ejs": "^2.7.3",
+    "ejs": "^2.7.4",
     "express": "^4.17.1",
     "gulp-streamify": "^1.0.2",
     "lens": "github:area9innovation/lens#develop",
