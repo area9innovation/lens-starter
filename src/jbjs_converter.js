@@ -29,6 +29,7 @@ var JbjsConverter = function(options, config) {
     this.viewMapping.video = 'content';
     this.viewMapping.infographic = 'content';
     this.viewMapping.videosummary = 'content';
+    this.viewMapping.supplement = 'content';
     this.createDocument = this.createDocumentOneColumn;
     this.enhanceArticle = this.enhanceArticleOneColumn;
     this.enhanceTable = this.enhanceTableOneColumn;
@@ -47,6 +48,7 @@ var JbjsConverter = function(options, config) {
   } else {
     this.viewMapping.infographic = 'supplemental';
     this.viewMapping.videosummary = 'supplemental';
+    this.viewMapping.supplement = 'supplemental';
 
     delete this._bodyNodes['table-wrap'];
 
@@ -246,7 +248,7 @@ JbjsConverter.Prototype = function() {
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
 
-    this.enhanceArticleSDC(state, article);
+    this.enhanceArticleSDC(state, article, true);
 
     var header = {
       'type' : 'heading',
@@ -650,10 +652,10 @@ JbjsConverter.Prototype = function() {
     this.showAffiliations(state, article);
     this.showAuthorNotes(state, article);
 
-    this.enhanceArticleSDC(state, article);
-
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
+
+    this.enhanceArticleSDC(state, article, false);
   };
 
   this.showAffiliations = function(state, article) {
@@ -666,7 +668,7 @@ JbjsConverter.Prototype = function() {
     });
   }
 
-  this.enhanceArticleSDC = function(state, article) {
+  this.enhanceArticleSDC = function(state, article, oneColumnArticle) {
 
     var sdcMeta = _.find(article.querySelectorAll('article-meta custom-meta-group#rsuite_files custom-meta'),
       function(cm){ return cm.querySelector('meta-name').textContent == 'sdc'});
@@ -682,24 +684,30 @@ JbjsConverter.Prototype = function() {
 
     var nodes = [];
     var doc = state.doc;
+    var tabName = 'supplemental';
 
     if ( files.length > 0 ) {
-      var header = {
-        type : 'heading',
-        id : state.nextId('heading'),
-        level : 1,
-        content : 'Supplementary Content',
-      };
+      if (oneColumnArticle) {
+        tabName = 'content';
 
-      doc.create(header);
-      nodes.push(header.id);
-      doc.show('content', header.id);
+        var header = {
+          type : 'heading',
+          id : state.nextId('heading'),
+          level : 1,
+          content : 'Supplementary Content',
+        };
+
+        doc.create(header);
+        nodes.push(header.id);
+        doc.show(tabName, header.id);
+
+      }
 
       for (var i = 0; i < files.length; ++i) {
         var label;
         var url;
         if ( sdcMeta ) {
-          label = files[i].textContent?files[i].textContent:'Data Supplement ' + (i+1);
+          label = files[i].textContent?files[i].textContent:'Data Supplement ' + (i + 1);
           url = this.URLBuilder(files[i].getAttribute('href'), '.supplement');
         } else {
           label = files[i].querySelector('description').textContent;
@@ -714,9 +722,10 @@ JbjsConverter.Prototype = function() {
           url: url,
           caption: null
         };
+        
         doc.create(supplementNode);
         nodes.push(supplementNode.id);
-        doc.show('content', supplementNode.id);
+        doc.show(tabName, supplementNode.id);
       }
     }
   };
