@@ -30,6 +30,8 @@ var JbjsConverter = function(options, config) {
     this.viewMapping.infographic = 'content';
     this.viewMapping.videosummary = 'content';
     this.viewMapping.supplement = 'content';
+    this.viewMapping.eletter = 'content';
+    this.viewMapping.eletter_submit = 'content';
     this.createDocument = this.createDocumentOneColumn;
     this.enhanceArticle = this.enhanceArticleOneColumn;
     this.enhanceTable = this.enhanceTableOneColumn;
@@ -49,6 +51,8 @@ var JbjsConverter = function(options, config) {
     this.viewMapping.infographic = 'supplemental';
     this.viewMapping.videosummary = 'supplemental';
     this.viewMapping.supplement = 'supplemental';
+    this.viewMapping.eletter = 'supplemental';
+    this.viewMapping.eletter_submit = 'supplemental';
 
     delete this._bodyNodes['table-wrap'];
 
@@ -206,7 +210,7 @@ JbjsConverter.Prototype = function() {
       ext = typeof ext !== 'undefined' ?  ext : '.pdf';
       subtype = typeof subtype !== 'undefined' ?  subtype : '';
       return [
-        (ext === '.pdf' || ext === '.supplement')? this.docBaseUrl : this.imageBaseUrl,
+        (ext === '.pdf' || ext === '.supplement' || ext === '.eletter') ? this.docBaseUrl : this.imageBaseUrl,
         '&type=', ext.substr(1),
         '&name=', url,
         '&subtype=', subtype,
@@ -249,6 +253,7 @@ JbjsConverter.Prototype = function() {
     this.extractInfographic(state, article);
 
     this.enhanceArticleSDC(state, article, true);
+    this.extractELetters(state, article, true);
 
     var header = {
       'type' : 'heading',
@@ -656,6 +661,7 @@ JbjsConverter.Prototype = function() {
     this.extractInfographic(state, article);
 
     this.enhanceArticleSDC(state, article, false);
+    this.extractELetters(state, article, false);
   };
 
   this.showAffiliations = function(state, article) {
@@ -669,7 +675,6 @@ JbjsConverter.Prototype = function() {
   }
 
   this.enhanceArticleSDC = function(state, article, oneColumnArticle) {
-
     var sdcMeta = _.find(article.querySelectorAll('article-meta custom-meta-group#rsuite_files custom-meta'),
       function(cm){ return cm.querySelector('meta-name').textContent == 'sdc'});
 
@@ -730,6 +735,179 @@ JbjsConverter.Prototype = function() {
     }
   };
 
+  this.extractELetters = function(state, xmlDoc, oneColumnArticle) {
+    var el = _.find(xmlDoc.querySelectorAll('article-meta custom-meta-group#rsuite_files custom-meta'),
+      function (cm){ return cm.querySelector('meta-name').textContent == 'eletters'});
+
+    if (!el) return;
+    if (el._converted) return;
+
+    var files = el.querySelectorAll('meta-value inline-eletter-material');
+    if (!files.length) return;
+
+    var nodes = [];
+    var node = this.eLetterSubmit(state, el, oneColumnArticle);
+    var refNode = this.eLettersReference(state, el, node);
+
+    refNode && nodes.push(refNode);
+    node && nodes.push(node);
+
+    nodes = nodes.concat(this.eLetters(state, el, files));
+
+    this.show(state, nodes);
+  };
+
+  this.eLetterSubmit = function(state, el, oneColumnArticle) {
+    var doc = state.doc;
+
+    var eletterSubmitNode = {
+      id: 'eletters',
+      source_id: null,
+      type: 'eletter_submit',
+      label: 'Submit eLetter',
+      url: 'http://eletters.jbjs.org/?__hstc=104777119.85d50a516d737ac12a8673577c84f375.1561055554490.1561055554490.1561055554490.1&__hssc=104777119.1.1561055554491&__hsfp=379383135',
+      caption: oneColumnArticle ? 'eLetters' : null,
+      image: this.ResourceURLBuilder('Letter_to_Editor_Widget_Icon_Small.png')
+    };
+
+    doc.create(eletterSubmitNode);
+
+    return eletterSubmitNode;
+  };
+
+  this.eLettersReference = function(state, el, node) {
+    var doc = state.doc;
+
+    var eletterReferenceNode = {
+      id: 'eletter_reference',
+      type: 'eletter_reference',
+      path: [ node.id, 'content' ],
+      range: [ 0, node.length ],
+      target: node.id
+    };
+
+    doc.create(eletterReferenceNode);
+
+    return eletterReferenceNode;
+  };
+
+  this.eLetters = function(state, el, files) {
+    var doc = state.doc;
+
+    var nodes = [];
+
+    for (var i = 0; i < files.length; ++i) {
+      var label = files[i].textContent ? files[i].textContent : 'eLetter ' + (i + 1);
+      var url = this.URLBuilder(files[i].getAttribute('href'), '.eletter');
+
+      var eletterNode = {
+        id: state.nextId('eletter'),
+        source_id: null,
+        type: 'eletter',
+        label: label,
+        url: url,
+        caption: null
+      };
+      
+      doc.create(eletterNode);
+      nodes.push(eletterNode);
+    }
+
+    el._converted = true;
+
+    return nodes;
+  };
+/*
+  this.extractELetters = function(state, article, oneColumnArticle) {
+    var eLettersMeta = _.find(article.querySelectorAll('article-meta custom-meta-group#rsuite_files custom-meta'),
+      function(cm){ return cm.querySelector('meta-name').textContent == 'eletters'});
+
+    var files;
+    if ( eLettersMeta ) {
+      files = eLettersMeta.querySelectorAll('meta-value inline-eletter-material');
+    } else if( this.config.manifest ) {
+      files = this.config.manifest.querySelectorAll('file');
+    } else {
+      return;
+    }
+
+    if ( !files.length ) return;
+
+    var nodes = [];
+    var doc = state.doc;
+    var tabName = 'supplemental';
+
+    if (oneColumnArticle) {
+      tabName = 'content';
+
+      var header = {
+        type : 'heading',
+        id : 'eletters',
+        level : 1,
+        content : 'eLetters',
+      };
+
+      doc.create(header);
+      doc.show(tabName, header.id);
+    }
+
+    var eletterSubmitNode = {
+      id: oneColumnArticle ? 'eletter_submit' : 'eletters',
+      source_id: null,
+      type: 'eletter_submit',
+      label: 'Submit eLetter',
+      url: 'http://eletters.jbjs.org/?__hstc=104777119.85d50a516d737ac12a8673577c84f375.1561055554490.1561055554490.1561055554490.1&__hssc=104777119.1.1561055554491&__hsfp=379383135',
+      caption: null,
+      image: this.ResourceURLBuilder('Letter_to_Editor_Widget_Icon_Small.png')
+    };
+
+    doc.create(eletterSubmitNode);
+
+    var eletterReferenceNode = oneColumnArticle
+      ? {
+          id: 'eletter_reference',
+          type: 'eletter_reference',
+          path: [ header.id, tabName ],
+          range: [ 0, header.length ],
+          target: header.id
+        }
+      : {
+          id: 'eletter_reference',
+          type: 'eletter_reference',
+          path: [ eletterSubmitNode.id, tabName ],
+          range: [ 0, eletterSubmitNode.length ],
+          target: eletterSubmitNode.id
+        };
+
+    doc.create(eletterReferenceNode);
+
+    doc.show(tabName, eletterSubmitNode.id);
+
+    for (var i = 0; i < files.length; ++i) {
+      var label;
+      var url;
+      if ( eLettersMeta ) {
+        label = files[i].textContent?files[i].textContent:'eLetter ' + (i + 1);
+        url = this.URLBuilder(files[i].getAttribute('href'), '.eletter');
+      } else {
+        label = files[i].querySelector('description').textContent;
+        url = this.URLBuilder(files[i].querySelector('filename').textContent);
+      }
+
+      var eletterNode = {
+        id: state.nextId('eletter'),
+        source_id: null,
+        type: 'eletter',
+        label: label,
+        url: url,
+        caption: null
+      };
+      
+      doc.create(eletterNode);
+      doc.show(tabName, eletterNode.id);
+    }
+  };
+*/
   this.appOneColumn = function(state, app) {
     delete this._bodyNodes['table-wrap'];
 

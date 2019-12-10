@@ -1,0 +1,21 @@
+.surface.content .nodes > .content-node.eletter {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.content-node.eletter > .content {
+  padding: 10px 20px;
+}
+
+.content-node.eletter .content .file {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.content-node.eletter .content .file a {
+  font-weight: 600;
+}
+
+.content-node.eletter .content .file span {
+  padding-right: 3px; 
+}

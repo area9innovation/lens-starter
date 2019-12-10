@@ -1,0 +1,28 @@
+.surface.content .nodes > .content-node.eletter-submit {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.surface.content > .nodes > .content-node.eletter-submit > .content .link {
+  padding: 0 20px;
+}
+
+.content-node.eletter-submit > .content .link {
+  position: relative !important;
+}
+
+.surface.content > .nodes > .content-node.eletter-submit > .content > .label {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.content-node.eletter-submit > .content a > .label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: black;
+}
