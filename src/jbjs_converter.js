@@ -462,6 +462,8 @@ JbjsConverter.Prototype = function() {
 
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
+
+    this.extractELetters(state, article, false);
   };
 
   this.addLoginInfo = function(state) {
@@ -736,36 +738,33 @@ JbjsConverter.Prototype = function() {
   };
 
   this.extractELetters = function(state, xmlDoc, oneColumnArticle) {
-    var el = _.find(xmlDoc.querySelectorAll('article-meta custom-meta-group#rsuite_files custom-meta'),
-      function (cm){ return cm.querySelector('meta-name').textContent == 'eletters'});
-
-    if (!el) return;
-    if (el._converted) return;
-
-    var files = el.querySelectorAll('meta-value inline-eletter-material');
-    if (!files.length) return;
-
-    var nodes = [];
-    var node = this.eLetterSubmit(state, el, oneColumnArticle);
-    var refNode = this.eLettersReference(state, el, node);
+    var nodes = [],
+      node = this.eLetterSubmit(state, oneColumnArticle),
+      refNode = this.eLettersReference(state, node);
 
     refNode && nodes.push(refNode);
     node && nodes.push(node);
 
-    nodes = nodes.concat(this.eLetters(state, el, files));
+    var el = xmlDoc.querySelector('eletters');
+
+    if (el && !el._converted) {
+      var files = el.querySelectorAll('eletter');  
+
+      if (files.length) nodes = nodes.concat(this.eLetters(state, el, files));
+    }
 
     this.show(state, nodes);
   };
 
-  this.eLetterSubmit = function(state, el, oneColumnArticle) {
+  this.eLetterSubmit = function(state, oneColumnArticle) {
     var doc = state.doc;
 
     var eletterSubmitNode = {
       id: 'eletters',
       source_id: null,
       type: 'eletter_submit',
-      label: 'Submit eLetter',
-      url: 'http://eletters.jbjs.org/?__hstc=104777119.85d50a516d737ac12a8673577c84f375.1561055554490.1561055554490.1561055554490.1&__hssc=104777119.1.1561055554491&__hsfp=379383135',
+      label: 'Submit an eLetter',
+      url: 'http://eletters.jbjs.org/?r=' + encodeURIComponent(window.location.href),
       caption: oneColumnArticle ? 'eLetters' : null,
       image: this.ResourceURLBuilder('Letter_to_Editor_Widget_Icon_Small.png')
     };
@@ -775,7 +774,7 @@ JbjsConverter.Prototype = function() {
     return eletterSubmitNode;
   };
 
-  this.eLettersReference = function(state, el, node) {
+  this.eLettersReference = function(state, node) {
     var doc = state.doc;
 
     var eletterReferenceNode = {
