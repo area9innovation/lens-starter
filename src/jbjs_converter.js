@@ -762,13 +762,14 @@ JbjsConverter.Prototype = function() {
         i = url.indexOf('#');
 
     if (i !== -1) url = url.substring(0, i);
+    url = decodeURIComponent(url).replace('/fulltext', '/abstract');
 
     var eletterSubmitNode = {
       id: 'eletters',
       source_id: null,
       type: 'eletter_submit',
       label: 'Submit an eLetter',
-      url: 'http://eletters.jbjs.org/?r=' + encodeURIComponent(decodeURIComponent(url)),
+      url: 'http://eletters.jbjs.org/?r=' + encodeURIComponent(url),
       caption: oneColumnArticle ? 'eLetters' : null,
       image: this.ResourceURLBuilder('Letter_to_Editor_Widget_Icon_Small.png')
     };
