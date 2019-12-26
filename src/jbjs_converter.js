@@ -762,7 +762,7 @@ JbjsConverter.Prototype = function() {
         i = url.indexOf('#');
 
     if (i !== -1) url = url.substring(0, i);
-    url = decodeURIComponent(url).replace('/fulltext', '/abstract');
+    url = decodeURIComponent(url).replace('/fulltext', '/abstract').replace(/\s/g, '+');
 
     var eletterSubmitNode = {
       id: 'eletters',
