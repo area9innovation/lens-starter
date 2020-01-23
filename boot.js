@@ -164,9 +164,9 @@ var qs = function () {
 
 var isPIP = false;
 
-
+// devtrace global function. Not supported in IE
 (function(){
-  const devtraceOn = (new URLSearchParams(window.location.search)).has('devtrace');
+  const devtraceOn = window.URLSearchParams && (new URLSearchParams(window.location.search)).has('devtrace');
   function devtrace(message) {
     if (devtraceOn) {
       console.log(message);
