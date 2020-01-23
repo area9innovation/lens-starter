@@ -25,6 +25,7 @@ FollowCitationRefs.Prototype = function() {
   };
 
   this.followCitationReference = function(panel, id, element) {
+    window.dev.trace("followCitationReference");
     var ref = this.readerCtrl.getDocument().get(id);
     this.lastFromId = id;
     var citationNode = this.readerView.contentView.findNodeView(ref.target);
@@ -33,6 +34,7 @@ FollowCitationRefs.Prototype = function() {
   };
 
   this.citationClick = function(e) {
+    window.dev.trace("citationClick");
     if ( this.lastFromId !== undefined) {
       $('.citation').removeClass('back');
       this.readerView.contentView.findNodeView(this.lastFromId).scrollIntoView();

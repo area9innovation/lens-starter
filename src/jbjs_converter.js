@@ -11,6 +11,8 @@ var TwoColumnsCustomNodeTypes = require('./nodes/two_columns_index');
 var CrossReferenceAbstractOnly = require('./nodes/cross_reference');
 
 var JbjsConverter = function(options, config) {
+  window.dev.trace('JbjsConverter');
+
   this.config = config;
 
   this.config.storage_layout = config.storage_layout || 'brackets';
@@ -729,7 +731,7 @@ JbjsConverter.Prototype = function() {
           url: url,
           caption: null
         };
-        
+
         doc.create(supplementNode);
         nodes.push(supplementNode.id);
         doc.show(tabName, supplementNode.id);
@@ -748,7 +750,7 @@ JbjsConverter.Prototype = function() {
     var el = xmlDoc.querySelector('eletters');
 
     if (el && !el._converted) {
-      var files = el.querySelectorAll('eletter');  
+      var files = el.querySelectorAll('eletter');
 
       if (files.length) nodes = nodes.concat(this.eLetters(state, el, files));
     }
@@ -812,7 +814,7 @@ JbjsConverter.Prototype = function() {
         url: url,
         caption: null
       };
-      
+
       doc.create(eletterNode);
       nodes.push(eletterNode);
     }
@@ -906,7 +908,7 @@ JbjsConverter.Prototype = function() {
         url: url,
         caption: null
       };
-      
+
       doc.create(eletterNode);
       doc.show(tabName, eletterNode.id);
     }
