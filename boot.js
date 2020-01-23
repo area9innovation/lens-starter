@@ -164,6 +164,18 @@ var qs = function () {
 
 var isPIP = false;
 
+
+(function(){
+  const devtraceOn = (new URLSearchParams(window.location.search)).has('devtrace');
+  function devtrace(message) {
+    if (devtraceOn) {
+      console.log(message);
+    }
+  }
+  window.dev = {trace: devtrace};
+})();
+
+
 $(function() {
 
   // Create a new Lens app instance
@@ -208,7 +220,8 @@ $(function() {
 
       app.listenTo(app.controller, 'loaded:xml', onXmlLoaded);
       app.listenTo(app.controller, 'loaded:doc', onDocLoaded);
-      if(!app.config.show_resources_panel) app.listenTo(app.controller, 'created:reader', onReaderCreated);
+      if (!app.config.show_resources_panel)
+        app.listenTo(app.controller, 'created:reader', onReaderCreated);
       app.start();
 
       window.app = app;
@@ -219,6 +232,7 @@ $(function() {
 });
 
 function onXmlLoaded(data) {
+  window.dev.trace("onXmlLoaded");
   var volume = data.querySelector("article-meta volume");
   if( volume ) {
     isPIP = volume.textContent=='Publish Ahead of Print';
@@ -232,6 +246,7 @@ function onXmlLoaded(data) {
 }
 
 function onDocLoaded(reader, doc, state) {
+  window.dev.trace("onDocLoaded");
   if( !state.focussedNode ) return;
 
   var fs = state.focussedNode.split('video_ref_');
@@ -264,6 +279,7 @@ function onDocLoaded(reader, doc, state) {
 }
 
 function onMenuReady() {
+  window.dev.trace("onMenuReady");
   $('.resources .menu-bar .external-menu').after('<a class="favorite article" style="float:right; margin:10px 15px; width:20px; height:20px" content_type="article" content_id="1330028"></a>');
 
   $('.resources .menu-bar .external-menu').after('<a class="socialshare article" style="float:right; margin:10px 15px 10px -5px; width:20px; height:20px; cursor: pointer;"><img style="width: 20px" src="https://tech.area9innovation.com/jbjs/hub/pages/images/share_icon.png"></a>');
@@ -290,6 +306,7 @@ function onMenuReady() {
 }
 
 function onReaderCreated() {
+  window.dev.trace("onReaderCreated");
   $('body').append('<a class="favorite article" style="position: absolute; right: 4rem; top: 1rem; width:2rem; height:2rem; margin:0" content_type="article" content_id="1330028"></a>');
 
   $('body').append('<a class="socialshare saveposition article" style="position: absolute; right: 1rem; top: 1rem; width:2rem; height:2rem; margin:0; cursor: pointer;"><img style="width: 2rem;" src="https://tech.area9innovation.com/jbjs/hub/pages/images/share_icon.png"></a>');
