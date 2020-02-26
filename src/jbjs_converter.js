@@ -557,13 +557,19 @@ JbjsConverter.Prototype = function() {
     }
 
     // separate processing because financial-disclosure may have a few interleaved fn tags
+    var financialDisclosureAttrs = ['financial-disclosure', 'conflict'];
     var fns = article.querySelectorAll('back fn-group fn');
 
     for (var i = 0; i < fns.length; ++i) {
-      if ( (!fns[i].hasAttribute('fn-type')
-            || fns[i].getAttribute('fn-type') !== 'financial-disclosure')
-            && (!fns[i].hasAttribute('id')
-            || article.querySelector('xref[ref-type=fn][rid=' + fns[i].getAttribute('id') + ']') === null)
+      if (
+            (
+              !fns[i].hasAttribute('fn-type')
+              || !financialDisclosureAttrs.includes(fns[i].getAttribute('fn-type'))
+            )
+            && (
+              !fns[i].hasAttribute('id')
+              || article.querySelector('xref[ref-type=fn][rid=' + fns[i].getAttribute('id') + ']') === null
+            )
         ) {
         var pars = this.bodyNodes(state, util.dom.getChildren(fns[i]));
         _.each(pars, function(par) {
@@ -572,7 +578,11 @@ JbjsConverter.Prototype = function() {
       }
     }
 
-    var discls = article.querySelectorAll('fn[fn-type=financial-disclosure]');
+    var discls = [];
+    for (var i = 0; discls.length == 0 && i < financialDisclosureAttrs.length; i++ ) {
+      var attr = financialDisclosureAttrs[i];
+      discls = article.querySelectorAll('fn[fn-type=' + attr + ']');
+    }
 
     if ( discls.length > 0 ) {
       var header = {
