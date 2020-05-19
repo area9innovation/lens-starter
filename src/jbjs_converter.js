@@ -617,6 +617,20 @@ JbjsConverter.Prototype = function() {
           doc.create(supplementNode);
           nodes.push(supplementNode.id);
         }
+        var uri = article.querySelector('self-uri[content-type=disclosure-zip]');
+        uri = uri ?uri:article.querySelector('self-uri[content-type=disclosures-zip]');
+        if ( uri ) {
+          var supplementNode = {
+            id: state.nextId('supplement'),
+            source_id: null,
+            type: 'supplement',
+            label: 'Disclosures of Potential Conflicts of Interest ZIP',
+            url: this.URLBuilder(uri.getAttribute('xlink:href'), '.zip', 'disclosure'),
+            caption: null
+          };
+          doc.create(supplementNode);
+          nodes.push(supplementNode.id);
+        }
       }
     }
 
