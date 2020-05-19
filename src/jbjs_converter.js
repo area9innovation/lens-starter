@@ -610,7 +610,7 @@ JbjsConverter.Prototype = function() {
             id: state.nextId('supplement'),
             source_id: null,
             type: 'supplement',
-            label: 'Disclosures of Potential Conflicts of Interest PDF',
+            label: 'Disclosures of Potential Conflicts of Interest',
             url: this.URLBuilder(uri.getAttribute('xlink:href'), '.pdf', 'disclosure'),
             caption: null
           };
@@ -624,7 +624,7 @@ JbjsConverter.Prototype = function() {
             id: state.nextId('supplement'),
             source_id: null,
             type: 'supplement',
-            label: 'Disclosures of Potential Conflicts of Interest ZIP',
+            label: 'Disclosures of Potential Conflicts of Interest',
             url: this.URLBuilder(uri.getAttribute('xlink:href'), '.zip', 'disclosure'),
             caption: null
           };
