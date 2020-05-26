@@ -459,8 +459,11 @@ JbjsConverter.Prototype = function() {
     // Populate Publication Info node
     this.extractPublicationInfo(state, article);
 
+    // catch all unhandled foot-notes
+    this.extractFootNotes(state, article);
+
     this.showAffiliations(state, article);
-    this.showAuthorNotes(state, article);
+    this.showNotes(state, article);
 
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
@@ -683,7 +686,7 @@ JbjsConverter.Prototype = function() {
 
   this.enhanceArticle = function(state, article) {
     this.showAffiliations(state, article);
-    this.showAuthorNotes(state, article);
+    this.showNotes(state, article);
 
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
@@ -696,9 +699,15 @@ JbjsConverter.Prototype = function() {
     _.each(state.affiliations, function(n) {state.doc.show('info', n);});
   }
 
-  this.showAuthorNotes = function(state, article) {
+  this.showNotes = function(state, article) {
     _.each(state.authorNotes, function(n) {
       state.doc.show('info', n);
+    });
+    _.each(state.doc.subtitle.notes, function(n) {
+      var fn = state.doc.getNodeBySourceId(n);
+      if (fn && !state.authorNotes.includes(fn.id)) {
+        state.doc.show('info', fn.id);
+      }
     });
   }
 
