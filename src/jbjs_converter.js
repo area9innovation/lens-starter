@@ -558,7 +558,7 @@ JbjsConverter.Prototype = function() {
 
     // separate processing because financial-disclosure may have a few interleaved fn tags
     var financialDisclosureAttrs = ['financial-disclosure', 'conflict'];
-    var fns = article.querySelectorAll('back fn-group fn');
+    var fns = article.querySelectorAll('back fn-group fn, front author-notes fn');
 
     for (var i = 0; i < fns.length; ++i) {
       if (
