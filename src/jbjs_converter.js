@@ -449,6 +449,12 @@ JbjsConverter.Prototype = function() {
     // Extract ArticleMeta
     this.extractArticleMeta(state, article);
 
+    // workaround - do not show subtitle footnote reference in case of mobile abstract
+    // where we do not show footnotes. Should be done by checking whether we show references
+    if (!this.config.show_resources_panel && this.config.show_abstract_only) {
+      state.doc.subtitle.notes = [];
+    }
+
     if ( ! article.querySelector('front abstract') ) {
       var bodyP = article.querySelector('body p');
       if ( bodyP ) this.abstractFromParagraph(state, bodyP);
@@ -463,7 +469,7 @@ JbjsConverter.Prototype = function() {
     this.extractFootNotes(state, article);
 
     this.showAffiliations(state, article);
-    this.showNotes(state, article);
+    this.showBottomNotes(state, article);
 
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
@@ -686,7 +692,7 @@ JbjsConverter.Prototype = function() {
 
   this.enhanceArticle = function(state, article) {
     this.showAffiliations(state, article);
-    this.showNotes(state, article);
+    this.showBottomNotes(state, article);
 
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
@@ -699,7 +705,7 @@ JbjsConverter.Prototype = function() {
     _.each(state.affiliations, function(n) {state.doc.show('info', n);});
   }
 
-  this.showNotes = function(state, article) {
+  this.showBottomNotes = function(state, article) {
     _.each(state.bottomNotes, function(n) { state.doc.show('info', n); });
   }
 
