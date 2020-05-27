@@ -270,7 +270,7 @@ JbjsConverter.Prototype = function() {
 
     _.each(state.affiliations, function(n) {state.doc.show('content', n);});
 
-    _.each(state.authorNotes, function(n) {state.doc.show('content', n);});
+    _.each(state.bottomNotes, function(n) {state.doc.show('content', n);});
   };
 
   this.enhanceTable = function(state, node, tableWrap) {
@@ -700,15 +700,7 @@ JbjsConverter.Prototype = function() {
   }
 
   this.showNotes = function(state, article) {
-    _.each(state.authorNotes, function(n) {
-      state.doc.show('info', n);
-    });
-    _.each(state.doc.subtitle.notes, function(n) {
-      var fn = state.doc.getNodeBySourceId(n);
-      if (fn && !state.authorNotes.includes(fn.id)) {
-        state.doc.show('info', fn.id);
-      }
-    });
+    _.each(state.bottomNotes, function(n) { state.doc.show('info', n); });
   }
 
   this.enhanceArticleSDC = function(state, article, oneColumnArticle) {
