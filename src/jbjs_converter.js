@@ -87,6 +87,10 @@ JbjsConverter.Prototype = function() {
   this.__ignoreCustomMetaNamesHeader = [
     'peer-review-statement'
    ];
+  this.__financialDisclosureAttrs = [
+    'financial-disclosure',
+    'conflict'
+  ];
   // ignore all <custom-meta> tags. This duplicates the two above.
   this.__ignoreAllCustomMeta = true;
 
@@ -270,7 +274,7 @@ JbjsConverter.Prototype = function() {
 
     _.each(state.affiliations, function(n) {state.doc.show('content', n);});
 
-    _.each(state.bottomNotes, function(n) {state.doc.show('content', n);});
+    _.each(state.authorNotes, function(n) {state.doc.show('content', n);});
   };
 
   this.enhanceTable = function(state, node, tableWrap) {
@@ -469,7 +473,7 @@ JbjsConverter.Prototype = function() {
     this.extractFootNotes(state, article);
 
     this.showAffiliations(state, article);
-    this.showBottomNotes(state, article);
+    this.showAuthorNotes(state, article);
 
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
@@ -535,7 +539,37 @@ JbjsConverter.Prototype = function() {
     }
   };
 
+  // notes that come before copyright - non-referenced and subtitle
   this.extractNotes = function(state, article) {
+    var nodes = [];
+    var titleNodes = [];
+    var doc = state.doc;
+
+    // separate processing because financial-disclosure may have a few interleaved fn tags
+    var fns = article.querySelectorAll('back fn-group fn, front author-notes fn');
+
+    fns.forEach(function (note) {
+      var isNonDisclosureNote = !note.hasAttribute('fn-type')
+              || !this.__financialDisclosureAttrs.includes(note.getAttribute('fn-type'));
+      var isNotReferencedNote = !note.hasAttribute('id')
+              || article.querySelector('xref[ref-type=fn][rid=' + note.getAttribute('id') + ']') === null;
+      var isSubtitleNote = doc.subtitle.notes.includes(note.id);
+      if (isNonDisclosureNote && (isNotReferencedNote || isSubtitleNote)) {
+        if (isSubtitleNote) {
+          titleNodes.push(this.footnote(state, note, 'article-note').id);
+        } else {
+          var pars = this.bodyNodes(state, util.dom.getChildren(note));
+          _.each(pars, function(par) {
+            nodes.push(par.id);
+          });
+        }
+      }
+    }, this);
+
+    return titleNodes.concat(nodes);
+  };
+
+  this.extractCustomNotes = function(state, article) {
     var nodes = [];
     var doc = state.doc;
 
@@ -565,31 +599,9 @@ JbjsConverter.Prototype = function() {
       }
     }
 
-    // separate processing because financial-disclosure may have a few interleaved fn tags
-    var financialDisclosureAttrs = ['financial-disclosure', 'conflict'];
-    var fns = article.querySelectorAll('back fn-group fn, front author-notes fn');
-
-    for (var i = 0; i < fns.length; ++i) {
-      if (
-            (
-              !fns[i].hasAttribute('fn-type')
-              || !financialDisclosureAttrs.includes(fns[i].getAttribute('fn-type'))
-            )
-            && (
-              !fns[i].hasAttribute('id')
-              || article.querySelector('xref[ref-type=fn][rid=' + fns[i].getAttribute('id') + ']') === null
-            )
-        ) {
-        var pars = this.bodyNodes(state, util.dom.getChildren(fns[i]));
-        _.each(pars, function(par) {
-          nodes.push(par.id);
-        });
-      }
-    }
-
     var discls = [];
-    for (var i = 0; discls.length == 0 && i < financialDisclosureAttrs.length; i++ ) {
-      var attr = financialDisclosureAttrs[i];
+    for (var i = 0; discls.length == 0 && i <  this.__financialDisclosureAttrs.length; i++ ) {
+      var attr =  this.__financialDisclosureAttrs[i];
       discls = article.querySelectorAll('fn[fn-type=' + attr + ']');
     }
 
@@ -692,7 +704,7 @@ JbjsConverter.Prototype = function() {
 
   this.enhanceArticle = function(state, article) {
     this.showAffiliations(state, article);
-    this.showBottomNotes(state, article);
+    this.showAuthorNotes(state, article);
 
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
@@ -705,8 +717,8 @@ JbjsConverter.Prototype = function() {
     _.each(state.affiliations, function(n) {state.doc.show('info', n);});
   }
 
-  this.showBottomNotes = function(state, article) {
-    _.each(state.bottomNotes, function(n) { state.doc.show('info', n); });
+  this.showAuthorNotes = function(state, article) {
+    _.each(state.doc.authorNotes, function(n) { state.doc.show('info', n); });
   }
 
   this.enhanceArticleSDC = function(state, article, oneColumnArticle) {
