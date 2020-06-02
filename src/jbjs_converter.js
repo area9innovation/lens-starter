@@ -579,6 +579,11 @@ JbjsConverter.Prototype = function() {
       }
     }, this);
 
+    state.doc.authorNotes.forEach(function(sourceId) {
+      var note = state.xmlDoc.getElementById(sourceId);
+      this.footnote(state, note, 'author-note');
+    }, this);
+
     return titleNodes.concat(nodes);
   };
 
