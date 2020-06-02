@@ -274,7 +274,7 @@ JbjsConverter.Prototype = function() {
 
     _.each(state.affiliations, function(n) {state.doc.show('content', n);});
 
-    _.each(state.authorNotes, function(n) {state.doc.show('content', n);});
+    this.showAuthorNotes(state, 'content');
   };
 
   this.enhanceTable = function(state, node, tableWrap) {
@@ -473,7 +473,7 @@ JbjsConverter.Prototype = function() {
     this.extractFootNotes(state, article);
 
     this.showAffiliations(state, article);
-    this.showAuthorNotes(state, article);
+    this.showAuthorNotes(state, 'info');
 
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
@@ -539,6 +539,10 @@ JbjsConverter.Prototype = function() {
     }
   };
 
+  this.removeNoteId = function(array, noteId) {
+    var idx = array.findIndex(function(id) {return id == noteId});
+    if (idx != -1) array.splice(idx, 1);
+  }
   // notes that come before copyright - non-referenced and subtitle
   this.extractNotes = function(state, article) {
     var nodes = [];
@@ -549,20 +553,29 @@ JbjsConverter.Prototype = function() {
     var fns = article.querySelectorAll('back fn-group fn, front author-notes fn');
 
     fns.forEach(function (note) {
-      var isNonDisclosureNote = !note.hasAttribute('fn-type')
-              || !this.__financialDisclosureAttrs.includes(note.getAttribute('fn-type'));
-      var isNotReferencedNote = !note.hasAttribute('id')
-              || article.querySelector('xref[ref-type=fn][rid=' + note.getAttribute('id') + ']') === null;
+      var isDisclosureNote = note.hasAttribute('fn-type')
+              && this.__financialDisclosureAttrs.includes(note.getAttribute('fn-type'));
+      if (isDisclosureNote) {
+        // we have separate processing for disclosure
+        this.removeNoteId(state.doc.authorNotes, note.id);
+        this.removeNoteId(state.doc.subtitle.notes, note.id);
+        return;
+      }
+      var isReferencedNote = note.hasAttribute('id')
+        && article.querySelector('xref[ref-type=fn][rid=' + note.getAttribute('id') + ']') !== null;
       var isSubtitleNote = doc.subtitle.notes.includes(note.id);
-      if (isNonDisclosureNote && (isNotReferencedNote || isSubtitleNote)) {
+      // this goes to the upper part of info panel
+      var isArticleNote = isSubtitleNote || !isReferencedNote;
+      if (isArticleNote) {
         if (isSubtitleNote) {
           titleNodes.push(this.footnote(state, note, 'article-note').id);
-        } else {
+        } else if (!isReferencedNote) {
           var pars = this.bodyNodes(state, util.dom.getChildren(note));
           _.each(pars, function(par) {
             nodes.push(par.id);
           });
         }
+        this.removeNoteId(state.doc.authorNotes, note.id);
       }
     }, this);
 
@@ -704,7 +717,7 @@ JbjsConverter.Prototype = function() {
 
   this.enhanceArticle = function(state, article) {
     this.showAffiliations(state, article);
-    this.showAuthorNotes(state, article);
+    this.showAuthorNotes(state, 'info');
 
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
@@ -717,8 +730,13 @@ JbjsConverter.Prototype = function() {
     _.each(state.affiliations, function(n) {state.doc.show('info', n);});
   }
 
-  this.showAuthorNotes = function(state, article) {
-    _.each(state.doc.authorNotes, function(n) { state.doc.show('info', n); });
+  this.showAuthorNotes = function(state, panelName) {
+    _.each(state.doc.authorNotes, function(sourceId) {
+      var note = state.doc.getNodeBySourceId(sourceId);
+      if (note) {
+        state.doc.show(panelName, note.id);
+      }
+    });
   }
 
   this.enhanceArticleSDC = function(state, article, oneColumnArticle) {
