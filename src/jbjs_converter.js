@@ -31,6 +31,7 @@ var JbjsConverter = function(options, config) {
     this.viewMapping.video = 'content';
     this.viewMapping.infographic = 'content';
     this.viewMapping.videosummary = 'content';
+    this.viewMapping.authorinsights = 'content';
     this.viewMapping.supplement = 'content';
     this.viewMapping.eletter = 'content';
     this.viewMapping.eletter_submit = 'content';
@@ -52,6 +53,7 @@ var JbjsConverter = function(options, config) {
   } else {
     this.viewMapping.infographic = 'supplemental';
     this.viewMapping.videosummary = 'supplemental';
+    this.viewMapping.authorinsights = 'supplemental';
     this.viewMapping.supplement = 'supplemental';
     this.viewMapping.eletter = 'supplemental';
     this.viewMapping.eletter_submit = 'supplemental';
@@ -261,6 +263,8 @@ JbjsConverter.Prototype = function() {
     this.enhanceArticleSDC(state, article, true);
     this.extractELetters(state, article, true);
 
+    this.extractAuthorInsights(state, article);
+
     var header = {
       'type' : 'heading',
       'id' : state.nextId('heading'),
@@ -379,6 +383,59 @@ JbjsConverter.Prototype = function() {
     return videoSummaryReferenceNode;
   };
 
+  this.extractAuthorInsights = function(state, xmlDoc) {
+    var el = xmlDoc.querySelector('author-insights');
+
+    if (!el) return;
+
+    var nodes = [];
+
+    if (el._converted) return;
+
+    var node = this.authorInsights(state, el);
+    var refNode = this.authorInsightsReference(state, el, node);
+
+    refNode && nodes.push(refNode);
+    node && nodes.push(node);
+
+    this.show(state, nodes);
+  };
+
+  this.authorInsights = function(state, el) {
+    var doc = state.doc;
+
+    var authorInsightsNode = {
+      id: 'authorinsights',
+      type: 'authorinsights',
+      label: 'Author Insights',
+      url: el.getAttribute('video-id'),
+      url_webm: 'By Id',
+      poster: el.getAttribute('poster-url')
+    };
+
+    doc.create(authorInsightsNode);
+
+    el._converted = true;
+
+    return authorInsightsNode;
+  };
+
+  this.authorInsightsReference = function(state, el, node) {
+    var doc = state.doc;
+
+    var authorInsightsReferenceNode = {
+      id: 'authorinsights_reference',
+      type: 'authorinsights_reference',
+      path: [ node.id, 'content' ],
+      range: [ 0, node.length ],
+      target: node.id
+    };
+
+    doc.create(authorInsightsReferenceNode);
+
+    return authorInsightsReferenceNode;
+  };
+
   this.extractInfographic = function(state, xmlDoc) {
     var el = xmlDoc.querySelector('infographic');
 
@@ -479,6 +536,8 @@ JbjsConverter.Prototype = function() {
     this.extractInfographic(state, article);
 
     this.extractELetters(state, article, false);
+
+    this.extractAuthorInsights(state, article);
   };
 
   this.addLoginInfo = function(state) {
@@ -729,6 +788,8 @@ JbjsConverter.Prototype = function() {
 
     this.enhanceArticleSDC(state, article, false);
     this.extractELetters(state, article, false);
+
+    this.extractAuthorInsights(state, article);
   };
 
   this.showAffiliations = function(state, article) {

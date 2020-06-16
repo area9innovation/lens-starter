@@ -7,6 +7,8 @@ module.exports = {
   'infographic_reference': require('./infographic_reference'),
   'videosummary': require('./video'),
   'videosummary_reference': require('./videosummary_reference'),
+  'authorinsights': require('./video'),
+  'authorinsights_reference': require('./authorinsights_reference'),
   'eletter': require('./eletter'),
   'eletter_submit': require('./eletter_submit'),
   'eletter_reference': require('./eletter_reference')
