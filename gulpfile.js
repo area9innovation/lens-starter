@@ -9,6 +9,7 @@ var through2 = require('through2');
 var path = require('path');
 var streamify = require('gulp-streamify');
 var source = require('vinyl-source-stream');
+var bom = require('gulp-bom');
 
 gulp.task('assets', function (done) {
     gulp.src('assets/**/*', {base:"./assets"})
@@ -46,6 +47,7 @@ gulp.task('bundle', function () {
         })
         .pipe(uglify())
         .pipe(rename('lens.js'))
+		.pipe(bom())
         .pipe(gulp.dest('./dist'));
 });
 
