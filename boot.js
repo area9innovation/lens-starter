@@ -162,7 +162,8 @@ var qs = function () {
 // This document gets loaded by default
 // --------
 
-var isPIP = false;
+var isPAP = false;
+var isFullPAP = false;
 
 // devtrace global function. Not supported in IE
 (function(){
@@ -235,7 +236,10 @@ function onXmlLoaded(data) {
   window.dev.trace("onXmlLoaded");
   var volume = data.querySelector("article-meta volume");
   if( volume ) {
-    isPIP = volume.textContent=='Publish Ahead of Print';
+    isPAP = volume.textContent=='Publish Ahead of Print';
+  }
+  if( isPAP ) {
+    isFullPAP = data.querySelector("body") ? true : false;
   }
 
   var title = data.querySelector("article-title");
@@ -287,7 +291,7 @@ function onMenuReady() {
   $('img.orcid').attr('src', 'https://tech.area9innovation.com/jbjs/hub/pages/images/orcid_logo.png');
   $('.content-node.citation a.link').attr('target', '_blank');
 
-  if( isPIP ) {
+  if( isPAP && !isFullPAP) {
     $('.surface.resource-view.content').prepend('<div style="font-weight:bold;color:blue;position:fixed;z-index:1; width:45%;padding-left:50px;"><center>Abstract and PDF now available.</center><center>Full text HTML will be available upon publication in the next journal issue</center></div>');
     pipContentCorrection();
   }
@@ -313,7 +317,7 @@ function onReaderCreated() {
 
   $('a:contains("Please register or login to see full text of this article")').parent().css('padding-right','4.5rem');
 
-  if( isPIP ) {
+  if( isPAP  && !isFullPAP) {
     $('.surface.resource-view.content').prepend('<div class="saveposition" style="font-weight:bold;color:blue;position:fixed; left:35px;right:0;z-index:1;"><center>Abstract and PDF now available.</center><center>Full text HTML will be available upon publication in the next journal issue</center></div>');
     pipContentCorrection();
   }
