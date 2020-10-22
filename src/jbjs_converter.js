@@ -652,7 +652,17 @@ JbjsConverter.Prototype = function() {
 
     if ( this.config.show_pdf_href ) {
       var pdf = article.querySelector('self-uri[*|title=pdf]');
-      if( pdf && ! this.config.show_abstract_only ) {
+      if (!pdf) {
+        // if there is no xlink:title=pdf,
+        // let's take pdf from self-uri with THE ONLY xlink:href attribute with pdf-file name.
+        var pdfs = article.querySelectorAll('self-uri[*|href$=".pdf"]');
+        pdfs.forEach(function(p) {
+          if (p.attributes.length == 1) {
+            pdf = p;
+          }
+        });
+      }
+      if( pdf && !this.config.show_abstract_only ) {
         var url = this.URLBuilder(pdf.getAttribute('xlink:href'));
 
         if( this.config.storage_layout === 'jbjs_jtype' ) {
