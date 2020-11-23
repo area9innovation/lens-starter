@@ -90,6 +90,7 @@ JbjsConverter.Prototype = function() {
     'peer-review-statement'
    ];
   this.__financialDisclosureAttrs = [
+    'coi-statement',
     'financial-disclosure',
     'conflict'
   ];
