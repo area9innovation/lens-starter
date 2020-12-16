@@ -9,13 +9,17 @@ var FigureView = function(node, viewFactory, options) {
 
 FigureView.Prototype = function() {
   this.renderBody = function() {
+    dev.trace("render figure custom");
     this.content.appendChild($$('.label', {text: this.node.label}));
 
-    if (this.node.url) {
-      var imgEl = $$('.image-wrapper', {
-        children: [$$("img", {src: this.node.url})]
-      });
-      this.content.appendChild(imgEl);
+    if (this.node.urls.length) {
+      this.node.urls.forEach(function(url) {
+        // Add graphic (img element)
+        var imgEl = $$('.image-wrapper', {
+          children: [$$("img", {src: url})]
+        });
+        this.content.appendChild(imgEl);
+      }, this);
     }
 
     this.renderChildren();
