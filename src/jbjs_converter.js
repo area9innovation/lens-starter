@@ -150,15 +150,17 @@ JbjsConverter.Prototype = function() {
     var fpage = xmlDoc.querySelector("article-meta fpage");
     var elocation = xmlDoc.querySelector("article-meta elocation-id");
 
-    var page = fpage?fpage.textContent:elocation.textContent;
+    var page = fpage ? fpage.textContent : elocation.textContent;
     if( fpage && fpage.hasAttribute('seq') ) {
       page += 'a';
     }
 
-    var volumeText = volume?volume.textContent:'';
-    var issueText = issue?issue.textContent:'';
+    var volumeText = volume ? volume.textContent : '';
+    var issueText = issue ? issue.textContent : '';
 
-    this.imageFolder = volumeText + '_' + issueText + '_' + page + '(1)';
+    this.imageFolder = this.isPAParticle(volumeText)
+      ? 'PAP_' + page.replace(/\W/g, '') + '(1)'
+      : volumeText + '_' + issueText + '_' + page + '(1)'
 
     if ( this.config.uppercase ) {
       this.imageFolder = this.imageFolder.toUpperCase();
