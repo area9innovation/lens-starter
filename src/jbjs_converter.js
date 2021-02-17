@@ -673,7 +673,7 @@ JbjsConverter.Prototype = function() {
           var keywordsNode = {
             id: state.nextId('text'),
             type: 'text',
-            content: keywords.join(', ')
+            content: keywords.join('; ')
           };
 
           doc.create(keywordsNode);
