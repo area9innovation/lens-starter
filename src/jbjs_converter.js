@@ -649,6 +649,42 @@ JbjsConverter.Prototype = function() {
     return titleNodes.concat(nodes);
   };
 
+  this.extractKeywords = function(state, article) {
+    var nodes = [];
+    var doc = state.doc;
+
+    var kwdElements = article.querySelectorAll('kwd-group[kwd-group-type=author] kwd');
+    if (kwdElements.length) {
+        var keywords = [];
+        kwdElements.forEach(function(ke) {
+          var kw = ke.textContent.trim();
+          if (!keywords.includes(kw)) keywords.push(kw);
+        });
+        if (keywords.length) {
+          var header = {
+            type : 'heading',
+            id : state.nextId('heading'),
+            level : 3,
+            content : 'Keywords'
+          };
+          doc.create(header);
+          nodes.push(header.id);
+
+          var keywordsNode = {
+            id: state.nextId('text'),
+            type: 'text',
+            content: keywords.join(', ')
+          };
+
+          doc.create(keywordsNode);
+          nodes.push(keywordsNode.id);
+        }
+    }
+
+    return nodes;
+  };
+
+
   this.extractCustomNotes = function(state, article) {
     var nodes = [];
     var doc = state.doc;
@@ -785,6 +821,7 @@ JbjsConverter.Prototype = function() {
         }
 
     }
+
     return nodes;
   };
 
