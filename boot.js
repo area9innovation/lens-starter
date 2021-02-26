@@ -164,6 +164,7 @@ var qs = function () {
 
 var isPAP = false;
 var isFullPAP = false;
+var openFigureTab = false;
 
 // devtrace global function. Not supported in IE
 (function(){
@@ -232,6 +233,18 @@ $(function() {
 
 });
 
+function isFigureTabByDefault(data) {
+  const FIGURE_TAB_SUBJECT_HEADINGS = ["image quiz"];
+  var res = false;
+
+  var subjectEl = data.querySelector("subj-group[subj-group-type=heading] subject");
+  if (subjectEl) {
+    var subject = subjectEl.textContent.trim().toLowerCase();
+    res = FIGURE_TAB_SUBJECT_HEADINGS.includes(subject);
+  }
+  return res;
+}
+
 function onXmlLoaded(data) {
   window.dev.trace("onXmlLoaded");
   var volume = data.querySelector("article-meta volume");
@@ -241,6 +254,7 @@ function onXmlLoaded(data) {
   if( isPAP ) {
     isFullPAP = data.querySelector("body") ? true : false;
   }
+  openFigureTab = isFigureTabByDefault(data);
 
   var title = data.querySelector("article-title");
   var q = title?title.textContent:"";
@@ -307,6 +321,12 @@ function onMenuReady() {
     }
   });
 
+  if (openFigureTab) {
+      var aFigureTab = $('a.context-toggle.figures:not(.hidden)');
+      if (aFigureTab.length && !aFigureTab.first().hasClass('active')) {
+        aFigureTab.click();
+      }
+  }
 }
 
 function onReaderCreated() {
