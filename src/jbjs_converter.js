@@ -653,7 +653,7 @@ JbjsConverter.Prototype = function() {
     var nodes = [];
     var doc = state.doc;
 
-    var kwdElements = article.querySelectorAll('kwd-group[kwd-group-type=author] kwd');
+    var kwdElements = article.querySelectorAll('kwd-group kwd');
     if (kwdElements.length) {
         var keywords = [];
         kwdElements.forEach(function(ke) {
