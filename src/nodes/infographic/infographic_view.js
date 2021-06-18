@@ -42,7 +42,20 @@ InfographicView.Prototype = function() {
       this.content.appendChild($$('.label', { text: node.label }));
     }
 
-    this.content.appendChild($$('a', { class: 'link', href: node.url, text: 'Download' }));
+    var url = new URL(location),
+      urlParams = url.searchParams,
+      id = urlParams.get('rsuite_id'),
+      topics = urlParams.get('topics').split(/\+/);
+
+    this.content.appendChild(
+      $$('a', {
+        class: 'link jbjs_tracking',
+        jbjs_tracking_type: 'pdf',
+        jbjs_tracking_data: JSON.stringify({ id, type: 'infographic', topics }),
+        href: node.url,
+        text: 'Download'
+      })
+    );
 
     var isFullscreen = fullscreen.enabled() && fullscreen.isFullscreen(),
       toolbar = [
@@ -63,8 +76,8 @@ InfographicView.Prototype = function() {
           children: [
             $$('div', { class: 'progress-bar' }),
             $$('div', { class: 'pages' }),
-            $$('div', { 
-              class: 'toolbar', 
+            $$('div', {
+              class: 'toolbar',
               children: toolbar
             })
           ]
@@ -79,11 +92,11 @@ InfographicView.Prototype = function() {
     this.pagesContainer = this.progressBar.nextElementSibling;
 
     this.currentScale = 0;
-    this.pages = [], 
+    this.pages = [],
     this.lastScrollTop = 0;
     this.isReady = false;
     this.isManualZoom = false;
-  
+
     var that = this,
       loadingTask = pdfjsLib.getDocument({ url: node.url });
 
@@ -97,14 +110,14 @@ InfographicView.Prototype = function() {
         document.getElementById('zoom-out').addEventListener('click', function () { that.zoomOut(); });
 
         if (fullscreen.enabled()) {
-          document.getElementById('full-screen').addEventListener('click', function () { 
+          document.getElementById('full-screen').addEventListener('click', function () {
             var el = document.getElementById('full-screen');
 
             that.isManualZoom = false;
 
-            if (fullscreen.isFullscreen()) 
+            if (fullscreen.isFullscreen())
               fullscreen.exit()
-              .then(function () { 
+              .then(function () {
                 el.textContent = 'Full screen ON';
                 (that.node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop = that.lastScrollTop;
               });
@@ -112,9 +125,9 @@ InfographicView.Prototype = function() {
               that.lastScrollTop = (node.isMobile ? document.documentElement : document.querySelector('.surface.supplemental')).scrollTop;
 
               fullscreen.request(that.viewerContainer)
-              .then(function () { 
+              .then(function () {
                 el.textContent = 'Full screen OFF';
-              }); 
+              });
             }
           });
         }
@@ -150,7 +163,7 @@ InfographicView.Prototype = function() {
       hc = this.pagesContainer.clientHeight,
       wv = viewport.width,
       hv = viewport.height,
-      dimension = ((wc / hc) < (wv / hv)) ? 'Width' : 'Height',    
+      dimension = ((wc / hc) < (wv / hv)) ? 'Width' : 'Height',
       newScale = (this.pagesContainer['client' + dimension] - 32) / viewport[dimension.toLowerCase()],
       result = this.currentScale !== newScale;
 
@@ -195,9 +208,9 @@ InfographicView.Prototype = function() {
       page.render({
         canvasContext: canvas.getContext('2d'),
         viewport: viewport
-      }).promise.then(function () { 
-        that.isReady = true; 
-        resolve(); 
+      }).promise.then(function () {
+        that.isReady = true;
+        resolve();
       });
     });
   }
@@ -223,8 +236,8 @@ InfographicView.Prototype = function() {
   this.setDragScrollHandler = function () {
     var that = this,
       pages = that.pagesContainer,
-      pushed, 
-      lastClientX, 
+      pushed,
+      lastClientX,
       lastClientY,
       isTouch = 'ontouchstart' in window,
       startEvent = isTouch ? 'touchstart' : 'mousedown',
@@ -244,7 +257,7 @@ InfographicView.Prototype = function() {
 
     pages.addEventListener(endEvent, function (e) { pushed = 0; }, 0);
 
-    pages.addEventListener(moveEvent, function (e) { 
+    pages.addEventListener(moveEvent, function (e) {
       if (!pushed) return;
 
       var d = isTouch ? e.changedTouches[0] : e;

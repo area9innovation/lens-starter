@@ -25,18 +25,25 @@ ELetterView.Prototype = function() {
     var file;
 
     if( this.node.url ) {
-          file = $$('div.file', {
-          children: [
-            $$('span', {html: this.node.getHeader() }),
-            $$('a', {
-              href: this.node.url,
-              html: (this.node.icon?'<img src="' + this.node.icon + '"/>':'<i class="fa fa-download"/>') + ' Download',
-              target: '_blank',
-            })
-          ]
-        });
+      var urlParams = (new URL(location)).searchParams,
+        id = urlParams.get('rsuite_id'),
+        topics = urlParams.get('topics').split(/\+/);
+
+      file = $$('div.file', {
+        children: [
+          $$('span', {html: this.node.getHeader() }),
+          $$('a', {
+            class: 'jbjs_tracking',
+            jbjs_tracking_type: 'pdf',
+            jbjs_tracking_data: JSON.stringify({ id, type: 'eletter', topics }),
+            href: this.node.url,
+            html: (this.node.icon?'<img src="' + this.node.icon + '"/>':'<i class="fa fa-download"/>') + ' Download',
+            target: '_blank',
+          })
+        ]
+      });
     } else {
-        file = $$('div.file', {
+      file = $$('div.file', {
         children: [
           $$('span', {html: this.node.getHeader() }),
         ]
