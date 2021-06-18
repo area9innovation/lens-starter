@@ -55,6 +55,24 @@ VideoView.Prototype = function() {
       ]
     });
 
+    var u = new URL(location),
+      p = u.searchParams,
+      articleId = p.get('id'),
+      rsuiteId = p.get('rsuite_id'),
+      type = node.id === 'videosummary'
+        ? 'video_summary'
+        : (node.id === 'authorinsights'
+          ? 'author_insights'
+          : (node.id.indexOf('video') > -1
+            ? 'video'
+            : 'unknown'
+          )
+        );
+
+    video.classList.add('jbjs_tracking');
+    video.setAttribute('jbjs_tracking_type', 'video');
+    video.setAttribute('jbjs_tracking_data', JSON.stringify({ id: node.url, type, articleId, rsuiteId }));
+
     this.content.appendChild(video);
 
     if (node.title) {
