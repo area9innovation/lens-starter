@@ -42,8 +42,7 @@ InfographicView.Prototype = function() {
       this.content.appendChild($$('.label', { text: node.label }));
     }
 
-    var url = new URL(location),
-      urlParams = url.searchParams,
+    var urlParams = (new URL(location)).searchParams,
       id = urlParams.get('rsuite_id'),
       topics = urlParams.get('topics').split(/\+/);
 

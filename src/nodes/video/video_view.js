@@ -55,10 +55,9 @@ VideoView.Prototype = function() {
       ]
     });
 
-    var u = new URL(location),
-      p = u.searchParams,
-      articleId = p.get('id'),
-      rsuiteId = p.get('rsuite_id'),
+    var urlParams = (new URL(location)).searchParams,
+      articleId = urlParams.get('id'),
+      rsuiteId = urlParams.get('rsuite_id'),
       type = node.id === 'videosummary'
         ? 'video_summary'
         : (node.id === 'authorinsights'
