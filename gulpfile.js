@@ -1,5 +1,5 @@
 'use strict';
- 
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserify = require('browserify');
@@ -11,26 +11,24 @@ var streamify = require('gulp-streamify');
 var source = require('vinyl-source-stream');
 var bom = require('gulp-bom');
 
-gulp.task('assets', function (done) {
-    gulp.src('assets/**/*', {base:"./assets"})
+function assets() {
+    return gulp.src('assets/**/*', {base:"./assets"})
         .pipe(gulp.dest('dist'));
+}
 
-    gulp.src('data/**/*', {base:"."})
+function data() {
+    return gulp.src('data/**/*', {base:"."})
         .pipe(gulp.dest('dist'));
+}
 
-    done();
-});
-
-gulp.task('sass', function (done) {
-    gulp.src('./lens.scss')
+function css() {
+    return gulp.src('./lens.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(rename('lens.css'))
         .pipe(gulp.dest('./dist'));
+}
 
-    done();
-});
-
-gulp.task('bundle', function () {
+function bundle() {
     return gulp.src('./embedded.js')
         .pipe(through2.obj(function (file, enc, next) {
             browserify(file.path)
@@ -49,11 +47,12 @@ gulp.task('bundle', function () {
         .pipe(rename('lens.js'))
 		.pipe(bom())
         .pipe(gulp.dest('./dist'));
-});
+}
 
-gulp.task('worker', function () {
+function worker() {
     // We can create our own viewer (see worker.js) or use already defined one.
     var workerSrc = require.resolve('pdfjs-dist/build/pdf.worker.entry');
+
     return browserify(workerSrc, { output: 'lens.worker.tmp', })
         .bundle()
         .pipe(source('lens.worker.tmp'))
@@ -64,6 +63,6 @@ gulp.task('worker', function () {
         })))
         .pipe(rename('lens.worker.js'))
         .pipe(gulp.dest('./dist'));
-});
+}
 
-gulp.task('default', gulp.series('assets', 'sass', 'bundle', 'worker'));
+exports.default = gulp.series(assets, data, css, bundle, worker);

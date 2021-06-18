@@ -1,6 +1,10 @@
 {
   "name": "lens-starter",
   "description": "Custom Lens bundle.",
+  "scripts": {
+    "start": "node server.js .",
+    "bundle": "gulp"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
@@ -17,12 +21,12 @@
     "browserify": "*",
     "gulp": "^4.0.2",
     "gulp-bom": "^3.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^1.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
     "node-sass": "^4.14.1",
-    "pdfjs-dist": "^2.2.228",
-    "through2": "^2.0.0"
+    "pdfjs-dist": "*",
+    "through2": "^4.0.2"
   },
   "version": "2.0.0"
 }
