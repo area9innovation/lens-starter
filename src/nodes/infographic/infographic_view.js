@@ -51,7 +51,7 @@ InfographicView.Prototype = function() {
     this.content.appendChild(
       $$('a', {
         class: 'link jbjs_tracking',
-        jbjs_tracking_type: 'pdf',
+        jbjs_tracking_type: 'download',
         jbjs_tracking_data: JSON.stringify({ id, type: 'infographic', topics }),
         href: node.url,
         text: 'Download'

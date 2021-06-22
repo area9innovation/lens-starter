@@ -36,7 +36,7 @@ ELetterView.Prototype = function() {
           $$('span', {html: this.node.getHeader() }),
           $$('a', {
             class: 'jbjs_tracking',
-            jbjs_tracking_type: 'pdf',
+            jbjs_tracking_type: 'download',
             jbjs_tracking_data: JSON.stringify({ id, type: 'eletter', topics }),
             href: this.node.url,
             html: (this.node.icon?'<img src="' + this.node.icon + '"/>':'<i class="fa fa-download"/>') + ' Download',
