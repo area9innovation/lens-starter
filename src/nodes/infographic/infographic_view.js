@@ -44,7 +44,9 @@ InfographicView.Prototype = function() {
 
     var urlParams = (new URL(location)).searchParams,
       id = urlParams.get('rsuite_id'),
-      topics = urlParams.get('topics').split(/\+/);
+      topics = urlParams.get('topics');
+
+      topics = topics ? topics.split(/\+/) : [];
 
     this.content.appendChild(
       $$('a', {

@@ -27,7 +27,9 @@ ELetterView.Prototype = function() {
     if( this.node.url ) {
       var urlParams = (new URL(location)).searchParams,
         id = urlParams.get('rsuite_id'),
-        topics = urlParams.get('topics').split(/\+/);
+        topics = urlParams.get('topics');
+
+      topics = topics ? topics.split(/\+/) : [];
 
       file = $$('div.file', {
         children: [
