@@ -263,7 +263,7 @@ JbjsConverter.Prototype = function() {
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
 
-    this.enhanceArticleSDC(state, article, true);
+    this.extractSupplements(state, article, true);
     this.extractELetters(state, article, true);
 
     this.extractAuthorInsights(state, article);
@@ -537,6 +537,8 @@ JbjsConverter.Prototype = function() {
 
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
+
+    this.extractSupplements(state, article, false);
 
     this.extractELetters(state, article, false);
 
@@ -836,7 +838,7 @@ JbjsConverter.Prototype = function() {
     this.extractVideoSummary(state, article);
     this.extractInfographic(state, article);
 
-    this.enhanceArticleSDC(state, article, false);
+    this.extractSupplements(state, article, false);
     this.extractELetters(state, article, false);
 
     this.extractAuthorInsights(state, article);
@@ -855,45 +857,44 @@ JbjsConverter.Prototype = function() {
     });
   }
 
-  this.enhanceArticleSDC = function(state, article, oneColumnArticle) {
-    var sdcMeta = _.find(article.querySelectorAll('article-meta custom-meta-group#rsuite_files custom-meta'),
-      function(cm){ return cm.querySelector('meta-name').textContent == 'sdc'});
+  this.supplementReference = function(state, node) {
+    var doc = state.doc;
 
-    var files;
-    if ( sdcMeta ) {
-      files = sdcMeta.querySelectorAll('meta-value inline-supplementary-material');
+    var supplementReferenceNode = {
+      id: 'supplement_reference',
+      type: 'supplement_reference',
+      path: [ node.id, 'content' ],
+      range: [ 0, node.length ],
+      target: node.id
+    };
+
+    doc.create(supplementReferenceNode);
+
+    return supplementReferenceNode;
+  };
+
+  this.extractSupplements = function(state, article, oneColumnArticle) {
+    var meta = _.find(article.querySelectorAll('article-meta custom-meta-group#rsuite_files custom-meta'),
+      function(cm){ return cm.querySelector('meta-name').textContent == 'sdc'}),
+      files;
+
+    if (meta) {
+      files = meta.querySelectorAll('meta-value inline-supplementary-material');
     } else if( this.config.manifest ) {
       files = this.config.manifest.querySelectorAll('file');
     } else {
       return;
     }
 
-    var nodes = [];
-    var doc = state.doc;
-    var tabName = 'supplemental';
+    var nodes = [],
+      doc = state.doc;
 
-    if ( files.length > 0 ) {
-      if (oneColumnArticle) {
-        tabName = 'content';
+    if (files.length) {
+      for (var i = 0; i < files.length; i++) {
+        var label, url;
 
-        var header = {
-          type : 'heading',
-          id : state.nextId('heading'),
-          level : 1,
-          content : 'Supplementary Content',
-        };
-
-        doc.create(header);
-        nodes.push(header.id);
-        doc.show(tabName, header.id);
-
-      }
-
-      for (var i = 0; i < files.length; ++i) {
-        var label;
-        var url;
-        if ( sdcMeta ) {
-          label = files[i].textContent?files[i].textContent:'Data Supplement ' + (i + 1);
+        if (meta) {
+          label = files[i].textContent ? files[i].textContent : 'Data Supplement ' + (i + 1);
           url = this.URLBuilder(files[i].getAttribute('href'), '.supplement');
         } else {
           label = files[i].querySelector('description').textContent;
@@ -901,19 +902,24 @@ JbjsConverter.Prototype = function() {
         }
 
         var supplementNode = {
-          id: state.nextId('supplement'),
+          id: i ? state.nextId('supplement') : 'supplements',
           source_id: null,
           type: 'supplement',
           label: label,
           url: url,
-          caption: null
+          caption: (oneColumnArticle && !i) ? 'Supplementary Content' : null
         };
 
         doc.create(supplementNode);
-        nodes.push(supplementNode.id);
-        doc.show(tabName, supplementNode.id);
+        nodes.push(supplementNode);
       }
+
+      var refNode = this.supplementReference(state, nodes[0]);
+
+      nodes.unshift(refNode);
     }
+
+    this.show(state, nodes);
   };
 
   this.extractELetters = function(state, xmlDoc, oneColumnArticle) {
@@ -1000,97 +1006,7 @@ JbjsConverter.Prototype = function() {
 
     return nodes;
   };
-/*
-  this.extractELetters = function(state, article, oneColumnArticle) {
-    var eLettersMeta = _.find(article.querySelectorAll('article-meta custom-meta-group#rsuite_files custom-meta'),
-      function(cm){ return cm.querySelector('meta-name').textContent == 'eletters'});
 
-    var files;
-    if ( eLettersMeta ) {
-      files = eLettersMeta.querySelectorAll('meta-value inline-eletter-material');
-    } else if( this.config.manifest ) {
-      files = this.config.manifest.querySelectorAll('file');
-    } else {
-      return;
-    }
-
-    if ( !files.length ) return;
-
-    var nodes = [];
-    var doc = state.doc;
-    var tabName = 'supplemental';
-
-    if (oneColumnArticle) {
-      tabName = 'content';
-
-      var header = {
-        type : 'heading',
-        id : 'eletters',
-        level : 1,
-        content : 'eLetters',
-      };
-
-      doc.create(header);
-      doc.show(tabName, header.id);
-    }
-
-    var eletterSubmitNode = {
-      id: oneColumnArticle ? 'eletter_submit' : 'eletters',
-      source_id: null,
-      type: 'eletter_submit',
-      label: 'Submit eLetter',
-      url: 'http://eletters.jbjs.org/?__hstc=104777119.85d50a516d737ac12a8673577c84f375.1561055554490.1561055554490.1561055554490.1&__hssc=104777119.1.1561055554491&__hsfp=379383135',
-      caption: null,
-      image: this.ResourceURLBuilder('Letter_to_Editor_Widget_Icon_Small.png')
-    };
-
-    doc.create(eletterSubmitNode);
-
-    var eletterReferenceNode = oneColumnArticle
-      ? {
-          id: 'eletter_reference',
-          type: 'eletter_reference',
-          path: [ header.id, tabName ],
-          range: [ 0, header.length ],
-          target: header.id
-        }
-      : {
-          id: 'eletter_reference',
-          type: 'eletter_reference',
-          path: [ eletterSubmitNode.id, tabName ],
-          range: [ 0, eletterSubmitNode.length ],
-          target: eletterSubmitNode.id
-        };
-
-    doc.create(eletterReferenceNode);
-
-    doc.show(tabName, eletterSubmitNode.id);
-
-    for (var i = 0; i < files.length; ++i) {
-      var label;
-      var url;
-      if ( eLettersMeta ) {
-        label = files[i].textContent?files[i].textContent:'eLetter ' + (i + 1);
-        url = this.URLBuilder(files[i].getAttribute('href'), '.eletter');
-      } else {
-        label = files[i].querySelector('description').textContent;
-        url = this.URLBuilder(files[i].querySelector('filename').textContent);
-      }
-
-      var eletterNode = {
-        id: state.nextId('eletter'),
-        source_id: null,
-        type: 'eletter',
-        label: label,
-        url: url,
-        caption: null
-      };
-
-      doc.create(eletterNode);
-      doc.show(tabName, eletterNode.id);
-    }
-  };
-*/
   this.appOneColumn = function(state, app) {
     delete this._bodyNodes['table-wrap'];
 
@@ -1127,4 +1043,3 @@ JbjsConverter.prototype = new JbjsConverter.Prototype();
 JbjsConverter.prototype.constructor = JbjsConverter;
 
 module.exports = JbjsConverter;
-

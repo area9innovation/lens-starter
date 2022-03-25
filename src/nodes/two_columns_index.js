@@ -9,6 +9,7 @@ module.exports = {
   'videosummary_reference': require('./videosummary_reference'),
   'authorinsights': require('./video'),
   'authorinsights_reference': require('./authorinsights_reference'),
+  'supplement_reference': require('./supplement_reference'),
   'eletter': require('./eletter'),
   'eletter_submit': require('./eletter_submit'),
   'eletter_reference': require('./eletter_reference')
