@@ -7,13 +7,14 @@ var documentURL = "data/" +
 //"links_in_refs/Predatory Publishing in Orthopaedic Research.xml"
 //"links_in_refs/Influence of Acetabular Coverage on Hip Survival After Free Vascularized Fibular Grafting for Femoral Head Osteonecrosis.xml"
 //"99_1_10/99_1_10.xml"
-"mathml/JBJSOA-D-17-00063.xml"
+//"mathml/JBJSOA-D-17-00063.xml"
 //"example.xml"
 //"97_16_1354/97_16_1354.xml"
 //"5_4_e20/5_4_e20.xml"
 //"5_4_e19/5_4_e19.xml"
 //'97_15_1220/97_15_1220.xml'
 //'99_1_10/99_1_10.xml'
+'Anatomic Hip Center.xml'
 ;
 
 
