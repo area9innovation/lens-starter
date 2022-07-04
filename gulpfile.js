@@ -1,7 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var browserify = require('browserify');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
@@ -40,7 +40,7 @@ function bundle() {
                 });
         }))
         .on('error', function (error) {
-            console.log(error.stack);
+            console.log(error);
             this.emit('end');
         })
         .pipe(uglify())
