@@ -357,7 +357,7 @@ JbjsConverter.Prototype = function() {
     var videoSummaryNode = {
       id: 'videosummary',
       type: 'videosummary',
-      label: 'Video Summary',
+      label: 'Video Abstract',
       url: el.getAttribute('video-id'),
       url_webm: 'By Id',
       poster: el.getAttribute('poster-url')
