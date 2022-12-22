@@ -1,4 +1,5 @@
 
+
 var Document = require('lens/substance/document');
 var Annotation = require('lens/article/nodes/annotation/annotation');
 var ResourceReference = require('lens/article/nodes/resource_reference/resource_reference');
@@ -11,7 +12,7 @@ VideosummaryReference.type = {
   id: "videosummary_reference",
   parent: "resource_reference",
   properties: {
-    "target": "videosummary"
+    "target": "videoabstract"
   }
 };
 

@@ -355,7 +355,7 @@ JbjsConverter.Prototype = function() {
     var doc = state.doc;
 
     var videoSummaryNode = {
-      id: 'videosummary',
+      id: 'videoabstract',
       type: 'videosummary',
       label: 'Video Abstract',
       url: el.getAttribute('video-id'),
