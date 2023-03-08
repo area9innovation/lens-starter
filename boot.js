@@ -14,7 +14,9 @@ var documentURL = "data/" +
 //"5_4_e19/5_4_e19.xml"
 //'97_15_1220/97_15_1220.xml'
 //'99_1_10/99_1_10.xml'
-'Anatomic Hip Center.xml'
+// 'Anatomic Hip Center.xml'
+// 'JBJSOA-D-17-00063-mathml.xml'
+'poetry/What_s_Important_(Arts_and_Humanities)_Teach_Me_Orthopaedics.xml'
 ;
 
 

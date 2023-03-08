@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.2 20190208//EN" "JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:r="http://www.rsuitecms.com/rsuite/ns/metadata"
+  xmlns:xlink="http://www.w3.org/1999/xlink" article-type="editorial" dtd-version="1.2"
+  r:rsuiteId="19fbfea4-42b9-47ab-9292-6dbb0e31d8e5" xml:lang="EN">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">J Bone Joint Surg Am</journal-id>
+      <journal-id journal-id-type="publisher-id">jbjsam</journal-id>
+      <journal-title-group>
+        <journal-title>The Journal of Bone and Joint Surgery</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0021-9355</issn>
+      <issn pub-type="epub">1535-1386</issn>
+      <publisher>
+        <publisher-name>Journal of Bone and Joint Surgery, Inc.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">JBJS-D-22-01238</article-id>
+      <article-id pub-id-type="doi">10.2106/JBJS.22.01238</article-id>
+      <article-categories>
+        <subj-group subj-group-type="hwp-journal-coll">
+          <subject>0180</subject>
+        </subj-group>
+        <subj-group subj-group-type="heading">
+          <subject>The Orthopaedic Forum</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>What’s Important (Arts and Humanities): Teach Me Orthopaedics</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id authenticated="true" contrib-id-type="orcid">https://orcid.org/0000-0001-9500-1169</contrib-id>
+          <name>
+            <surname>Uppal</surname>
+            <given-names>Harjot</given-names>
+          </name>
+          <degrees>MBA</degrees>
+          <xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+          <xref ref-type="corresp" rid="cor1"><sup>a</sup></xref>
+        </contrib>
+        <aff id="aff1"><label>1</label>Albany Medical College, Albany, New York</aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="cor1"><label>a</label>Email: <email>hsuuppal12@gmail.com</email>
+        </corresp>
+        <fn fn-type="financial-disclosure" id="fn1">
+          <p>
+            <bold>Disclosure:</bold> The <bold>Disclosure of Potential Conflicts of Interest</bold> form is provided
+            with the online version of the article (<ext-link ext-link-type="uri"
+              xlink:href="http://links.lww.com/JBJS/H430">http://links.lww.com/JBJS/H430</ext-link>).
+          </p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>28</day>
+        <month>2</month>
+        <year>2023</year>
+      </pub-date>
+      <volume>Publish Ahead of Print</volume>
+      <elocation-id>10.2106/JBJS.22.01238</elocation-id>
+      <permissions>
+        <copyright-statement>Copyright © 2023 by The Journal of Bone and Joint Surgery, Incorporated
+        </copyright-statement>
+        <copyright-year>2023</copyright-year>
+      </permissions>
+      <self-uri xlink:href="JBJS.22.01238.pdf" xlink:title="pdf" />
+      <self-uri content-type="disclosure-zip" xlink:href="JBJS.22.01238.disclosure.zip" />
+      <counts>
+        <page-count count="1" />
+      </counts>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>PUBSTATE</meta-name>
+          <meta-value>POST-COPYEDIT</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+
+  <body>
+    <sec>
+      <title>Teach Me Orthopaedics</title>
+      <verse-group>
+        <verse-group>
+          <verse-line>The tools used in patient care</verse-line>
+          <verse-line>are required for fracture repair;</verse-line>
+          <verse-line>the femur reamed to make room for a rod</verse-line>
+          <verse-line>to fix the bone given by God.</verse-line>
+        </verse-group>
+        <verse-group>
+          <verse-line>You see, orthopaedic care</verse-line>
+          <verse-line>is much more than simple bone repairs.</verse-line>
+        </verse-group>
+        <verse-group>
+          <verse-line>One must know not only medicine and physiology</verse-line>
+          <verse-line>but also biomaterials, mechanics, and anatomy.</verse-line>
+          <verse-line>Preoperative work-up requires great aptitude</verse-line>
+          <verse-line>as the surgeries are of great magnitude.</verse-line>
+        </verse-group>
+        <verse-group>
+          <verse-line>Look at Frank Jobe who used a stitch</verse-line>
+          <verse-line>to resurrect Tommy John’s ability to pitch.</verse-line>
+          <verse-line>The players get the fame</verse-line>
+          <verse-line>but remember who helps prolong their game.</verse-line>
+        </verse-group>
+        <verse-group>
+          <verse-line>I crave to treat a career-ending ACL tear</verse-line>
+          <verse-line>and allow athletes to play without despair.</verse-line>
+          <verse-line>I want to dissect along the muscle plane</verse-line>
+          <verse-line>and use landmarks to keep my lane.</verse-line>
+        </verse-group>
+        <verse-group>
+          <verse-line>Teach me orthopaedics.</verse-line>
+        </verse-group>
+      </verse-group>
+    </sec>
+  </body>
+</article>
