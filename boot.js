@@ -330,6 +330,7 @@ function onMenuReady() {
         aFigureTab.click();
       }
   }
+  $('div.image-download').click(function() { downloadImage(this);});
 }
 
 function onReaderCreated() {
@@ -344,6 +345,7 @@ function onReaderCreated() {
     $('.surface.resource-view.content').prepend('<div class="saveposition" style="font-weight:bold;color:blue;position:fixed; left:35px;right:0;z-index:1;"><center>Abstract and PDF now available.</center><center>Full text HTML will be available upon publication in the next journal issue</center></div>');
     pipContentCorrection();
   }
+  $('div.image-download').click(function() { downloadImage(this);});
 }
 
 function pipContentCorrection() {
@@ -354,4 +356,16 @@ function pipContentCorrection() {
   } else if( $(node).hasClass('text') ) {
     $( node ).css('padding-top', '80px');
   }
+}
+
+function downloadImage(elem) {
+  const name = $(elem).attr('name');
+  if (!name) {
+    console.log("Image download error - image name is empty") ;
+    return;
+  }
+  const urlParams = (new URL(location)).searchParams;
+  const topics = urlParams.get('topics');
+  const id = urlParams.get('rsuite_id');
+  console.log(`download image '${name}', id = ${id}, topics = ${topics}`);
 }

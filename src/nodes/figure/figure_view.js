@@ -10,7 +10,22 @@ var FigureView = function(node, viewFactory, options) {
 FigureView.Prototype = function() {
   this.renderBody = function() {
     dev.trace("render figure custom");
-    this.content.appendChild($$('.label', {text: this.node.label}));
+
+    var header =  $$('div', {
+      class : 'header'
+    });
+    header.appendChild($$('.label', {text: this.node.label}));
+
+    if (this.node.names && this.node.names.length == 1) {
+      header.appendChild(
+        $$('div', {
+          class: 'image-download',
+          name: this.node.names[0],
+          html: `<i class="fa fa-download"></i>Download`,
+      }));
+    }
+
+    this.content.appendChild(header);
 
     if (this.node.urls.length) {
       this.node.urls.forEach(function(url) {
