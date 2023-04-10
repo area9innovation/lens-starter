@@ -3,7 +3,7 @@
 set baseDir=%~dp0
 set srcDir=%baseDir%\dist
 set hubDir=%baseDir%\..\jbjs\hub\www\pages\elensreader\
-set hubDir2=%baseDir%\..\jbjshub\www2\pages\elensreader\
+set hubDir2=%baseDir%\..\jbjs\hub\www2\pages\elensreader\
 
 echo Copy from lens-starter to hub
 echo.
