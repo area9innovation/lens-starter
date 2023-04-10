@@ -1,6 +1,6 @@
 var _ = require('underscore');
 
-var Document = require('lens/substance/document');
+var Document = require('../../lens/substance/document');
 
 // Lens.ELetter
 // -----------------

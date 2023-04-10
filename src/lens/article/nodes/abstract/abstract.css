@@ -1,0 +1,21 @@
+.lens-article .content-node.abstract {
+  background-color: rgba(35, 30, 30, 0.12);
+  z-index: 1;
+}
+
+.lens-article .content-node.abstract .content {
+  background: none;
+}
+
+.lens-article .content-node.abstract .content .sections {
+}
+
+.lens-article .content-node.abstract .sections .content-node {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.lens-article .content-node.abstract .sections ul.simple li .label {
+    padding-top: 5px;
+}

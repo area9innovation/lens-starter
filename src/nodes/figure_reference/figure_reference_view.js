@@ -1,6 +1,6 @@
 "use strict";
 
-var AnnotationView = require('lens/article/nodes/annotation/annotation_view');
+var AnnotationView = require('../../lens/article/nodes/annotation/annotation_view');
 
 var FigureReferenceView = function(node, viewFactory) {
   AnnotationView.call(this, node, viewFactory);

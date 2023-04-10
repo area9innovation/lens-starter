@@ -1,9 +1,9 @@
 "use strict";
 
 var _ = require("underscore");
-var $$ = require("lens/substance/application").$$;
-var NodeView = require("lens/article/nodes/node").View;
-var ResourceView = require('lens/article/resource_view');
+var $$ = require("../../lens/substance/application").$$;
+var NodeView = require("../../lens/article/nodes/node").View;
+var ResourceView = require('../../lens/article/resource_view');
 
 var VideoView = function(node, viewFactory, options) {
   NodeView.call(this, node, viewFactory);

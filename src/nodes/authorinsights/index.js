@@ -1,5 +1,5 @@
 "use strict";
-var LensNodes = require("lens/article/nodes");
+var LensNodes = require("../../lens/article/nodes");
 var AuthorInsightsModel = LensNodes["video"].Model;
 
 module.exports = {

@@ -1,6 +1,6 @@
 "use strict";
 
-var Document = require('lens/substance/document');
+var Document = require('../../lens/substance/document');
 
 var Infographic = function(node, document) {
   Document.Composite.call(this, node, document);

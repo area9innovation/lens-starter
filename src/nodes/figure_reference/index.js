@@ -1,4 +1,4 @@
-var LensNodes = require("lens/article/nodes");
+var LensNodes = require("../../lens/article/nodes");
 var FigureReferenceModel = LensNodes["figure_reference"].Model;
 
 module.exports = {

@@ -1,4 +1,4 @@
-var LensNodes = require("lens/article/nodes");
+var LensNodes = require("../../lens/article/nodes");
 var CrossReferenceModel = LensNodes["cross_reference"].Model;
 
 module.exports = {

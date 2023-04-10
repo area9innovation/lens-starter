@@ -1,0 +1,48 @@
+/* Publication Info */
+
+.lens-article .content-node.publication-info {
+  color: #333;
+  font-size: 16px;
+}
+
+.lens-article .content-node.publication-info table {
+  padding: 10px 0;
+  border: none;
+  width: 100%;
+}
+
+.lens-article .content-node.publication-info .meta-data > .dates {
+  margin-top: 10px;
+}
+
+.lens-article .content-node.publication-info .label {
+  float: left;
+  width: 100px;
+  font-size: 14px;
+  color: #999;
+}
+
+.lens-article .content-node.publication-info .value {
+  margin-left: 140px;
+}
+
+.article .resources .nodes > .content-node.publication-info > .content {
+  border: none;
+  padding: 20px;
+}
+
+.article .resources .nodes > .content-node.publication-info .content-node[data-id=articleinfo] .heading.level-3 .content {
+  font-size: 20px;
+  margin-top: 12px;
+  /* The 'content-node paragraph' below has a padding top making the space between the heading and text 22px rather than 12. */
+  /* margin-bottom: 12px; */
+}
+
+.article .resources .nodes > .content-node.publication-info .content-node[data-id=articleinfo] .content-node {
+  padding-top: 10px;
+}
+
+.article .resources .nodes > .content-node.publication-info .content-node[data-id=articleinfo] .content-node.footnote.article-note .content-node {
+  padding-top: 0;
+}
+

@@ -1,9 +1,9 @@
 "use strict";
 
 var _ = require('underscore');
-var NodeView = require("lens/article/nodes/node").View;
-var $$ = require("lens/substance/application").$$;
-var ResourceView = require('lens/article/resource_view');
+var NodeView = require("../../lens/article/nodes/node").View;
+var $$ = require("../../lens/substance/application").$$;
+var ResourceView = require('../../lens/article/resource_view');
 
 // Lens.ELetterSubmit.View
 // ==========================================================================
@@ -25,7 +25,7 @@ ELetterSubmitView.Prototype = function() {
     var node = this.node;
 
     if (!node.url) return;
-  
+
     if (node.caption) {
       this.content.appendChild($$('.label', { text: node.caption }));
     }

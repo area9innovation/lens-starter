@@ -1,5 +1,5 @@
 
 module.exports = {
   Model: require('./videosummary_reference'),
-  View: require('lens/article/nodes/resource_reference/resource_reference_view')
+  View: require('../../lens/article/nodes/resource_reference/resource_reference_view')
 };

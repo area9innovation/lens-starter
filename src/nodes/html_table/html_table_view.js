@@ -1,6 +1,6 @@
 "use strict";
 
-var HTMLTableView = require('lens/article/nodes/html_table').View;
+var HTMLTableView = require('../../lens/article/nodes/html_table').View;
 
 var InlineHTMLTableView = function(node, viewFactory, options) {
 	HTMLTableView.apply(this, arguments);

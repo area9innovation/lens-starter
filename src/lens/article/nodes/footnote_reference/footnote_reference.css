@@ -1,0 +1,20 @@
+/* Footnote reference Node
+-------------------------------------------------------------------------------*/
+.caption .sm-expanded .footnote {
+  position: relative;
+}
+
+
+.sm-expanded .footnote {
+  background: lightgray;
+  position: absolute;
+  margin: 0;
+  padding: 10px;
+  right: 0;
+  left: 0;
+}
+
+.footnote-reference a {
+  border: none;
+  padding-left: 0;
+}

@@ -10,15 +10,21 @@ var path = require('path');
 var streamify = require('gulp-streamify');
 var source = require('vinyl-source-stream');
 var bom = require('gulp-bom');
+var clean = require('gulp-clean');
 
 function assets() {
-    return gulp.src('assets/**/*', {base:"./assets"})
+    return gulp.src(['assets/**/*', '!assets/index.html' ], {base:"./assets"})
         .pipe(gulp.dest('dist'));
 }
 
 function data() {
     return gulp.src('data/**/*', {base:"."})
         .pipe(gulp.dest('dist'));
+}
+
+function clean_dist() {
+	return gulp.src(['dist/*', '!dist/'], {read: false})
+		.pipe(clean());
 }
 
 function css() {
@@ -65,4 +71,4 @@ function worker() {
         .pipe(gulp.dest('./dist'));
 }
 
-exports.default = gulp.series(assets, data, css, bundle, worker);
+exports.default = gulp.series(clean_dist, assets, css, bundle, worker);

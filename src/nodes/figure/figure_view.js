@@ -1,7 +1,7 @@
 "use strict";
 
-var $$ = require ("lens/substance/application").$$;
-var OriginalFigureView = require('lens/article/nodes/figure').View;
+var $$ = require ("../../lens/substance/application").$$;
+var OriginalFigureView = require('../../lens/article/nodes/figure').View;
 
 var FigureView = function(node, viewFactory, options) {
   OriginalFigureView.apply(this, arguments);

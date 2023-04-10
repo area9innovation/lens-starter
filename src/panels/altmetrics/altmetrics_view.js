@@ -1,4 +1,4 @@
-var PanelView = require('lens/reader').PanelView;
+var PanelView = require('../../lens/reader').PanelView;
 
 var AltmetricsView = function(panelCtrl, config) {
   PanelView.call(this, panelCtrl, config);
@@ -17,12 +17,12 @@ AltmetricsView.Prototype = function() {
 
     this.controller.getAltmetrics(function(err, altmetrics) {
       if (!err) {
-        self.renderAltmetrics(altmetrics);  
+        self.renderAltmetrics(altmetrics);
       } else {
         console.error("Could not retrieve altmetrics data:", err);
       }
     });
-    
+
     return this;
   };
 

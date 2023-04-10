@@ -1,7 +1,7 @@
 "use strict";
 
-var Lens = require("lens/reader");
-  
+var Lens = require("./lens/reader");
+
 var JbjsConverter = require("./jbjs_converter");
 var FollowCitationRefs = require("./workflows/follow_citation_refs");
 var TableScaling = require("./workflows/table_scaling");
@@ -19,10 +19,10 @@ panels.push(supplementalPanel);
 
 var LensApp = function(config) {
   this.config = config;
-  
+
   this.config.scrollbar_position = this.config.scrollbar_position ||
     (( this.config.show_resources_panel !== undefined && this.config.show_resources_panel === false)
-      ? 'none' 
+      ? 'none'
       : 'left');
 
   Lens.call(this, config);
@@ -32,7 +32,7 @@ LensApp.Prototype = function() {
 
   // Custom converters
   // --------------
-  // 
+  //
   // Provides a sequence of converter instances
   // Converter.match will be called on each instance with the
   // XML document to processed. The one that returns true first
@@ -53,7 +53,7 @@ LensApp.Prototype = function() {
     if ( this.config.show_resources_panel ) {
       var ws = this.constructor.Prototype.prototype.getWorkflows.call(this).slice(0);
       ws.unshift(new BrightcoveVideos(this.config.bcvideo_account_id, this.config.bcvideo_player_id));
-      
+
       if ( this.config.full_screen_toggler ) {
         ws.unshift(new ExternalMenu(this.config.full_screen_toggler, this.config.external_menu_cb));
       }

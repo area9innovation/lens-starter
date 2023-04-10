@@ -1,7 +1,7 @@
 "use strict";
 
 var _ = require("underscore");
-var Workflow = require('lens/reader/workflows/workflow');
+var Workflow = require('../lens/reader/workflows/workflow');
 
 var ExternalMenu = function(fullScreenToggler, externalMenuCB) {
   Workflow.apply(this);
@@ -24,14 +24,14 @@ ExternalMenu.Prototype = function() {
     if ( this.pass > 1 ) return;
 
     $('.resources .menu-bar').append('<div class="context-toggles external-menu"><a href="#" class="fullscreen">' + this.fullScreenToggler() + '</a></div>');
-    
+
     var this_ = this;
     $('.resources .menu-bar a.fullscreen').on('click', function() {
       $('.resources .menu-bar a.fullscreen').text(this_.toggleFullScreen());
     });
 
     if( this.externalMenuCB ) this.externalMenuCB();
-    
+
     return false;
   };
 
@@ -48,9 +48,9 @@ ExternalMenu.Prototype = function() {
     var text = this.fullScreenToggler();
 
     this.readerView.contentView.surface.$el.scrollTop(scrollTop);
-    
+
     if ( panelScrollTop ) {
-      currentPanel.surface.$el.scrollTop(panelScrollTop); 
+      currentPanel.surface.$el.scrollTop(panelScrollTop);
     }
 
     return text;

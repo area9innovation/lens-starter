@@ -1,7 +1,7 @@
 "use strict";
 
 var _ = require('underscore');
-var Workflow = require('lens/reader/workflows/workflow');
+var Workflow = require('../lens/reader/workflows/workflow');
 
 var ScrollToReference = function() {
   Workflow.apply(this, arguments);

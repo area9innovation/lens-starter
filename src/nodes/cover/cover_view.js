@@ -1,6 +1,6 @@
-var LensNodes = require("lens/article/nodes");
+var LensNodes = require("../../lens/article/nodes");
 var CoverView = LensNodes["cover"].View;
-var $$ = require("lens/substance/application").$$;
+var $$ = require("../../lens/substance/application").$$;
 
 var CustomCoverView = function(node, viewFactory) {
   CoverView.call(this, node, viewFactory);
@@ -24,7 +24,7 @@ CustomCoverView.Prototype = function() {
 
     // Prepend
     this.content.insertBefore(introEl, this.content.firstChild);
-    
+
     return this;
   }
 };

@@ -1,11 +1,11 @@
 'use strict';
 
 var _ = require('underscore');
-var util = require('lens/substance/util');
+var util = require('./lens/substance/util');
 
-var LensConverter = require('lens/converter');
+var LensConverter = require('./lens/converter');
 
-var LensArticle = require('lens/article');
+var LensArticle = require('./lens/article');
 var CustomNodeTypes = require('./nodes');
 var TwoColumnsCustomNodeTypes = require('./nodes/two_columns_index');
 var CrossReferenceAbstractOnly = require('./nodes/cross_reference');

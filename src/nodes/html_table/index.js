@@ -1,5 +1,5 @@
 "use strict";
-var LensNodes = require("lens/article/nodes");
+var LensNodes = require("../../lens/article/nodes");
 var HtmlTableModel = LensNodes["html_table"].Model;
 
 module.exports = {

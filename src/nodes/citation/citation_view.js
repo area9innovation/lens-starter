@@ -1,6 +1,6 @@
 "use strict";
 
-var CitationView = require('lens/article/nodes/citation').View;
+var CitationView = require('../../lens/article/nodes/citation').View;
 
 var InlineCitationView = function(node, viewFactory, options) {
   CitationView.apply(this, arguments);

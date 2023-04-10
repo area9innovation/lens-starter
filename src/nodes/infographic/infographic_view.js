@@ -1,9 +1,9 @@
 "use strict";
 
 var _ = require('underscore');
-var $$ = require ("lens/substance/application").$$;
-var ResourceView = require('lens/article/resource_view');
-var NodeView = require("lens/article/nodes/node").View;
+var $$ = require ("../../lens/substance/application").$$;
+var ResourceView = require('../../lens/article/resource_view');
+var NodeView = require("../../lens/article/nodes/node").View;
 var pdfjsLib = require('pdfjs-dist');
 var fullscreen = require('./fullscreen');
 

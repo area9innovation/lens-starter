@@ -1,8 +1,8 @@
 "use strict";
 
 var _ = require("underscore");
-var NodeView = require("lens/article/nodes/node").View;
-var $$ = require("lens/substance/application").$$;
+var NodeView = require("../../lens/article/nodes/node").View;
+var $$ = require("../../lens/substance/application").$$;
 
 var AffiliationView = function(node, viewFactory, options) {
   NodeView.call(this, node, viewFactory);

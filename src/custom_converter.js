@@ -1,8 +1,8 @@
 "use strict";
 
-var LensConverter = require('lens/converter');
+var LensConverter = require('./lens/converter');
 
-var LensArticle = require("lens/article");
+var LensArticle = require("./lens/article");
 var CustomNodeTypes = require("./nodes");
 
 var CustomConverter = function(options) {
@@ -27,7 +27,7 @@ CustomConverter.Prototype = function() {
 
   // Resolve figure urls
   // --------
-  // 
+  //
 
   this.enhanceFigure = function(state, node, element) {
     var graphic = element.querySelector("graphic");

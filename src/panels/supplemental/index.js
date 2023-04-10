@@ -1,6 +1,6 @@
 "use strict";
 
-var ContainerPanel = require('lens/reader').ContainerPanel;
+var ContainerPanel = require('../../lens/reader').ContainerPanel;
 
 var panel = new ContainerPanel({
   type: 'resource',

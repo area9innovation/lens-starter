@@ -1,0 +1,22 @@
+.content-node.figure-group { 
+}
+ 
+.content-node.figure-group .content { 
+}
+
+.document .content-node.figure-group > .content {
+    padding: 15px;
+    border: 1px solid #ddd; 
+}
+
+.content-node.figure-group .caption .caption-title {
+    color: #777;
+}
+
+.resources .content-node.figure-group > .content {
+    padding: 15px;
+}
+
+.fullscreen .action-toggle-resource {
+	display: none;
+}

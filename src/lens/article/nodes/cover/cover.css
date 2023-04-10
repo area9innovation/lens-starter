@@ -1,0 +1,107 @@
+.lens-article .content-node.cover {
+  text-align: center;
+}
+
+.lens-article .content-node.cover .content {
+  background: none;
+}
+
+.lens-article .content-node.cover .title {
+  font-weight: 600;
+  line-height: 1.3em;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.lens-article .content-node.cover .subtitle {
+  font-weight: 600;
+  line-height: 1.3em;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.lens-article .content-node.cover .subtitle .label {
+    font-size: 12px;
+    padding: 0 2px 0 2px;
+    margin: 0 2px 0 2px;
+    text-align: center;
+}
+
+
+.lens-article .content-node.cover .subjects {
+
+}
+
+.lens-article .content-node.cover .published-on {
+  color: #999;
+}
+
+.lens-article .content-node.cover .published-on a {
+  font-weight: 600;
+  color: #999;
+}
+
+.lens-article .content-node.cover .published-on a:hover {
+  color: #0277BD;
+}
+
+.lens-article .content-node.cover .doi {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.lens-article .content-node.cover .content .authors {
+  padding-top: 30px;
+  color: #1B6685;
+  overflow: auto;
+  margin-bottom: 24px;
+}
+
+.lens-article .content-node.cover .content .links {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.lens-article .content-node.cover .content .links a {
+  padding-left: 4px;
+  margin-right: 20px;
+}
+
+/* One para per author */
+.lens-article .content-node.cover .authors .text {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  font-size: 17px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.lens-article .content-node.cover .authors .text.plain {
+  color: #777;
+  padding-left: 1px;
+}
+
+.lens-article .intro {
+  font-size: 13px;
+  background: #FFFEF5;
+  border: 1px solid#D8D9C1;
+  color: rgba(0,0,0,0.6);
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.lens-article .intro .intro-text {
+  float: left;
+}
+
+.lens-article .intro .send-feedback {
+  float: right;
+  color: #E40000;
+  font-weight: bold;
+}
+
+.lens-article .intro .send-feedback:hover {
+  color: #ff0000;
+}
