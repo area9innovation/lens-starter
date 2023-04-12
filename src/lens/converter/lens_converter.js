@@ -1464,7 +1464,7 @@ NlmToLensConverter.Prototype = function() {
 
   this.makeNoteReferences = function(state) {
     var doc = state.doc;
-    var notes = doc.authorNotes.concat(doc.subtitle.notes);
+    var notes = [].concat(doc.authorNotes, doc.title.notes, doc.subtitle.notes);
     notes.forEach(function(sourceId) {
       var footnote = doc.getNodeBySourceId(sourceId);
       if (!footnote || !footnote.properties || footnote.properties.label == '') {
@@ -1509,14 +1509,18 @@ NlmToLensConverter.Prototype = function() {
     }
   };
 
-  this.titleGroup = function(state, titleGroup) {
-    var doc = state.doc;
-    var articleTitle = titleGroup.querySelector("article-title");
-    if (articleTitle) {
-      doc.title = this.annotatedText(state, articleTitle, ['document', 'title'], {
-        ignore: ['xref']
-      });
-    }
+	this.titleGroup = function(state, titleGroup) {
+		var doc = state.doc;
+		const articleTitle = titleGroup.querySelector("article-title");
+		if (articleTitle) {
+			doc.title.text = this.annotatedText(state, articleTitle, ['document', 'title', 'text'], {
+				ignore: ['xref']
+			});
+			const titleNotes = articleTitle.querySelectorAll("xref[rid^='fn']");
+			titleNotes.forEach(function(note) {
+				doc.title.notes.push(note.getAttribute('rid'));
+			});
+		}
 
     var articleSubtitle = titleGroup.querySelector("subtitle");
     if (articleSubtitle) {

@@ -316,13 +316,13 @@ function onMenuReady() {
 //  $('.pubmed').css('display', 'none');
 //  $('.googlescholar').css('display', 'none');
 
-  //click on subtitle footnote should activate Info tab if not yet
-  $('span.label.annotation.cross_reference.subtitle').click(function() {
-    var aInfo = $('a.context-toggle.info');
-    if(!aInfo.hasClass('active')) {
-      aInfo.click();
-    }
-  });
+	//click on title/subtitle footnote should activate Info tab if not yet
+	$('span.label.annotation.cross_reference.title, span.label.annotation.cross_reference.subtitle').click(function() {
+    	var aInfo = $('a.context-toggle.info');
+    	if(!aInfo.hasClass('active')) {
+      		aInfo.click();
+    	}
+  	});
 
   if (openFigureTab) {
       var aFigureTab = $('a.context-toggle.figures:not(.hidden)');

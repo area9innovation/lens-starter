@@ -20,11 +20,19 @@
   padding-top: 10px;
 }
 
-.lens-article .content-node.cover .subtitle .label {
-    font-size: 12px;
+.lens-article .content-node.cover .label {
     padding: 0 2px 0 2px;
     margin: 0 2px 0 2px;
     text-align: center;
+}
+
+.lens-article .content-node.cover .title .label {
+    font-size: 20px;
+	top: -0.2em;
+}
+
+.lens-article .content-node.cover .subtitle .label {
+    font-size: 12px;
 }
 
 

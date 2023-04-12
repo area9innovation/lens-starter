@@ -513,9 +513,10 @@ JbjsConverter.Prototype = function() {
     // Extract ArticleMeta
     this.extractArticleMeta(state, article);
 
-    // workaround - do not show subtitle footnote reference in case of mobile abstract
+    // workaround - do not show subtitle/title footnote reference in case of mobile abstract
     // where we do not show footnotes. Should be done by checking whether we show references
     if (!this.config.show_resources_panel && this.config.show_abstract_only) {
+      state.doc.title.notes = [];
       state.doc.subtitle.notes = [];
     }
 
@@ -607,7 +608,7 @@ JbjsConverter.Prototype = function() {
     var idx = array.findIndex(function(id) {return id == noteId});
     if (idx != -1) array.splice(idx, 1);
   }
-  // notes that come before copyright - non-referenced and subtitle
+  // notes that come before copyright - non-referenced + title + subtitle
   this.extractNotes = function(state, article) {
     var nodes = [];
     var titleNodes = [];
@@ -622,16 +623,18 @@ JbjsConverter.Prototype = function() {
       if (isDisclosureNote) {
         // we have separate processing for disclosure
         this.removeNoteId(state.doc.authorNotes, note.id);
+        this.removeNoteId(state.doc.title.notes, note.id);
         this.removeNoteId(state.doc.subtitle.notes, note.id);
         return;
       }
       var isReferencedNote = note.hasAttribute('id')
         && article.querySelector('xref[ref-type=fn][rid=' + note.getAttribute('id') + ']') !== null;
-      var isSubtitleNote = doc.subtitle.notes.includes(note.id);
+      const isSubtitleNote = doc.subtitle.notes.includes(note.id);
+      const isTitleNote = doc.title.notes.includes(note.id);
       // this goes to the upper part of info panel
-      var isArticleNote = isSubtitleNote || !isReferencedNote;
+      const isArticleNote = isTitleNote || isSubtitleNote || !isReferencedNote;
       if (isArticleNote) {
-        if (isSubtitleNote) {
+		if (isTitleNote || isSubtitleNote) {
           titleNodes.push(this.footnote(state, note, 'article-note').id);
         } else if (!isReferencedNote) {
           var pars = this.bodyNodes(state, util.dom.getChildren(note));

@@ -31,7 +31,10 @@ var Article = function(options) {
       creator: options.creator,
       created_at: options.created_at,
       views: Article.views, // is views really needed on the instance level
-      title: "",
+      title: {
+        text: "",
+        notes: [] // footnote ids
+      },
       subtitle: {
         text: "",
         notes: [] // ids from footnote elements

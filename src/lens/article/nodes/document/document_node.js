@@ -13,7 +13,10 @@ DocumentNode.type = {
     "views": ["array", "view"],
     "guid": "string",
     "creator": "string",
-    "title": "string",
+    "title": {
+        "text": "string",
+        "notes": ["array", "string"]
+    },
     "subtitle": {
         "text": "string",
         "notes": ["array", "string"]

@@ -24,9 +24,9 @@ CoverView.Prototype = function() {
   //   .caption
   //   .doi
 
-  this.render = function() {
-    dev.trace("render - Cover");
-    NodeView.prototype.render.call(this);
+this.render = function() {
+	dev.trace("render - Cover");
+	NodeView.prototype.render.call(this);
 
     var node = this.node;
     var doc = this.node.document;
@@ -37,11 +37,24 @@ CoverView.Prototype = function() {
     // --------------
     //
 
-    var titleView = this.createTextPropertyView(['document', 'title'], { classes: 'title', elementType: 'div' });
-    this.content.appendChild(titleView.render().el);
-    this.content.appendChild(titleView.render().el);
+    const titleView = this.createTextPropertyView(['document', 'title', 'text'], { classes: 'title', elementType: 'div' });
+    const titleEl = this.content.appendChild(titleView.render().el);
+	const title = this.node.getTitle();
+	if (title.notes.length) {
+		this.content.appendChild($$('.footnotes', {
+			children: _.map(title.notes, function(fnId) {
+				const fn = doc.getNodeBySourceId(fnId);
+				if (fn && fn.label.length > 0 ) {
+					titleEl.appendChild($$('span.label .annotation .cross_reference .title',
+						{'data-id': fn.properties.reference_id, text: fn.label}
+					));
+				}
+				return $$('span', {text: ''});
+			})
+		}))
+	}
 
-    var subtitle = this.node.getSubtitle();
+	const subtitle = this.node.getSubtitle();
     if( subtitle ) {
       var subtitleView = this.createTextPropertyView(['document', 'subtitle', 'text'], { classes: 'subtitle', elementType: 'div' });
       var subtitleEl = subtitleView.render().el;
