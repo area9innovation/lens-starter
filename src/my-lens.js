@@ -18,12 +18,15 @@ var panels = Lens.getDefaultPanels();
 panels.push(supplementalPanel);
 
 var LensApp = function(config) {
+	// Lens entry point
   this.config = config;
 
+  this.config.layout = config.layout || 'mobile';
+  this.config.isMobile =  this.config.layout === 'mobile';
+  this.config.isDesktop = !this.config.isMobile;
+
   this.config.scrollbar_position = this.config.scrollbar_position ||
-    (( this.config.show_resources_panel !== undefined && this.config.show_resources_panel === false)
-      ? 'none'
-      : 'left');
+    (this.config.isMobile ? 'none' : 'left');
 
   Lens.call(this, config);
 };
@@ -50,7 +53,7 @@ LensApp.Prototype = function() {
   };
 
   this.getWorkflows = function() {
-    if ( this.config.show_resources_panel ) {
+    if ( this.config.isDesktop ) {
       var ws = this.constructor.Prototype.prototype.getWorkflows.call(this).slice(0);
       ws.unshift(new BrightcoveVideos(this.config.bcvideo_account_id, this.config.bcvideo_player_id));
 

@@ -22,9 +22,11 @@ var JbjsConverter = function(options, config) {
   this.config.show_pdf_href = this.config.show_pdf_href || false;
   this.config.show_datasharing_href = this.config.show_datasharing_href || false;
 
+  this.config.show_resources_panel = this.config.isDesktop;
+
   LensConverter.call(this, options);
 
-  if ( !config.show_resources_panel || config.show_abstract_only ) {
+  if ( this.config.isMobile || config.show_abstract_only ) {
     this.viewMapping.figure = 'content';
     this.viewMapping.figure_group = 'content';
     this.viewMapping.html_table = 'content';
@@ -35,6 +37,7 @@ var JbjsConverter = function(options, config) {
     this.viewMapping.supplement = 'content';
     this.viewMapping.eletter = 'content';
     this.viewMapping.eletter_submit = 'content';
+
     this.createDocument = this.createDocumentOneColumn;
     this.enhanceArticle = this.enhanceArticleOneColumn;
     this.enhanceTable = this.enhanceTableOneColumn;
@@ -51,6 +54,10 @@ var JbjsConverter = function(options, config) {
       this.setAbstractOnly();
     }
   } else {
+	this.viewMapping.figure = 'figures';
+	this.viewMapping.figure_group = 'figures';
+	this.viewMapping.html_table = 'figures';
+	this.viewMapping.video = 'figures';
     this.viewMapping.infographic = 'supplemental';
     this.viewMapping.videosummary = 'supplemental';
     this.viewMapping.authorinsights = 'supplemental';
@@ -101,9 +108,13 @@ JbjsConverter.Prototype = function() {
     if ( this.config.storage_layout === 'db' ) {
       this.docBaseUrl = docUrl;
       this.imageBaseUrl = this.config.image_url ? this.config.image_url : this.docBaseUrl;
+      this.pdfBaseUrl = this.config.pdf_url ? this.config.pdf_url : this.docBaseUrl;
+      this.contentBaseUrl = this.config.content_url ? this.config.content_url : this.docBaseUrl;
     } else {
-      this.docBaseUrl = docUrl.split('/').slice(0, -1).join('/');
-      this.imageBaseUrl = this.docBaseUrl;
+		this.docBaseUrl = docUrl.split('/').slice(0, -1).join('/');
+		this.imageBaseUrl = this.docBaseUrl;
+		this.pdfBaseUrl = this.docBaseUrl;
+		this.contentBaseUrl = this.docBaseUrl;
     }
 
 //    var publisherName = xmlDoc.querySelector('publisher-name').textContent;
@@ -218,13 +229,16 @@ JbjsConverter.Prototype = function() {
   };
 
   this.URLBuilderDB = function(url, ext, subtype) {
-      ext = typeof ext !== 'undefined' ?  ext : '.pdf';
-      subtype = typeof subtype !== 'undefined' ?  subtype : '';
+      ext = ext || '.pdf';
+	  const baseUrl =
+	  	ext === '.jpeg' ? this.imageBaseUrl
+	  	: (ext === '.pdf' && !subtype) ? this.pdfBaseUrl
+	  	: this.contentBaseUrl;
       return [
-        (ext === '.pdf' || ext === '.supplement' || ext === '.eletter') ? this.docBaseUrl : this.imageBaseUrl,
+        baseUrl,
         '&type=', ext.substr(1),
         '&name=', url,
-        '&subtype=', subtype,
+        (subtype ? `&subtype=${subtype}` : '')
       ].join('');
   };
 
@@ -238,12 +252,11 @@ JbjsConverter.Prototype = function() {
     if (baseURL) {
       return [baseURL, url].join('');
     } else {
-      // Use special URL resolving for production articles
-      return this.URLBuilder(
-        this.config.figure_url_lowercase
-        ?url.toLowerCase()
-        :url
-        , '.jpeg');
+      	// Use special URL resolving for production articles
+      	return this.URLBuilder(
+        	this.config.figure_url_lowercase ? url.toLowerCase() : url,
+			'.jpeg'
+		);
     }
   };
 
@@ -448,7 +461,7 @@ JbjsConverter.Prototype = function() {
 
     if (el._converted) return;
 
-    var node = this.infographic(state, el, !this.config.show_resources_panel);
+    var node = this.infographic(state, el, this.config.isMobile);
     var refNode = this.infographicReference(state, el, node);
 
     refNode && nodes.push(refNode);
@@ -515,7 +528,7 @@ JbjsConverter.Prototype = function() {
 
     // workaround - do not show subtitle/title footnote reference in case of mobile abstract
     // where we do not show footnotes. Should be done by checking whether we show references
-    if (!this.config.show_resources_panel && this.config.show_abstract_only) {
+    if (this.config.isMobile && this.config.show_abstract_only) {
       state.doc.title.notes = [];
       state.doc.subtitle.notes = [];
     }
@@ -707,7 +720,7 @@ JbjsConverter.Prototype = function() {
         });
       }
       if( pdf && !this.config.show_abstract_only ) {
-        var url = this.URLBuilder(pdf.getAttribute('xlink:href'));
+        var url = this.URLBuilder(pdf.getAttribute('xlink:href'), '.pdf');
 
         if( this.config.storage_layout === 'jbjs_jtype' ) {
           var pub_id = article.querySelector('article-id[pub-id-type=publisher-id]');
@@ -770,7 +783,7 @@ JbjsConverter.Prototype = function() {
           nodes.push(supplementNode.id);
         }
         var uri = article.querySelector('self-uri[content-type=disclosure-zip]');
-        uri = uri ?uri:article.querySelector('self-uri[content-type=disclosures-zip]');
+        uri = uri ? uri : article.querySelector('self-uri[content-type=disclosures-zip]');
         if ( uri ) {
           var supplementNode = {
             id: state.nextId('supplement'),
@@ -811,13 +824,12 @@ JbjsConverter.Prototype = function() {
             var uri = article.querySelector('self-uri[*|title=data-availability-pdf]');
             if ( uri ) {
               var url = uri.getAttribute('xlink:href');
-              var ext = '.pdf';
               var supplementNode = {
                 id: state.nextId('supplement'),
                 source_id: null,
                 type: 'supplement',
                 label: 'Data Sharing PDF',
-                url: this.URLBuilder(url, ext, 'dataavailability'),
+                url: this.URLBuilder(url, '.pdf', 'dataavailability'),
                 caption: null
               };
               doc.create(supplementNode);

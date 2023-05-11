@@ -111,72 +111,78 @@ LensController.Prototype = function() {
 
 
 
-  this.openReader = function(panel, focussedNode, fullscreen) {
-    window.dev.trace("openReader - LensController");
-    var that = this;
+	this.openReader = function(panel, focussedNode, fullscreen) {
+		window.dev.trace("openReader - LensController");
+		var that = this;
 
-    // The article view state
-    var state = {
-      panel: panel || "info",
-      focussedNode: focussedNode,
-      fullscreen: !!fullscreen
-    };
+		// The article view state
+		var state = {
+			panel: panel || "info",
+			focussedNode: focussedNode,
+			fullscreen: !!fullscreen
+		};
 
-    // Already loaded?
-    if (this.reader) {
-      that.trigger("loaded:doc", this.reader, this.reader.getDocument(), state);
-      if ( panel ) this.reader.modifyState(state);
-    } else if (this.config.document_url === "lens_article.xml") {
-      var doc = this.Article.describe();
-      that.createReader(doc, state);
-    } else {
-      this.trigger("loading:started", "Loading article");
-      $.get(this.config.document_url)
-      .done(function(data) {
-        var doc;
+		// Already loaded?
+		if (this.reader) {
+			that.trigger("loaded:doc", this.reader, this.reader.getDocument(), state);
+			if ( panel ) this.reader.modifyState(state);
+		} else if (this.config.document_url === "lens_article.xml") {
+			var doc = this.Article.describe();
+			that.createReader(doc, state);
+		} else  {
+			dev.trace("Loading xml...");
+			this.trigger("loading:started", "Loading article");
+			this.config.loader.getXml({
+				done: function(xml) {
+						// Determine type of resource
+						if ($.isXMLDoc(xml)) {
+							dev.trace("Xml loaded");
+							try {
+								that.createReaderByXml(that, state, xml);
+							} catch (e) {
+								that.view.errorOnLoad("This article cannot be shown.");
+								console.error("Error on convert: " + e);
+							}
+						} else {
+							that.view.errorOnLoad("This article cannot be shown.");
+							console.error("Error on load: " + xml);
+						}
+					},
+				fail : function(err) {
+						that.view.startLoading("Error during loading. Please try again.");
+						console.error(err);
+					}
+			})
+		}
+	}
+	this.createReaderByXml = function(that, state, xml) {
+		var doc;
+		that.trigger("loaded:xml", xml);
+		doc = that.convertDocument(xml);
+		// Figures without reference
+		var hasAnyFigureReference = function(){
+			for (var k in doc.nodes) {
+				if (k.startsWith("figure_reference_")) {
+					return true;
+				}
+			}
+			return false;
+		}
+		// We suppose references are numbered starting with 1
+		if (doc.nodes.figures.nodes.length != 0 && !("figure_reference_1" in doc.nodes) && !hasAnyFigureReference()) {
+			state.panel = "figures";
+		}
 
-        // Determine type of resource
-        if ($.isXMLDoc(data)) {
-          try {
-            that.trigger("loaded:xml", data);
-            doc = that.convertDocument(data);
-
-            // Figures without reference
-			var hasAnyFigureReference = function(){
-              for (var k in doc.nodes)
-                if (k.startsWith("figure_reference_"))
-                  return true;
-              return false;
-            }
-			// We suppose references are numbered starting with 1
-            if (doc.nodes.figures.nodes.length != 0 && !("figure_reference_1" in doc.nodes) && !hasAnyFigureReference()) {
-                state.panel = "figures";
-            }
-
-            // Extract headings
-            // TODO: this should be solved with an index on the document level
-            // This same code occurs in TOCView!
-            if (state.panel === "toc" && doc.getHeadings().length <= 2) {
-              state.panel = "info";
-            }
-            that.trigger("loaded:doc", null, doc, state);
-            that.createReader(doc, state);
-            that.trigger("created:reader", null, doc, state);
-          } catch (e) {
-            that.view.errorOnLoad("This article cannot be shown.");
-            console.error("Error on convert: " + e);
-          }
-        } else {
-          that.view.errorOnLoad("This article cannot be shown.");
-          console.error("Error on load: " + data);
-        }
-      })
-      .fail(function(err) {
-        that.view.startLoading("Error during loading. Please try again.");
-        console.error(err);
-      });
-    }
-  };
+		// Extract headings
+		// TODO: this should be solved with an index on the document level
+		// This same code occurs in TOCView!
+		if (state.panel === "toc" && doc.getHeadings().length <= 2) {
+			state.panel = "info";
+		}
+		that.trigger("loaded:doc", null, doc, state);
+		that.createReader(doc, state);
+		that.trigger("created:reader", null, doc, state);
+	}
 };
 
 // Exports

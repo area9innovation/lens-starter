@@ -209,6 +209,7 @@ $(function() {
     })
     .always(function() {
       var app = new window.Lens({
+		layout : mobileMode ? 'mobile' : 'desktop',
 //      el: '#lens',
         document_url: qs.url ? decodeURIComponent(qs.url) : documentURL,
         show_resources_panel: !mobileMode,
@@ -225,8 +226,9 @@ $(function() {
 
       app.listenTo(app.controller, 'loaded:xml', onXmlLoaded);
       app.listenTo(app.controller, 'loaded:doc', onDocLoaded);
-      if (!app.config.show_resources_panel)
+      if (app.config.isMobile) {
         app.listenTo(app.controller, 'created:reader', onReaderCreated);
+	  }
       app.start();
 
       window.app = app;

@@ -102,7 +102,7 @@ Article.Prototype = function() {
 Article.prepareOptions = function(options) {
   // prepare configuration for
   options = options || {};
-  options.nodeTypes = _.extend(Article.nodeTypes, options.nodeTypes);
+  options.nodeTypes = _.extend({}, Article.nodeTypes, options.nodeTypes);
   options.schema = Article.getSchema(options.nodeTypes);
   return options;
 };

@@ -19,7 +19,7 @@ var ReaderController = function(doc, state, options) {
 
   this.panels = options.panels;
   this.contentPanel = new ContentPanel(doc);
-  this.isResourcesPanel = this.options.show_resources_panel;
+  this.isResourcesPanel = this.options.isDesktop;
 
   // create panel controllers
   this.panelCtrls = {};

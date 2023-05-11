@@ -21,12 +21,19 @@ TableScaling.Prototype = function() {
   };
 
   this.handleStateUpdate = function(state, stateInfo) {
+	window.dev.trace("TableScaling - handleStateUpdate");
     ++this.pass;
     if ( this.pass > 1 ) return;
     var ie = this.detectIE()
 
     if ( !$('#forlens').length ) {
-      $('body *').not('.video-wrapper *').not('.label').not('.spinner-wrapper').not('.favorite.article').not('.saveposition').css('position', 'unset');
+      $('body *')
+	  	.not('.video-wrapper *')
+		.not('.label')
+		.not('.spinner-wrapper')
+		.not('.favorite.article')
+		.not('.saveposition')
+		.css('position', 'unset');
       $('body').css('position', 'unset');
       $('body').css('overflow', 'auto');
       if( ie && ie<=11) {}

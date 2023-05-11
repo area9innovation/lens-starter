@@ -937,3 +937,7 @@ TOC
 .content-node.footnote .content.article-note .content-node {
   padding: 0;
 }
+
+#MathJax_Message {
+	display: none !important;
+}

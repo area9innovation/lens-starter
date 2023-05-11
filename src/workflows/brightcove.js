@@ -34,7 +34,9 @@ BrightcoveVideos.Prototype = function() {
           });
     });
 
-    $('body').append('<script src="//players.brightcove.net/' + accountId + '/' + playerId + '/index.min.js"></script>');
+	if (!$('body > script#brightcove_player').length) {
+		$('body').append(`<script id="brightcove_player" src="//players.brightcove.net/${accountId}/${playerId}/index.min.js"></script>`);
+	}
 
     return false;
   };

@@ -56,13 +56,14 @@ LensView.Prototype = function() {
   };
 
   this.startLoading = function(msg) {
-    window.dev.trace("startLoading");
+    window.dev.trace(`startLoading ${ msg ? ` - '${msg}'` : ''}`);
     if (!msg) msg = "Loading article";
     $('.spinner-wrapper .message').html(msg);
     $('body').addClass('loading');
   };
 
   this.stopLoading = function() {
+	window.dev.trace("stopLoading");
     $('body').removeClass('loading');
   };
 
@@ -99,7 +100,7 @@ LensView.Prototype = function() {
   //
 
   this.replaceMainView = function(name, view) {
-    $('body').removeClass().addClass('current-view ' + name);
+    $('body').removeClass().addClass('current-view').addClass(name).addClass(getLayoutClass());
 
     if (this.mainView && this.mainView !== view) {
       this.mainView.dispose();
