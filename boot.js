@@ -22,9 +22,11 @@ var documentURL = "data/" +
 
 var mmobile = window.location.href.match(/mobile/);
 var mobileMode = mmobile!=null;
-
-
 var modeThreshold = 980;
+
+window.getLayoutClass = function() {
+	return mobileMode ? 'mobile' : 'desktop';
+}
 
 getValidWidth = function() {
   var windowOuterWidth = window.outerWidth>0?window.outerWidth:window.innerWidth;
@@ -201,6 +203,11 @@ $(function() {
     return inFullScreen ? "Window" : "Full screen";
   };
 
+  	const docUrl = qs.url ? decodeURIComponent(qs.url) : documentURL;
+	const loader = {
+		getXml : ({done, fail}) => $.get(docUrl).done(done).fail(fail)
+	}
+
   $.get(path.join('/'))
     .done(function(data) {
       if ($.isXMLDoc(data)) {
@@ -209,9 +216,10 @@ $(function() {
     })
     .always(function() {
       var app = new window.Lens({
+		loader,
 		layout : mobileMode ? 'mobile' : 'desktop',
+		document_url: docUrl,
 //      el: '#lens',
-        document_url: qs.url ? decodeURIComponent(qs.url) : documentURL,
         show_resources_panel: !mobileMode,
 //      show_abstract_only: true,
         bcvideo_account_id: '2324982687001',
