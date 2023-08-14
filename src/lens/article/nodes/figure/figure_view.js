@@ -57,27 +57,28 @@ FigureView.Prototype = function() {
 
       topics = topics ? topics.split(/\+/) : [];
 
-      this.node.urls.forEach(function(url) {
+      this.node.urls.forEach(function(imageUrl) {
         // Add graphic (img element)
         var imgEl = $$('.image-wrapper', {
           children: [
             $$("a", {
-              href: url,
+              href: imageUrl,
               target: "_blank",
-              children: [$$("span", {"data-src": url, "data-id": this.node.id})]
+              children: [$$("span", {"data-src": imageUrl, "data-id": this.node.id})]
             })
           ]
         });
 
         if (hash == this.node.id) {
-          var urlParams = (new URL(url)).searchParams,
-            id = urlParams.get('id'),
-            name = urlParams.get('name');
+			// image URL is relative
+			var urlParams = (new URL(imageUrl, location.origin)).searchParams,
+				id = urlParams.get('id'),
+				name = urlParams.get('name');
 
-          imgEl.classList.add('jbjs_tracking');
-          imgEl.setAttribute('jbjs_tracking_type', 'image');
-          imgEl.setAttribute('jbjs_tracking_data', JSON.stringify({ id, name, rsuiteId, topics }));
-        }
+				imgEl.classList.add('jbjs_tracking');
+				imgEl.setAttribute('jbjs_tracking_type', 'image');
+				imgEl.setAttribute('jbjs_tracking_data', JSON.stringify({ id, name, rsuiteId, topics }));
+		}
 
         this.content.appendChild(imgEl);
       }, this);
