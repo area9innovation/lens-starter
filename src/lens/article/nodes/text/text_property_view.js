@@ -91,13 +91,15 @@ TextPropertyView.renderAnnotatedText = function(doc, path, el, viewFactory) {
   var fragmenter = new Fragmenter();
   fragmenter.onText = function(context, text) {
     var pieces = text.split('<br>');
+    var appendLine = false;
     pieces.forEach(function(piece, index) {
       if (piece.trim() === '') {
         return;
       }
-      if (index) {
+      if (appendLine) {
         context.appendChild(document.createElement("br"));
       }
+      appendLine = true;
       context.appendChild(window.document.createTextNode(piece));
     });
   }
