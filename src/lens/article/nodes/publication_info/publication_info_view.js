@@ -157,23 +157,6 @@ PublicationInfoView.Prototype = function() {
       metaData.appendChild(doiEl);
     }
 
-    // Related Article
-    //
-
-    if (this.node.related_articles.length) {
-      this.node.related_articles.forEach(function(ra) {
-        var relatedArticleEl = $$('.related-article', {
-          children: [
-            $$('div.label', {text: "Related Article"}),
-            $$('div.value', {
-              children: [$$('a', {href: ra.href, text: ra.text, target: "_blank"})]
-            })
-          ]
-        });
-        metaData.appendChild(relatedArticleEl);
-      });
-    }
-
     var historyEl = this.describePublicationHistory();
 
     metaData.appendChild(historyEl);

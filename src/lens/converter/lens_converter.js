@@ -275,27 +275,31 @@ NlmToLensConverter.Prototype = function() {
     return volume && volume.toLowerCase() == 'publish ahead of print';
   }
 
-  this.extractRelatedArticles = function(article) {
-    // Related articles if exists
-    var relatedArticles = article.querySelectorAll("related-article");
-    var result = [];
+  this.extractRelatedArticles = function(state, article) {
+    const nodes = [];
+    const doc = state.doc;
+
+    const relatedArticles = article.querySelectorAll("related-article");
     for (var i = 0; i < relatedArticles.length; i++) {
-      var ra = relatedArticles[i];
-      var type = ra.getAttribute("ext-link-type");
-      var doiType = type && type == "doi";
-      var href =  ra.getAttribute("xlink:href");
-      if (!href) {
+      const ra = relatedArticles[i];
+      const linkType = ra.getAttribute("ext-link-type");
+      const doiType = linkType && linkType == "doi";
+      const href =  ra.getAttribute("xlink:href");
+      if (!href || !doiType) {
         continue;
       }
-      var text = href;
-      var link = href;
-      if (doiType) {
-        var readerLink = ra.getAttribute("reader_link");
-        link = readerLink ? readerLink : ("http://dx.doi.org/" + href);
-      }
-      result.push({href : link, text : text});
+
+      const relatedArticle = {
+        type: 'related_article',
+        id: state.nextId('related_article'),
+        article_type: ra.getAttribute("related-article-type"),
+        doi: href,
+      };
+      doc.create(relatedArticle);
+      nodes.push(relatedArticle.id);
     }
-    return result;
+
+    return nodes;
   }
 
   this.extractPublicationInfo = function(state, article) {
@@ -356,7 +360,6 @@ NlmToLensConverter.Prototype = function() {
       "first_published_on": pubDates.first_published_on,
       "published_on": pubDates.published_on,
       "journal": journalTitle ? journalTitle.textContent : "",
-      "related_articles": this.extractRelatedArticles(article),
       "doi": articleDOI ? articleDOI.textContent : "",
       "article_info": articleInfo.id,
       "funding_info": fundingInfo,
@@ -450,6 +453,8 @@ NlmToLensConverter.Prototype = function() {
     nodes = nodes.concat(this.extractNotes(state, article));
     // Keywords
     nodes = nodes.concat(this.extractKeywords(state, article));
+    // Related article
+    nodes = nodes.concat(this.extractRelatedArticles(state, article));
     // License and Copyright
     nodes = nodes.concat(this.extractCopyrightAndLicense(state, article));
     // Custom notes - datasharing, disclosure, etc.
