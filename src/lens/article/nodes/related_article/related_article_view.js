@@ -18,30 +18,35 @@ RelatedArticleView.Prototype = function() {
   this.render = function() {
     NodeView.prototype.render.call(this);
 
+    const $content = $('.related-article');
+
     const capitalizeWords = function (str) {
       return str.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
     }
-    const title = capitalizeWords(this.node.properties.article_type);
-    const titleEl = $$('div.title', {text: title});
-    this.content.appendChild(titleEl);
+    const articleType = capitalizeWords(this.node.properties.article_type);
+    const $title = $$('.article-type', {text: articleType});
+    $content.appendChild($title);
 
-    const doi = this.node.properties.doi;
-    // const xmlUrl = `https://tech.area9innovation.com/jbjs/hub/pages/reader.php?doi=${doi}&show-xml=1`
-    // $.get(xmlUrl).done(function(data){
-    //   console.log(data)
-    // })
+    var requestData = {
+      operation: "find_by_fields",
+      article: {
+        doi: this.node.properties.doi
+      }
+    };
+    $.post("https://rsuite.tech.area9innovation.com/search", JSON.stringify(requestData), function(data, status) {
+      console.log('response data', data)
+      let article = data.article;
+      article = article[0] !== undefined ? article[0] : article;
 
-    // // Heading title
-    // var titleView = this.createTextPropertyView([this.node.id, 'content'], {
-    //   classes: 'title'
-    // });
+      const $info = $$('.article-info');
+      $info.appendChild([
+        $$('.article-title', article['Title']),
+        $$('.article-subtitle', article['Subtitle']),
+      ])
+      $content.appendChild($info);
+    });
 
-    // if (this.node.label) {
-    //   var labelEl = $$('.label', {text: this.node.label});
-    //   this.content.appendChild(labelEl);
-    // }
-
-    // this.content.appendChild(titleView.render().el);
+    this.content.appendChild($content);
     return this;
   };
 
