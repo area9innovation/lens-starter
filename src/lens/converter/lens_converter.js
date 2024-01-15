@@ -280,8 +280,7 @@ NlmToLensConverter.Prototype = function() {
     const doc = state.doc;
 
     const relatedArticles = article.querySelectorAll("related-article");
-    for (var i = 0; i < relatedArticles.length; i++) {
-      const ra = relatedArticles[i];
+    for (const ra of relatedArticles) {
       const linkType = ra.getAttribute("ext-link-type");
       const doiType = linkType && linkType == "doi";
       const href =  ra.getAttribute("xlink:href");

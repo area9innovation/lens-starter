@@ -49,10 +49,10 @@ RelatedArticle.description = {
 };
 
 RelatedArticle.Prototype = function() {
-  this.inline = false;
+  // this.inline = false;
 };
 
-RelatedArticle.Prototype.prototype = Text.prototype;
+RelatedArticle.Prototype.prototype = Document.Node.prototype;
 RelatedArticle.prototype = new RelatedArticle.Prototype();
 RelatedArticle.prototype.constructor = RelatedArticle;
 

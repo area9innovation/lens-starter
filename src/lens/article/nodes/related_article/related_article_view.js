@@ -18,8 +18,18 @@ RelatedArticleView.Prototype = function() {
   this.render = function() {
     NodeView.prototype.render.call(this);
 
-    const titleEl = $$('.title', {text: this.node.aricle_typ});
+    const capitalizeWords = function (str) {
+      return str.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+    }
+    const title = capitalizeWords(this.node.properties.article_type);
+    const titleEl = $$('div.title', {text: title});
     this.content.appendChild(titleEl);
+
+    const doi = this.node.properties.doi;
+    // const xmlUrl = `https://tech.area9innovation.com/jbjs/hub/pages/reader.php?doi=${doi}&show-xml=1`
+    // $.get(xmlUrl).done(function(data){
+    //   console.log(data)
+    // })
 
     // // Heading title
     // var titleView = this.createTextPropertyView([this.node.id, 'content'], {

@@ -137,12 +137,12 @@ LensController.Prototype = function() {
 						// Determine type of resource
 						if ($.isXMLDoc(xml)) {
 							dev.trace("Xml loaded");
-							try {
+							// try {
 								that.createReaderByXml(that, state, xml);
-							} catch (e) {
-								that.view.errorOnLoad("This article cannot be shown.");
-								console.error("Error on convert: " + e);
-							}
+							// } catch (e) {
+							// 	that.view.errorOnLoad("This article cannot be shown.");
+							// 	console.error("Error on convert: " + e);
+							// }
 						} else {
 							that.view.errorOnLoad("This article cannot be shown.");
 							console.error("Error on load: " + xml);
