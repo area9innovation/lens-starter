@@ -80,13 +80,13 @@ function formatArticleCitation(journalName, heading, day2, month2, year, volume,
   let month = -1;
   let day = '';
 
-  if (!month2) {
+  if (month2) {
     const m = parseInt(month2);
     if (m >= 1 && m <= 12) {
       month = m;
     }
   }
-  if (!day2) {
+  if (day2) {
     if (parseInt(day2) > 0) {
       day = ' ' + day2;
     }
