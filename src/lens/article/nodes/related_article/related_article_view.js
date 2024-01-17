@@ -67,7 +67,9 @@ RelatedArticleView.Prototype = function() {
             article['Volume'], article['Issue'],
             article['Journal id'] != 'jbjsam' ? article['Start page'] : article['Pages']
           );
-          $info.appendChild($$('.article-citations', {text: citation}));
+          const logo = `<img src="${getJournalLogoUrl(article['Journal id'])}">`
+          const $citations = $$('.article-citations', {html: logo + citation});
+          $info.appendChild($citations);
           $article.appendChild($info);
         }
       });
@@ -125,6 +127,18 @@ function replaceJournal(journal) {
     'JBJS Journal of Orthopaedics for Physician Assistants': 'JBJS JOPA'
   };
   return journal in JournalReplaces ? JournalReplaces[journal] : journal;
+}
+
+function getJournalLogoUrl(journal_id) {
+  const LogoUrl = {
+    'jbjsam': 'images/journals/icon/JBJS-icons-JBJS-Hub-5.svg',
+    'jbjscc': 'images/journals/icon/JBJS-icons-CC-Hub-5.svg',
+    'jbjsest': 'images/journals/icon/JBJS-icons-EST-Hub-5.svg',
+    'jbjsrev': 'images/journals/icon/JBJS-icons-REV-Hub-5.svg',
+    'JOPAJBJS': 'images/journals/icon/JBJS-icons-JOPA-Hub-5.svg',
+    'JBJSOA': 'images/journals/icon/JBJS-icons-OA-Hub-5.svg',
+  };
+  return 'https://tech.area9innovation.com/jbjs/hub/pages/' + LogoUrl[journal_id];
 }
 
 function capitalizeWords(str) {

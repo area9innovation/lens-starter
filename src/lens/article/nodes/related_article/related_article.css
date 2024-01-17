@@ -30,9 +30,16 @@
 
 .related-articles .article-info > * {
     margin-top: 3px;
+    display: flex;
+    align-items: center;
 }
 
 .related-articles a {
     text-decoration: none;
     color: blue;
+}
+
+.related-articles .article-citations > img {
+    margin-right: 3px;
+    width: 24px;
 }
