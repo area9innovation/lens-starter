@@ -280,6 +280,7 @@ NlmToLensConverter.Prototype = function() {
     const doc = state.doc;
 
     const relatedArticles = article.querySelectorAll("related-article");
+    const result = [];
     for (const ra of relatedArticles) {
       const linkType = ra.getAttribute("ext-link-type");
       const doiType = linkType && linkType == "doi";
@@ -288,15 +289,19 @@ NlmToLensConverter.Prototype = function() {
         continue;
       }
 
-      const relatedArticle = {
-        type: 'related_article',
-        id: state.nextId('related_article'),
+      result.push({
         article_type: ra.getAttribute("related-article-type"),
         doi: href,
-      };
-      doc.create(relatedArticle);
-      nodes.push(relatedArticle.id);
+      });
     }
+
+    const relatedArticle = {
+      type: 'related_article',
+      id: state.nextId('related_article'),
+      articles: result,
+    };
+    doc.create(relatedArticle);
+    nodes.push(relatedArticle.id);
 
     return nodes;
   }

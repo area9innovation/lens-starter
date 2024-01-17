@@ -7,6 +7,10 @@
     padding: 0.5em;
 }
 
+.related-articles .related-article + .related-article {
+    margin-top: 0.5em;
+}
+
 .related-articles .article-type {
     padding: 0.3em 0em;
     font-size: 1.2em;

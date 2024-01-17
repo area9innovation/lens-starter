@@ -16,8 +16,9 @@ RelatedArticle.type = {
   "properties": {
     "source_id": "string",
     "label": "string",
-    "article_type": "string",
-    "doi": "string"
+    "articles": "array",
+    // "article_type": "string",
+    // "doi": "string"
   }
 };
 
