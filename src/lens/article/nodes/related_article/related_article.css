@@ -31,7 +31,7 @@
 .related-articles .article-info > * {
     margin-top: 3px;
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 .related-articles a {
