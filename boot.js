@@ -16,7 +16,10 @@ var documentURL = "data/" +
 //'99_1_10/99_1_10.xml'
 // 'Anatomic Hip Center.xml'
 // 'JBJSOA-D-17-00063-mathml.xml'
-'poetry/What_s_Important_(Arts_and_Humanities)_Teach_Me_Orthopaedics.xml'
+// 'poetry/What_s_Important_(Arts_and_Humanities)_Teach_Me_Orthopaedics.xml'
+'related_article/Retraction.xml'
+// 'related_article/Cervical Disc Replacement Shows Compelling Difference in Adjacent-Level Ossification Development.xml'
+// 'related_article/The Estimated Cost of Maintenance of Certification.xml'
 ;
 
 

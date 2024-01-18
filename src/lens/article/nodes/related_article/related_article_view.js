@@ -18,59 +18,28 @@ RelatedArticleView.Prototype = function() {
     const $content = $$('.related-articles');
 
     const articles = this.node.properties.articles;
+    articles.sort((a, b) => a.article_type < b.article_type ? -1 : 1);
     for (let i = 0; i < articles.length; i++) {
       const $article = $$('.related-article');
+      const article = articles[i];
 
-      if (i == 0 || articles[i-1].article_type != articles[i].article_type) {
-        const articleType = capitalizeWords(articles[i].article_type);
+      if (i == 0 || articles[i-1].article_type != article.article_type) {
+        const articleType = capitalizeWords(article.article_type);
         const $title = $$('.article-type');
         $title.appendChild($$('span', {text: articleType}));
         $article.appendChild($title);
       }
 
-      const requestData = {
-        operation: "find_by_fields",
-        article: {
+      const searchParam = article.isDoi ? {
           doi: articles[i].doi
-        }
-      };
-      jQuery.ajax ({
-        url: "https://rsuite.tech.area9innovation.com/search",
-        type: "POST",
-        data: JSON.stringify(requestData),
-        contentType: "application/json;",
-        success: function (data) {
-          if (data.article.length == 0) {
-            return;
-          }
-          const article = data.article[0];
-
-          const $info = $$('.article-info');
-          const link = 'reader.php?rsuite_id=' + article['Rsuite id'];
-          if ('Title' in article) {
-            const $el = $$('.article-title');
-            $el.appendChild($$('a.article-title', {text: article['Title'], href: link}));
-            $info.appendChild($el);
-          }
-          if ('Subtitle' in article) {
-            const $el = $$('.article-subtitle');
-            $el.appendChild($$('a.', {text: article['Subtitle'], href: link}));
-            $info.appendChild($el);
-          }
-          if ('Authors' in article) {
-            $info.appendChild($$('.article-authors', {text: article['Authors']}));
-          }
-          const citation = formatArticleCitation(
-            article['Journal name'],
-            article['Heading'],
-            article['Day'], article['Month'], article['Year'],
-            article['Volume'], article['Issue'],
-            article['Journal id'] != 'jbjsam' ? article['Start page'] : article['Pages']
-          );
-          const logo = `<img src="${getJournalLogoUrl(article['Journal id'])}">`
-          const $citations = $$('.article-citations', {html: logo + citation});
-          $info.appendChild($citations);
-          $article.appendChild($info);
+        } : {
+          issue: article.issue,
+          start_page: article.start_page,
+          volume: article.volume
+        };
+      searchArticle(searchParam).done(function (data) {
+        if (data.article && data.article[0]) {
+          $article.appendChild(createArticleBlock(data.article[0]));
         }
       });
 
@@ -142,7 +111,54 @@ function getJournalLogoUrl(journal_id) {
 }
 
 function capitalizeWords(str) {
-  return str.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return str.split(/[_-]/).map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+
+function searchArticle(params) {
+  const requestData = {
+    operation: "find_by_fields",
+    article: params
+  };
+  return jQuery.ajax({
+    url: "https://rsuite.tech.area9innovation.com/search",
+    type: "POST",
+    data: JSON.stringify(requestData),
+    contentType: "application/json;",
+  });
+}
+
+function createArticleBlock(article) {
+  const $info = $$('.article-info');
+
+  const link = 'reader.php?rsuite_id=' + article['Rsuite id'];
+  if (article['Title']) {
+    const $el = $$('.article-title');
+    $el.appendChild($$('a.article-title', {text: article['Title'], href: link}));
+    $info.appendChild($el);
+  }
+  
+  if (article['Subtitle']) {
+    const $el = $$('.article-subtitle');
+    $el.appendChild($$('a.', {text: article['Subtitle'], href: link}));
+    $info.appendChild($el);
+  }
+  
+  if (article['Authors']) {
+    $info.appendChild($$('.article-authors', {text: article['Authors']}));
+  }
+  
+  const citation = formatArticleCitation(
+    article['Journal name'],
+    article['Heading'],
+    article['Day'], article['Month'], article['Year'],
+    article['Volume'], article['Issue'],
+    article['Journal id'] != 'jbjsam' ? article['Start page'] : article['Pages']
+  );
+  const logo = `<img src="${getJournalLogoUrl(article['Journal id'])}">`
+  const $citations = $$('.article-citations', {html: logo + citation});
+  $info.appendChild($citations);
+
+  return $info;
 }
 
 RelatedArticleView.Prototype.prototype = NodeView.prototype;

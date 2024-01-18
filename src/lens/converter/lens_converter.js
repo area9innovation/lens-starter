@@ -34,6 +34,7 @@ NlmToLensConverter.Prototype = function() {
     "source": "emphasis",
     "string-name": "",
     "break": "break",
+    "related-article": "",
   };
 
   this._inlineNodeTypes = {
@@ -279,29 +280,29 @@ NlmToLensConverter.Prototype = function() {
     const nodes = [];
     const doc = state.doc;
 
-    const relatedArticles = article.querySelectorAll("related-article");
+    const relatedArticles = article.querySelectorAll("article-meta related-article");
+    console.log(relatedArticles)
     const result = [];
     for (const ra of relatedArticles) {
-      const linkType = ra.getAttribute("ext-link-type");
-      const doiType = linkType && linkType == "doi";
-      const href =  ra.getAttribute("xlink:href");
-      if (!href || !doiType) {
-        continue;
-      }
-
       result.push({
         article_type: ra.getAttribute("related-article-type"),
-        doi: href,
+        isDoi: ra.getAttribute("ext-link-type") == "doi",
+        doi: ra.getAttribute("xlink:href"),
+        issue: ra.getAttribute("issue"),
+        start_page: ra.getAttribute("page"),
+        volume: ra.getAttribute("vol"),
       });
     }
 
-    const relatedArticle = {
-      type: 'related_article',
-      id: state.nextId('related_article'),
-      articles: result,
-    };
-    doc.create(relatedArticle);
-    nodes.push(relatedArticle.id);
+    if (result.length > 0) {
+      const relatedArticle = {
+        type: 'related_article',
+        id: state.nextId('related_article'),
+        articles: result,
+      };
+      doc.create(relatedArticle);
+      nodes.push(relatedArticle.id);
+    }
 
     return nodes;
   }

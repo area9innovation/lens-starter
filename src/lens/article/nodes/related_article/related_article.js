@@ -17,8 +17,6 @@ RelatedArticle.type = {
     "source_id": "string",
     "label": "string",
     "articles": "array",
-    // "article_type": "string",
-    // "doi": "string"
   }
 };
 
@@ -29,8 +27,18 @@ RelatedArticle.type = {
 RelatedArticle.example = {
   "type": "related_article",
   "id": "related_articles_1",
-  "article_type": "companion",
-  "doi": "10.2106/JBJS.21.00178"
+  "articles": [{
+    "article_type": "companion",
+    "isDoi": true,
+    "doi": "10.2106/JBJS.21.00178",
+  }, {
+    "article_type": "companion",
+    "isDoi": false,
+    "volume" : "93",
+    "issue" : "9",
+    "start_page": "801",
+  }]
+   
 };
 
 // This is used for the auto-generated docs
@@ -44,8 +52,7 @@ RelatedArticle.description = {
     "Show related articles."
   ],
   "properties": {
-    "article_type": "Related article type",
-    "doi": "Doi of the article"
+    "articles": "Related articles",
   }
 };
 
