@@ -30,6 +30,14 @@
 
 .related-articles .article-info > * {
     margin-top: 3px;
+}
+
+.related-articles .article-info .article-title,
+.related-articles .article-info .article-subtitle {
+    font-weight: 700;
+}
+
+.related-articles .article-info .article-citations {
     display: flex;
     align-items: start;
 }
@@ -42,4 +50,17 @@
 .related-articles .article-citations > img {
     margin-right: 3px;
     width: 24px;
+}
+
+.text-with-ellipsis {
+	line-height: 1.2em;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.text-with-ellipsis.one-line {
+	max-height: 1.2em;
+	-webkit-line-clamp: 1;
 }

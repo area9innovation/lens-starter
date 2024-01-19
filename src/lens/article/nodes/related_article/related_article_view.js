@@ -144,7 +144,7 @@ function createArticleBlock(article) {
   }
   
   if (article['Authors']) {
-    $info.appendChild($$('.article-authors', {text: article['Authors']}));
+    $info.appendChild($$('.article-authors.text-with-ellipsis.one-line', {text: article['Authors']}));
   }
   
   const citation = formatArticleCitation(
