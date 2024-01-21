@@ -28,15 +28,13 @@ RelatedArticle.example = {
   "type": "related_article",
   "id": "related_articles_1",
   "articles": [{
-    "article_type": "companion",
-    "isDoi": true,
-    "doi": "10.2106/JBJS.21.00178",
-  }, {
-    "article_type": "companion",
-    "isDoi": false,
-    "volume" : "93",
-    "issue" : "9",
-    "start_page": "801",
+    "title": "Rare Fungal Infection in Arthritic Knee After Stem Cell...",
+    "subtitle": "A Case Report",
+    "authors": "Maniar, Adit R; Bhatnagar, Nishit; Mishra, Abhinav; Vinchurkar, Kshitija; Jain, Ditesh",
+    "citation": "JBJS Case Connect, 11(2):e20.00354 | May 14, 2021",
+    "logo_url": "https://tech.area9innovation.com/jbjs/hub/pages/images/journals/icon/JBJS-icons-CC-Hub-5.svg",
+    "heading": "Case Reports",
+    "reader_link": "reader.php?rsuite_id=2874499",
   }]
    
 };
