@@ -33,9 +33,14 @@
     margin-top: 3px;
 }
 
-.related-articles .article-info .article-title > a,
-.related-articles .article-info .article-subtitle > a {
+.related-articles .article-info .article-title {
     font-weight: 700;
+    font-size: 1.1em;
+}
+
+.related-articles .article-info .article-title .subtitle {
+    font-weight: 600;
+    font-size: 0.9em;
 }
 
 .related-articles .article-info .article-citations {

@@ -40,17 +40,11 @@ RelatedArticleView.Prototype = function() {
 function createArticleInfoBlock(article) {
   const $info = $$('.article-info');
 
-  if (article.title) {
-    const $el = $$('.article-title');
-    $el.appendChild($$('a', {text: article.title, href: article.reader_link}));
-    $info.appendChild($el);
-  }
-  
+  const $title = $$('a.article-title', {html: article.title, href: article.reader_link});
   if (article.subtitle) {
-    const $el = $$('.article-subtitle');
-    $el.appendChild($$('a', {text: article.subtitle, href: article.reader_link}));
-    $info.appendChild($el);
+    $title.appendChild($$('span.subtitle', {html: '<br>' + article.subtitle}));
   }
+  $info.appendChild($title);
   
   if (article.authors) {
     const $el = $$('.article-authors.text-with-ellipsis.one-line', {text: article.authors});
