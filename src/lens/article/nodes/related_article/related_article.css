@@ -24,9 +24,13 @@
     font-size: 0.9em;
 }
 
+.related-article + .related-article .heading {
+    margin-top: 0.8em;
+}
+
 .related-articles .article-info {
     font-size: 0.9em;
-    margin-top: 0.5em;
+    margin-top: 0.3em;
 }
 
 .related-articles .article-info > * {

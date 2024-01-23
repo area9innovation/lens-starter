@@ -17,10 +17,7 @@ var documentURL = "data/" +
 // 'Anatomic Hip Center.xml'
 // 'JBJSOA-D-17-00063-mathml.xml'
 // 'poetry/What_s_Important_(Arts_and_Humanities)_Teach_Me_Orthopaedics.xml'
-// 'related_article/Retraction.xml'
-// 'related_article/Cervical Disc Replacement Shows Compelling Difference in Adjacent-Level Ossification Development.xml'
-// 'related_article/The Estimated Cost of Maintenance of Certification.xml'
-'related_article/Erratum_ Rare Fungal Infection in Arthritic Knee after Stem Cell Injection Managed by Novel Staged Primary Arthroplasty_ A Case Report.xml'
+'related_article/Retraction.xml'
 ;
 
 

@@ -282,15 +282,18 @@ NlmToLensConverter.Prototype = function() {
     const relatedArticles = article.querySelectorAll("related-article");
     const result = [];
     for (const ra of relatedArticles) {
-      result.push({
-        title: ra.getAttribute('title'),
-        subtitle: ra.getAttribute('subtitle'),
-        authors: ra.getAttribute('authors'),
-        citation: ra.getAttribute('citation'),
-        logo_url: ra.getAttribute('logo_url'),
-        heading: ra.getAttribute('heading'),
-        reader_link: ra.getAttribute('reader_link'),
-      });
+      const reader_link = ra.getAttribute('reader_link');
+      if (reader_link) {
+        result.push({
+          title: ra.getAttribute('title'),
+          subtitle: ra.getAttribute('subtitle'),
+          authors: ra.getAttribute('authors'),
+          citation: ra.getAttribute('citation'),
+          logo_url: ra.getAttribute('logo_url'),
+          heading: ra.getAttribute('heading'),
+          reader_link: reader_link,
+        });
+      }
     }
 
     if (result.length > 0) {
