@@ -2,7 +2,7 @@
 
 var Document = require('../../../substance/document');
 
-var RelatedArticle = function(node, document) {
+var RelatedArticles = function(node, document) {
   Document.Node.call(this, node, document);
 };
 
@@ -10,8 +10,8 @@ var RelatedArticle = function(node, document) {
 // -----------------
 //
 
-RelatedArticle.type = {
-  "id": "related_article",
+RelatedArticles.type = {
+  "id": "related_articles",
   "parent": "content",
   "properties": {
     "source_id": "string",
@@ -24,8 +24,8 @@ RelatedArticle.type = {
 // -----------------
 //
 
-RelatedArticle.example = {
-  "type": "related_article",
+RelatedArticles.example = {
+  "type": "related_articles",
   "id": "related_articles_1",
   "articles": [{
     "title": "Rare Fungal Infection in Arthritic Knee After Stem Cell...",
@@ -44,7 +44,7 @@ RelatedArticle.example = {
 //
 
 
-RelatedArticle.description = {
+RelatedArticles.description = {
   "name": "Related Article",
   "remarks": [
     "Show related articles."
@@ -54,14 +54,14 @@ RelatedArticle.description = {
   }
 };
 
-RelatedArticle.Prototype = function() {
+RelatedArticles.Prototype = function() {
   // this.inline = false;
 };
 
-RelatedArticle.Prototype.prototype = Document.Node.prototype;
-RelatedArticle.prototype = new RelatedArticle.Prototype();
-RelatedArticle.prototype.constructor = RelatedArticle;
+RelatedArticles.Prototype.prototype = Document.Node.prototype;
+RelatedArticles.prototype = new RelatedArticles.Prototype();
+RelatedArticles.prototype.constructor = RelatedArticles;
 
-Document.Node.defineProperties(RelatedArticle);
+Document.Node.defineProperties(RelatedArticles);
 
-module.exports = RelatedArticle;
+module.exports = RelatedArticles;

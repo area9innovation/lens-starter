@@ -4,20 +4,24 @@ var NodeView = require("../node").View;
 var $$ = require("../../../substance/application").$$;
 
 
-// Substance.RelatedArticle.View
+// Substance.RelatedArticles.View
 // ==========================================================================
 
-var RelatedArticleView = function(node, viewFactory) {
+var RelatedArticlesView = function(node, viewFactory) {
   NodeView.call(this, node, viewFactory);
 };
 
-RelatedArticleView.Prototype = function() {
+RelatedArticlesView.Prototype = function() {
   this.render = function() {
     NodeView.prototype.render.call(this);
 
-    const $content = $$('.related-articles');
+    const $content = $$('.related-articles-box');
 
     const articles = this.node.properties.articles;
+    if (!articles.length) {
+      return this;
+    }
+    
     articles.sort((a, b) => a.heading < b.heading ? -1 : 1);
     for (let i = 0; i < articles.length; i++) {
       const $article = $$('.related-article');
@@ -58,7 +62,7 @@ function createArticleInfoBlock(article) {
   return $info;
 }
 
-RelatedArticleView.Prototype.prototype = NodeView.prototype;
-RelatedArticleView.prototype = new RelatedArticleView.Prototype();
+RelatedArticlesView.Prototype.prototype = NodeView.prototype;
+RelatedArticlesView.prototype = new RelatedArticlesView.Prototype();
 
-module.exports = RelatedArticleView;
+module.exports = RelatedArticlesView;

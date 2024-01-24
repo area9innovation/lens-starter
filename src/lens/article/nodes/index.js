@@ -55,5 +55,5 @@ module.exports = {
   "break": require("./break"),
   "verse_group": require("./verse_group"),
   "verse_line": require("./verse_line"),
-  "related_article": require("./related_article"),
+  "related_articles": require("./related_articles"),
 };

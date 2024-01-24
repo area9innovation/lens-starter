@@ -297,13 +297,13 @@ NlmToLensConverter.Prototype = function() {
     }
 
     if (result.length > 0) {
-      const relatedArticle = {
-        type: 'related_article',
-        id: state.nextId('related_article'),
+      const relatedArticles = {
+        type: 'related_articles',
+        id: state.nextId('related_articles'),
         articles: result,
       };
-      doc.create(relatedArticle);
-      nodes.push(relatedArticle.id);
+      doc.create(relatedArticles);
+      nodes.push(relatedArticles.id);
     }
 
     return nodes;

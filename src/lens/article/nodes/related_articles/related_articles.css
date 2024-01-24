@@ -1,18 +1,18 @@
 /* Related Article Node
 -------------------------------------------------------------------------------*/
 
-.related-articles {
+.related-articles-box {
     border: 1px solid #4f759c;
     background: #e3eaf1;
-    padding: 0.5em 1em;
+    padding: 0.6em 1em;
     border-radius: 5px;
 }
 
-.mobile .related-articles {
+.mobile .related-articles-box {
     margin-top: 10px;
 }
 
-.related-articles .heading {
+.related-article .heading {
     font-size: 1.2em;
     font-weight: 700;
     display: flex;
@@ -20,7 +20,7 @@
     gap: 5px;
 }
 
-.related-articles .heading i {
+.related-article .heading i {
     font-size: 0.9em;
 }
 
@@ -28,36 +28,36 @@
     margin-top: 0.8em;
 }
 
-.related-articles .article-info {
+.related-article .article-info {
     font-size: 0.9em;
     margin-top: 0.3em;
 }
 
-.related-articles .article-info > * {
+.related-article .article-info > * {
     margin-top: 3px;
 }
 
-.related-articles .article-info .article-title {
+.related-article .article-info .article-title {
     font-weight: 700;
     font-size: 1.1em;
 }
 
-.related-articles .article-info .article-title .subtitle {
+.related-article .article-info .article-title .subtitle {
     font-weight: 600;
     font-size: 0.9em;
 }
 
-.related-articles .article-info .article-citations {
+.related-article .article-info .article-citations {
     display: flex;
     align-items: start;
 }
 
-.related-articles a {
+.related-article a {
     text-decoration: none;
     color: blue;
 }
 
-.related-articles .article-citations > img {
+.related-article .article-citations > img {
     margin-right: 3px;
     width: 24px;
 }
