@@ -15,12 +15,12 @@ RelatedArticlesView.Prototype = function() {
   this.render = function() {
     NodeView.prototype.render.call(this);
 
-    const $content = $$('.related-articles-box');
-
     const articles = this.node.properties.articles;
     if (!articles.length) {
       return this;
     }
+
+    const $content = $$('.related-articles-box');
     
     articles.sort((a, b) => a.heading < b.heading ? -1 : 1);
     for (let i = 0; i < articles.length; i++) {
