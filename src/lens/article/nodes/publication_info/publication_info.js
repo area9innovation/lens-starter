@@ -22,7 +22,6 @@ PublicationInfo.type = {
     "subjects": ["array", "string"],
     "links": ["array", "objects"],
     "doi": "string",
-    "related_articles": ["array", "object"],
     "article_info": "paragraph",
     // optional
     "subject_link": "string",
@@ -52,7 +51,6 @@ PublicationInfo.description = {
     "research_organisms": "Research Organisms",
     "subjects": "Article Subjects",
     "doi": "Article DOI",
-    "related_articles": "DOI and link of related articles if there is any",
     "is_pap" : " if this is a Publish Ahead of Print article"
   }
 };
