@@ -63,7 +63,7 @@ Contributor.description = {
     "equal_contrib": "A list of people who contributed equally",
     "competing_interests": "A list of conflicts",
     "members": "a list of group members",
-	"subtype": "collab or empty"
+	"subtype": "collab / on-behalf-of or empty"
   }
 };
 

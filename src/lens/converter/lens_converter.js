@@ -748,35 +748,38 @@ NlmToLensConverter.Prototype = function() {
     // Create authors paragraph that has contributor_reference annotations
     // to activate the author cards
 
-    _.each(docNode.authors, function(contributorId) {
-      const contributor = doc.get(contributorId);
-      var name = contributor.name
-        + (contributor.degrees ? ', ' + contributor.degrees : '');
+	_.each(docNode.authors, function(contributorId) {
+		const contributor = doc.get(contributorId);
+		var name = contributor.name
+			+ (contributor.degrees ? ', ' + contributor.degrees : '');
 
-      var authorsPara = {
-        "id": "text_" + contributorId + "_reference",
-        "type": "text",
-        "content": name
-      };
+		var authorsPara = {
+			"id": "text_" + contributorId + "_reference",
+			"type": "text",
+			"content": name
+		};
 
-      doc.create(authorsPara);
+		doc.create(authorsPara);
 
-		const withFootnotes = !state.hideReferences && contributor.subtype === 'collab' && contributor.footnotes.length;
+		const withFootnotes =
+			!state.hideReferences
+			&& ['collab', 'on-behalf-of'].includes(contributor.subtype)
+			&& contributor.footnotes.length;
 
 		cover.authors.push({
 			paragraphId : authorsPara.id,
 			footnotes : withFootnotes ? contributor.footnotes : []
 		});
 
-      var anno = {
-        id: state.nextId("contributor_reference"),
-        type: "contributor_reference",
-        path: ["text_" + contributorId + "_reference", "content"],
-        range: [0, name.length],
-        target: contributorId
-      };
+		var anno = {
+			id: state.nextId("contributor_reference"),
+			type: "contributor_reference",
+			path: ["text_" + contributorId + "_reference", "content"],
+			range: [0, name.length],
+			target: contributorId
+		};
 
-      doc.create(anno);
+		doc.create(anno);
     }, this);
 
     // Move to elife configuration
@@ -820,15 +823,14 @@ NlmToLensConverter.Prototype = function() {
       state.doc.show("info", h1.id);
     }
 
-    for (i = 0; i < contribs.length; i++) {
-      this.contributor(state, contribs[i], topLevel);
-    }
-    // Extract on-behalf-of element and stick it to the document
-    var doc = state.doc;
-    var on_behalf_of = contribGroup.querySelector("on-behalf-of");
-    if (on_behalf_of) {
-      this.on_behalf_of(state, contribGroup, on_behalf_of);
-    }
+		for (i = 0; i < contribs.length; i++) {
+			this.contributor(state, contribs[i], topLevel);
+		}
+		// Extract on-behalf-of element and stick it to the document
+		var on_behalf_of = contribGroup.querySelector("on-behalf-of");
+		if (on_behalf_of) {
+			this.on_behalf_of(state, contribGroup, on_behalf_of);
+		}
   };
 
   this.on_behalf_of = function (state, contribGroup, on_behalf_of) {
@@ -841,7 +843,8 @@ NlmToLensConverter.Prototype = function() {
       id: state.nextId("contributor"),
       type: "contributor",
       name: text,
-      footnotes: []
+      footnotes: [],
+	  subtype: "on-behalf-of"
     };
 
     doc.nodes.document.authors.push(on_behalf_of_node.id);
