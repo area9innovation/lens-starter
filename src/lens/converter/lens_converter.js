@@ -749,19 +749,24 @@ NlmToLensConverter.Prototype = function() {
     // to activate the author cards
 
     _.each(docNode.authors, function(contributorId) {
-      var contributor = doc.get(contributorId);
-
+      const contributor = doc.get(contributorId);
       var name = contributor.name
         + (contributor.degrees ? ', ' + contributor.degrees : '');
 
       var authorsPara = {
-        "id": "text_"+contributorId+"_reference",
+        "id": "text_" + contributorId + "_reference",
         "type": "text",
         "content": name
       };
 
       doc.create(authorsPara);
-      cover.authors.push(authorsPara.id);
+
+		const withFootnotes = !state.hideReferences && contributor.subtype === 'collab' && contributor.footnotes.length;
+
+		cover.authors.push({
+			paragraphId : authorsPara.id,
+			footnotes : withFootnotes ? contributor.footnotes : []
+		});
 
       var anno = {
         id: state.nextId("contributor_reference"),
@@ -948,6 +953,7 @@ NlmToLensConverter.Prototype = function() {
       id: id,
       source_id: contrib.getAttribute("id"),
       type: "contributor",
+	  subtype: "", // collab
       name: "",
       affiliations: [],
       footnotes:[],
@@ -1029,6 +1035,10 @@ NlmToLensConverter.Prototype = function() {
     var collabHasTags = collab && util.dom.getChildren(collab).length;
 
     var nameEl = this.selectDirectChild(contrib, "name");
+
+	if (collab) {
+		contribNode.subtype = 'collab';
+	}
 
     if (nameEl) {
       contribNode.name = this.getName(nameEl);
@@ -3550,6 +3560,8 @@ NlmToLensConverter.State = function(converter, xmlDoc, doc) {
     top.ignore = top.ignore || [];
     return top;
   };
+
+  this.hideReferences = false;
 };
 
 NlmToLensConverter.prototype = new NlmToLensConverter.Prototype();

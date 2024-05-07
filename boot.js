@@ -328,7 +328,7 @@ function onMenuReady() {
 //  $('.googlescholar').css('display', 'none');
 
 	//click on title/subtitle footnote should activate Info tab if not yet
-	$('span.label.annotation.cross_reference.title, span.label.annotation.cross_reference.subtitle').click(function() {
+	$('span.label.annotation.cross_reference.title, span.label.annotation.cross_reference.subtitle, span.label.annotation.cross_reference.author').click(function() {
     	var aInfo = $('a.context-toggle.info');
     	if(!aInfo.hasClass('active')) {
       		aInfo.click();

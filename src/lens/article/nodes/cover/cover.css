@@ -78,7 +78,7 @@
 
 /* One para per author */
 .lens-article .content-node.cover .authors .text {
-  display: inline-block;
+  display: inline-flex;
   padding: 0px;
   margin: 0px;
   font-size: 17px;

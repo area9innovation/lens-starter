@@ -24,6 +24,8 @@ var JbjsConverter = function(options, config) {
 
   this.config.show_resources_panel = this.config.isDesktop;
 
+  this.hideReferences = this.config.isMobile && this.config.show_abstract_only;
+
   LensConverter.call(this, options);
 
   if ( this.config.isMobile || config.show_abstract_only ) {
@@ -507,6 +509,8 @@ JbjsConverter.Prototype = function() {
   this.articleAbstractOnly = function(state, article) {
     var doc = state.doc;
 
+	state.hideReferences = this.hideReferences;
+
     var articleId = article.querySelector("article-id");
 
     if (articleId) {
@@ -526,9 +530,7 @@ JbjsConverter.Prototype = function() {
     // Extract ArticleMeta
     this.extractArticleMeta(state, article);
 
-    // workaround - do not show subtitle/title footnote reference in case of mobile abstract
-    // where we do not show footnotes. Should be done by checking whether we show references
-    if (this.config.isMobile && this.config.show_abstract_only) {
+    if (state.hideReferences) {
       state.doc.title.notes = [];
       state.doc.subtitle.notes = [];
     }

@@ -18,7 +18,7 @@ Cover.type = {
   "parent": "content",
   "properties": {
     "source_id": "string",
-    "authors": ["array", "paragraph"],
+    "authors": ["array", "object"],
     "breadcrumbs": "object"
     // No properties as they are all derived from the document node
   }
@@ -50,11 +50,14 @@ Cover.example = {
 
 Cover.Prototype = function() {
 
-  this.getAuthors = function() {
-    return _.map(this.properties.authors, function(paragraphId) {
-      return this.document.get(paragraphId);
-    }, this);
-  };
+	this.getAuthors = function() {
+		return _.map(this.properties.authors, function(authorInfo) {
+			return {
+				paragraph : this.document.get(authorInfo.paragraphId),
+				footnotes : authorInfo.footnotes
+			};
+		}, this);
+	};
 
   this.getTitle = function() {
     return this.document.title;

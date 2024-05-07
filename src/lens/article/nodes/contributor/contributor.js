@@ -29,6 +29,8 @@ Contributor.type = {
     "emails": ["array", "string"],
     "contribution": "string",
     "bio": ["array", "paragraph"],
+	"subtype" : "string",
+
     "deceased": "boolean",
     "members": ["array", "string"],
     "orcid": "string",
@@ -60,7 +62,8 @@ Contributor.description = {
     "contribution": "Description of contribution",
     "equal_contrib": "A list of people who contributed equally",
     "competing_interests": "A list of conflicts",
-    "members": "a list of group members"
+    "members": "a list of group members",
+	"subtype": "collab or empty"
   }
 };
 
@@ -79,7 +82,8 @@ Contributor.example = {
   "fundings": ["Funding Organisation 1"],
   "emails": ["a@b.com"],
   "contribution": "Revising the article, data cleanup",
-  "equal_contrib": ["John Doe", "Jane Doe"]
+  "equal_contrib": ["John Doe", "Jane Doe"],
+  "subtype" : "collab"
 };
 
 

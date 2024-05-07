@@ -79,10 +79,28 @@ this.render = function() {
     //
 
     var authors = $$('.authors', {
-      children: _.map(node.getAuthors(), function(authorPara) {
+      children: _.map(node.getAuthors(), function(authorInfo) {
+		const authorPara = authorInfo.paragraph;
+		const footnotes = authorInfo.footnotes;
         var paraView = this.viewFactory.createView(authorPara);
         var paraEl = paraView.render().el;
-        this.content.appendChild(paraEl);
+		if (footnotes.length) {
+			paraEl.appendChild($$('.footnotes', {
+				children: _.map(footnotes, function(fnId) {
+				  const fn = doc.get(fnId);
+				  if (fn && fn.label.length > 0 ) {
+					return $$('span.label .annotation .cross_reference .author',
+						{
+							'data-id': fn.properties.reference_id,
+							text: fn.label
+						}
+					);
+				  }
+				  return $$('span', {text: ''});
+				})
+			}))
+		}
+		this.content.appendChild(paraEl);
         return paraEl;
       }, this)
     });
