@@ -835,7 +835,7 @@ NlmToLensConverter.Prototype = function() {
 
   this.on_behalf_of = function (state, contribGroup, on_behalf_of) {
     var doc = state.doc;
-    var text = this.normalizeOnBehalfOfText(on_behalf_of.textContent);
+    var text = this.normalizeOnBehalfOfText(on_behalf_of);
     doc.on_behalf_of = text;
 
     // hack: we treat on-behalf-of as contributor because it is shown exactly as contributor.
@@ -851,7 +851,11 @@ NlmToLensConverter.Prototype = function() {
     doc.create(on_behalf_of_node);
     doc.show("info", on_behalf_of_node.id);
 
+	// xref can be inside or outside of <on-behalf-of>
     var xref = contribGroup.querySelector('on-behalf-of + xref[ref-type=fn]');
+    if (!xref) {
+		xref = contribGroup.querySelector('on-behalf-of xref[ref-type=fn]');
+	};
     if (!xref) return;
 
     var fnId = xref.getAttribute("rid");
@@ -874,9 +878,23 @@ NlmToLensConverter.Prototype = function() {
     }
   }
 
-  this.normalizeOnBehalfOfText = function(onBehalfOf) {
-    return "on behalf of " + onBehalfOf.trim().replace(/^on\s+behalf\s+of\s/i, "");
-  }
+	this.normalizeOnBehalfOfText = function(onBehalfOf) {
+		/*
+			only take top-level text nodes to deal with constructions like this
+			<on-behalf-of>on behalf of the European Spine Study Group
+				<xref ref-type="aff" rid="aff2"><sup>2</sup></xref>
+				<xref ref-type="fn" rid="fn1">*</xref>
+			</on-behalf-of>
+		*/
+		let textNodes = [];
+		for (const node of onBehalfOf.childNodes) {
+			if (node.nodeType === Node.TEXT_NODE) {
+				textNodes.push(node);
+			}
+		}
+		const text = textNodes.map((node) => node.textContent).join('').trim().replace(/^on\s+behalf\s+of\s/i, "");
+		return `on behalf of ${text}`;
+	}
 
   this.affiliation = function(state, aff) {
     var doc = state.doc;
