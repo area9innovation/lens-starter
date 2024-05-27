@@ -307,9 +307,10 @@ JbjsConverter.Prototype = function() {
     var footers = tableWrap.querySelectorAll("table-wrap-foot fn");
     for (var i = 0; i < footers.length; ++i) {
       var label = footers[i].querySelector('label');
+      var content = footers[i].querySelector('p');
       node.footers.push({
-        label: label ? label.textContent:'',
-        content: footers[i].querySelector('p').textContent
+        label: label ? label.textContent : '',
+        content: this.annotatedText(state, content, [node.id, 'footers', i, 'content'])
       });
     }
   };
