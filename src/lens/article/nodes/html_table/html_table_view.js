@@ -62,11 +62,13 @@ HTMLTableView.Prototype = function() {
     // --------
     //
 
-    var footers = $$('.footers', {
-      children: _.map(this.node.footers, function(footer) {
-        return $$('.footer', { html: "<b>"+footer.label+"</b> " + footer.content });
-      })
-    });
+    var footers = $$('.footers');
+    for (var i = 0; i < this.node.footers.length; i++) {
+      var footer = $$('.footer', { html: "<b>" + this.node.footers[i].label + "</b> "})
+      var footerContentView = this.createTextPropertyView([this.node.id, 'footers', i, 'content']);
+      footer.appendChild(footerContentView.render().el);
+      footers.appendChild(footer)
+    }
 
     this.content.appendChild(footers);
   };
