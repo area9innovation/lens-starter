@@ -844,6 +844,7 @@ NlmToLensConverter.Prototype = function() {
       type: "contributor",
       name: text,
       footnotes: [],
+      affiliations: [],
 	  subtype: "on-behalf-of"
     };
 
@@ -851,31 +852,11 @@ NlmToLensConverter.Prototype = function() {
     doc.create(on_behalf_of_node);
     doc.show("info", on_behalf_of_node.id);
 
-	// xref can be inside or outside of <on-behalf-of>
-    var xref = contribGroup.querySelector('on-behalf-of + xref[ref-type=fn]');
-    if (!xref) {
-		xref = contribGroup.querySelector('on-behalf-of xref[ref-type=fn]');
-	};
-    if (!xref) return;
+	// xref can be inside or outside of <on-behalf-of>, we pass the outsides
+    const outsideXref = contribGroup.querySelector('on-behalf-of + xref[ref-type=fn]');
+    const outsideXrefs = outsideXref ? [outsideXref] : [];
 
-    var fnId = xref.getAttribute("rid");
-    var fnElem = state.xmlDoc.getElementById(fnId);
-    if (!fnElem) return;
-
-    var fnLabel = fnElem.querySelector("label");
-    if (!fnLabel) return;
-
-    var fnLabelText = fnLabel.textContent;
-    if (!fnLabelText) return;
-
-    var fn = state.doc.getNodeBySourceId(fnElem.getAttribute("id"));
-    if (!fn) {
-      fn = this.footnote(state, fnElem, 'author-note');
-    }
-    if (fn) {
-      on_behalf_of_node.footnotes.push(fn.id);
-      state.used[fnId] = true;
-    }
+	this.extractContributorProperties(state, on_behalf_of, on_behalf_of_node, outsideXrefs);
   }
 
 	this.normalizeOnBehalfOfText = function(onBehalfOf) {
@@ -1122,15 +1103,20 @@ NlmToLensConverter.Prototype = function() {
     return result;
   };
 
-  this.extractContributorProperties = function(state, contrib, contribNode) {
+  this.extractContributorProperties = function(state, contrib, contribNode, outsideXrefs) {
     var doc = state.doc;
 
     // Extract equal contributors
     var equalContribs = [];
     var compInterests = [];
 
+
     // extract affiliations stored as xrefs
     var xrefs = this.selectDirectChildren(contrib, "xref");
+	if (!xrefs.length && outsideXrefs) {
+		// xref can be inside or outside of <on-behalf-of>
+		xrefs = outsideXrefs;
+	}
     _.each(xrefs, function(xref) {
       if (xref.getAttribute("ref-type") === "aff") {
         var affId = xref.getAttribute("rid");
