@@ -19,7 +19,7 @@ HTMLTable.type = {
   "properties": {
     "source_id": "string",
     "label": "string",
-    "footers": ["array", "string"],
+    "footers": ["array", "html_table_footer"],
     "caption": "caption",
     "table": "array",
     "annotated_text": "array",
@@ -45,7 +45,7 @@ HTMLTable.description = {
     "source_id": "string",
     "label": "Label shown in the resource header.",
     "title": "Full table title",
-    "footers": "HTMLTable footers expressed as an array strings",
+    "footers": "Array of HTMLTableFooter",
     "caption": "References a caption node, that has all the content",
     "table": "Table representation",
     "annotated_text": "td/th content"

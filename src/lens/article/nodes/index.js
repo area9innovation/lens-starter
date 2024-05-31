@@ -41,6 +41,7 @@ module.exports = {
   "image": require("./image"),
   "webresource": require("./web_resource"),
   "html_table": require("./html_table"),
+  "html_table_footer": require("./html_table_footer"),
   "supplement": require("./supplement"),
   "video": require("./video"),
   "contributor": require("./contributor"),
