@@ -64,10 +64,8 @@ HTMLTableView.Prototype = function() {
 
     var footers = $$('.footers');
     for (var i = 0; i < this.node.footers.length; i++) {
-      var footer = $$('.footer', { html: "<b>" + this.node.footers[i].label + "</b> "})
-      var footerContentView = this.createTextPropertyView([this.node.id, 'footers', i, 'content']);
-      footer.appendChild(footerContentView.render().el);
-      footers.appendChild(footer)
+      var footerView = this.createView(this.node.footers[i]);
+      footers.appendChild(footerView.render().el);
     }
 
     this.content.appendChild(footers);
@@ -83,7 +81,7 @@ HTMLTableView.Prototype = function() {
     var this_ = this;
     if ( obj.childrens ) {
       obj.childrens.forEach(function(children){
-        el.appendChild(this_.buildTable(children));  
+        el.appendChild(this_.buildTable(children));
       });
     } else {
       var annoView = this.createTextPropertyView([this.node.id, 'annotated_text', this.ATPos]);

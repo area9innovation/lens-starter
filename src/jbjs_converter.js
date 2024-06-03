@@ -304,14 +304,19 @@ JbjsConverter.Prototype = function() {
   };
 
   this.enhanceTableFooters = function(state, node, tableWrap) {
-    var footers = tableWrap.querySelectorAll("table-wrap-foot fn");
+    const footers = tableWrap.querySelectorAll("table-wrap-foot fn");
     for (var i = 0; i < footers.length; ++i) {
-      var label = footers[i].querySelector('label');
-      var content = footers[i].querySelector('p');
-      node.footers.push({
+      const label = footers[i].querySelector('label');
+      const content = footers[i].querySelector('p');
+      const footerNodeId = state.nextId('html_table_footer');
+      const footerNode = {
+        type: 'html_table_footer',
+        id: footerNodeId,
         label: label ? label.textContent : '',
-        content: this.annotatedText(state, content, [node.id, 'footers', i, 'content'])
-      });
+        content: this.annotatedText(state, content, [footerNodeId, 'content'])
+      };
+      doc.create(footerNode)
+      node.footers.push(footerNode.id);
     }
   };
 
