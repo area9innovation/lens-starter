@@ -873,18 +873,21 @@ TOC
   padding: 20px;
 }
 
-.surface.content .nodes > .content-node.footnote{
-  border: none;
-  margin: 4px 0;
-  font-size:unset;
+.surface.content .nodes > .content-node.footnote,
+.article .resources .nodes > .content-node.footnote {
+	border: none;
+	margin: 4px 0 0 0;
+	font-size:unset;
+}
+
+.surface.content .nodes > .content-node.footnote {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.article .resources .nodes > .content-node.footnote {
-  border: none;
-  margin: 4px 0;
-  font-size:unset;
+.surface.content .nodes > .content-node.footnote + .content-node.footnote,
+.article .resources .nodes > .content-node.footnote + .content-node.footnote {
+  margin-top: 0;
 }
 
 .footnote-reference > a {
@@ -915,6 +918,14 @@ TOC
     border: unset;
     font-size: 16px;
     margin: 20px 0 0 0;
+}
+
+.surface .content-node.footnote.author-note > .content.author-note {
+	padding-bottom : 0;
+}
+
+.surface .content-node.footnote.author-note:last-child > .content.author-note {
+	padding-bottom : 20px;
 }
 
 .content-node.footnote > .content.author-note > span.label {
