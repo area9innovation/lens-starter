@@ -3129,6 +3129,7 @@ this.mixedCitation = function(state, ref, citation) {
   this.addAnnotationDataForXref = function(state, anno, el) {
     var refType = el.getAttribute("ref-type");
     var sourceId = el.getAttribute("rid");
+    sourceId = (sourceId && sourceId.length > 0) ? sourceId.split(' ')[0] : sourceId;
     // Default reference is a cross_reference
     anno.type = this._refTypeMapping[refType] || "cross_reference";
     if (sourceId) anno.target = sourceId;
