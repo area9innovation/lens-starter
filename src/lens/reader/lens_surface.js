@@ -32,7 +32,7 @@ LensSurface.Prototype = function() {
   };
 
   this.findNodeView = function(nodeId) {
-    return this.el.querySelector('*[data-id='+nodeId+']');
+    return this.el.querySelector('*[data-id="'+nodeId+'"]');
   };
 
   this.build = function() {
