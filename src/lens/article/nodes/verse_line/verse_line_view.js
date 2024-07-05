@@ -32,7 +32,8 @@ VerseLineView.Prototype = function() {
 
     NodeView.prototype.render.call(this);
 
-    this.content.appendChild($$('div', {text: this.node.properties.text}))
+    const content = this.createTextPropertyView([this.node.id, 'text']);
+    this.content.appendChild(content.render().el);
 
     return this;
   };

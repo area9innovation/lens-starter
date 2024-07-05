@@ -2289,10 +2289,11 @@ NlmToLensConverter.Prototype = function() {
   this.verseLine = function(state, verseLine) {
     var doc = state.doc;
 
+    var id = state.nextId('verse_line');
     var verseLineNode = {
       type: 'verse_line',
-      id: state.nextId('verse_line'),
-      text: verseLine.innerHTML
+      id: id,
+      text: this.annotatedText(state, verseLine, [id, 'text'])
     };
 
     doc.create(verseLineNode)
