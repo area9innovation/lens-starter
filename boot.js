@@ -18,8 +18,9 @@ var documentURL = "data/" +
 // 'JBJSOA-D-17-00063-mathml.xml'
 // 'poetry/What_s_Important_(Arts_and_Humanities)_Teach_Me_Orthopaedics.xml'
 // 'related_article/Retraction.xml'
-'Hip Preservation and Capanna Reconstruction for Pediatric Proximal Femur Ewing Sarcoma.xml'
+// 'Hip Preservation and Capanna Reconstruction for Pediatric Proximal Femur Ewing Sarcoma.xml'
 // 'Orthopaedic Systems Response to and Return from the COVID-19 Pandemic.xml'
+'What’s Important (Arts & Humanities)_ My Death Education.xml'
 ;
 
 
