@@ -24,6 +24,10 @@
   font-weight: 600;
 }
 
+.content-node.supplement .content .file a span.icon {
+  margin: 0 4px 0 8px;
+}
+
 .content-node.supplement .content .file span {
   padding-right: 3px;
 }

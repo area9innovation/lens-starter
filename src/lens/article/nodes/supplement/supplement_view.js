@@ -54,13 +54,21 @@ SupplementView.Prototype = function() {
 
       file = $$('div.file', {
         children: [
-          $$('span', { html: node.getHeader() }),
+          $$('span', { html: node.getHeader()}),
           $$('a', {
             class: 'jbjs_tracking',
             jbjs_tracking_type: 'download',
             jbjs_tracking_data: JSON.stringify({ id, type, topics }),
             href: node.url,
-            html: (node.icon?'<img src="' + node.icon + '"/>':'<i class="fa fa-download"/>') + ' Download',
+            children: [
+				$$('span', {
+					class : 'icon',
+					html : node.icon
+						? '<img src="' + node.icon + '"/>'
+						: '<i class="fa fa-download"/>'
+		  		}),
+				$$('span', {html : 'Download'})
+			],
             target: '_blank',
           })
         ]

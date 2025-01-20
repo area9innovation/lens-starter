@@ -829,15 +829,17 @@ JbjsConverter.Prototype = function() {
         });
 
         if (this.config.show_datasharing_href ) {
-            var uri = article.querySelector('self-uri[*|title=data-availability-pdf]');
+			var uri = article.querySelector('self-uri[*|title^=data-availability-]');
             if ( uri ) {
               var url = uri.getAttribute('xlink:href');
+              const title = uri.getAttribute('xlink:title');
+			  const ext = title.replace('data-availability-', '');
               var supplementNode = {
                 id: state.nextId('supplement'),
                 source_id: null,
                 type: 'supplement',
-                label: 'Data Sharing PDF',
-                url: this.URLBuilder(url, '.pdf', 'dataavailability'),
+                label: 'Data-sharing statement',
+                url: this.URLBuilder(url, '.' + ext, 'dataavailability'),
                 caption: null
               };
               doc.create(supplementNode);
