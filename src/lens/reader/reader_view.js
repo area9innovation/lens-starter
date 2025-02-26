@@ -326,8 +326,10 @@ ReaderView.Prototype = function() {
           } else {
             hIdx = 0;
           }
-          view.scrollTo(refsArray[hIdx].id, true);
-          $(view.findNodeView(refsArray[hIdx].id)).addClass('highlighted_current');
+          if (refsArray.length > 0) {
+            view.scrollTo(refsArray[hIdx].id, true);
+            $(view.findNodeView(refsArray[hIdx].id)).addClass('highlighted_current');
+          }
 
           var focussedNodeClass;
           if(refsArray.length>0) focussedNodeClass='highlighted_next';
