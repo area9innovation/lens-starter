@@ -2,6 +2,7 @@
 
 var NodeView = require("../node").View;
 var $$ = require("../../../substance/application").$$;
+var pluralize = require("pluralize");
 
 
 // Substance.RelatedArticles.View
@@ -28,7 +29,7 @@ RelatedArticlesView.Prototype = function() {
       const article = articles[i];
 
       if (i == 0 || articles[i-1].heading != article.heading) {
-        const heading = i + 1 < articles.length && article.heading == articles[i+1].heading ? article.heading + 's' : article.heading;
+        const heading = i + 1 < articles.length && article.heading == articles[i+1].heading ? pluralize(article.heading) : article.heading;
         const $title = $$('.heading', {html: '<i class="fa fa-link"></i>' + heading});
         $article.appendChild($title);
       }
