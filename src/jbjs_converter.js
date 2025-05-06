@@ -579,7 +579,7 @@ JbjsConverter.Prototype = function() {
     var login = {
       id: state.nextId('text'),
       type: 'text',
-      content: 'Please register or login to see full text of this article'
+      content: 'REGISTER OR LOG IN TO ACCESS CONTENT'
     };
 
     doc.create(login);
