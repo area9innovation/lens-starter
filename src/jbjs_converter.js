@@ -480,12 +480,15 @@ JbjsConverter.Prototype = function() {
 
   this.infographic = function(state, el, isMobile) {
     var doc = state.doc;
+	const accessRestricted = el.getAttribute('access') === 'restricted';
 
     var infographicNode = {
       id: 'infographic',
       type: 'infographic',
       label: 'Infographic',
       url: el.getAttribute('url'),
+	  loginUrl : accessRestricted ? this.config.return_url : '',
+      accessRestricted,
       isMobile: isMobile
     };
 

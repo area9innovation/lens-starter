@@ -29,13 +29,13 @@
 
 .viewer {
     position: relative !important;
-    text-align: center; 
+    text-align: center;
 }
 
 .viewer > .progress-bar {
     position: absolute !important;
     top: 0;
-    left: 0;    
+    left: 0;
     width: 0%;
     height: 8px;
     background-color: blue;
@@ -43,7 +43,7 @@
 
 .viewer > .pages {
     overflow: hidden;
-    text-align: center; 
+    text-align: center;
     background-color: #808080;
     padding: 16px 16px 0;
     cursor: -webkit-grab;
@@ -82,4 +82,22 @@
     border: 1px solid #505050;
     background-color: white;
     box-shadow: 0 0 4px;
+}
+
+div.restricted-infographic {
+	min-height: 250px;
+	display:grid;
+	place-items: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+div.restricted-infographic .register-link {
+	width: 100%;
+	background-color: white;
+	font-weight: 600;
+	line-height: 24px;
+	display:grid;
+	place-items: center;
 }
