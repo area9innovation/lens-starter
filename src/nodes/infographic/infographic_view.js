@@ -55,7 +55,7 @@ InfographicView.Prototype = function() {
 				$('<a>', {
 					class : 'register-link',
 					href : node.loginUrl(),
-					text : "REGISTER OR LOG IN TO ACCESS CONTENT"
+					text : node.loginMessage(),
 				})
 			)
 		);

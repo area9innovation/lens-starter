@@ -70,6 +70,10 @@ Infographic.Prototype = function() {
   this.loginUrl = function() {
     return this.properties.loginUrl || '#';
   };
+  
+  this.loginMessage = function() {
+	  return this.properties.loginMessage || '';
+  }
 };
 
 Infographic.Prototype.prototype = Document.Node.prototype;
