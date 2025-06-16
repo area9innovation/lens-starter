@@ -103,7 +103,7 @@ PublicationInfoView.Prototype = function() {
         children: [
           $$('div.label', {text: "Section"}),
           $$('div.value', {
-            text: this.node.subjects.join(', ')
+            text: this.node.subjects.join(': ')
           })
         ]
       });
