@@ -8,8 +8,10 @@ InlineImageView.Prototype = function() {
 
   this.createElement = function() {
     var el = document.createElement('img');
-    el.setAttribute('src', this.node.url);
+    el.setAttribute('src', this.node.properties.url);
     return el;
+  };
+  this.setClasses = function() {
   };
 
 };
