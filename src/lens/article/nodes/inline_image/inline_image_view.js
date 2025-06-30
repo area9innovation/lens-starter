@@ -12,6 +12,7 @@ InlineImageView.Prototype = function() {
     return el;
   };
   this.setClasses = function() {
+    this.$el.addClass(this.node.type);
   };
 
 };

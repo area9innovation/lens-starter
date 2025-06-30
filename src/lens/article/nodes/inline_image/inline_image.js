@@ -7,7 +7,7 @@ var InlineImage = function(node, doc) {
 };
 
 InlineImage.type = {
-  id: "inline_image", //fix?
+  id: "inline_image",
   parent: "annotation",
   properties: {
     "target": "image"

@@ -2574,7 +2574,7 @@ NlmToLensConverter.Prototype = function() {
       var path = path.slice();
       path[2] = at.length;
       if (!this.isParagraphish(el)) {
-        console.error(el + "is not paragraphish");
+        console.error("Unsupported element in table: ", el);
       }
       at.push(this.annotatedText(state, el, path));
       return {
@@ -3340,7 +3340,7 @@ this.mixedCitation = function(state, ref, citation) {
   };
 
   this._annotationTextHandler['inline-graphic'] = function(state) {
-    return 'dummy';
+    return '{{inline-graphic}}';
   };
 
   this.shortenLinkLabel = function(state, linkLabel) {
