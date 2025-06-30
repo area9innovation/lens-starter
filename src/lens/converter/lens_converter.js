@@ -29,6 +29,7 @@ NlmToLensConverter.Prototype = function() {
     "email": "link",
     "named-content": "",
     "inline-formula": "inline-formula",
+	"inline-graphic": "inline_image",
     "uri": "link",
     "article-title": "strong",
     "source": "emphasis",
@@ -2572,6 +2573,9 @@ NlmToLensConverter.Prototype = function() {
     if( el.nodeName === 'td' || el.nodeName === 'th') {
       var path = path.slice();
       path[2] = at.length;
+      if (!this.isParagraphish(el)) {
+        console.error("Unsupported element in table: ", el);
+      }
       at.push(this.annotatedText(state, el, path));
       return {
         name: el.nodeName,
@@ -3118,7 +3122,7 @@ this.mixedCitation = function(state, ref, citation) {
     } else if (type === "email") {
       anno.url = "mailto:" + el.textContent.trim();
     } else if (type === 'inline-graphic') {
-      anno.url = el.getAttribute("xlink:href");
+      anno.url = this.resolveURL(state, el.getAttribute("xlink:href"));
     } else if (type === 'inline-formula') {
       var formula = this.formula(state, el, "inline");
       anno.target = formula.id;
@@ -3333,6 +3337,10 @@ this.mixedCitation = function(state, ref, citation) {
 
   this._annotationTextHandler['break'] = function(state) {
     return ' ';
+  };
+
+  this._annotationTextHandler['inline-graphic'] = function(state) {
+    return '{{inline-graphic}}';
   };
 
   this.shortenLinkLabel = function(state, linkLabel) {
