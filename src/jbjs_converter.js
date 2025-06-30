@@ -381,7 +381,10 @@ JbjsConverter.Prototype = function() {
       label: 'Video Abstract',
       url: el.getAttribute('video-id'),
       url_webm: 'By Id',
-      poster: el.getAttribute('poster-url')
+      poster: el.getAttribute('poster-url'),
+      loginUrl : this.config.return_url,
+      loginMessage : this.config.restricted_message,
+      accessRestricted: el.getAttribute('access') === 'restricted',
     };
 
     doc.create(videoSummaryNode);
@@ -434,7 +437,10 @@ JbjsConverter.Prototype = function() {
       label: 'Author Insights',
       url: el.getAttribute('video-id'),
       url_webm: 'By Id',
-      poster: el.getAttribute('poster-url')
+      poster: el.getAttribute('poster-url'),
+      loginUrl : this.config.return_url,
+      loginMessage : this.config.restricted_message,
+      accessRestricted: el.getAttribute('access') === 'restricted',
     };
 
     doc.create(authorInsightsNode);
@@ -480,12 +486,16 @@ JbjsConverter.Prototype = function() {
 
   this.infographic = function(state, el, isMobile) {
     var doc = state.doc;
+	const accessRestricted = el.getAttribute('access') === 'restricted';
 
     var infographicNode = {
       id: 'infographic',
       type: 'infographic',
       label: 'Infographic',
       url: el.getAttribute('url'),
+	  loginUrl : accessRestricted ? this.config.return_url : '',
+      loginMessage : this.config.restricted_message,
+      accessRestricted,
       isMobile: isMobile
     };
 
@@ -579,13 +589,13 @@ JbjsConverter.Prototype = function() {
     var login = {
       id: state.nextId('text'),
       type: 'text',
-      content: 'REGISTER OR LOG IN TO ACCESS CONTENT'
+      content: this.config.restricted_message
     };
 
     doc.create(login);
 
     var link = {
-      id: state.nextId('link'),
+      id: 'restricted_link',
       type: 'link',
       url: this.config.return_url,
       path: [login.id, 'content'],

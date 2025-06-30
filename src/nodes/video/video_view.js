@@ -26,53 +26,75 @@ VideoView.Prototype = function() {
       this.content.appendChild($$('.label', { text: node.label }));
     }
 
-    var video =  $$('video', {
-      'data-application-id': '',
-      'data-id': node.url,
-      'class': 'video-js',
-      style: 'width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;',
-      controls: '',
-    });
-    $(video).attr(playlist?'data-playlist-id':'data-video-id', (!byId ? 'ref:' : '') + node.url);
+	if (node.accessRestricted()) {
+		const $restrictedInfographic = $('<div>', {
+			class : 'video-wrapper restricted'
+		}).append(
+			$('<div>', {
+				class : 'restricted-video',
+				css : {
+					backgroundImage : `url('${node.poster}')`
+				}
+			}).append(
+				$('<a>', {
+					class : 'register-link',
+					href : node.loginUrl(),
+					text : node.loginMessage(),
+				})
+			)
+		);
+		this.content.appendChild($restrictedInfographic[0]);
+		
+	} else {
 
-    var video = $$('.video-wrapper', {
-      children: [
-        $$('div', {
-          style: 'display: block; position: relative; max-width: 100%;',
-          children: [
-            $$('div', {
-              style: 'padding-top: 50%; position: relative;',
-              children: [
-                video
-              ]
-            }),
-            $$('div', {
-              'class': 'vjs-playlist',
-              style: 'overflow: auto',
-            })
-          ]
-        })
-      ]
-    });
+		var video =  $$('video', {
+		  'data-application-id': '',
+		  'data-id': node.url,
+		  'class': 'video-js',
+		  style: 'width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;',
+		  controls: '',
+		});
+		$(video).attr(playlist?'data-playlist-id':'data-video-id', (!byId ? 'ref:' : '') + node.url);
 
-    var urlParams = (new URL(location)).searchParams,
-      articleId = urlParams.get('id'),
-      rsuiteId = urlParams.get('rsuite_id'),
-      type = node.id === 'videosummary'
-        ? 'video_summary'
-        : (node.id === 'authorinsights'
-          ? 'author_insights'
-          : (node.id.indexOf('video') > -1
-            ? 'video'
-            : 'unknown'
-          )
-        );
+		var video = $$('.video-wrapper', {
+		  children: [
+			$$('div', {
+			  style: 'display: block; position: relative; max-width: 100%;',
+			  children: [
+				$$('div', {
+				  style: 'padding-top: 50%; position: relative;',
+				  children: [
+					video
+				  ]
+				}),
+				$$('div', {
+				  'class': 'vjs-playlist',
+				  style: 'overflow: auto',
+				})
+			  ]
+			})
+		  ]
+		});
 
-    video.classList.add('jbjs_tracking');
-    video.setAttribute('jbjs_tracking_type', 'video');
-    video.setAttribute('jbjs_tracking_data', JSON.stringify({ id: node.url, type, articleId, rsuiteId }));
+		var urlParams = (new URL(location)).searchParams,
+		  articleId = urlParams.get('id'),
+		  rsuiteId = urlParams.get('rsuite_id'),
+		  type = node.id === 'videosummary'
+			? 'video_summary'
+			: (node.id === 'authorinsights'
+			  ? 'author_insights'
+			  : (node.id.indexOf('video') > -1
+				? 'video'
+				: 'unknown'
+			  )
+			);
 
-    this.content.appendChild(video);
+		video.classList.add('jbjs_tracking');
+		video.setAttribute('jbjs_tracking_type', 'video');
+		video.setAttribute('jbjs_tracking_data', JSON.stringify({ id: node.url, type, articleId, rsuiteId }));
+	
+		this.content.appendChild(video);
+	}
 
     if (node.title) {
       this.content.appendChild($$('.title', {

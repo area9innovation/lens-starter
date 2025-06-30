@@ -81,6 +81,15 @@ Video.Prototype = function() {
     }
   };
 
+	this.accessRestricted = function() {
+		return this.properties.accessRestricted || false;
+	}
+	this.loginUrl = function() {
+		return this.properties.loginUrl || '#';
+	};
+	this.loginMessage = function() {
+		return this.properties.loginMessage || '';
+	}
 };
 
 Video.Prototype.prototype = Document.Node.prototype;

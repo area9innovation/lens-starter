@@ -38,9 +38,30 @@ InfographicView.Prototype = function() {
 
     if (!node.url) return;
 
-    if (node.label) {
-      this.content.appendChild($$('.label', { text: node.label }));
-    }
+	if (node.label) {
+	  this.content.appendChild($$('.label', { text: node.label }));
+	}
+
+	if (node.accessRestricted()) {
+		const $restrictedInfographic = $('<div>', {
+			class : 'infographic-wrapper restricted'
+		}).append(
+			$('<div>', {
+				class : 'restricted-infographic',
+				css : {
+					backgroundImage : `url('${node.url}')`
+				}
+			}).append(
+				$('<a>', {
+					class : 'register-link',
+					href : node.loginUrl(),
+					text : node.loginMessage(),
+				})
+			)
+		);
+		this.content.appendChild($restrictedInfographic.get(0));
+		return;
+	}
 
     var urlParams = (new URL(location)).searchParams,
       id = urlParams.get('rsuite_id'),

@@ -29,7 +29,7 @@ Infographic.config = {
 Infographic.description = {
   "name": "Infographic",
   "remarks": [
-    "An infographic PDF.",
+    "An infographic PDF (full access) or image (restricted access)",
   ],
   "properties": {
     "label": "Label used as header for the infographic cards",
@@ -49,7 +49,9 @@ Infographic.example = {
   "label": "Infographic 1",
   "url": "http://example.com/fig1.png",
   "caption": "caption_1",
-  "isMobile": false
+  "isMobile": false,
+  "accessRestricted" : false,
+  "loginUrl" : "#"
 };
 
 Infographic.Prototype = function() {
@@ -60,6 +62,18 @@ Infographic.Prototype = function() {
   this.getHeader = function() {
     return this.properties.label;
   };
+
+  this.accessRestricted = function() {
+    return this.properties.accessRestricted || false;
+  };
+
+  this.loginUrl = function() {
+    return this.properties.loginUrl || '#';
+  };
+  
+  this.loginMessage = function() {
+	  return this.properties.loginMessage || '';
+  }
 };
 
 Infographic.Prototype.prototype = Document.Node.prototype;
