@@ -61,6 +61,11 @@
   margin-left: 80px;
 }
 
+ol.alpha-upper {list-style-type: upper-alpha;}
+ol.alpha-lower {list-style-type: lower-alpha;}
+ol.roman-upper {list-style-type: upper-roman;}
+ol.roman-lower {list-style-type: lower-roman;}
+
 ul.simple {
   list-style-type: none;
 }

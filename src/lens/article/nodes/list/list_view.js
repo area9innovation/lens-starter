@@ -29,6 +29,13 @@ ListView.Prototype = function() {
       case 'ordered':
         this.content = document.createElement('OL');
         break;
+	case 'alpha-upper':
+	case 'alpha-lower':
+	case 'roman-upper':
+	case 'roman-lower':
+        this.content = document.createElement('OL');
+        this.content.classList.add(this.node.list_type);
+        break;
       default:
         this.content = document.createElement('UL');
         this.content.classList.add('simple');

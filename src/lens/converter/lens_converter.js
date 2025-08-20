@@ -2123,10 +2123,14 @@ NlmToLensConverter.Prototype = function() {
   // --------
 
   this.listTypesMap = {
-    bullet: 'bulleted',
-    ordered: 'ordered',
-    order: 'ordered',
-    simple: 'simple',
+	bullet: 'bulleted',
+	ordered: 'ordered',
+	order: 'ordered',
+	simple: 'simple',
+	'alpha-lower': 'alpha-lower',
+	'alpha-upper': 'alpha-upper',
+	'roman-lower': 'roman-lower',
+	'roman-upper': 'roman-upper',
   };
 
   this.list = function(state, list) {
