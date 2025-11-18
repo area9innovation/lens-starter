@@ -3278,7 +3278,10 @@ this.mixedCitation = function(state, ref, citation) {
             if (el.nodeName === 'list-item') {
               prefix = linebreak + prefix;
             }
-            if (el.parentNode.nodeName === 'list-item' &&  el.nodeName === 'label') {
+            if (el.parentNode.nodeName === 'list-item' && el.nodeName === 'p') {
+              suffix = linebreak;
+            }
+            if (el.parentNode.nodeName === 'list-item' && el.nodeName === 'label') {
               suffix = ' ';
             }
 
