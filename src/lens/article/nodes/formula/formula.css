@@ -23,3 +23,7 @@
 .document .content-node.formula .MathJax_Preview img {
   width: 80%;
 }
+
+.document .annotation.inline-formula .MathJax_Preview img {
+  height: 1em;
+}

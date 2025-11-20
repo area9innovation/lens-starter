@@ -2093,7 +2093,7 @@ NlmToLensConverter.Prototype = function() {
         nodes.push(img);
       }
       else if (type === "inline-formula") {
-        var formula = this.formula(state, child, "inline");
+        var formula = this.formula(state, child, true);
         if (formula) {
           nodes.push(formula);
         }
@@ -3128,7 +3128,7 @@ this.mixedCitation = function(state, ref, citation) {
     } else if (type === 'inline-graphic') {
       anno.url = this.resolveURL(state, el.getAttribute("xlink:href"));
     } else if (type === 'inline-formula') {
-      var formula = this.formula(state, el, "inline");
+      var formula = this.formula(state, el, true);
       anno.target = formula.id;
     } else if (anno.type === 'custom_annotation') {
       anno.name = type;
