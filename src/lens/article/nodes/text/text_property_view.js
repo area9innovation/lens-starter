@@ -93,7 +93,7 @@ TextPropertyView.renderAnnotatedText = function(doc, path, el, viewFactory) {
     var pieces = text.split('<br>');
     var appendLine = false;
     pieces.forEach(function(piece, index) {
-      if (piece.trim() === '') {
+      if (piece === '') {
         return;
       }
       if (appendLine) {
