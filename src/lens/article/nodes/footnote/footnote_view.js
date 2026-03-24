@@ -19,7 +19,7 @@ FootnoteView.Prototype = function() {
     CompositeView.prototype.render.call(this);
     var tag = this.node.properties.tag;
     if (this.labeledNoteTags.includes(tag)) {
-      this.$el.context.classList.add(tag);
+      this.el.classList.add(tag);
       this.content.classList.add(tag);
       var header = $$('span.label', {text: this.node.label});
       $(this.content.children).wrapAll('<span class="note"></span>');
