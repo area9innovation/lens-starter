@@ -1,14 +1,13 @@
 "use strict";
 
 var Document = require('../../../substance/document');
-var Composite = Document.Composite;
 
 // Lens.Quote
 // -----------------
 //
 
 var Quote = function(node, doc) {
-    Composite.call(this, node, doc);
+    Document.Composite.call(this, node, doc);
 };
 
 // Type definition
@@ -58,7 +57,7 @@ Quote.Prototype = function() {
 
 };
 
-Quote.Prototype.prototype = Composite.prototype;
+Quote.Prototype.prototype = Document.Composite.prototype;
 Quote.prototype = new Quote.Prototype();
 Quote.prototype.constructor = Quote;
 

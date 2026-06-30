@@ -1,12 +1,10 @@
 "use strict";
 
 var Document = require('../../../substance/document');
-var DocumentNode = Document.Node;
 var Paragraph = require('../paragraph').Model;
-var Composite = Document.Composite;
 
 var Footnote = function(node, document) {
-  Composite.call(this, node, document);
+  Document.Composite.call(this, node, document);
 };
 
 Footnote.type = {
@@ -43,6 +41,6 @@ Footnote.Prototype.prototype = Paragraph.prototype;
 Footnote.prototype = new Footnote.Prototype();
 Footnote.prototype.constructor = Footnote;
 
-DocumentNode.defineProperties(Footnote.prototype, ["children", "label", "footnoteType", "specificUse"]);
+Document.Node.defineProperties(Footnote.prototype, ["children", "label", "footnoteType", "specificUse"]);
 
 module.exports = Footnote;

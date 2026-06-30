@@ -2,11 +2,9 @@
 
 var _ = require("underscore");
 var Document = require('../../../substance/document');
-var DocumentNode = Document.Node;
-var Composite = Document.Composite;
 
 var Paragraph = function(node, document) {
-  Composite.call(this, node, document);
+  Document.Composite.call(this, node, document);
 };
 
 Paragraph.type = {
@@ -63,10 +61,10 @@ Paragraph.Prototype = function() {
 
 };
 
-Paragraph.Prototype.prototype = Composite.prototype;
+Paragraph.Prototype.prototype = Document.Composite.prototype;
 Paragraph.prototype = new Paragraph.Prototype();
 Paragraph.prototype.constructor = Paragraph;
 
-DocumentNode.defineProperties(Paragraph.prototype, ["children"]);
+Document.Node.defineProperties(Paragraph.prototype, ["children"]);
 
 module.exports = Paragraph;

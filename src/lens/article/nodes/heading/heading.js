@@ -1,7 +1,6 @@
 "use strict";
 
 var Document = require('../../../substance/document');
-var DocumentNode = Document.Node;
 var Text = require("../text/text_node");
 
 var Heading = function(node, document) {
@@ -71,6 +70,6 @@ Heading.Prototype.prototype = Text.prototype;
 Heading.prototype = new Heading.Prototype();
 Heading.prototype.constructor = Heading;
 
-DocumentNode.defineProperties(Heading);
+Document.Node.defineProperties(Heading);
 
 module.exports = Heading;

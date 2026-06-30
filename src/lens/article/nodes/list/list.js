@@ -2,11 +2,9 @@
 
 var _ = require("underscore");
 var Document = require('../../../substance/document');
-var DocumentNode = Document.Node;
-var Composite = Document.Composite;
 
 var List = function(node, document) {
-  Composite.call(this, node, document);
+  Document.Composite.call(this, node, document);
 };
 
 List.type = {
@@ -124,10 +122,10 @@ List.Prototype = function() {
 
 };
 
-List.Prototype.prototype = Composite.prototype;
+List.Prototype.prototype = Document.Composite.prototype;
 List.prototype = new List.Prototype();
 List.prototype.constructor = List;
 
-DocumentNode.defineProperties(List.prototype, ["items", "list_type", "labels"]);
+Document.Node.defineProperties(List.prototype, ["items", "list_type", "labels"]);
 
 module.exports = List;

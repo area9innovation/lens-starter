@@ -1,9 +1,8 @@
 "use strict";
 var Document = require('../../../substance/document');
-var DocumentNode = Document.Node;
 
 var WebResource = function(node, doc) {
-  DocumentNode.call(this, node, doc);
+  Document.Node.call(this, node, doc);
 };
 
 WebResource.type = {
@@ -35,10 +34,10 @@ WebResource.example = {
 
 WebResource.Prototype = function() {};
 
-WebResource.Prototype.prototype = DocumentNode.prototype;
+WebResource.Prototype.prototype = Document.Node.prototype;
 WebResource.prototype = new WebResource.Prototype();
 WebResource.prototype.constructor = WebResource;
 
-DocumentNode.defineProperties(WebResource.prototype, ["url"]);
+Document.Node.defineProperties(WebResource.prototype, ["url"]);
 
 module.exports = WebResource;

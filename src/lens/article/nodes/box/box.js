@@ -1,14 +1,13 @@
 "use strict";
 
 var Document = require('../../../substance/document');
-var Composite = Document.Composite;
 
 // Lens.Box
 // -----------------
 //
 
 var Box = function(node, doc) {
-  Composite.call(this, node, doc);
+  Document.Composite.call(this, node, doc);
 };
 
 // Type definition
@@ -60,7 +59,7 @@ Box.Prototype = function() {
 
 };
 
-Box.Prototype.prototype = Composite.prototype;
+Box.Prototype.prototype = Document.Composite.prototype;
 Box.prototype = new Box.Prototype();
 Box.prototype.constructor = Box;
 
