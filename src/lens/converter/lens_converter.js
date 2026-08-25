@@ -1948,6 +1948,7 @@ NlmToLensConverter.Prototype = function() {
     "disp-quote": {handler: "quoteText"},
     "list": { handler: "list" },
     "disp-formula": { handler: "formula" },
+    "verse-group": { handler: "verseGroup" },
   };
 
   this.inlineParagraphElements = {
