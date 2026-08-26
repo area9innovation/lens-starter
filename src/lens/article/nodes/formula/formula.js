@@ -63,7 +63,7 @@ Formula.Prototype = function() {
 
 Formula.Prototype.prototype = Document.Node.prototype;
 Formula.prototype = new Formula.Prototype();
-Formula.prototype.constuctor = Formula;
+Formula.prototype.constructor = Formula;
 
 Document.Node.defineProperties(Formula);
 
